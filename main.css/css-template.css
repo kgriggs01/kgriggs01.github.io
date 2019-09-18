@@ -32,16 +32,11 @@ header, footer, footer a {
 }
 
 header img {
-    width: 200px;
-    height: auto;
+    height: 175px;
+    width: auto;
     float: right;
 }
 
 footer {
     font-size: .85rem;
     }
-
-.img1 {
-    max-height: 10px;
-    max-width: 10px;
-}
