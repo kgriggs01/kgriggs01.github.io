@@ -4,24 +4,31 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family:  Helvetica, Arial, sans-serif;
-    color: rgb(255, 0, 0) ;
+    color: rgb(0, 0, 0);
 }
 
 h1 {
-    font-size: 2rem ;
-    color: rgb(255, 255, 255) ;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 1rem;
 }
 
 h2 {
-    font-size:  1.5rem ;
-    text-align: center;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size:  1.5rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    max-width: 900px;
+}
+
+header, footer {
+    height: 6rem;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width:  1000px;
+    border-radius: 15px;
 }
 
 header, footer, footer a {
@@ -29,6 +36,7 @@ header, footer, footer a {
     background-color:rgb(11, 74, 94) ;
     color: rgb(255, 255, 255);
     font-family: 'Source Serif Pro', serif;
+    padding: 10px;
 }
 
 header img {
@@ -38,5 +46,18 @@ header img {
 }
 
 footer {
+    font-size: 1rem;
+}
+
+ul {
+    padding-top: .75rem;
+}
+
+ul li {
+    margin: -7px;
+}
+
+.test {
+    color: yellow;
     font-size: .85rem;
-    }
+}

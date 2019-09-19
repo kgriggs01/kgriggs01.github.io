@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-us">
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,22 +11,40 @@
     <link rel="stylesheet" href="main.css/css-template.css">
 </head>
 
+
+
 <body>
+
     <header>
         <img class="img1" src="images/family-pic.jpg" alt="Picture of Keith Griggs">
         <h1>Keith A. Griggs</h1>
     </header>
+
+
+
     <main>
-        <h2>CIT 230 - Assignment Portal</h2>
+        <h2>CIT 230: Assignment Portal</h2>
         <ul>
-            <li>Lesson 2: <a href="placeholder">Assignment Link</a></li>
-            <li>Lesson 3: <a href="placeholder">Assignment Link</a></li>
-            <li>Lesson 4: <a href="placeholder">Link | Link</a></li>
+            <li>Lesson 02: <a href="placeholder">Assignment Link</a></li>
+            <li>Lesson 03: <a href="placeholder">Assignment Link</a></li>
+            <li>Lesson 04: <a href="placeholder">Link | Link</a></li>
         </ul>
     </main>
+
+
+
     <footer>
-        <p> &COPY; 2019 - Keith A. Griggs - Location: Oregon - <a href="http://byui.edu">BYU-Idaho</a></p>
+        <p> &COPY; 2019 | Keith A. Griggs | Location: Oregon | <a href="http://byui.edu/online">BYU-Idaho Online Learning</a></p>
+
+        <p class="test">Last Updated: <span id="update"></span></p>
+
+        <script class="test">
+                document.getElementById("update").innerHTML = document.lastModified;
+        </script>
+
     </footer>
+
+
 </body>
 
 </html>
