@@ -57,7 +57,13 @@ ul li {
     margin: -7px;
 }
 
-.test {
+.lastupdate {
     color: yellow;
     font-size: .85rem;
+}
+
+.test {
+    display: inline-block;
+    padding-right: 10px;
+    color: red;
 }
