@@ -8,10 +8,10 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 
 h2 {
@@ -21,7 +21,7 @@ h2 {
 }
 
 header, footer {
-    height: 6rem;
+    height:4rem;
 }
 
 header, main, footer {
@@ -60,10 +60,5 @@ ul li {
 .lastupdate {
     color: yellow;
     font-size: .85rem;
-}
-
-.test {
-    display: inline-block;
-    padding-right: 10px;
-    color: red;
+    margin: -8px;
 }
