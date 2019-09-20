@@ -17,23 +17,28 @@ h1 {
 h2 {
     font-size:  1.5rem;
     border-bottom: 1px solid rgb(0, 0, 0);
-    max-width: 900px;
+    max-width: 600px;
 }
 
-header, footer {
+header {
+    height:5rem;
+}
+
+footer {
     height:4rem;
+    font-size: .90rem;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width:  1000px;
+    max-width:  750px;
     border-radius: 15px;
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color:rgb(11, 74, 94) ;
+    background-color:rgb(11, 74, 94);
     color: rgb(255, 255, 255);
     font-family: 'Source Serif Pro', serif;
     padding: 10px;
@@ -45,10 +50,6 @@ header img {
     float: right;
 }
 
-footer {
-    font-size: 1rem;
-}
-
 ul {
     padding-top: .75rem;
 }
@@ -57,8 +58,8 @@ ul li {
     margin: -7px;
 }
 
-.lastupdate {
+.lastModified {
     color: yellow;
-    font-size: .85rem;
+    font-size: .80rem;
     margin: -8px;
 }
