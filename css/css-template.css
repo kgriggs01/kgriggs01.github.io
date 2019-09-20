@@ -45,8 +45,8 @@ header, footer, footer a {
 }
 
 header img {
-    height: 175px;
-    width: auto;
+    max-height: 175px;
+    max-width: auto;
     float: right;
 }
 
@@ -58,7 +58,7 @@ ul li {
     margin: -7px;
 }
 
-.lastModified {
+#updated {
     color: yellow;
     font-size: .80rem;
     margin: -8px;
