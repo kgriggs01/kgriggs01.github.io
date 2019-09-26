@@ -54,20 +54,6 @@ header, main, footer {
 }
 
 
-
-header img {
-    height: auto;
-    width: 175px;
-}
-
-ul {
-    padding-top: .75rem;
-}
-
-ul li {
-    margin: -7px;
-}
-
 #updated {
     color: yellow;
     font-size: .80rem;
