@@ -47,6 +47,7 @@ h3 {
     color: rgb(255, 255, 255);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    font-size: 1rem;
 }
 
 h3,
@@ -54,7 +55,7 @@ h4,
 .siteLink,
 .screenshot,
 .siteDescription {
-    padding-left: 10px;
+    padding: 10px;
 }
 
 
