@@ -1,13 +1,28 @@
-* { 
+* {
     margin: 0;
-    box-sizing: border-box; } 
+    box-sizing: border-box;
+}
 
-body { 
-    font-size: 16px; 
+body {
+    font-size: 16px;
     line-height: 2rem;
-    font-family:  Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: rgb(0, 0, 0);
     height: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+.sec1,
+.sec2,
+.sec3 {
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 h1 {
@@ -17,31 +32,52 @@ h1 {
 }
 
 h2 {
-    font-size:  1rem;
-    border-bottom: 1px solid rgb(0, 0, 0);
+    font-size: 1rem;
     font-family: 'Kalam', cursive;
     margin-bottom: 0.5rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
+h3 {
+    background-color: rgb(11, 74, 94);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h3,
+h4,
+.siteLink,
+.screenshot,
+.siteDescription {
+    padding-left: 10px;
+}
+
+
 header {
-    margin-top:10px;
+    margin-top: 10px;
     display: block;
 }
 
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
     margin: 0 auto;
     padding: 0.75rem;
     max-width: 45rem;
 }
 
-header, footer, footer a {
+header,
+footer,
+footer a {
     text-align: center;
-    background-color:rgb(11, 74, 94);
+    background-color: rgb(11, 74, 94);
     color: rgb(255, 255, 255);
     font-family: 'Source Serif Pro', serif;
 }
@@ -50,26 +86,13 @@ footer {
     font-size: .90rem;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     margin: 1.25rem auto;
-    padding:.5rem;
-    max-width:  750px;
+    padding: .5rem;
+    max-width: 750px;
     border-radius: 15px;
-}
-
-
-
-header img {
-    height: auto;
-    width: 175px;
-}
-
-ul {
-    padding-top: .75rem;
-}
-
-ul li {
-    margin: -7px;
 }
 
 #updated {

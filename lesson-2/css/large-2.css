@@ -1,15 +1,22 @@
+@media only screen and (min-width: 65em) {
 
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column: span 1;
+    }
 
-@media only screen and (min-width: 82.5rem) {
     h1 {
-    font-size: 3.5rem;
+        font-size: 3.0rem;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
-    
-    header, footer, footer a {
+
+    header,
+    footer,
+    footer a {
         border-radius: 20px;
     }
- 
+
+}
