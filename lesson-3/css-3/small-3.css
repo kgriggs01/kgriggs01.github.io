@@ -118,10 +118,14 @@ h3 {
 }
 
 .scenerios {
-    padding:20px;
+    padding: 20px;
     background-color: #BBB193;
     margin: 10px;
     line-height: 2rem;
+}
+
+#target {
+    text-align: center;
 }
 
 .colorList,
