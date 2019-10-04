@@ -100,9 +100,28 @@ nav a:hover {
 h3 {
     text-align: center;
     color: #28536B;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 30px;
+}
 
+.persona {
+    background-color: #7EA8BE;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.targetHeader {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.scenerios {
+    padding:20px;
+    background-color: #BBB193;
+    margin: 10px;
+    line-height: 2rem;
 }
 
 .colorList,
@@ -139,16 +158,26 @@ h3 {
 }
 
 #color6 {
-    color: white;
+    color: black;
     background-color: #28536B;
 }
 
 #color7 {
+    color: black;
+    background-color: #BBB193;
+}
+
+#color8 {
+    color: white;
+    background-color: #28536B;
+}
+
+#color9 {
     color: #FFFF00;
     background-color: #28536B;
 }
 
-#color8 {
+#color10 {
     color: #FFFF00;
     background-color: #7EA8BE;
 }
@@ -180,7 +209,7 @@ h3 {
 }
 
 footer {
-    font-size: .88rem;
+    font-size: .75rem;
     font-family: 'Buenard', serif;
     color: white;
 }
