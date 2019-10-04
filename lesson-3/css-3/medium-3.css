@@ -34,4 +34,9 @@
 	h2 {
 		font-size: 1rem;
 	}
+
+	.colorList,
+	.fontList {
+		margin: 0 auto;
+	}
 }
