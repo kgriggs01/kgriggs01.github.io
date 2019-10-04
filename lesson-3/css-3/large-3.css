@@ -3,10 +3,49 @@
 	nav a {
 		font-size: 1.1rem;
 	}
+
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+
 	article:nth-child(3) {
 		grid-column: span 1;
 	}
+
+
+
+
+
+
+
+	header {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		text-align: center
+	}
+
+	.flex-left,
+	.flex-right {
+		flex: 1 10px;
+	}
+
+	.flex-center {
+		flex: 5;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+		padding-bottom: 10px;
+	}
+
+
+
 }
