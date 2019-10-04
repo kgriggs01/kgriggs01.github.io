@@ -1,8 +1,6 @@
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
 
-	/* Horizontal Menu Examples */
-	/* Flex *********************/
 	nav ul {
 		display: flex;
 	}
@@ -11,52 +9,12 @@
 		flex: 1 1 100%;
 	}
 
-
-	/* Grid *********************/
-	nav ul {
-		/*display: grid;*/
-		/* grid-template-columns: repeat(5, 1fr); */
-		/*grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));*/
-	}
-
-	/* Inline-Block             */
-	/*
-			nav {text-align: center;}
-			nav li {display: inline-block;}
-	*/
-
-	/* Float                    */
-	/*
-			nav li {float:left; margin-right:15px;}
-			main {clear:both;}
-	*/
-
-	/*******************************************************/
-
-	nav a {
-		font-size: 1rem;
-	}
-
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	article:nth-child(3) {
-		grid-column: span 2;
-	}
-
-
-
-
-
-
-
 	header {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
 		justify-content: center;
-		text-align: center
+		text-align: center;
 	}
 
 	.flex-left,
@@ -76,5 +34,4 @@
 	h2 {
 		font-size: 1rem;
 	}
-
 }

@@ -1,29 +1,12 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 60em) {
-	nav a {
-		font-size: 1.1rem;
-	}
-
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-
-	article:nth-child(3) {
-		grid-column: span 1;
-	}
-
-
-
-
-
-
 
 	header {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
 		justify-content: center;
-		text-align: center
+		text-align: center;
 	}
 
 	.flex-left,
@@ -46,6 +29,11 @@
 		padding-bottom: 10px;
 	}
 
+	footer {
+		font-size: 1rem;
+	}
 
-
+	#updated {
+		font-size: .90rem;
+	}
 }
