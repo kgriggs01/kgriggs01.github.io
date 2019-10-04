@@ -1,5 +1,5 @@
 /* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60.0em) {
 
 	header {
 		display: flex;

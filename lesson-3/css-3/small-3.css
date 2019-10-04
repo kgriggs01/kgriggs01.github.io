@@ -139,67 +139,86 @@ h3 {
 #color1 {
     color: black;
     background-color: #F6F0ED;
+    margin: 20px;
 }
 
 #color2 {
     color: #C2948A;
     background-color: #28536B;
+    margin: 20px;
 }
 
 #color3 {
     color: black;
     background-color: #7EA8BE;
+    margin: 20px;
 }
 
 #color4 {
     color: white;
     background-color: #C2948A;
+    margin: 20px;
 }
 
 #color5 {
     color: #28536B;
     background-color: #F6F0ED;
+    margin: 20px;
 }
 
 #color6 {
     color: black;
     background-color: #28536B;
+    margin: 20px;
+    margin: 20px;
 }
 
 #color7 {
     color: black;
     background-color: #BBB193;
+    margin: 20px;
 }
 
 #color8 {
     color: white;
     background-color: #28536B;
+    margin: 20px;
 }
 
 #color9 {
     color: #FFFF00;
     background-color: #28536B;
+    margin: 20px;
 }
 
 #color10 {
     color: #FFFF00;
     background-color: #7EA8BE;
+    margin: 20px;
 }
 
 #font-1 {
     font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5rem;
+    margin: 20px;
 }
 
 #font-2 {
     font-family: 'Kalam', cursive;
+    line-height: 2.5rem;
+    margin: 20px;
 }
 
 #font-3 {
     font-family: 'Source Serif Pro', serif;
+    line-height: 2.5rem;
+    margin: 20px;
 }
 
 #font-4 {
     font-family: 'Buenard', serif;
+    line-height: 2.5rem;
+    margin: 20px;
 }
 
 .purpose {
