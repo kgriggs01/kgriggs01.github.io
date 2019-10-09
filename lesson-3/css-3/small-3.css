@@ -65,7 +65,6 @@ h2 {
 
 nav {
     background-color: #7EA8BE;
-    text-align: center;
     box-shadow: 0 2px 15px gray;
     border-radius: 10px;
     font-family: 'Source Serif Pro';
@@ -74,6 +73,7 @@ nav {
 
 nav ul {
     list-style-type: none;
+    display: grid;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -233,7 +233,7 @@ footer {
     color: white;
 }
 
-#updated {
+.updated {
     color: #FFFF00;
     font-size: .80rem;
 }
