@@ -17,6 +17,7 @@ document.getElementById("date").innerHTML = d.getDate();
 var y = new Date();
 document.getElementById("year").innerHTML = y.getFullYear();
 
+
 function toggleMenu() {
 	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
