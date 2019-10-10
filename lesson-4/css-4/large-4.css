@@ -2,11 +2,12 @@
 @media only screen and (min-width: 60.0em) {
 
 	.motto {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 	}
 
 	.logo {
-		max-width: 150px;
+		max-width: 140px;
+		right: 75px;
 	}
 
 	.navigation {
@@ -42,5 +43,9 @@
 	footer {
 		font-size: 1.25rem;
 		max-width: 1000px;
+	}
+
+	footer a {
+		bottom: 0px;
 	}
 }
