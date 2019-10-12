@@ -8,9 +8,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     color: rgb(0, 0, 0);
     background-color: #F6F0ED;
+    padding: 0;
 }
 
-.banner {
+header {
     display: flex;
     justify-content: center;
     flex-flow: row;
@@ -22,28 +23,31 @@ body {
     padding: 10px;
 }
 
-h1 {
-    font-size: 1.5rem;
-    position: relative;
-    top: 10px;
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
 }
 
 .motto {
-    font-size: .80rem;
-    position: relative;
-    bottom: 10px;
+    letter-spacing: 1pt;
+    margin-left: 20px;
 }
 
-.logo {
-    max-width: 65px;
-    position: relative;
-    right: 35px;
+header img {
+    width: 70px;
+    height: auto;
 }
 
 .navigation {
-    list-style: none;
+    list-style-type: none;
     text-align: center;
     padding: 0;
+    margin: 0;
     background-color: #7EA8BE;
 }
 
@@ -63,31 +67,33 @@ h1 {
     text-decoration: none;
 }
 
-.navigation a:hover {
-    color: #000;
-    font-weight: 700;
-    background-color: #C2948A;
-    color: black;
-}
-
 .navigation .active {
     background-color: rgb(62, 128, 163);
     color: yellow;
     font-size: 1.25rem;
 }
 
-.menu {
+.navigation a:hover {
+    color: #000;
+    font-weight: 700;
     background-color: rgb(62, 128, 163);
+    color: black;
 }
 
 .responsive li {
     display: block;
-
 }
 
 main {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.menu {
+    background-color: rgb(62, 128, 163);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 h2 {
@@ -111,13 +117,13 @@ footer {
     flex-flow: column;
     font-size: .75rem;
     font-family: 'Buenard', serif;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 0 auto;
     background-color: #28536B;
     align-items: center;
     justify-content: center;
-	padding-top: 10px;
+    padding-top: 10px;
 }
 
 footer a {

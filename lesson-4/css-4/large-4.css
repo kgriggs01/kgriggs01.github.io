@@ -1,13 +1,15 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 60.0em) {
+	.headings h1 {
+		font-size: 3rem;
+	}
 
 	.motto {
 		font-size: 1.25rem;
 	}
 
-	.logo {
-		max-width: 140px;
-		right: 75px;
+	header img {
+		width: 120px;
 	}
 
 	.navigation {
@@ -25,10 +27,6 @@
 
 	.navigation .active {
 		font-size: 1.75rem;
-	}
-
-	h1 {
-		font-size: 3rem;
 	}
 
 	h2 {
