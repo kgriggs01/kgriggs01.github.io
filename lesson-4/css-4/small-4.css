@@ -78,6 +78,7 @@ header img {
     font-weight: 700;
     background-color: rgb(62, 128, 163);
     color: black;
+    border: 2px solid black;
 }
 
 .responsive li {
