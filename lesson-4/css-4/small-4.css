@@ -30,11 +30,12 @@ header {
 }
 
 .headings h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 0 0 0 0px;
 }
 
 .motto {
+    font-size: .85rem;
     letter-spacing: 1pt;
 }
 
@@ -96,7 +97,6 @@ main {
     font-size: 1.4rem;
     font-weight: 700;
     border: 3px solid black;
-
 }
 
 h2 {
