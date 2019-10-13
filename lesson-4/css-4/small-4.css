@@ -7,7 +7,7 @@ body {
     line-height: 1.5rem;
     font-family: Helvetica, Arial, sans-serif;
     color: rgb(0, 0, 0);
-    background-color: #F6F0ED;
+    background-color: white;
     padding: 0;
 }
 
@@ -18,7 +18,7 @@ header {
     align-items: center;
     text-align: center;
     font-family: 'Kalam', cursive;
-    color: #C2948A;
+    color: #F6F0ED;
     background-color: #28536B;
     padding: 10px;
 }
@@ -26,16 +26,16 @@ header {
 .headings {
     display: flex;
     flex-direction: column;
+    padding-left: 30px;
 }
 
 .headings h1 {
     font-size: 1.6rem;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 0px;
 }
 
 .motto {
     letter-spacing: 1pt;
-    margin-left: 20px;
 }
 
 header img {
@@ -49,6 +49,7 @@ header img {
     padding: 0;
     margin: 0;
     background-color: #7EA8BE;
+    font-weight: 600;
 }
 
 .navigation li:first-child {
@@ -70,7 +71,6 @@ header img {
 .navigation .active {
     background-color: rgb(62, 128, 163);
     color: yellow;
-    font-size: 1.25rem;
 }
 
 .navigation a:hover {
@@ -95,6 +95,8 @@ main {
     border: none;
     font-size: 1.4rem;
     font-weight: 700;
+    border: 3px solid black;
+
 }
 
 h2 {

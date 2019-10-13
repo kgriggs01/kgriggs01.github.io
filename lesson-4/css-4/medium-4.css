@@ -3,6 +3,7 @@
 
 	.motto {
 		font-size: 1rem;
+		padding-top: 10px;
 	}
 
 	header img {
@@ -11,6 +12,7 @@
 
 	.headings h1 {
 		font-size: 2.5rem;
+		margin: 0 0 0 0px;
 	}
 
 	h2 {

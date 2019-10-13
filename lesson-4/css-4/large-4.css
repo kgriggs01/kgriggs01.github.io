@@ -2,10 +2,12 @@
 @media only screen and (min-width: 60.0em) {
 	.headings h1 {
 		font-size: 3rem;
+			font-size: 3rem;
 	}
 
 	.motto {
 		font-size: 1.25rem;
+		padding-top: 10px;
 	}
 
 	header img {
@@ -26,7 +28,7 @@
 	}
 
 	.navigation .active {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 
 	h2 {
