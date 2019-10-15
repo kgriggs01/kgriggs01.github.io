@@ -1,0 +1,39 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+
+	.motto {
+		font-size: 1rem;
+		padding-top: 10px;
+	}
+
+	header img {
+		width: 90px;
+	}
+
+	.headings h1 {
+		font-size: 2.5rem;
+	}
+
+	.navigation .active {
+		font-size: 1.2rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	.contentbox {
+		background-color: rgb(240, 205, 241);
+		max-width: 500px;
+	}
+
+	footer {
+		font-size: 1rem;
+		max-width: 600px;
+		padding-bottom: 10px;
+	}
+
+	footer a {
+		bottom: 5px;
+	}
+}

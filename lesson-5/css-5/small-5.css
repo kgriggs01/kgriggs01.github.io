@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: white;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    color: #F6F0ED;
+    background-color: #28536B;
+    padding: 10px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.headings h1 {
+    font-size: 2rem;
+    margin: 0 0 0 0px;
+}
+
+.motto {
+    font-size: .85rem;
+    letter-spacing: 1pt;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #7EA8BE;
+    font-weight: 500;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation .active {
+    background-color: rgb(62, 128, 163);
+    color: yellow;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.navigation a:hover {
+    color: #000;
+    font-weight: 600;
+    background-color: rgb(62, 128, 163);
+    color: black;
+    border: 2px solid black;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu {
+    background-color: rgb(62, 128, 163);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 3px solid black;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.contentbox {
+    display: block;
+    border: 1px dotted black;
+    font-style: italic;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: rgb(240, 205, 142);
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    font-size: .75rem;
+    font-family: 'Buenard', serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 auto;
+    background-color: #28536B;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+footer a {
+    position: relative;
+    bottom: 10px;
+}
