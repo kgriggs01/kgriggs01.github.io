@@ -134,12 +134,12 @@ main {
     color: white;
     line-height: 1.5rem;
     text-shadow: 2px 2px black;
-    max-width: 50%
+    max-width: 55%;
 }
 
 .grid-container {
     display: grid;
-    column-gap: 20px;
+    column-gap: 10px;
     padding: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -148,6 +148,7 @@ main {
         "wind-chill wind-chill-value"
         "humidity humidity-value"
         "wind-speed wind-speed-value";
+        font-size: .9rem;
 }
 
 h3 {
