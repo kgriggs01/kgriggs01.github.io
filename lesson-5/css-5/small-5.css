@@ -107,6 +107,7 @@ main {
     font-size: 1.5rem;
     text-align: center;
     padding: 10px;
+    margin: 10px;
 }
 
 .townpicdiv {
@@ -148,7 +149,7 @@ main {
         "wind-chill wind-chill-value"
         "humidity humidity-value"
         "wind-speed wind-speed-value";
-        font-size: .8rem;
+    font-size: .8rem;
 }
 
 h3 {
@@ -182,28 +183,73 @@ h3 {
     text-align: right;
 }
 
-.contentbox {
-    display: block;
-    border: 1px dotted black;
-    font-style: italic;
-    margin: 10px auto;
-    padding: 15px;
-    background-color: rgb(240, 205, 142);
+.forecastbox {
+    display: none;
 }
+
+.contentbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #C2948A;
+    margin-bottom: 1rem;
+}
+
+.contentinfo,
+.contentpic {
+    max-width: 100%;
+    max-height: auto;
+    flex: 1 0 15em;
+    padding-top: 1rem;
+}
+
+.contenttitle {
+    font-size: 1.5em;
+}
+
+.author {
+    font-style: italic;
+    font-size: 1em;
+    text-indent: 1em;
+}
+
+
+.contactbox {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(211, 204, 185);
+}
+
+.contactinfo,
+.map {
+    max-width: 95%;
+    max-height: auto;
+    flex: 1 0 15em;
+    padding: 10px;
+}
+
+
+
+
 
 footer {
     display: flex;
     flex-flow: column;
     font-size: .75rem;
     font-family: 'Buenard', serif;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
     margin: 0 auto;
     background-color: #28536B;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    text-shadow: 3px 3px black;
+
 }
 
 footer a {

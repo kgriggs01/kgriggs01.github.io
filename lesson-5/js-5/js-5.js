@@ -17,7 +17,11 @@ document.getElementById("date").innerHTML = d.getDate();
 var y = new Date();
 document.getElementById("year").innerHTML = y.getFullYear();
 
+if (day=="Wednesday") {
+	document.getElementById("breakfast").innerHTML = "Saturday = Preston Pancake.";
+}
 
 function toggleMenu() {
 	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+
