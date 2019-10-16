@@ -31,11 +31,13 @@ header {
 .headings h1 {
     font-size: 2rem;
     margin: 0 0 0 0px;
+    text-shadow: 5px 5px black;
 }
 
 .motto {
     font-size: .85rem;
     letter-spacing: 1pt;
+    text-shadow: 3px 3px black;
 }
 
 header img {
@@ -50,6 +52,7 @@ header img {
     margin: 0;
     background-color: #7EA8BE;
     font-weight: 500;
+    font-size: 1.25rem;
 }
 
 .navigation li:first-child {
@@ -72,7 +75,7 @@ header img {
     background-color: rgb(62, 128, 163);
     color: yellow;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.75rem;
 }
 
 .navigation a:hover {
@@ -100,25 +103,21 @@ main {
     border: 3px solid black;
 }
 
-h2 {
+.h2townname {
     font-size: 1.5rem;
     text-align: center;
     padding: 10px;
 }
 
-.herodiv {
-    margin: 10px auto;
+.townpicdiv {
     position: relative;
-    border: 1px dashed cyan;
-    width: 960px;
-    height: 300px;
 }
 
 .hero-ph {
+    max-width: 100%;
     margin: 10px auto;
     background-color: #eee;
     border: 1px solid #333;
-    width: 98%;
     height: 250px;
 }
 
@@ -126,25 +125,37 @@ h2 {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: radial-gradient(blue, lightblue);
+    background: radial-gradient(rgb(5, 5, 131, .25), rgb(125, 125, 170, 5));
     border: 1px solid blue;
-    padding: .5rem;
+    padding: 10px;
     box-shadow: 0 0 30px #777;
+    border-radius: 15px;
     letter-spacing: 1pt;
     color: white;
+    line-height: 1.5rem;
+    text-shadow: 2px 2px black;
+    max-width: 50%
 }
 
 .grid-container {
     display: grid;
     column-gap: 20px;
+    padding: 10px;
+    margin: 0 0 1rem 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "current current-value""high high-value""wind-chill wind-chill-value""humidity humidity-value""wind-speed wind-speed-value";
+    grid-template-areas:
+        "current current-value"
+        "high high-value"
+        "wind-chill wind-chill-value"
+        "humidity humidity-value"
+        "wind-speed wind-speed-value";
 }
 
 h3 {
     border-bottom: 1px solid white;
-       padding-top: 10px;
-   }   
+    padding-top: 10px;
+    letter-spacing: 2pt;
+}
 
 .current {
     grid-area: current;
@@ -171,29 +182,6 @@ h3 {
     text-align: right;
 }
 
-
-.current-value {
-    grid-area: current-value;
-}
-
-.high-value {
-    grid-area: high-value;
-}
-
-.wind-chill-value {
-    grid-area: wind-chill-value;
-}
-
-.humidity-value {
-    grid-area: humidity-value;
-}
-
-.wind-speed-value {
-    grid-area: wind-speed-value;
-}
-
-
-
 .contentbox {
     display: block;
     border: 1px dotted black;
@@ -215,6 +203,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    text-shadow: 3px 3px black;
 }
 
 footer a {
