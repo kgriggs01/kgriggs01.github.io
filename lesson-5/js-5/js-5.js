@@ -21,8 +21,10 @@ function toggleMenu() {
 	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
-if (thisDay =="Wednesday") {
-	document.getElementById("breakfast").innerHTML = "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.";
+if (thisDay =="Friday" || thisDay == "Saturday") {
+	document.getElementById("breakfast1").innerHTML = "Saturday = Preston Pancakes in the Park!";
+	document.getElementById("breakfast2").innerHTML = "9:00 a.m. Saturday at the city park.";
+
 }
 
 
