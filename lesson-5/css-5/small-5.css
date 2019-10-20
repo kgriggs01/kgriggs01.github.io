@@ -215,9 +215,12 @@ h3 {
 .content-info,
 .content-pic {
     max-width: 100%;
-    max-height: auto;
     flex: 1 0 15em;
     font-family: 'Kalam', cursive;
+}
+
+.box-heading {
+    display: none;
 }
 
 .content-pic {
@@ -245,7 +248,6 @@ h3 {
 
 .contact-info {
     max-width: 95%;
-    max-height: auto;
     padding: 10px;
 }
 
