@@ -119,6 +119,7 @@ main {
 
 .townpicdiv {
     position: relative;
+    font-size: 1.5rem;
 }
 
 .hero-ph {
@@ -132,21 +133,21 @@ main {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: radial-gradient(rgb(5, 5, 131, .25), rgb(125, 125, 170, 5));
+    background: radial-gradient(rgba(88, 88, 211, 0.616), rgb(0, 0, 0));
     border: 1px solid blue;
     padding: 10px;
     box-shadow: 0 0 30px #777;
     border-radius: 15px;
     letter-spacing: 1pt;
     color: white;
-    line-height: 1.75rem;
+    line-height: 1.5rem;
     text-shadow: 2px 2px black;
     max-width: 60%;
 }
 
 .summary-container {
     display: grid;
-    column-gap: 20px;
+    column-gap: 25px;
     padding: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -155,14 +156,13 @@ main {
         "wind-chill wind-chill-value"
         "humidity humidity-value"
         "wind-speed wind-speed-value";
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 h3 {
     border-bottom: 1px solid white;
     padding-top: 10px;
-    letter-spacing: 1.5pt;
-    font-size: 1.75rem;
+    letter-spacing: 1pt;
 }
 
 .current {
