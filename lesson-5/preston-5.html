@@ -19,8 +19,7 @@
 </head>
 
 <body onload="dayOfWeek()">
-    <h1 id="breakfast1"></h1>
-    <h1 id="breakfast2"></h1>
+    <h1 id="banner"></h1>
 
     <header>
         <picture>
@@ -55,9 +54,9 @@
                 <img class="hero-ph" src="images-5/preston-pic.jpg" alt="preston picture"></img>
             </picture>
 
-            <div class="weathersummary">
+            <div class="weather-summary">
                 <h3>Weather Summary</h3>
-                <div class="grid-container">
+                <div class="summary-container">
                     <div class="current">Currently:</div>
                     <div class="high">High:</div>
                     <div class="wind-chill">Wind Chill:</div>
@@ -65,7 +64,7 @@
                     <div class="wind-speed">Wind Speed:</div>
 
                     <div class="current-value">Sunny</div>
-                    <div class="high-value">76°</div>
+                    <div class="high-value">76 °F </div>
                     <div class="wind-chill-value">0°F</div>
                     <div class="humidity-value">69%</div>
                     <div class="wind-speed-value">5 mph</div>
@@ -73,15 +72,46 @@
             </div>
         </section>
 
-        <section class="forecastbox">5 Day Forecast</section>
+        <section class="forecast-box">
+            <div class="forecast-summary">
+                <h3>5-Day Forecast </h3>
 
+                <div class="forecast-container">
+                    <div class="forecast-day">Wed</div>
+                    <div class="forecast-day">Thu</div>
+                    <div class="forecast-day">Fri</div>
+                    <div class="forecast-day">Sat</div>
+                    <div class="forecast-day">Sun</div>
 
+                    <div class="forecast-image">
+                        <img src="images-5/sun.png" alt=forecast image></img>
+                    </div>
+                    <div class="forecast-image">
+                        <img src="images-5/sun.png" alt=forecast image></img>
+                    </div>
+                    <div class="forecast-image">
+                        <img src="images-5/sun.png" alt=forecast image></img>
+                    </div>
+                    <div class="forecast-image">
+                        <img src="images-5/sun.png" alt=forecast image></img>
+                    </div>
+                    <div class="forecast-image">
+                        <img src="images-5/sun.png" alt=forecast image></img>
+                    </div>
 
+                    <div class="forecast-temp">89 °F</div>
+                    <div class="forecast-temp">87 °F</div>
+                    <div class="forecast-temp">78 °F</div>
+                    <div class="forecast-temp">75 °F</div>
+                    <div class="forecast-temp">72 °F</div>
+                </div>
+            </div>
+        </section>
 
-        <section class="contentbox">
-            <div class="contentinfo">
-                <h4 class="contenttitle">Placeholder Article</h4>
-                <h5 class="author">by Some Person</h5><br>
+        <section class="content-box">
+            <div class="content-info">
+                <h4 class="content-itle">Article Title</h4>
+                <p class="author">by Author Unknown</p><br>
                 <article class="article">Lorem ipsum dolor sit amet, duo diam zril expetendis at.
                     Hinc tritani te ius, eum in tota causae alienum, eu eum augue conceptam adversarium.
                     Partem laboramus in vel, per harum probatus interesset ei. Eam vocibus appareat ad.<br>
@@ -90,35 +120,37 @@
                 </article>
             </div>
 
-            <picture class="contentpic">
-                <img class="contentpic" src="images-5/picnic-pic.jpg" alt="couple on picnic">
+            <picture class="content-pic">
+                <img class="content-pic" src="images-5/picnic-pic.jpg" alt="couple on picnic">
             </picture>
         </section>
 
-
-        <section class="contactbox">
+        <section class="contact-box">
 
             <picture class="map">
-                <img class="map" src="images-5/preston-map.jpg" alt="preston map">
+                <img class="map" src="images-5/map.jpg" alt="preston map">
             </picture>
 
-
-            <div class="contactinfo">
-                <h4 class="contacttitle">SE Idaho Weather</h4>
+            <div class="contact-info">
+                <h4 class="contact-title">SE Idaho Weather</h4>
 
                 <img class="pointer" src="images-5/map-pointer.jpg" alt="map pointer">
                 123 Fake St<br>
                 Preston, Idaho 83263<br>
-
-
                 <br>
-                555-555-5555<br>
-                idahoweather.us
+                &#9742; 208-555-5555<br>
+                &#9993; idahoweather.us
                 </p>
+                <br>
+
+                <div class="icons">
+                    <img src="images-5/facebook-icon.png" alt="facebook icon">
+                    <img src="images-5/pinterest-icon.png" alt="pinterest icon">
+                    <img src="images-5/twitter-icon.png" alt="twitter icon">
+                    <img src="images-5/whatsapp-icon.png" alt="whatsapp icon">
+                </div>
             </div>
-
         </section>
-
     </main>
 
     <footer>

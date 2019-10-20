@@ -2,13 +2,11 @@
     margin: 0;
 }
 
-#breakfast1,
-#breakfast2 {
+#banner {
     background: yellow;
     text-align: center;
     margin: 0rem;
     line-height: 2rem;
-    
 }
 
 body {
@@ -125,13 +123,12 @@ main {
 
 .hero-ph {
     max-width: 100%;
-    margin: 10px auto;
     background-color: #eee;
     border: 1px solid #333;
     height: 250px;
 }
 
-.weathersummary {
+.weather-summary {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -147,7 +144,7 @@ main {
     max-width: 60%;
 }
 
-.grid-container {
+.summary-container {
     display: grid;
     column-gap: 10px;
     padding: 5px;
@@ -192,40 +189,52 @@ h3 {
     text-align: right;
 }
 
-.forecastbox {
-    display: none;
-}
-
-.contentbox {
+.content-box {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     background-color: #C2948A;
-    margin-bottom: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.contentinfo,
-.contentpic {
+.current-value,
+.high-value,
+.wind-chill-value,
+.humidity-value,
+.wind-speed-value {
+    color: yellow;
+}
+
+.forecast-box {
+    display: none;
+}
+
+.content-info,
+.content-pic {
     max-width: 100%;
     max-height: auto;
     flex: 1 0 15em;
-    padding-top: 1rem;
+    font-family: 'Kalam', cursive;
 }
 
-.contenttitle {
+.content-pic {
+    padding-top: 10px;
+}
+
+.content-title {
     font-size: 1.5em;
 }
 
 .author {
     font-style: italic;
-    font-size: 1em;
-    text-indent: 1em;
+    font-size: 1rem;
+    text-indent: 1rem;
 }
 
-
-.contactbox {
+.contact-box {
     display: flex;
     flex-flow: column-reverse;
     justify-content: center;
@@ -234,22 +243,32 @@ h3 {
     background-color: rgb(211, 204, 185);
 }
 
-.contactinfo,
-.map {
+.contact-info {
     max-width: 95%;
     max-height: auto;
-    flex: 1 0 15em;
     padding: 10px;
 }
 
+.contact-title {
+    font-size: 1.25rem;
+}
 
+.map {
+    display: none;
+}
 
+.pointer {
+    height: 15px;
+}
 
+.icons img {
+    padding-right: 5px;
+}
 
 footer {
     display: flex;
     flex-flow: column;
-    font-size: .75rem;
+    font-size: 1rem;
     font-family: 'Buenard', serif;
     color: white;
     text-align: center;
@@ -258,7 +277,6 @@ footer {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-
 }
 
 footer a {

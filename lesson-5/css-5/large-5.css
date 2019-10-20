@@ -1,5 +1,5 @@
 /* Desktop Views ****************************/
-@media only screen and (min-width: 60.0em) {
+@media only screen and (min-width: 64em) {
 	.headings h1 {
 		font-size: 3rem;
 	}
@@ -34,7 +34,7 @@
 		font-size: 2rem;
 	}
 
-	.contentbox {
+	.content-box {
 		background-color: #C2948A;
 		max-width: 1000px;
 	}
