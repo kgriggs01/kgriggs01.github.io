@@ -133,7 +133,7 @@ main {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: radial-gradient(rgba(88, 88, 211, 0.616), rgb(0, 0, 0));
+    background:  rgb(0, 0, 0);
     border: 1px solid blue;
     padding: 10px;
     box-shadow: 0 0 30px #777;
