@@ -19,12 +19,13 @@ document.getElementById("date").innerHTML = d.getDate();
 var y = new Date();
 document.getElementById("year").innerHTML = y.getFullYear();
 
-function toggleMenu() {
-	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-}
+
 
 if (thisDay == "Friday") {
 	document.getElementById("banner").innerHTML = "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.";
 }
 }
 
+function toggleMenu() {
+	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
