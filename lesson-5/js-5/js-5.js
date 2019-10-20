@@ -1,4 +1,7 @@
-var w = new Date();
+function dayOfWeek() {
+	
+	
+	var w = new Date();
 var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var thisDay = weekdays[w.getDay()];
 document.getElementById("weekday").innerHTML = thisDay;
@@ -25,4 +28,5 @@ if (thisDay == "Friday" || "Saturday") {
 	document.getElementById("banner").innerHTML = "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.";
 }
 
+}
 
