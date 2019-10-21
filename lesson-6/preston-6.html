@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Preston Town Page | Keith Griggs | BYU-Idaho</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description"
+        content="Preston Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC%7CBuenard%7CKalam%7CSource+Serif+Pro&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css-6/small-6.css">
+    <link rel="stylesheet" href="css-6/medium-6.css">
+    <link rel="stylesheet" href="css-6/large-6.css">
+</head>
+
+<body onload="dayOfWeek()">
+    <div id="banner"></div>
+
+
+    <header>
+        <picture>
+            <img class="logo" src="images-6/weather-image.png" alt="weather logo">
+        </picture>
+
+        <section class="headings">
+            <h1>SE Idaho Weather</h1>
+            <div class="motto">High country living at its best</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">&#9925; Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="h2townname">
+            <h2>Preston Idaho</h2>
+        </section>
+
+        <section class="townpicdiv">
+            <picture>
+                <img class="hero-ph" src="images-6/preston-pic.jpg" alt="preston picture">
+            </picture>
+
+            <div class="weather-summary">
+                <h3>Weather Summary</h3>
+                <div class="summary-container">
+                    <div class="current">Currently:</div>
+                    <div class="high">High:</div>
+                    <div class="wind-chill">Wind Chill:</div>
+                    <div class="humidity">Humidity:</div>
+                    <div class="wind-speed">Wind Speed:</div>
+
+                    <div class="current-value">Sunny</div>
+                    <div class="high-value">76 °F </div>
+                    <div class="wind-chill-value">0°F</div>
+                    <div class="humidity-value">69%</div>
+                    <div class="wind-speed-value">5 mph</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast-box">
+            <div class="forecast-summary">
+                <h3>5 Day Forecast </h3>
+
+                <div class="forecast-container">
+                    <div class="forecast-day">Wed</div>
+                    <div class="forecast-day">Thu</div>
+                    <div class="forecast-day">Fri</div>
+                    <div class="forecast-day">Sat</div>
+                    <div class="forecast-day">Sun</div>
+
+                    <div class="forecast-image">
+                        <img src="images-6/sun.png" alt="forecast image">
+                    </div>
+                    <div class="forecast-image">
+                        <img src="images-6/sun.png" alt="forecast image">
+                    </div>
+                    <div class="forecast-image">
+                        <img src="images-6/sun.png" alt="forecast image">
+                    </div>
+                    <div class="forecast-image">
+                        <img src="images-6/sun.png" alt="forecast image">
+                    </div>
+                    <div class="forecast-image">
+                        <img src="images-6/sun.png" alt="forecast image">
+                    </div>
+
+                    <div class="forecast-temp">89 °F</div>
+                    <div class="forecast-temp">87 °F</div>
+                    <div class="forecast-temp">78 °F</div>
+                    <div class="forecast-temp">75 °F</div>
+                    <div class="forecast-temp">72 °F</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-box">
+            <h4 class="box-heading">placeholder</h4>
+            <div class="content-info">
+
+                <article class="article">
+                    <h4 class="content-Title">Founders Day Fresco</h4>
+                    <h5 class="author">by Janica Juarez</h5><br>
+                    <p>Lorem ipsum dolor sit amet, duo diam zril expetendis at.
+                        Hinc tritani te ius, eum in tota causae alienum, eu eum augue conceptam adversarium.
+                        Partem laboramus in vel, per harum probatus interesset ei. Eam vocibus appareat ad.<br>
+                        Cu paulo facilis mel. Cetero persius at mel, duo no habeo elitr assentior. Ex novum virtute pro.
+                        Ea eos facer quando alienum, unum mentitum delicata ex has.
+                    </p>
+                </article>
+            </div>
+
+            <picture class="content-pic">
+                <img class="content-pic" src="images-6/picnic-pic.jpg" alt="couple on picnic">
+            </picture>
+        </section>
+
+        <section class="contact-box">
+
+            <picture class="map">
+                <img class="map" src="images-6/map.jpg" alt="preston map">
+            </picture>
+
+            <div class="contact-info">
+                <h4 class="contact-title">SE Idaho Weather</h4>
+
+                <img class="pointer" src="images-6/pin.png" alt="map pointer">
+                123 Fake St<br>
+                Preston, Idaho 83263<br>
+                <br>
+                &#9742; 208-555-5555<br>
+                &#9993; idahoweather.us<br>
+                <br>
+
+                <div class="icons">
+                    <img src="images-6/facebook-icon.png" alt="facebook icon">
+                    <img src="images-6/pinterest-icon.png" alt="pinterest icon">
+                    <img src="images-6/twitter-icon.png" alt="twitter icon">
+                    <img src="images-6/whatsapp-icon.png" alt="whatsapp icon">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div> &COPY; SE Idaho Weather | Attributions | Keith A. Griggs</div>
+        <a> <span id="weekday"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span></a>
+    </footer>
+
+    <script src="js-6/js-6.js"></script>
+
+</body>
+
+</html>

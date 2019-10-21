@@ -1,0 +1,50 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 64em) {
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		font-size: 1.25rem;
+		padding-top: 10px;
+	}
+
+	header img {
+		width: 120px;
+	}
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.navigation .active {
+		font-size: 2rem;
+	}
+
+	.h2townname {
+		font-size: 2rem;
+	}
+
+	.content-box {
+		background-color: #C2948A;
+		max-width: 1000px;
+	}
+
+	footer {
+		font-size: 1.25rem;
+		max-width: 1000px;
+	}
+
+	footer a {
+		bottom: 0px;
+	}
+}

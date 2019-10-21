@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+}
+
+#banner {
+    background: yellow;
+    text-align: center;
+    margin: 0rem;
+    line-height: 2rem;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: white;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    color: #F6F0ED;
+    background-color: #28536B;
+    padding: 10px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.headings h1 {
+    font-size: 2rem;
+    margin: 0 0 0 0px;
+    text-shadow: 5px 5px black;
+}
+
+.motto {
+    font-size: .85rem;
+    letter-spacing: 1pt;
+    text-shadow: 3px 3px black;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #7EA8BE;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation .active {
+    background-color: rgb(62, 128, 163);
+    color: yellow;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.navigation a:hover {
+    color: #000;
+    font-weight: 600;
+    background-color: rgb(62, 128, 163);
+    color: black;
+    border: 2px solid black;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu {
+    background-color: rgb(62, 128, 163);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 3px solid black;
+}
+
+.h2townname {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.townpicdiv {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.hero-ph {
+    max-width: 100%;
+    background-color: #eee;
+    border: 1px solid #333;
+    height: 250px;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: rgb(0, 0, 0);
+    border: 1px solid blue;
+    padding: 10px;
+    box-shadow: 0 0 30px #777;
+    border-radius: 15px;
+    letter-spacing: 1pt;
+    color: white;
+    line-height: 1.5rem;
+    text-shadow: 2px 2px black;
+    max-width: 60%;
+}
+
+.summary-container {
+    display: grid;
+    column-gap: 25px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "current current-value"
+        "high high-value"
+        "wind-chill wind-chill-value"
+        "humidity humidity-value"
+        "wind-speed wind-speed-value";
+    font-size: 1.25rem;
+}
+
+h3 {
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    letter-spacing: 1pt;
+}
+
+.current {
+    grid-area: current;
+    text-align: right;
+}
+
+.high {
+    grid-area: high;
+    text-align: right;
+}
+
+.wind-chill {
+    grid-area: wind-chill;
+    text-align: right;
+}
+
+.humidity {
+    grid-area: humidity;
+    text-align: right;
+}
+
+.wind-speed {
+    grid-area: wind-speed;
+    text-align: right;
+}
+
+.content-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #C2948A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.current-value,
+.high-value,
+.wind-chill-value,
+.humidity-value,
+.wind-speed-value {
+    color: yellow;
+}
+
+.forecast-box {
+    display: none;
+}
+
+.content-info,
+.content-pic {
+    max-width: 100%;
+    flex: 1 0 15em;
+    font-family: 'Kalam', cursive;
+}
+
+.box-heading {
+    display: none;
+}
+
+.content-pic {
+    padding-top: 10px;
+}
+
+.content-title {
+    font-size: 1.5em;
+}
+
+.author {
+    font-style: italic;
+    font-size: 1rem;
+    text-indent: 1rem;
+}
+
+.contact-box {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(211, 204, 185);
+}
+
+.contact-info {
+    max-width: 95%;
+    padding: 10px;
+}
+
+.contact-title {
+    font-size: 1.25rem;
+}
+
+.map {
+    display: none;
+}
+
+.icons img {
+    padding-right: 5px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    font-size: 1rem;
+    font-family: 'Buenard', serif;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #28536B;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+footer a {
+    bottom: 10px;
+}
