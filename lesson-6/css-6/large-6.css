@@ -34,6 +34,28 @@
 		font-size: 2rem;
 	}
 
+	.mediumtextoverlay {
+		display: none;
+	}
+
+	.largetextoverlay {
+		position: absolute;
+		top: 100px;
+		right: 40px;
+		color: red;
+		font-size: 3.5rem;
+		font-family: 'Kalam', cursive;
+		font-weight: bold;
+	}
+
+	.weather-summary {
+		max-width: 70%;
+	}
+
+	.summary-container {
+		font-size: 1.5rem;
+	}
+
 	.content-box {
 		background-color: #C2948A;
 		max-width: 1000px;

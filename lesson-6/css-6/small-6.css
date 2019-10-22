@@ -119,14 +119,32 @@ main {
 
 .townpicdiv {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
-.hero-ph {
-    max-width: 100%;
-    background-color: #eee;
-    border: 1px solid #333;
-    height: 250px;
+main figure.myphoto {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.myphoto img {
+    position: relative;
+    width: 100%;
+}
+
+main figure.myphoto figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.smalltextoverlay {
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    color: red;
+    font-size: 2rem;
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
 }
 
 .weather-summary {
@@ -142,7 +160,7 @@ main {
     color: white;
     line-height: 1.5rem;
     text-shadow: 2px 2px black;
-    max-width: 60%;
+    max-width: 55%;
 }
 
 .summary-container {
@@ -151,12 +169,12 @@ main {
     padding: 5px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "current current-value"
-        "high high-value"
-        "wind-chill wind-chill-value"
-        "humidity humidity-value"
-        "wind-speed wind-speed-value";
-    font-size: 1.25rem;
+        "current currentValue"
+        "high highValue"
+        "windChill windChillValue"
+        "humidity humidityValue"
+        "windSpeed windSpeedValue";
+    font-size: 1rem;
 }
 
 h3 {
@@ -175,8 +193,8 @@ h3 {
     text-align: right;
 }
 
-.wind-chill {
-    grid-area: wind-chill;
+.windChill {
+    grid-area: windChill;
     text-align: right;
 }
 
@@ -185,8 +203,8 @@ h3 {
     text-align: right;
 }
 
-.wind-speed {
-    grid-area: wind-speed;
+.windSpeed {
+    grid-area: windSpeed;
     text-align: right;
 }
 
@@ -201,11 +219,11 @@ h3 {
     margin-bottom: 10px;
 }
 
-.current-value,
-.high-value,
-.wind-chill-value,
-.humidity-value,
-.wind-speed-value {
+.currentValue,
+.highValue,
+.windChillValue,
+.humidityValue,
+.windSpeedValue {
     color: yellow;
 }
 

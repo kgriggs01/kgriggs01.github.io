@@ -18,6 +18,28 @@
 		font-size: 1.75rem;
 	}
 
+	.smalltextoverlay {
+		display: none;
+	}
+
+	.mediumtextoverlay {
+		position: absolute;
+		top: 80px;
+		right: 30px;
+		color: red;
+		font-size: 2.5rem;
+		font-family: 'Kalam', cursive;
+		font-weight: bold;
+	}
+
+	.weather-summary {
+		max-width: 60%;
+	}
+
+	.summary-container {
+		font-size: 1.25rem;
+	}
+
 	.content-pic {
 		float: right;
 	}

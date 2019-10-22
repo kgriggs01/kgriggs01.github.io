@@ -2,21 +2,39 @@
 <html lang="en-us">
 
 <head>
-    <title>Preston Town Page | Keith Griggs | BYU-Idaho</title>
+    <title>Responsive Images and Font | Keith Griggs | BYU-Idaho</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="description"
         content="Preston Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC%7CBuenard%7CKalam%7CSource+Serif+Pro&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="css-6/small-6.css">
     <link rel="stylesheet" href="css-6/medium-6.css">
     <link rel="stylesheet" href="css-6/large-6.css">
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <body onload="dayOfWeek()">
     <div id="banner"></div>
@@ -51,24 +69,40 @@
         </section>
 
         <section class="townpicdiv">
+
+            <figure class="myphoto">
+                <img src="images-6/franklin-1100a.jpg" alt="Franklin pic" sizes="50vw" srcset="images-6/franklin-200a.jpg 200w, 
+                        images-6/franklin-500a.jpg 500w, 
+                        images-6/franklin-800a.jpg 800w, , 
+                        images-6/franklin-1100a.jpg 1100w, ">
+            </figure>
+
+            <div class="smalltextoverlay">Small</div>
+            <div class="mediumtextoverlay">Medium</div>
+            <div class="largetextoverlay">Large</div>
+
+
+            <!--        
+        <section class="townpicdiv">
             <picture>
                 <img class="hero-ph" src="images-6/preston-pic.jpg" alt="preston picture">
             </picture>
+-->
 
             <div class="weather-summary">
                 <h3>Weather Summary</h3>
                 <div class="summary-container">
                     <div class="current">Currently:</div>
                     <div class="high">High:</div>
-                    <div class="wind-chill">Wind Chill:</div>
+                    <div class="windChill">Wind Chill:</div>
                     <div class="humidity">Humidity:</div>
-                    <div class="wind-speed">Wind Speed:</div>
+                    <div class="windSpeed">Wind Speed:</div>
 
-                    <div class="current-value">Sunny</div>
-                    <div class="high-value">76 °F </div>
-                    <div class="wind-chill-value">0°F</div>
-                    <div class="humidity-value">69%</div>
-                    <div class="wind-speed-value">5 mph</div>
+                    <div class="currentValue">Rainy</div>
+                    <div class="highValue">54</div>
+                    <a class="windChillValue"><span id="getChillValue"></span> °F</a>
+                    <div class="humidityValue">95%</div>
+                    <div class="windSpeedValue">12</div>
                 </div>
             </div>
         </section>
@@ -163,6 +197,45 @@
     </footer>
 
     <script src="js-6/js-6.js"></script>
+    <script src="js-6/windChill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Kalam', 'Alegreya Sans SC', 'Buenard', 'Source Serif Pro']
+            }
+        })
+    </script>
+
+
+
+
+
+
+
+
+<h1>Wind Chill Calculator</h1>
+Temperature <input type="text" id="Temperature" size="5"> (°F)<br>
+<br>
+Wind Speed <input type="text" id="WindSpeed" size="5"> (MPH)<br>
+<br>
+<button type="button" onclick="doInputOutput()">Wind Chill</button><br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
