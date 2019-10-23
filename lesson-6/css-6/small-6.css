@@ -138,6 +138,7 @@ main figure.myphoto figcaption {
 }
 
 .smalltextoverlay {
+    display: block;
     position: absolute;
     top: 45px;
     right: 25px;
@@ -145,6 +146,14 @@ main figure.myphoto figcaption {
     font-size: 2rem;
     font-family: 'Kalam', cursive;
     font-weight: bold;
+}
+
+.mediumtextoverlay {
+    display: none;
+}
+
+.largetextoverlay {
+    display: none;
 }
 
 .weather-summary {

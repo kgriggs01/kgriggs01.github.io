@@ -18,11 +18,16 @@
 		font-size: 1.75rem;
 	}
 
+	main figure.myphoto {
+		padding-bottom: 10px;
+	}
+
 	.smalltextoverlay {
 		display: none;
 	}
 
 	.mediumtextoverlay {
+		display: block;
 		position: absolute;
 		top: 80px;
 		right: 30px;
@@ -30,6 +35,10 @@
 		font-size: 2.5rem;
 		font-family: 'Kalam', cursive;
 		font-weight: bold;
+	}
+
+	.largetextoverlay {
+		display: none;
 	}
 
 	.weather-summary {
@@ -93,6 +102,11 @@
 		font-size: 1.2rem;
 	}
 
+	.content-box {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
 	.map {
 		display: flex;
 		max-width: 300px;
@@ -107,7 +121,7 @@
 
 	footer {
 		font-size: 1.25rem;
-		max-width: 600px;
+		max-width: 100%;
 		padding-bottom: 10px;
 	}
 
