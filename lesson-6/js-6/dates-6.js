@@ -23,6 +23,4 @@ function dayOfWeek() {
 	var copyright_year = new Date();
 	document.getElementById("copyright_year").innerHTML = copyright_year.getFullYear();
 
-	document.getElementById("lastModified").innerHTML = document.lastModified;
-
 }
