@@ -34,6 +34,10 @@
 		font-size: 2rem;
 	}
 
+	.weather-summary {
+		line-height: 1.75rem;
+	}
+
 	.mediumtextoverlay {
 		display: none;
 	}

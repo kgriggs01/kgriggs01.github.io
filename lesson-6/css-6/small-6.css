@@ -39,6 +39,7 @@ header {
     font-size: 2rem;
     margin: 0 0 0 0px;
     text-shadow: 5px 5px black;
+    line-height: 2rem;
 }
 
 .motto {
@@ -167,7 +168,7 @@ main figure.myphoto figcaption {
     border-radius: 15px;
     letter-spacing: 1pt;
     color: white;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
     text-shadow: 2px 2px black;
     max-width: 55%;
 }
@@ -179,17 +180,19 @@ main figure.myphoto figcaption {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "current currentValue"
-        "high highValue"
+        "temp tempValue"
         "windChill windChillValue"
         "humidity humidityValue"
         "windSpeed windSpeedValue";
-    font-size: 1rem;
+    font-size: .75rem;
 }
 
 h3 {
     border-bottom: 1px solid white;
     padding-top: 10px;
+    padding-bottom: 5px;
     letter-spacing: 1pt;
+    font-size: 1.25rem;
 }
 
 .current {
@@ -197,8 +200,8 @@ h3 {
     text-align: right;
 }
 
-.high {
-    grid-area: high;
+.temp {
+    grid-area: temp;
     text-align: right;
 }
 
@@ -229,7 +232,7 @@ h3 {
 }
 
 .currentValue,
-.highValue,
+.tempValue,
 .windChillValue,
 .humidityValue,
 .windSpeedValue {

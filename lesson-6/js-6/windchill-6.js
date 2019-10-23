@@ -1,12 +1,11 @@
 function wind() {
-   var tempF = parseFloat(document.getElementById("getHighValue").textContent);
+   var tempF = parseFloat(document.getElementById("getTempValue").textContent);
    var speed = parseFloat(document.getElementById("getWindSpeedValue").textContent);
    var result = calcWindChill(tempF, speed);
    console.log(tempF, speed);
 
-
    if ((tempF <= 50) && (speed >= 3.0)) {
-      document.getElementById("getWindChillValue").innerHTML = result.toFixed() + "°F";
+      document.getElementById("getWindChillValue").innerHTML = result.toFixed() + " °F";
    } else {
       document.getElementById("getWindChillValue").innerHTML = "N/A";
    }

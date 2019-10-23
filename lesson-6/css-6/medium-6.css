@@ -22,6 +22,11 @@
 		padding-bottom: 10px;
 	}
 
+	h3 {
+		padding-bottom: 7px;
+		font-size: 2rem;
+	}
+
 	.smalltextoverlay {
 		display: none;
 	}
@@ -43,6 +48,7 @@
 
 	.weather-summary {
 		max-width: 60%;
+		line-height: 1.5rem;
 	}
 
 	.summary-container {
