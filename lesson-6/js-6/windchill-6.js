@@ -2,7 +2,6 @@ function wind() {
    var tempF = parseFloat(document.getElementById("getTempValue").textContent);
    var speed = parseFloat(document.getElementById("getWindSpeedValue").textContent);
    var result = calcWindChill(tempF, speed);
-   console.log(tempF, speed);
 
    if ((tempF <= 50) && (speed >= 3.0)) {
       document.getElementById("getWindChillValue").textContent = result.toFixed() + " °F";
