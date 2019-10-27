@@ -123,20 +123,16 @@ main {
     font-size: 1.25rem;
 }
 
-main figure.myphoto {
+main picture.myphoto {
     width: 100%;
     margin: 0;
 }
 
-main figure.myphoto img {
+main picture.myphoto img {
     position: relative;
     width: 100%;
 }
 
-main figure.myphoto figcaption {
-    text-align: center;
-    font-size: .75rem;
-}
 
 .smalltextoverlay {
     display: block;
@@ -161,7 +157,7 @@ main figure.myphoto figcaption {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: rgb(0, 0, 0);
+    background: linear-gradient(to right, rgb(1, 4, 27), rgba(0,0,0,0));
     border: 1px solid blue;
     padding: 10px;
     box-shadow: 0 0 30px #777;

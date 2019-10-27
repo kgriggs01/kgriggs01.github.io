@@ -5,9 +5,9 @@ function wind() {
    console.log(tempF, speed);
 
    if ((tempF <= 50) && (speed >= 3.0)) {
-      document.getElementById("getWindChillValue").innerHTML = result.toFixed() + " °F";
+      document.getElementById("getWindChillValue").textContent = result.toFixed() + " °F";
    } else {
-      document.getElementById("getWindChillValue").innerHTML = "N/A";
+      document.getElementById("getWindChillValue").textContent = "N/A";
    }
 }
 
