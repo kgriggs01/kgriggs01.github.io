@@ -17,16 +17,19 @@ footer {
     padding: 10px;
 }
 
-
 h1 {
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    padding-bottom: 10px;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    margin: auto;
     padding: 10px;
 }
 
@@ -49,7 +52,7 @@ figure img[data-src] {
 
 figure img {
     filter: blur(0em);
-    transition: filter .5s;
+    transition: filter 1s;
 }
 
 figure figcaption {
@@ -61,7 +64,7 @@ figure figcaption {
     font-size: 1.25rem;
 }
 
-.norm:hover {
-    box-shadow: 0 0 50px #333;
+.favPic:hover {
+    box-shadow: 0 0 50px rgb(12, 11, 11);
 }
 
