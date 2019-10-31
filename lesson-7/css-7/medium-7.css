@@ -51,7 +51,7 @@
 		line-height: 1.5rem;
 	}
 
-	.summary-container {
+	.summaryContainer {
 		font-size: 1.25rem;
 	}
 
@@ -85,7 +85,7 @@
 		font-size: 1.5rem;
 	}
 
-	.forecast-container {
+	.forecastContainer {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		text-align: center;
@@ -133,5 +133,17 @@
 
 	footer a {
 		bottom: 5px;
+	}
+
+	/* CSS for Gallery Page */
+
+	.galleryContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+	}
+
+	.galleryPicCaption {
+		display: none;
 	}
 }

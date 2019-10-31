@@ -57,7 +57,7 @@
 		max-width: 70%;
 	}
 
-	.summary-container {
+	.summaryContainer {
 		font-size: 1.5rem;
 	}
 
@@ -73,5 +73,29 @@
 
 	footer a {
 		bottom: 0px;
+	}
+
+	/* CSS for Gallery Page */
+
+	.mainGallery {
+		max-width: 1500px;
+	}
+
+	.galleryContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 50px;
+	}
+
+	.galleryPics:hover {
+		box-shadow: 0 0 50px rgb(12, 11, 11);
+	}
+
+	.galleryPicCaption {
+		display: grid;
+		text-align: center;
+		padding-bottom: 10px;
+		color: blue;
+		font-size: 1.25rem;
 	}
 }
