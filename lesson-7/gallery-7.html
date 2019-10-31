@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Responsive Images and Font | Keith Griggs | BYU-Idaho</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description"
+        content="Preston Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css-7/small-7.css">
+    <link rel="stylesheet" href="css-7/medium-7.css">
+    <link rel="stylesheet" href="css-7/large-7.css">
+</head>
+
+<body onload="dayOfWeek()">
+    <div id="banner"></div>
+
+    <header>
+        <picture>
+            <img class="logo" src="images-7/weather-image.png" alt="weather logo">
+        </picture>
+
+        <section class="headings">
+            <h1>SE Idaho Weather</h1>
+            <div class="motto">High country living at its best</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#" class="active">&#9925; Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="h2townname">
+            <h2>Gallery</h2>
+        </section>
+
+
+
+        <div class="gallery-container">
+            <figure>
+                <img class="norm" src="https://mobile-cdn.lds.org/a1/7a/a17a8b57df952457cc3af5ac347be7a178e2a0db/barranquilla_columbia_temple_exterior.jpeg">
+                <figcaption>:hover pseduo-class box-shadow</figcaption>
+            </figure>
+            <figure><img class="rocorn" src="https://mobile-cdn.lds.org/a1/7a/a17a8b57df952457cc3af5ac347be7a178e2a0db/barranquilla_columbia_temple_exterior.jpeg">
+                <figcaption>border-radius</figcaption>
+            </figure>
+            <figure><img class="opac" src="https://mobile-cdn.lds.org/a1/7a/a17a8b57df952457cc3af5ac347be7a178e2a0db/barranquilla_columbia_temple_exterior.jpeg">
+                <figcaption>opacity</figcaption>
+            </figure>
+            <figure><img class="blur" src="https://mobile-cdn.lds.org/a1/7a/a17a8b57df952457cc3af5ac347be7a178e2a0db/barranquilla_columbia_temple_exterior.jpeg">
+                <figcaption>filter: blur and grayscale</figcaption>
+            </figure>
+            <figure><img class="object" src="https://mobile-cdn.lds.org/a1/7a/a17a8b57df952457cc3af5ac347be7a178e2a0db/barranquilla_columbia_temple_exterior.jpeg">
+                <figcaption>object-fit<br>☼ <a href="https://youtu.be/5CZyxnCdXuk" target="_blank">More on Object Fit from Layout Land</a></figcaption>
+            </figure>
+            <figure><img class="shape-outside" src="https://mobile-cdn.lds.org/a1/7a/a17a8b57df952457cc3af5ac347be7a178e2a0db/barranquilla_columbia_temple_exterior.jpeg">
+                <figcaption>shape-outside<br> Applied with a border-radius and a reduced width. The shape-outside property may not be supported in your browser. Consult <a href="https://caniuse.com/#search=shape-outside" target="_blank">CanIUse</a> to check the support status.
+                    </figcaption>
+            </figure>
+        </div>
+
+
+
+
+
+        
+    </main>
+
+    <footer>
+        <div> &COPY; <span id="copyright_year"></span> | SE Idaho Weather | Keith A. Griggs</div>
+        <a> <span id="weekday"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span></a>
+    </footer>
+
+    <script src="js-7/dates-7.js"></script>
+    <script src="js-7/togglemenu-7.js"></script>
+    <script src="js-7/windchill-7.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js-7/webfontload-7.js"></script>
+</body>
+
+</html>
