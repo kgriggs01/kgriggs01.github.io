@@ -78,13 +78,11 @@
 	/* CSS for Gallery Page */
 
 	.mainGallery {
-		max-width: 1500px;
+		max-width: 1750px;
 	}
 
 	.galleryContainer {
-		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		gap: 50px;
 	}
 
 	.galleryPics:hover {
