@@ -92,10 +92,10 @@
 	}
 
 	.galleryPicCaption {
-		display: grid;
+		display: grid;;
 		text-align: center;
 		padding-bottom: 10px;
-		color: blue;
+		color: rgb(0, 0, 170);
 		font-size: 1.25rem;
 	}
 }
