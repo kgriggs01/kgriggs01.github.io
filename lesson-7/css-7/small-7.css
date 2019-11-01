@@ -335,7 +335,6 @@ figure {
 }
 
 .galleryContainer {
-    width: 1fr;
     grid-template-columns: 1fr;
 }
 
