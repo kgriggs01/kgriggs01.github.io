@@ -318,9 +318,9 @@ footer a {
     line-height: 3rem;
 }
 
-figure {
+.mainGallery figure {
     border: 2px solid black;
-    background-color: rgb(186, 190, 199);
+    background-color: rgb(199, 186, 186);
 }
 
 .galleryContainer img[data-src] {
@@ -331,13 +331,15 @@ figure {
     filter: blur(0em);
     transition: filter 1s;
     width: 94%;
-    margin: .5rem;
-}
-
-.galleryContainer {
-    grid-template-columns: 1fr;
+    margin: 10px;
 }
 
 .galleryPicCaption {
-    display: none;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(0, 0, 170);
+    font-size: 1.25rem;
 }
