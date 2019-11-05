@@ -1,0 +1,101 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 64em) {
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		font-size: 1.25rem;
+		padding-top: 10px;
+	}
+
+	header img {
+		width: 120px;
+	}
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.navigation .active {
+		font-size: 2rem;
+	}
+
+	.h2townname {
+		font-size: 2rem;
+	}
+
+	.weather-summary {
+		line-height: 1.75rem;
+	}
+
+	.mediumtextoverlay {
+		display: none;
+	}
+
+	.largetextoverlay {
+		display: block;
+		position: absolute;
+		top: 100px;
+		right: 40px;
+		color: red;
+		font-size: 3.5rem;
+		font-family: 'Kalam', cursive;
+		font-weight: bold;
+	}
+
+	.weather-summary {
+		max-width: 70%;
+	}
+
+	.summaryContainer {
+		font-size: 1.5rem;
+	}
+
+	.content-box {
+		background-color: #C2948A;
+		max-width: 1000px;
+	}
+
+	footer {
+		font-size: 1.25rem;
+		max-width: 1000px;
+	}
+
+	footer a {
+		bottom: 0px;
+	}
+
+	/* CSS for Gallery Page */
+
+	.mainGallery {
+		max-width: 1750px;
+	}
+
+	.galleryContainer {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.mainGallery figure:hover {
+		box-shadow: 0 0 50px rgb(12, 11, 11);
+	}
+
+	/* CSS for "Storm Center" Page */
+
+	.h2StormCenter {
+		font-size: 2rem;
+	}
+
+	form label.sbs {
+		padding: .4rem 0;
+	}
+}

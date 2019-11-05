@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Storm Center | Keith Griggs | BYU-Idaho</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description"
+        content="Preston Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css-8/small-8.css">
+    <link rel="stylesheet" href="css-8/medium-8.css">
+    <link rel="stylesheet" href="css-8/large-8.css">
+</head>
+
+<body onload="dayOfWeek()">
+    <div id="banner"></div>
+
+    <header>
+        <picture>
+            <img class="logo" src="images-8/icons/weather-image.png" alt="weather logo">
+        </picture>
+
+        <section class="headings">
+            <h1>SE Idaho Weather</h1>
+            <div class="motto">High country living at its best</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#" class="active">&#9925; Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="mainStormCenter">
+        <section class="h2StormCenter">
+            <h2>Report a Weather Event</h2>
+        </section>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Website <input type="url" name="email" placeholder="http://"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</label>
+                <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
+                <label class="sbs"><input type="radio" name="audience" value="advanced">Advanced</label>
+
+                <div>Software needed</div>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top">Anticipated Competion Date <input type="date" name="completeDate"></label>
+                <label class="top">Course Subject
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                    </select>
+                </label>
+
+                <label class="top">How Many Authors <input type="number" name="authors"></label>
+            </fieldset>
+
+            <input type="submit" value="Report the Weather Event" class="submitBtn">
+
+            <!--
+            <div class="nameContainer">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" minlength="5" size="25"><br>
+                <small>(min 5 characters)</small>
+            </div>
+
+            <div class="emailContainer">
+                <label for="email">Enter your email address:</label>
+                <input type="email" id="email" size="30" placeholder="abc123@gmail.com">
+            </div>
+
+            <div class="phoneContainer">
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                <small>Format: 123-456-7890</small>
+            </div>
+
+            <div class="zipContainer">
+                <label for="zip">Zip Code:</label>
+                <input type="number" id="zip" name="zip" pattern="[0-9]">
+            </div>
+
+            <div class="stormDateContainer">
+                <label for="start">Date of Storm:</label>
+                <input type="date" id="stormDate" name="trip-start" min="2019-11-01" max="2025-12-31">
+            </div>
+
+            <div class="ratingContainer">
+                <label for="rating">Rating (1 to 10):</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+                    onchange="adjustRating(this.value)"><br>
+                <span id="ratingValue">5</span>
+            </div>
+
+            <div class="stormChoiceContainer">
+                <label for="list">Storm Type:</label>
+                <input list="stormType" id="stormChoice" name="stormChoice" />
+
+                <datalist id="stormType">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </div>
+
+            <div class="regionContainer">
+                <label for="regionSelect">Storm Region:</label>
+                <select name="stormRegion" id="regionSelect">
+                    <option value="">-- Select Region --</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Sugar City">Sugar City</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+            </div>
+
+            <div class="dangerContainer">
+                <p>User In-Danger Level:
+
+                    <div class="dangerLevel">
+                        <input type="radio" id="dangerLevel" name="dangerLevel" value="yes" checked>
+                        <label for="yes">Yes</label>
+                    </div>
+
+                    <div class="dangerLevel">
+                        <input type="radio" id="dangerLevel" name="dangerLevel" value="maybe">
+                        <label for="maybe">Maybe</label>
+                    </div>
+
+                    <div class="dangerLevel">
+                        <input type="radio" id="dangerLevel" name="dangerLevel" value="no">
+                        <label for="no">No</label>
+                    </div>
+            </div>
+
+            <div class="commentsContainer">
+                <label for="comments">Tell us more:</label>
+                <textarea id="comments" name="comments" rows="5" cols="33">
+                    </textarea>
+            </div>
+
+            <div class="formEntry">
+                <button type="submit" class="submitButton" formaction="thanks.html">Submit</button>
+            </div><br>
+
+            -->
+        </form>
+    </main>
+
+    <footer>
+        <div> &COPY; <span id="copyright_year"></span> | SE Idaho Weather | Keith A. Griggs</div>
+        <a> <span id="weekday"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span></a>
+    </footer>
+
+    <script src="js-8/lazyload.js" defer></script>
+    <script src="js-8/dates-8.js"></script>
+    <script src="js-8/togglemenu-8.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js-8/webfontload-8.js"></script>
+    <script src="js-8/stormcenter.js"></script>
+</body>
+
+</html>

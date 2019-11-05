@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+}
+
+#banner {
+    background: yellow;
+    text-align: center;
+    margin: 0rem;
+    line-height: 2rem;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: white;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    color: #F6F0ED;
+    background-color: #28536B;
+    padding: 10px;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.headings h1 {
+    font-size: 2rem;
+    margin: 0 0 0 0px;
+    text-shadow: 5px 5px black;
+    line-height: 2rem;
+}
+
+.motto {
+    font-size: .85rem;
+    letter-spacing: 1pt;
+    text-shadow: 3px 3px black;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #7EA8BE;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation .active {
+    background-color: rgb(62, 128, 163);
+    color: yellow;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.navigation a:hover {
+    color: #000;
+    font-weight: 600;
+    background-color: rgb(62, 128, 163);
+    color: black;
+    border: 2px solid black;
+}
+
+.responsive li {
+    display: block;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu {
+    background-color: rgb(62, 128, 163);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 3px solid black;
+}
+
+.h2townname {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.townpicdiv {
+    position: relative;
+    font-size: 1.25rem;
+}
+
+main figure.myphoto {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.myphoto img {
+    position: relative;
+    width: 100%;
+}
+
+.smalltextoverlay {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    color: red;
+    font-size: 2rem;
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+}
+
+.mediumtextoverlay {
+    display: none;
+}
+
+.largetextoverlay {
+    display: none;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: linear-gradient(to right, rgb(1, 4, 27), rgba(0, 0, 0, 0));
+    border: 1px solid blue;
+    padding: 10px;
+    box-shadow: 0 0 30px #777;
+    border-radius: 15px;
+    letter-spacing: 1pt;
+    color: white;
+    line-height: 1.25rem;
+    text-shadow: 2px 2px black;
+    max-width: 55%;
+}
+
+.summaryContainer {
+    display: grid;
+    column-gap: 25px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "current currentValue"
+        "temp tempValue"
+        "windChill windChillValue"
+        "humidity humidityValue"
+        "windSpeed windSpeedValue";
+    font-size: .75rem;
+}
+
+h3 {
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 1pt;
+    font-size: 1.25rem;
+}
+
+.current {
+    grid-area: current;
+    text-align: right;
+}
+
+.temp {
+    grid-area: temp;
+    text-align: right;
+}
+
+.windChill {
+    grid-area: windChill;
+    text-align: right;
+}
+
+.humidity {
+    grid-area: humidity;
+    text-align: right;
+}
+
+.windSpeed {
+    grid-area: windSpeed;
+    text-align: right;
+}
+
+.content-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #C2948A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.currentValue,
+.tempValue,
+.windChillValue,
+.humidityValue,
+.windSpeedValue {
+    color: yellow;
+}
+
+.forecast-box {
+    display: none;
+}
+
+.content-info,
+.content-pic {
+    max-width: 100%;
+    flex: 1 0 15em;
+    font-family: 'Kalam', cursive;
+}
+
+.box-heading {
+    display: none;
+}
+
+.content-pic {
+    padding-top: 10px;
+}
+
+.content-title {
+    font-size: 1.5em;
+}
+
+.author {
+    font-style: italic;
+    font-size: 1rem;
+    text-indent: 1rem;
+}
+
+.contact-box {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(211, 204, 185);
+}
+
+.contact-info {
+    max-width: 95%;
+    padding: 10px;
+}
+
+.contact-title {
+    font-size: 1.25rem;
+}
+
+.map {
+    display: none;
+}
+
+.icons img {
+    padding-right: 5px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    font-size: 1rem;
+    font-family: 'Buenard', serif;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #28536B;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+footer a {
+    bottom: 10px;
+}
+
+
+/* CSS for "Gallery" Page */
+
+.h2gallery {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    line-height: 3rem;
+}
+
+.mainGallery figure {
+    border: 2px solid black;
+    background-color: rgb(199, 186, 186);
+}
+
+.galleryContainer img[data-src] {
+    filter: blur(0.2em);
+}
+
+.galleryContainer img {
+    filter: blur(0em);
+    transition: filter 1s;
+    width: 94%;
+    margin: 10px;
+}
+
+.galleryPicCaption {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(0, 0, 170);
+    font-size: 1.25rem;
+}
+
+
+
+/* CSS for "Storm Center" Page */
+
+.h2StormCenter {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.mainStormCenter {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.top select {
+    max-width: 21.5rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+/*
+
+div.name,
+div.email,
+div.phone,
+div.zip,
+div.stormDate,
+div.rating,
+div.stormChoice,
+div.regionSelect,
+div.dangerLevel,
+div.comments {
+    display: table-row;
+    font-size: 1.25rem;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.nameContainer,
+.phoneContainer,
+.stormDateContainer,
+.stormChoiceContainer,
+.dangerContainer {
+    background-color: rgb(245, 240, 240);
+    font-size: 1.25rem;
+}
+
+.emailContainer,
+.zipContainer,
+.ratingContainer,
+.regionContainer,
+.commentsContainer {
+    background-color: rgb(224, 220, 220);
+    font-size: 1.25rem;
+}
+
+small {
+    padding-right: 20px;
+}
+
+.rating,
+#rating {
+
+    font-weight: 600;
+    background-color: rgb(62, 128, 163);
+    color: black;
+    border: 2px solid black;
+}
+
+.ratingValue,
+#ratingValue,
+.range,
+#range {
+    align-content: center;
+    justify-content: center;
+    padding-left: 4.65rem;
+}
+
+.comments {
+    margin: 10px;
+    padding: 10px;
+}
+
+label,
+input {
+    display: table-cell;
+    margin: 10px;
+    padding: 10px;
+}
+
+input:hover,
+.regionSelect:hover,
+.comments:hover,
+.stormDate:hover,
+.rating:hover {
+    background-color: rgb(212, 212, 221);
+    cursor: pointer;
+}
+
+#regionSelect {
+    margin: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.dangerContainer {
+    padding: 10px;
+}
+
+.submitButton {
+    background-color: rgb(176, 176, 180);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    font-size: 1.25rem;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
+
+.submitButton:hover {
+    background-color: rgb(62, 128, 163);
+}
+
+
+
+ CSS for the "Thank You" page 
+.thanks {
+    color: red;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+*/
