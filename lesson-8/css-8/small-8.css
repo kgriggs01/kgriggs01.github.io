@@ -403,11 +403,10 @@ form label.top select {
 
 form label.bottom {
     display: block;
-    padding: .25rem;
 }
 
-form label.tellUs input{
-height: 5rem;
+form label.tellUs input {
+    height: 5rem;
 }
 
 form input.submitBtn {
@@ -544,7 +543,7 @@ input {
 
 */
 
- /* CSS for the "Thank You" page */
+/* CSS for the "Thank You" page */
 .thanks {
     color: red;
     display: flex;
