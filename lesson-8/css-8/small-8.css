@@ -374,6 +374,7 @@ form legend {
 }
 
 form label.top,
+form label.tellUs,
 form div {
     display: block;
     padding-top: 1rem;
@@ -382,7 +383,8 @@ form div {
 }
 
 form label.top input,
-form label.top select {
+form label.top select,
+form label.tellUs input {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -399,10 +401,13 @@ form label.top select {
     max-width: 21.5rem;
 }
 
-form label.sbs {
+form label.bottom {
     display: block;
-    padding: .75rem 0;
-    color: #555;
+    padding: .25rem;
+}
+
+form label.tellUs input{
+height: 5rem;
 }
 
 form input.submitBtn {
@@ -423,6 +428,19 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+input:hover,
+form label.top select {
+    cursor: pointer;
+}
+
+#ratingValue {
+    padding-left: 10px;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+
 
 
 /*
@@ -496,15 +514,10 @@ input {
     padding: 10px;
 }
 
-input:hover,
-.regionSelect:hover,
-.comments:hover,
-.stormDate:hover,
-.rating:hover {
-    background-color: rgb(212, 212, 221);
-    cursor: pointer;
-}
+*/
 
+
+/*
 #regionSelect {
     margin: 10px;
     padding: 5px 5px 5px 5px;
@@ -529,9 +542,9 @@ input:hover,
     background-color: rgb(62, 128, 163);
 }
 
+*/
 
-
- CSS for the "Thank You" page 
+ /* CSS for the "Thank You" page */
 .thanks {
     color: red;
     display: flex;
@@ -541,5 +554,3 @@ input:hover,
     text-align: center;
     padding: 10px;
 }
-
-*/

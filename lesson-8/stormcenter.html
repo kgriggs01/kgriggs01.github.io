@@ -2,12 +2,11 @@
 <html lang="en-us">
 
 <head>
-    <title>Storm Center | Keith Griggs | BYU-Idaho</title>
+    <title>Storm Center Page | Keith Griggs | BYU-Idaho</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
-    <meta name="description"
-        content="Preston Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+    <meta name="description" content="Storm Center Page">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css-8/small-8.css">
     <link rel="stylesheet" href="css-8/medium-8.css">
@@ -42,52 +41,56 @@
 
     <main class="mainStormCenter">
         <section class="h2StormCenter">
-            <h2>Report a Weather Event</h2>
+            <h2>Report a Storm</h2>
         </section>
 
         <form method="get" action="thanks.html">
             <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Website <input type="url" name="email" placeholder="http://"></label>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
             </fieldset>
 
             <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="advanced">Advanced</label>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date <input type="date" name="stormDate"></label>
 
-                <div>Software needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-            </fieldset>
 
-            <fieldset>
-                <legend>Funding</legend>
-                <label class="top">Anticipated Competion Date <input type="date" name="completeDate"></label>
-                <label class="top">Course Subject
-                    <select name="subject">
-                        <option value="">Please Select &#9662;</option>
-                        <option value="a">A</option>
-                        <option value="b">B</option>
-                        <option value="c">C</option>
-                        <option value="d">D</option>
-                        <option value="e">E</option>
-                        <option value="f">F</option>
+
+                <div class="ratingContainer">
+                    <label class="top">Rating (1 to 10):</label>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingValue">5</span>
+                </div>
+
+
+                <label class="top">Storm Region
+                    <select name="stormRegion">
+                        <option value="">Select &#9662;</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sugarCity">Sugar City</option>
                     </select>
                 </label>
 
-                <label class="top">How Many Authors <input type="number" name="authors"></label>
+
+
+                <div>Are you in danger?</div>
+                <label class="bottom"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="bottom"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="bottom"><input type="radio" name="danger" value="no"> No</label>
             </fieldset>
 
-            <input type="submit" value="Report the Weather Event" class="submitBtn">
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <label class="tellUs">Tell us more: <input type="textarea" name="comments"
+                        placeholder="Type comments here..."></label>
+            </fieldset>
+
+            <input type="submit" value="Report the Storm" class="submitBtn">
 
             <!--
             <div class="nameContainer">
