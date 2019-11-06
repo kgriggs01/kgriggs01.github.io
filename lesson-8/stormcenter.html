@@ -47,8 +47,10 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top">Full Name* <input type="text" name="fullName" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Full Name* <input type="text" name="fullName" pattern="[A-Z a-z]{5,}"
+                        required></label>
+                <label class="top">Phone Number* <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10"
+                        placeholder="1235551234" required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
                 <label class="top">Zip Code* <input type="number" name="zip" required></label>
             </fieldset>
@@ -56,130 +58,42 @@
             <fieldset>
                 <legend>Storm Information</legend>
                 <label class="top">Storm Date <input type="date" name="stormDate"></label>
-
-
-
+                <label class="top">Storm Type <input list="stormType" id="stormChoice" name="stormChoice">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
                 <div class="ratingContainer">
-                    <label class="top">Rating (1 to 10):</label>
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                    <label class="top">Storm Severity (1 to 10)</label>
+                    <input type="range" name="rating" id="rating" value="5" min="1" max="10" step="1"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingValue">5</span>
                 </div>
-
-
                 <label class="top">Storm Region
                     <select name="stormRegion">
-                        <option value="">Select &#9662;</option>
+                        <option value="">Select Region &#9662;</option>
                         <option value="fishHaven">Fish Haven</option>
                         <option value="preston">Preston</option>
                         <option value="sugarCity">Sugar City</option>
                     </select>
                 </label>
-
-
-
-                <div>Are you in danger?</div>
-                <label class="bottom"><input type="radio" name="danger" value="yes"> Yes</label>
-                <label class="bottom"><input type="radio" name="danger" value="maybe"> Maybe</label>
-                <label class="bottom"><input type="radio" name="danger" value="no"> No</label>
+                <div class="danger">Are you in danger?</div>
+                <label class="dangerOption"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="dangerOption"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="dangerOption"><input type="radio" name="danger" value="no"> No</label>
             </fieldset>
 
             <fieldset>
-                <legend>Additional Comments</legend>
-                <label class="tellUs">Tell us more: <input type="textarea" name="comments"
-                        placeholder="Type comments here..."></label>
+                <legend>Additional Information or Comments</legend>
+                <label class="tellUs">Tell us more <input type="textarea" name="comments"
+                        placeholder="Type your comments here..."></label>
             </fieldset>
 
-            <input type="submit" value="Report the Storm" class="submitBtn">
-
-            <!--
-            <div class="nameContainer">
-                <label for="name">First Name:</label>
-                <input type="text" id="name" name="name" minlength="5" size="25"><br>
-                <small>(min 5 characters)</small>
-            </div>
-
-            <div class="emailContainer">
-                <label for="email">Enter your email address:</label>
-                <input type="email" id="email" size="30" placeholder="abc123@gmail.com">
-            </div>
-
-            <div class="phoneContainer">
-                <label for="phone">Enter your phone number:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-                <small>Format: 123-456-7890</small>
-            </div>
-
-            <div class="zipContainer">
-                <label for="zip">Zip Code:</label>
-                <input type="number" id="zip" name="zip" pattern="[0-9]">
-            </div>
-
-            <div class="stormDateContainer">
-                <label for="start">Date of Storm:</label>
-                <input type="date" id="stormDate" name="trip-start" min="2019-11-01" max="2025-12-31">
-            </div>
-
-            <div class="ratingContainer">
-                <label for="rating">Rating (1 to 10):</label>
-                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
-                    onchange="adjustRating(this.value)"><br>
-                <span id="ratingValue">5</span>
-            </div>
-
-            <div class="stormChoiceContainer">
-                <label for="list">Storm Type:</label>
-                <input list="stormType" id="stormChoice" name="stormChoice" />
-
-                <datalist id="stormType">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
-            </div>
-
-            <div class="regionContainer">
-                <label for="regionSelect">Storm Region:</label>
-                <select name="stormRegion" id="regionSelect">
-                    <option value="">-- Select Region --</option>
-                    <option value="Preston">Preston</option>
-                    <option value="Sugar City">Sugar City</option>
-                    <option value="Fish Haven">Fish Haven</option>
-                </select>
-            </div>
-
-            <div class="dangerContainer">
-                <p>User In-Danger Level:
-
-                    <div class="dangerLevel">
-                        <input type="radio" id="dangerLevel" name="dangerLevel" value="yes" checked>
-                        <label for="yes">Yes</label>
-                    </div>
-
-                    <div class="dangerLevel">
-                        <input type="radio" id="dangerLevel" name="dangerLevel" value="maybe">
-                        <label for="maybe">Maybe</label>
-                    </div>
-
-                    <div class="dangerLevel">
-                        <input type="radio" id="dangerLevel" name="dangerLevel" value="no">
-                        <label for="no">No</label>
-                    </div>
-            </div>
-
-            <div class="commentsContainer">
-                <label for="comments">Tell us more:</label>
-                <textarea id="comments" name="comments" rows="5" cols="33">
-                    </textarea>
-            </div>
-
-            <div class="formEntry">
-                <button type="submit" class="submitButton" formaction="thanks.html">Submit</button>
-            </div><br>
-
-            -->
+            <input class="submitBtn" type="submit" name="submitButton" value="Report the Storm">
         </form>
     </main>
 

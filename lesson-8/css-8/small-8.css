@@ -375,16 +375,22 @@ form legend {
 
 form label.top,
 form label.tellUs,
-form div {
+form div.danger,
+#ice-cream-choice {
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
     font-size: 1rem;
 }
 
+form div {
+    color: green;
+}
+
 form label.top input,
 form label.top select,
-form label.tellUs input {
+form label.tellUs input,
+#ice-cream-choice {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -401,8 +407,9 @@ form label.top select {
     max-width: 21.5rem;
 }
 
-form label.bottom {
+form label.dangerOption {
     display: block;
+    padding: 5px;
 }
 
 form label.tellUs input {
@@ -433,115 +440,17 @@ form label.top select {
     cursor: pointer;
 }
 
+#rating {
+    width: 20rem;
+}
+
 #ratingValue {
     padding-left: 10px;
-    color: blue;
-    font-size: 1.5rem;
+    color: #445ba9;
+    font-size: 1.75rem;
 }
 
 
-
-
-/*
-
-div.name,
-div.email,
-div.phone,
-div.zip,
-div.stormDate,
-div.rating,
-div.stormChoice,
-div.regionSelect,
-div.dangerLevel,
-div.comments {
-    display: table-row;
-    font-size: 1.25rem;
-    padding-left: 5px;
-    padding-right: 5px;
-
-}
-
-.nameContainer,
-.phoneContainer,
-.stormDateContainer,
-.stormChoiceContainer,
-.dangerContainer {
-    background-color: rgb(245, 240, 240);
-    font-size: 1.25rem;
-}
-
-.emailContainer,
-.zipContainer,
-.ratingContainer,
-.regionContainer,
-.commentsContainer {
-    background-color: rgb(224, 220, 220);
-    font-size: 1.25rem;
-}
-
-small {
-    padding-right: 20px;
-}
-
-.rating,
-#rating {
-
-    font-weight: 600;
-    background-color: rgb(62, 128, 163);
-    color: black;
-    border: 2px solid black;
-}
-
-.ratingValue,
-#ratingValue,
-.range,
-#range {
-    align-content: center;
-    justify-content: center;
-    padding-left: 4.65rem;
-}
-
-.comments {
-    margin: 10px;
-    padding: 10px;
-}
-
-label,
-input {
-    display: table-cell;
-    margin: 10px;
-    padding: 10px;
-}
-
-*/
-
-
-/*
-#regionSelect {
-    margin: 10px;
-    padding: 5px 5px 5px 5px;
-}
-
-.dangerContainer {
-    padding: 10px;
-}
-
-.submitButton {
-    background-color: rgb(176, 176, 180);
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    font-size: 1.25rem;
-    padding: 5px 10px 5px 10px;
-    margin-top: 10px;
-}
-
-.submitButton:hover {
-    background-color: rgb(62, 128, 163);
-}
-
-*/
 
 /* CSS for the "Thank You" page */
 .thanks {
