@@ -376,21 +376,16 @@ form legend {
 form label.top,
 form label.tellUs,
 form div.danger,
-#ice-cream-choice {
+#comments {
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
     font-size: 1rem;
 }
 
-form div {
-    color: green;
-}
-
 form label.top input,
 form label.top select,
-form label.tellUs input,
-#ice-cream-choice {
+#comments {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -409,10 +404,10 @@ form label.top select {
 
 form label.dangerOption {
     display: block;
-    padding: 5px;
+    padding: 3px;
 }
 
-form label.tellUs input {
+#comments {
     height: 5rem;
 }
 
