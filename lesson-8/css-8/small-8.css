@@ -376,7 +376,7 @@ form legend {
 form label.top,
 form label.tellUs,
 form div.danger,
-#comments {
+#comments{
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
@@ -385,6 +385,7 @@ form div.danger,
 
 form label.top input,
 form label.top select,
+form label.tellUs input,
 #comments {
     -webkit-appearance: none;
     display: block;
@@ -406,6 +407,7 @@ form label.dangerOption {
     display: block;
     padding: 3px;
 }
+
 
 #comments {
     height: 5rem;
