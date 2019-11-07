@@ -376,7 +376,7 @@ form legend {
 form label.top,
 form label.tellUs,
 form div.danger,
-#comments{
+#comments {
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
