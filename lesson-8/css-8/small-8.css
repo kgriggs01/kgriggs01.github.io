@@ -365,6 +365,8 @@ form fieldset {
     border: 1px solid #445ba9;
     border-radius: 10px;
     padding: .5rem 2%;
+    padding-bottom: 2rem;
+    
 }
 
 form legend {
@@ -408,7 +410,6 @@ form label.dangerOption {
     padding: 3px;
 }
 
-
 #comments {
     height: 5rem;
 }
@@ -446,7 +447,6 @@ form label.top select {
     color: #445ba9;
     font-size: 1.75rem;
 }
-
 
 
 /* CSS for the "Thank You" page */

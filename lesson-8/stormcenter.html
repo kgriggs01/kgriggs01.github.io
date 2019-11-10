@@ -14,7 +14,6 @@
 </head>
 
 <body onload="dayOfWeek()">
-    <div id="banner"></div>
 
     <header>
         <picture>
@@ -58,7 +57,7 @@
             <fieldset>
                 <legend>Storm Information</legend>
                 <label class="top">Storm Date <input type="date" name="stormDate"></label>
-                <label class="top">Storm Type <input list="stormType" id="stormChoice" name="stormChoice">
+                <label class="top">Storm Type <input list="stormType" id="stormChoice" name="stormChoice" placeholder="Select Storm Type">
                     <datalist id="stormType">
                         <option value="Flash Flood">
                         <option value="Hail">
@@ -75,7 +74,7 @@
                 </div>
                 <label class="top">Storm Region
                     <select name="stormRegion">
-                        <option value="">Select Region &#9662;</option>
+                        <option disabled selected value="">Select Region &#9662;</option>
                         <option value="fishHaven">Fish Haven</option>
                         <option value="preston">Preston</option>
                         <option value="sugarCity">Soda Springs</option>
