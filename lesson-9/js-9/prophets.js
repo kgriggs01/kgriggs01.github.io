@@ -15,22 +15,21 @@ fetch(requestURL)
       h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
       card.appendChild(h2);
 
-      let p = document.createElement('p');
-      p.textContent = "Date of Birth: " + prophets[i].birthdate;
-      card.appendChild(p);
+      let dateOfBirth = document.createElement('p');
+      dateOfBirth.textContent = "Date of Birth: " + prophets[i].birthdate;
+      card.appendChild(dateOfBirth);
 
 
-      let p2 = document.createElement('p2');
-      p2.textContent = "Place of Birth: " + prophets[i].birthplace;
-      card.appendChild(p2);
+      let placeOfBirth = document.createElement('p');
+      placeOfBirth.textContent = "Place of Birth: " + prophets[i].birthplace;
+      card.appendChild(placeOfBirth);
 
-      let img = document.createElement('image');
-      img.setAttribute("src", prophets[i].imageurl);
-      img.setAttribute("alt", "Joseph Smith-1")
-      card.appendChild(img);
+      let image = document.createElement('img');
+      image.setAttribute("src", prophets[i].imageurl);
+      image.setAttribute("alt", prophets[i].name + ' ' + prophets[i].lastname + "-" + prophets[i].order)
+      card.appendChild(image);
 
       document.querySelector('div.cards').appendChild(card);
-
 
     }
   });
