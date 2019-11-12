@@ -15,7 +15,7 @@ h1 {
     line-height: 2rem;
     font-weight: bold;
     font-family: sans-serif;
-    color: rgb(4, 4, 129);
+    color: rgb(13, 13, 177);
 }
 
 div.cards {
@@ -56,5 +56,5 @@ footer {
     line-height: 1.5rem;
     font-weight: bold;
     font-family: sans-serif;
-    color: rgb(4, 4, 129);
+    color: rgb(13, 13, 177);
 }
