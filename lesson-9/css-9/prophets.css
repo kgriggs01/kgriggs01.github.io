@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 0 0px;
+    line-height: 2rem;
+    text-align: center;
+    color: rgb(42, 18, 110);
+    padding: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+section {
+    background-color: rgb(192, 184, 204);
+    display: inline-block;
+    
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(42, 18, 110);
+}
+
+
+
+/*
+
+div {
+    box-shadow: 0 0 20px rgb(12, 11, 11);
+}
+
+*/
