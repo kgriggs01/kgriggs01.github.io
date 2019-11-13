@@ -9,7 +9,7 @@ function preloadImage(img) {
     img.src = src;
     img.onload = () => {
         img.removeAttribute("data-src");
-    }
+    };
 }
 
 const imgOptions = {
