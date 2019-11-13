@@ -4,5 +4,6 @@
     div.cards {
         grid-template-columns: 1fr 1fr;
         column-gap: 5px;
+        width: 95%;
     }
 }
