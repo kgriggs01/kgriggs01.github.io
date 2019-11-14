@@ -10,6 +10,7 @@ header div {
     font-size: 2rem;
     padding: 10px 10px 50px 10px;
     font-weight: bold;
+    color:white;
 }
 
 .cards {
@@ -22,13 +23,13 @@ header div {
 }
 
 section {
-    background-color: rgb(92, 117, 92);
+    background-color: #415341;
     border: 1px solid rgb(78, 78, 78);
     padding: 10px;
 }
 
 p {
-    color: rgb(230, 225, 225);
+    color:white;
 }
 
 h2 {
