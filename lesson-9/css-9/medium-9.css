@@ -14,7 +14,7 @@
 		font-size: 2.5rem;
 	}
 
-	.info {
+	.h2info {
 		font-size: 3rem;
 		padding: 0 0 20px 0;
 		margin: 20px;
@@ -24,14 +24,6 @@
 		font-size: 1.25rem;
 		max-width: 100%;
 		padding-bottom: 10px;
-	}
-
-	.h2info {
-		font-size: 3rem;
-	}
-
-	p {
-		font-size: 1.1rem;
 	}
 
 	.cards {
@@ -57,5 +49,9 @@
 
 	main img {
 		width: 40%;
+	}
+
+	p {
+		font-size: 1.1rem;
 	}
 }

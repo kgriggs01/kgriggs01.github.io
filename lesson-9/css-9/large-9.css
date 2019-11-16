@@ -30,13 +30,13 @@
 		font-size: 2rem;
 	}
 
+	.h2info {
+		margin: 30px;
+	}
+
 	footer {
 		font-size: 1.25rem;
 		max-width: 1000px;
-	}
-
-	.h2info {
-		margin: 30px;
 	}
 
 	div.cards {
@@ -55,11 +55,11 @@
 		width: 90%;
 	}
 
-	p {
-		font-size: 1.1rem;
-	}
-
 	h4 {
 		font-size: 1.2rem;
+	}
+
+	p {
+		font-size: 1.1rem;
 	}
 }
