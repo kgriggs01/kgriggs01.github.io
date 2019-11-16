@@ -64,8 +64,13 @@
 	}
 
 	.traffic {
-		width: 500px;
+		width: 700px;
 		justify-content: center;
 		margin: 40px auto;
+
+	}
+
+	.roadcams {
+		font-size: 1.5rem;
 	}
 }

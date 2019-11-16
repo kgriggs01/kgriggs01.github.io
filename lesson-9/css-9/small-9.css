@@ -172,6 +172,7 @@ h4 {
 
 p {
     color: black;
+    font-size: 1.5rem;
 }
 
 section div {
@@ -186,12 +187,8 @@ section div {
     border: 3px solid black;
     max-width: auto;
     background-color: rgb(199, 186, 186);
-}
 
-h5 {
-    font-size: 1.5rem;
-    color:red;
-    margin: 10px;
+    line-height: 3rem;
 }
 
 .traffic a:hover {
@@ -205,14 +202,23 @@ h5 {
     color: rgb(0, 0, 170);
 }
 
-.road{
-    font-size: 25px;
-    font-family: cursive;
+.road {
+    font-size: 2.5rem;
     color: red;
-    animation: blink 2.5s linear infinite;
+    animation: blink 3s linear infinite;
+    margin: 10px;
 }
-@keyframes blink{
-0%{opacity: 0;}
-50%{opacity: .5;}
-100%{opacity: 1;}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
