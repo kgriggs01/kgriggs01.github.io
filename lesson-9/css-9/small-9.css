@@ -99,7 +99,6 @@ header {
 }
 
 main {
-    max-width: auto;
     margin: 0 auto;
 }
 
@@ -185,7 +184,6 @@ section div {
     margin: 20px;
     padding: 20px;
     border: 3px solid black;
-    max-width: auto;
     background-color: rgb(199, 186, 186);
 
     line-height: 3rem;
@@ -204,7 +202,8 @@ section div {
 
 .road {
     font-size: 2.5rem;
-    color: red;
+    background-color: #F0F0F0;
+    color: #8F0000;
     animation: blink 3s linear infinite;
     margin: 10px;
 }
