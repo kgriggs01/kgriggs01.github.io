@@ -149,4 +149,15 @@
 		font-size: 1.75rem;
 	}
 
+
+	/* CSS for the "Home" page */
+	@media only screen and (min-width: 32.5em) {
+
+		div.cards {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 5px;
+			width: 95%;
+		}
+	}
+
 }

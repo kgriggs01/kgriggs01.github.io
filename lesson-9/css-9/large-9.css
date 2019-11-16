@@ -98,4 +98,13 @@
 	form label.bottom {
 		padding: .4rem 0;
 	}
+
+	/* CSS for the "Home" page */
+	@media only screen and (min-width: 64em) {
+
+		div.cards {
+			grid-template-columns: 1fr 1fr 1fr;
+			width: 100%;
+		}
+	}
 }
