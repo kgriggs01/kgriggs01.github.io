@@ -13,26 +13,26 @@
 	.headings h1 {
 		font-size: 2.5rem;
 	}
-	
+
+	.info {
+		font-size: 3rem;
+		padding: 0 0 20px 0;
+		margin: 20px;
+	}
+
 	footer {
 		font-size: 1.25rem;
 		max-width: 100%;
 		padding-bottom: 10px;
 	}
 
-	footer a {
-		bottom: 5px;
-	}
-
 	h2 {
 		font-size: 1.75rem;
 	}
 
-	div.cards {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 5px;
-        width: 95%;
-    }
+	
+	p {
+		font-size: 1.1rem;
+		}
+
 }
-
-

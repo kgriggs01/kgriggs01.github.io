@@ -35,17 +35,27 @@
 		max-width: 1000px;
 	}
 
-	footer a {
-		bottom: 0px;
-	}
-
-
-	.h2HomePage {
-		font-size: 2rem;
+	.info {
+		margin: 30px;
 	}
 
 	div.cards {
+		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		width: 100%;
+		height: auto;
+		gap: 25px
+	}
+
+	main img {
+		width: 90%;
+	}
+
+	p {
+	font-size: 1.1rem;
+	}
+
+	h4 {
+		font-size: 1.2rem;
 	}
 }

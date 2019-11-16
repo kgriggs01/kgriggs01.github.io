@@ -14,7 +14,7 @@ body {
     line-height: 1.5rem;
     font-family: 'Alegreya Sans SC', sans-serif;
     background-color: white;
-    padding: 0;
+    padding: 0
 }
 
 header {
@@ -99,7 +99,7 @@ header {
 }
 
 main {
-    max-width: 960px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -125,10 +125,6 @@ footer {
     padding-top: 10px;
 }
 
-footer a {
-    bottom: 10px;
-}
-
 .info {
     font-size: 1.5rem;
     text-align: center;
@@ -137,8 +133,7 @@ footer a {
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     padding: 10px;
     row-gap: 5px;
     text-align: center;
@@ -153,15 +148,26 @@ section {
 
 h3 {
     margin: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 0;
     color: white;
+    font-size: 3rem;
+    font-family: 'Kalam', cursive;
+}
+
+h4 {
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 0 20px 0;
+    font-family: 'Kalam', cursive;
 }
 
 p {
     color: white;
 }
 
-img {
-    width: 100%;
+main img {
+    width: 80%;
     height: auto;
+    margin: 25px 0 10px 0;
+    box-shadow: -1px 1px 22px 1px rgba(0, 0, 0, 1);
 }
