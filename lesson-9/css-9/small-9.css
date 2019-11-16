@@ -99,7 +99,7 @@ header {
 }
 
 main {
-    max-width: 1300px;
+    max-width: auto;
     margin: 0 auto;
 }
 
@@ -125,15 +125,16 @@ footer {
     padding-top: 10px;
 }
 
-.info {
-    font-size: 1.5rem;
+.h2info {
+    font-size: 2.5rem;
     text-align: center;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     margin: 10px;
 }
 
 .cards {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 10px;
     row-gap: 5px;
     text-align: center;
@@ -141,33 +142,38 @@ footer {
 }
 
 section {
-    background-color: red;
+    background-color: rgb(199, 186, 186);
     border: 1px solid rgb(78, 78, 78);
     padding: 10px;
+    margin-bottom: 10px;
+}
+
+section img {
+    width: 80%;
+    height: auto;
+    margin: 25px 0 10px 0;
+    box-shadow: -1px 1px 22px 1px rgba(0, 0, 0, 1);
 }
 
 h3 {
     margin: 10px;
     padding: 10px 0 10px 0;
-    color: white;
+    color: rgb(0, 0, 170);
     font-size: 3rem;
     font-family: 'Kalam', cursive;
 }
 
 h4 {
-    color: white;
+    color: rgb(0, 0, 170);
     font-size: 1.5rem;
-    padding: 0 0 20px 0;
+    padding: 0 0 30px 0;
     font-family: 'Kalam', cursive;
 }
 
 p {
-    color: white;
+    color: black;
 }
 
-main img {
-    width: 80%;
-    height: auto;
-    margin: 25px 0 10px 0;
-    box-shadow: -1px 1px 22px 1px rgba(0, 0, 0, 1);
+section div {
+    padding-bottom: 20px;
 }

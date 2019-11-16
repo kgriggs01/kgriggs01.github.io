@@ -35,16 +35,20 @@
 		max-width: 1000px;
 	}
 
-	.info {
+	.h2info {
 		margin: 30px;
 	}
 
 	div.cards {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		width: 100%;
+		width: auto;
 		height: auto;
-		gap: 25px
+		margin: 10px;
+	}
+
+	main section {
+		display: block;
 	}
 
 	main img {
@@ -52,7 +56,7 @@
 	}
 
 	p {
-	font-size: 1.1rem;
+		font-size: 1.1rem;
 	}
 
 	h4 {

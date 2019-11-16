@@ -26,13 +26,36 @@
 		padding-bottom: 10px;
 	}
 
-	h2 {
-		font-size: 1.75rem;
+	.h2info {
+		font-size: 3rem;
 	}
 
-	
 	p {
 		font-size: 1.1rem;
-		}
+	}
 
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	main section {
+		display: flex;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+
+	section:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	section div {
+		margin: auto;
+	}
+
+	main img {
+		width: 40%;
+	}
 }
