@@ -13,8 +13,8 @@ fetch(requestURL)
 
       let town = ["Preston", "Soda Springs", "Fish Haven"]; 
       let card = document.createElement("section");
-      let townNameHeading = document.createElement("h2");
-      let motto = document.createElement("h3");
+      let townNameHeading = document.createElement("h3");
+      let motto = document.createElement("h4");
       let yearFounded = document.createElement("p");
       let population = document.createElement("p");
       let annualRainfall = document.createElement("p");
@@ -26,7 +26,7 @@ fetch(requestURL)
       yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
       population.textContent = "Population: " + towns[i].currentPopulation;
       annualRainfall.textContent = "Annual Rainfall: " + towns[i].averageRainfall;
-      image.setAttribute("src", "./images/homepagePics/" + towns[i].photo);
+      image.setAttribute("src", "./images/" + towns[i].photo);
       image.setAttribute("alt", towns[i].photo);
 
 
