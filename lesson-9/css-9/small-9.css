@@ -131,7 +131,7 @@ footer {
     margin: 10px;
 }
 
-.cards {
+.townInfo {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;

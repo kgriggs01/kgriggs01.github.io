@@ -39,7 +39,7 @@
 		max-width: 1000px;
 	}
 
-	div.cards {
+	div.townInfo {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		width: auto;
