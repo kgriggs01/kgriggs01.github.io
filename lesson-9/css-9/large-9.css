@@ -62,4 +62,10 @@
 	p {
 		font-size: 1.1rem;
 	}
+
+	.traffic {
+		width: 500px;
+		justify-content: center;
+		margin: 40px auto;
+	}
 }

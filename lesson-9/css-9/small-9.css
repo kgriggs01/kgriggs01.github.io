@@ -99,6 +99,7 @@ header {
 }
 
 main {
+    max-width: auto;
     margin: 0 auto;
 }
 
@@ -175,4 +176,43 @@ p {
 
 section div {
     padding-bottom: 20px;
+}
+
+.traffic {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid black;
+    max-width: auto;
+    background-color: rgb(199, 186, 186);
+}
+
+h5 {
+    font-size: 1.5rem;
+    color:red;
+    margin: 10px;
+}
+
+.traffic a:hover {
+    color: #000;
+    background-color: #7EA8BE;
+    color: black;
+    border: 2px solid black;
+}
+
+.traffic a {
+    color: rgb(0, 0, 170);
+}
+
+.road{
+    font-size: 25px;
+    font-family: cursive;
+    color: red;
+    animation: blink 2.5s linear infinite;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
 }
