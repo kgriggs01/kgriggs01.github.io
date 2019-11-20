@@ -9,7 +9,7 @@
 		padding-top: 10px;
 	}
 
-	.logo {
+	header img {
 		width: 120px;
 	}
 
@@ -30,8 +30,40 @@
 		font-size: 2rem;
 	}
 
-	.h2info {
-		margin: 30px;
+	.h2townname {
+		font-size: 2rem;
+	}
+
+	.weather-summary {
+		line-height: 1.75rem;
+	}
+
+	.mediumtextoverlay {
+		display: none;
+	}
+
+	.largetextoverlay {
+		display: block;
+		position: absolute;
+		top: 100px;
+		right: 40px;
+		color: red;
+		font-size: 3.5rem;
+		font-family: 'Kalam', cursive;
+		font-weight: bold;
+	}
+
+	.weather-summary {
+		max-width: 70%;
+	}
+
+	.summaryContainer {
+		font-size: 1.5rem;
+	}
+
+	.content-box {
+		background-color: #C2948A;
+		max-width: 1000px;
 	}
 
 	footer {
@@ -39,38 +71,7 @@
 		max-width: 1000px;
 	}
 
-	div.townInfo {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		width: auto;
-		height: auto;
-		margin: 10px;
-	}
-
-	main section {
-		display: block;
-	}
-
-	main img {
-		width: 90%;
-	}
-
-	h4 {
-		font-size: 1.2rem;
-	}
-
-	p {
-		font-size: 1.1rem;
-	}
-
-	.traffic {
-		width: 700px;
-		justify-content: center;
-		margin: 40px auto;
-
-	}
-
-	.roadcams {
-		font-size: 1.5rem;
+	footer a {
+		bottom: 0px;
 	}
 }
