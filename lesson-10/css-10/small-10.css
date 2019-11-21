@@ -176,6 +176,8 @@ main figure.myphoto img {
     grid-template-areas:
         "current currentValue"
         "temp tempValue"
+        "highTemp highTempValue"
+        "lowTemp lowTempValue"
         "windChill windChillValue"
         "humidity humidityValue"
         "windSpeed windSpeedValue";
@@ -197,6 +199,16 @@ h3 {
 
 .temp {
     grid-area: temp;
+    text-align: right;
+}
+
+.highTemp {
+    grid-area: highTemp;
+    text-align: right;
+}
+
+.lowTemp {
+    grid-area: lowTemp;
     text-align: right;
 }
 
@@ -222,12 +234,14 @@ h3 {
     align-items: center;
     padding: 1rem;
     background-color: #C2948A;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .currentValue,
 .tempValue,
+.highTempValue,
+.lowTempValue,
 .windChillValue,
 .humidityValue,
 .windSpeedValue {

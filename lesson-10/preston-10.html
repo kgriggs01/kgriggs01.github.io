@@ -62,16 +62,20 @@
                 <h3>Weather Summary</h3>
                 <div class="summaryContainer">
                     <div class="current">Currently:</div>
-                    <div class="temp">Temp:</div>
+                    <div class="temp">Current Temp:</div>
+                    <div class="highTemp">High Temp:</div>
+                    <div class="lowTemp">Low Temp:</div>
                     <div class="windChill">Wind Chill:</div>
                     <div class="humidity">Humidity:</div>
                     <div class="windSpeed">Wind Speed:</div>
 
-                    <div class="currentValue">Rainy</div>
-                    <div class="tempValue"> <span id="getTempValue">-10</span> °F</div>
-                    <div class="windChillValue"><span id="getWindChillValue"></span></div>
-                    <div class="humidityValue">95 %</div>
-                    <div class="windSpeedValue"> <span id="getWindSpeedValue">8</span> mph</div>
+                    <div class="currentValue"><span id="current-weather-condition"></span></div>
+                    <div class="tempValue"><span id="current-temp"></span> °F</div>
+                    <div class="highTempValue"><span id="high-temp"></span> °F</div>
+                    <div class="lowTempValue"><span id="low-temp"></span> °F</div>
+                    <div class="windChillValue"><span id="getWindChillValue"></span> </div>
+                    <div class="humidityValue"><span id="current-humidity"></span> %</div>
+                    <div class="windSpeedValue"><span id="current-wind-speed"></span> mph</div>
                 </div>
             </div>
         </section>
@@ -81,14 +85,15 @@
                 <h3>5 Day Forecast </h3>
 
                 <div class="forecastContainer">
-                    <div class="forecast-day">Wed</div>
-                    <div class="forecast-day">Thu</div>
-                    <div class="forecast-day">Fri</div>
-                    <div class="forecast-day">Sat</div>
-                    <div class="forecast-day">Sun</div>
+                    <div class="forecast-day" id="day1">Wed</div>
+                    <div class="forecast-day" id="day2">Thu</div>
+                    <div class="forecast-day" id="day3">Fri</div>
+                    <div class="forecast-day" id="day4">Sat</div>
+                    <div class="forecast-day" id="day5">Sun</div>
 
                     <div class="forecast-image">
-                        <img src="images/icons/sun.png" alt="forecast image">
+                        <!--    <span id="imagesrc"></span> &nbsp; <img src="#" alt="test" id="icon">-->
+                        <span id="imagesrc"></span> &nbsp; <img id="icon">
                     </div>
                     <div class="forecast-image">
                         <img src="images/icons/sun.png" alt="forecast image">
@@ -103,11 +108,11 @@
                         <img src="images/icons/sun.png" alt="forecast image">
                     </div>
 
-                    <div class="forecast-temp">89 °F</div>
-                    <div class="forecast-temp">87 °F</div>
-                    <div class="forecast-temp">78 °F</div>
-                    <div class="forecast-temp">75 °F</div>
-                    <div class="forecast-temp">72 °F</div>
+                    <div class="forecast-temp"><span id="forecastDayOne"></span> °F</div>
+                    <div class="forecast-temp"><span id="forecastDayTwo"></span>°F</div>
+                    <div class="forecast-temp"><span id="forecastDayThree"></span>°F</div>
+                    <div class="forecast-temp"><span id="forecastDayFour"></span>°F</div>
+                    <div class="forecast-temp"><span id="forecastDayFive"></span>°F</div>
                 </div>
             </div>
         </section>
@@ -167,9 +172,9 @@
 
     <script src="js-10/dates.js"></script>
     <script src="js-10/togglemenu.js"></script>
-    <script src="js-10/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js-10/webfontload.js"></script>
+    <script src="js-10/weatherapi.js"></script>
 </body>
 
 </html>
