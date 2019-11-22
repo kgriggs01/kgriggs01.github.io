@@ -54,6 +54,15 @@ fetch(forecastURL)
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
         const desc = jsObject.list[i].weather[0].description;
 
+       /*      
+        let dayOfWeekInfo = jsObject.list[i].dt_txt;
+        let futureDay = new Date(dayOfWeekInfo);
+        let dayOfWeek = futureDay.toLocaleDateString('en-US', {
+          weekday: 'short'
+        });
+        console.log(dayOfWeek);
+*/
+
         let dayContainer = document.createElement("div");
         let forecastContainer = document.createElement("section");
         let dayOfWeek = document.createElement("h5");
@@ -71,7 +80,6 @@ fetch(forecastURL)
         forecastContainer.appendChild(futureTemp);
 
         document.querySelector("div.dayContainers").appendChild(dayContainer);
-
       }
     }
   });
