@@ -55,42 +55,88 @@
 		font-size: 1.25rem;
 	}
 
-	.content-pic {
-		float: right;
+	div.dayContainers {
+		display: flex;
+		flex-direction: row;
+		background-color: white;
+		text-align: center;
+
 	}
 
-	.forecast-box {
-		display: grid;
+	div.dayContainers section {
+		width: 100%;
 		background-color: rgb(211, 204, 185);
-		margin-bottom: 10px;
-		padding-bottom: 10px;
+		border: 1px solid black;
 	}
 
+	div.dayContainers h5 {
+		font-size: 2rem;
+		padding: 10px 10px 20px 10px;
+		background-color: #28536B;
+		color: white;
+	}
+
+	div.dayContainers p {
+		font-size: 2rem;
+		padding: 20px 10px 20px 10px;
+	}
+
+	div.dayContainers img {
+		padding: 10px;
+		width: 50%;
+	}
+
+/*
+	div.forecastContainer { 
+		display: grid;
+		text-align: center;
+		border: 1px solid black;
+		background-color: red;
+		color: green;
+		justify-items: center;
+		align-items: center;
+	}
+
+	p.dayOfWeek {
+		font-size: 5rem;
+		background-color: red;
+		color: green;
+		text-align: center;
+		justify-items: center;
+		align-items: center;
+	}
+
+	p.futureTemp {
+		font-size: 3rem;
+		background-color: red;
+		color: green;
+		text-align: center;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.image {
+		align-content: center;
+		align-items: center;
+		justify-items: center;
+	}
+
+*/
+
+	/*
 	.forecast-summary {
 		display: grid;
 		width: 500px;
 		padding: 10px;
 		line-height: 1.5rem;
-		margin: 0 auto;
+
 	}
 
-	.forecast-summary div {
-		border-left: 1px solid black;
-		border-left: 1px solid black;
-	}
 
 	.forecast-summary h3 {
 		text-align: center;
 		padding: 10px;
 		font-size: 1.5rem;
-	}
-
-	.forecastContainer {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		text-align: center;
-		border: 1px solid black;
-		background-color: white;
 	}
 
 	.forecast-image {
@@ -107,10 +153,21 @@
 		padding-bottom: 10px;
 		font-size: 1.2rem;
 	}
+*/
+
 
 	.content-box {
 		margin-top: 20px;
 		margin-bottom: 20px;
+	}
+
+	.content-info,
+	.content-pic {
+		margin-top: 10px;
+	}
+
+	.content-pic {
+		float: right;
 	}
 
 	.map {

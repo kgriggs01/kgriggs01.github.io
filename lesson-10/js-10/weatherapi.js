@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=c5be23148aa1ea915f584c3fbe57e45c";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -6,11 +6,11 @@ fetch(apiURL)
     console.log(jsObject);
 
     document.getElementById('current-weather-condition').textContent = jsObject.weather[0].main;
-    document.getElementById('current-temp').textContent = Math.round((jsObject.main.temp - 273.15) * 1.8) + 32;
+    document.getElementById('current-temp').textContent = jsObject.main.temp.toFixed(0);
     document.getElementById('current-wind-speed').textContent = jsObject.wind.speed;
     document.getElementById('current-humidity').textContent = jsObject.main.humidity;
-    document.getElementById('high-temp').textContent = Math.round((jsObject.main.temp_max - 273.15) * 1.8) + 32;
-    document.getElementById('low-temp').textContent = Math.round((jsObject.main.temp_min - 273.15) * 1.8) + 32;
+    document.getElementById('high-temp').textContent = jsObject.main.temp_max.toFixed(0);
+    document.getElementById('low-temp').textContent = jsObject.main.temp_min.toFixed(0);
 
 
 
@@ -34,32 +34,45 @@ fetch(apiURL)
 
   });
 
+  const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=c5be23148aa1ea915f584c3fbe57e45c";
+  fetch(apiURL2)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsObject) {
+      //console.table(jsonObject); // temporary checking for valid response and data parsing
+     
+      const forecast = jsObject.forecast;
+  
+        for (let i = 0; i < jsObject.list.length; i++) {
+        if (jsObject.list[i].dt_txt.includes('18:00:00')) {
+          console.log(jsObject.list[i].dt_txt);
+          console.log(jsObject.list[i].main.temp.toFixed(0));
+          console.log(jsObject.list[i].weather[0].icon);
+  
+          const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
+          const desc = jsObject.list[i].weather[0].description;
+  
+          //let forecast = ["day1", "day2", "day3", "day4", "day5"];
+          let dayContainer = document.createElement("section");
+          let forecastContainer = document.createElement("div");
+          let dayOfWeek = document.createElement("h5");
+          let image = document.createElement("img");
+          let futureTemp = document.createElement("p");
+  
+          dayOfWeek.textContent = jsObject.list[i].dt_txt;
+          image.setAttribute("src", imagesrc);
+          image.setAttribute("alt", desc);
+          futureTemp.textContent = jsObject.list[i].main.temp.toFixed(0) + (' °F');
 
-fetch(apiURL2)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
-    let i = 0;
-
-    /*
-    for (let i = 0; i < jsObject.list.length; i + 8) {
-      if (jsObject.length[i].dt_txt === "1800") {
-
-      
-      const temp = (jsObject.length[i].dt_txt,
-        jsObject.list[i].weather[0].icon,
-        jsObject.list[i].main.temp_max,
-        jsObject.list[i].main.temp_min)
-    */
-
-    document.getElementById('forecastDayOne').textContent = Math.round((jsObject.list[i].main.temp - 273.15) * 1.8) + 32;
-    document.getElementById('forecastDayTwo').textContent = Math.round((jsObject.list[i + 8].main.temp - 273.15) * 1.8) + 32;
-    document.getElementById('forecastDayThree').textContent = Math.round((jsObject.list[i + 8 + 8].main.temp - 273.15) * 1.8) + 32;
-    document.getElementById('forecastDayFour').textContent = Math.round((jsObject.list[i + 8 + 8 + 8].main.temp - 273.15) * 1.8) + 32;
-    document.getElementById('forecastDayFive').textContent = Math.round((jsObject.list[i + 8 + 8 + 8 + 8].main.temp - 273.15) * 1.8) + 32;
-
-
-
-  });
+          dayContainer.appendChild(forecastContainer);
+          forecastContainer.appendChild(dayOfWeek);
+          dayContainer.appendChild(image);
+          forecastContainer.appendChild(futureTemp);
+  
+          document.querySelector("div.dayContainers").appendChild(dayContainer);
+          
+        }
+      }
+    });

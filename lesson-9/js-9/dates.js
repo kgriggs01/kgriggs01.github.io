@@ -1,5 +1,3 @@
-function dayOfWeek() {
-
 	var w = new Date();
 	var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	var thisDay = weekdays[w.getDay()];
@@ -16,11 +14,5 @@ function dayOfWeek() {
 	var y = new Date();
 	document.getElementById("year").innerHTML = y.getFullYear();
 
-	if (thisDay == "Friday") {
-		document.getElementById("banner").innerHTML = "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.";
-	}
-
 	var copyright_year = new Date();
 	document.getElementById("copyright_year").innerHTML = copyright_year.getFullYear();
-
-}
