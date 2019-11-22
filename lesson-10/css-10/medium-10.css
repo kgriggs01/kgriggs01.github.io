@@ -75,6 +75,12 @@
 		padding: 10px 10px 30px 10px;
 	}
 
+	.forecastSec p {
+		font-size: 1rem;
+		padding: 20px 0 0 0;
+		font-family: 'Buenard', serif;
+	}
+
 	div.dayContainers section {
 		width: 75%;
 		background-color: rgb(178, 179, 180);
