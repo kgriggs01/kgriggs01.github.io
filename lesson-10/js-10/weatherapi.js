@@ -12,8 +12,6 @@ fetch(apiURL)
     document.getElementById('high-temp').textContent = jsObject.main.temp_max.toFixed(0);
     document.getElementById('low-temp').textContent = jsObject.main.temp_min.toFixed(0);
 
-
-
     function wind() {
       var tempF = parseFloat(document.getElementById("current-temp").textContent);
       var speed = parseFloat(document.getElementById("current-wind-speed").textContent);
@@ -54,7 +52,6 @@ fetch(apiURL)
           const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
           const desc = jsObject.list[i].weather[0].description;
   
-          //let forecast = ["day1", "day2", "day3", "day4", "day5"];
           let dayContainer = document.createElement("section");
           let forecastContainer = document.createElement("div");
           let dayOfWeek = document.createElement("h5");
