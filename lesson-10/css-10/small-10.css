@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-#prestonBanner {
+#banner {
     background: yellow;
     text-align: center;
     margin: 0rem;
@@ -237,7 +237,7 @@ h3 {
     color: yellow;
 }
 
-.dayContainers {
+.forecastSec {
     display: none;
 }
 
