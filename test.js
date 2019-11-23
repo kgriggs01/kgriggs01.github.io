@@ -34,7 +34,11 @@
        wind();
    
      });
-  /* 
+  
+
+
+
+     
      const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
    
      fetch(apiURL2)
@@ -78,7 +82,6 @@
          }
        });
 
-*/
 
 
 
@@ -91,6 +94,7 @@
 
 
 
+/*
            
 const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
@@ -135,3 +139,5 @@ console.log(tempInfo);
       }
     }
   });
+
+  */
