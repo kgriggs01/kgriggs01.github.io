@@ -45,93 +45,30 @@ fetch(forecastURL)
 
     let day = 0;
     for (let i = 0; i < jsObject.list.length; i++) {
+
       if (jsObject.list[i].dt_txt.includes('18:00:00')) {
         console.log(jsObject.list[i].dt_txt);
         console.log(jsObject.list[i].main.temp.toFixed(0));
         console.log(jsObject.list[i].weather[0].icon);
+       
+        let dayInfo = new Date(jsObject.list[i].dt_txt);
+        let weekday = {weekday: 'short'};
+        let forecastDayOfWeek = dayInfo.toLocaleDateString('en-US', weekday);
+        let dayOfWeek = 'forecastWeekdayValue' + day;
+        document.getElementById(dayOfWeek).textContent = forecastDayOfWeek;
 
-
-        //const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
-        //const desc = jsObject.list[i].weather[0].description;
-
+        let forecastIconInfo = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
+        let iconDescription = jsObject.list[i].weather[0].description;
+        let icon = 'forecastIconValue' + day;
+        document.getElementById(icon).setAttribute('src', forecastIconInfo);
+        document.getElementById(icon).setAttribute('alt', iconDescription);
 
         let forecastTempValue = jsObject.list[i].main.temp.toFixed(0);
         let tempInfo = 'forecastTempValue' + day;
-        document.getElementById(tempInfo).textContent = forecastTempValue;
-
+        document.getElementById(tempInfo).textContent = forecastTempValue + ' °F';
+        
         day = day + 1;
 
       }
     }
   });
-
-     
-        let dayOfWeekInfo = jsObject.list[i].dt_txt;
-        let futureDay = new Date(dayOfWeekInfo);
-        let dayOfWeek = futureDay.toLocaleDateString('en-US', {
-          weekday: 'short'
-        });
-        console.log(dayOfWeek);
-
-
-
-        dayOfWeek.textContent = jsObject.list[i].dt_txt;
-        image.setAttribute("src", imagesrc);
-        image.setAttribute("alt", desc);
-       
-
-        dayContainer.appendChild(forecastContainer);
-        forecastContainer.appendChild(dayOfWeek);
-        forecastContainer.appendChild(image);
-        forecastContainer.appendChild(futureTemp);
-
-      }
-    }
-  });
-
-  */
-
-/*
-
-// Pull forecast weather data from OpenWeather API
-const forecastAPI = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=c6debd9d9914f38a4a730ac064c0c641&units=imperial';
-
-fetch(forecastAPI)
-  .then((response) => response.json())
-  .then((jsObject) => {
-
-    var i = 0;
-    var j = 0;
-
-    while (i < 40 && j < 5) {
-      var time = jsObject.list[i].dt_txt;
-      if (time.includes('18:00:00')) {
-        /*
-         
-                let date = new Date(time);
-                let weekdayOption = { weekday: 'short' };
-                let weekday = date.toLocaleDateString('en-US', weekdayOption);
-                let labelId = 'forecastWeekdayValue' + j;
-                document.getElementById(labelId).textContent = weekday;
-
-
-                let icon = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
-                let description = jsObject.list[i].weather[0].description;
-                let imageId = 'forecastIconValue' + j;
-                document.getElementById(imageId).setAttribute('src', icon); 
-                document.getElementById(imageId).setAttribute('alt', description); 
-
-        
-        let forecastTempValue = Math.round(jsObject.list[i].main.temp);
-        let tempId = 'forecastTempValue' + j;
-        document.getElementById(tempId).textContent = forecastTempValue;
-
-        j++;
-      }
-
-      i++;
-    }
-
-  });
-
-  */
