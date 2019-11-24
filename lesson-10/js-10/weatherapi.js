@@ -3,9 +3,9 @@
  fetch(weatherURL)
    .then((response) => response.json())
    .then((jsObject) => {
-     console.log(jsObject);
+     //console.log(jsObject);
 
-     document.getElementById('current-weather-condition').textContent = jsObject.weather[0].main;
+     document.getElementById('current-weather-condition').textContent = jsObject.weather[0].description;
      document.getElementById('current-temp').textContent = jsObject.main.temp.toFixed(0);
      document.getElementById('current-wind-speed').textContent = jsObject.wind.speed.toFixed(1);
      document.getElementById('current-humidity').textContent = jsObject.main.humidity;
