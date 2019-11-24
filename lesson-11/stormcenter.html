@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <title>Storm Center Page | Keith Griggs | BYU-Idaho</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Storm Center Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/storm&gallery/small-storm&gallery.css">
+    <link rel="stylesheet" href="css/storm&gallery/medium-storm&gallery.css">
+    <link rel="stylesheet" href="css/storm&gallery/large-storm&gallery.css">
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img class="logo" src="images/icons/weather-image.png" alt="weather logo">
+        </picture>
+
+        <section class="headings">
+            <h1>SE Idaho Weather</h1>
+            <div class="motto">High country living at its best</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#" class="active">&#9925; Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="mainStormCenter">
+        <section class="h2StormCenter">
+            <h2>Report a Storm</h2>
+        </section>
+
+        <form method="get" action="thankyoupage.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" pattern="[A-Z a-z]{5,}"
+                        required></label>
+                <label class="top">Phone Number* <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10"
+                        placeholder="1235551234" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date <input type="date" name="stormDate"></label>
+                <label class="top">Storm Type <input list="stormType" id="stormChoice" name="stormChoice"
+                        placeholder="Select Storm Type">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <div>
+                    <label class="top">Storm Severity (1 to 10)</label>
+                    <label class="rating"><input type="range" name="rating" id="rating" value="5" min="1" max="10"
+                            step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingValue">5</span></label>
+                </div>
+                <label class="top">Storm Region
+                    <select name="stormRegion">
+                        <option disabled selected value="">Select Region &#9662;</option>
+                        <option value="fishHaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sugarCity">Soda Springs</option>
+                    </select>
+                </label>
+                <div class="danger">Are you in danger?</div>
+                <label class="dangerOption"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="dangerOption"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="dangerOption"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information or Comments</legend>
+
+                <label class="tellUs">Tell us more <textarea id="comments" name="comments"
+                        placeholder="Type your comments here..."></textarea></label>
+
+            </fieldset>
+
+            <input class="submitBtn" type="submit" name="submitButton" value="Report the Storm">
+        </form>
+    </main>
+
+    <footer>
+        <div> &COPY; <span id="copyright_year"></span> | SE Idaho Weather | Keith A. Griggs</div>
+        <a> <span id="weekday"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span></a>
+    </footer>
+
+    <script src="js/lazyload.js" defer></script>
+    <script src="js/dates.js"></script>
+    <script src="js/togglemenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/stormcenter.js"></script>
+</body>
+
+</html>
