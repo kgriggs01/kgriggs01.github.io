@@ -133,25 +133,6 @@ main figure.myphoto img {
     width: 100%;
 }
 
-.smalltextoverlay {
-    display: block;
-    position: absolute;
-    top: 45px;
-    right: 25px;
-    color: red;
-    font-size: 2rem;
-    font-family: 'Kalam', cursive;
-    font-weight: bold;
-}
-
-.mediumtextoverlay {
-    display: none;
-}
-
-.largetextoverlay {
-    display: none;
-}
-
 .weather-summary {
     position: absolute;
     top: 10px;

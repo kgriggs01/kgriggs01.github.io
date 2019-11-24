@@ -27,39 +27,13 @@
 		font-size: 2rem;
 	}
 
-	.smalltextoverlay {
-		display: none;
-	}
-
-	.mediumtextoverlay {
-		display: block;
-		position: absolute;
-		top: 80px;
-		right: 30px;
-		color: red;
-		font-size: 2.5rem;
-		font-family: 'Kalam', cursive;
-		font-weight: bold;
-	}
-
-	.largetextoverlay {
-		display: none;
-	}
-
 	.weather-summary {
-		max-width: 60%;
+		max-width: 100%;
 		line-height: 1.5rem;
 	}
 
 	.summaryContainer {
 		font-size: 1.25rem;
-	}
-
-	div.dayContainers {
-		display: flex;
-		flex-direction: row;
-		background-color: rgb(211, 204, 185);
-		text-align: center;
 	}
 
 	.forecastSec {
@@ -68,6 +42,48 @@
 		margin: 0 auto;
 		text-align: center;
 		padding: 10px 10px 30px 10px;
+	}
+
+	.forecastDayContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		width: 600px;
+		height: 200px;
+		margin: 0 auto;
+		text-align: center;
+		background-color: rgb(178, 179, 180);
+	}
+
+	.forecastSec,
+	.forecastDayContainer,
+	.forecastWeekday,
+	.forecastIcon,
+	.forecastTemp {
+		border: 1px solid black;
+	}
+
+	.forecastWeekday {
+		background-color: #28536B;
+		text-align: center;
+		color: white;
+		padding: 10px 0 0;
+		font-size: 2rem;
+	}
+
+	.forecastIcon {
+		padding: 10px 0 0 0;
+		border-bottom: none;
+	}
+
+	.forecastSec img {
+		width: 75px;
+
+	}
+
+	.forecastTemp {
+		font-size: 2rem;
+		padding: 10px 0 10px 0;
+		border-top: none;
 	}
 
 	.forecastSec h4 {
@@ -79,31 +95,6 @@
 		font-size: 1rem;
 		padding: 20px 0 0 0;
 		font-family: 'Buenard', serif;
-	}
-
-	div.dayContainers section {
-		width: 75%;
-		background-color: rgb(178, 179, 180);
-		border: 1px solid black;
-		margin: 0 auto;
-	}
-
-	div.dayContainers h5 {
-		font-size: 1.5rem;
-		padding: 10px 10px 20px 10px;
-		background-color: #28536B;
-		color: white;
-	}
-
-	div.dayContainers p {
-		font-size: 2rem;
-		font-weight: bold;
-		padding: 10px 10px 30px 10px;
-	}
-
-	div.dayContainers img {
-		padding: 10px;
-		width: 50%;
 	}
 
 	.content-box {

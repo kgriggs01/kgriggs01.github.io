@@ -48,15 +48,11 @@
         <section class="townpicdiv">
 
             <figure class="myphoto">
-                <img src="image/prestonPagePics/franklin-1100.jpg" alt="Franklin pic" sizes="50vw" srcset="images-8/prestonPagePics/franklin-200.jpg 200w, 
-                        images/prestonPagePics/franklin-500.jpg 500w, 
-                        images/prestonPagePics/franklin-800.jpg 800w,
-                        images/prestonPagePics/franklin-1100.jpg 1100w">
+                <img src="image/prestonPagePics/preston-1100.jpg" alt="Preston pic" sizes="50vw" srcset="images-8/prestonPagePics/preston-200.jpg 200w, 
+                        images/prestonPagePics/preston-500.jpg 500w, 
+                        images/prestonPagePics/preston-800.jpg 800w,
+                        images/prestonPagePics/preston-1100.jpg 1100w">
             </figure>
-
-            <div class="smalltextoverlay">Small</div>
-            <div class="mediumtextoverlay">Medium</div>
-            <div class="largetextoverlay">Large</div>
 
             <div class="weather-summary">
                 <h3>Weather Summary</h3>
@@ -80,12 +76,40 @@
             </div>
         </section>
 
+        <!--
         <div class="forecastSec">
             <h4 class="forecastH1">5 Day Forecast</h4>
             <div class="dayContainers">
             </div>
             <p class="siteCredit">Data courtesy of OpenWeatherMap.org</p>
         </div>
+    -->
+
+        <section class="forecastSec">
+            <h4>5 Day Forecast</h4>
+
+            <div class="forecastDayContainer">
+                <div class="forecastWeekday" id="forecastWeekdayValue0"></div>
+                <div class="forecastWeekday" id="forecastWeekdayValue1"></div>
+                <div class="forecastWeekday" id="forecastWeekdayValue2"></div>
+                <div class="forecastWeekday" id="forecastWeekdayValue3"></div>
+                <div class="forecastWeekday" id="forecastWeekdayValue4"></div>
+
+                <div class="forecastIcon"> &nbsp; <img src="#" alt="forecast icon" id="forecastIconValue0"></div>
+                <div class="forecastIcon"> &nbsp; <img src="#" alt="forecast icon" id="forecastIconValue1"></div>
+                <div class="forecastIcon"> &nbsp; <img src="#" alt="forecast icon" id="forecastIconValue2"></div>
+                <div class="forecastIcon"> &nbsp; <img src="#" alt="forecast icon" id="forecastIconValue3"></div>
+                <div class="forecastIcon"> &nbsp; <img src="#" alt="forecast icon" id="forecastIconValue4"></div>
+
+                <div class="forecastTemp"><span id="forecastTempValue0"></span></div>
+                <div class="forecastTemp"><span id="forecastTempValue1"></span></div>
+                <div class="forecastTemp"><span id="forecastTempValue2"></span></div>
+                <div class="forecastTemp"><span id="forecastTempValue3"></span></div>
+                <div class="forecastTemp"><span id="forecastTempValue4"></span></div>
+            </div>
+
+            <p class="siteCredit">Weather data courtesy of OpenWeatherMap.org</p>
+        </section>
 
         <section class="content-box">
             <h4 class="box-heading">placeholder</h4>
