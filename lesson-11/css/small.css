@@ -56,7 +56,6 @@ header img {
 }
 
 main {
-    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -112,10 +111,10 @@ nav .menu {
 }
 
 .navigation a:hover {
-    color: #000;
+    color: black;
     font-weight: 600;
     background-color: rgb(62, 128, 163);
-    color: black;
+
 }
 
 .responsive li {
@@ -147,7 +146,7 @@ footer a {
 
 /************************* Home Page *************************/
 
-.homePageMain .townInfo {
+.townInfo {
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
@@ -156,7 +155,7 @@ footer a {
     box-shadow: 2px 2px 10px 18px rgba(0, 0, 0, 0.40);
 }
 
-.homePageMain section {
+.townInfo section {
     background-color: rgb(199, 186, 186);
     border: 1px solid rgb(78, 78, 78);
     padding: 10px;
@@ -216,16 +215,12 @@ footer a {
 }
 
 .traffic h5 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     background-color: #F0F0F0;
     color: #8F0000;
     animation: blink 3s linear infinite;
+    margin: 10px;
 }
-
-.traffic p {
-    font-size: 1.25rem;
-}
-
 
 @keyframes blink {
     0% {
@@ -243,6 +238,10 @@ footer a {
 
 
 /************************* Preston Page ************************/
+
+.prestonPageMain {
+    max-width: 960px;
+}
 
 .prestonPhoto {
     position: relative;
@@ -426,9 +425,8 @@ footer a {
     border-radius: 10px;
     padding: .5rem 2%;
     padding-bottom: 2rem;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-
 }
 
 .stormPageMain form legend {
@@ -491,7 +489,7 @@ input:hover,
 }
 
 #rating {
-    width: 20rem;
+    width: 87%;
 }
 
 #ratingValue {
@@ -515,7 +513,6 @@ input:hover,
     width: 100%;
     text-align: center;
     padding: 25px 0 0 0;
-
 }
 
 
@@ -534,7 +531,7 @@ input:hover,
 
 /************************* Gallery Page *************************/
 
-.galleryMainPage figure {
+.galleryPageMain figure {
     border: 2px solid black;
     background-color: rgb(199, 186, 186);
 }
