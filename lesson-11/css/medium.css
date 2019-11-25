@@ -114,6 +114,10 @@
 		font-size: 2rem;
 	}
 
+	.siteCreditSmall {
+		display: none;
+	}
+
 	.forecastSection {
 		display: grid;
 		background-color: rgb(211, 204, 185);

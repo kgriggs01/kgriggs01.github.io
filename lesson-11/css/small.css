@@ -344,6 +344,10 @@ footer a {
     color: yellow;
 }
 
+.siteCreditSmall {
+    font-size: .75rem;
+}
+
 .forecastSection {
     display: none;
 }
