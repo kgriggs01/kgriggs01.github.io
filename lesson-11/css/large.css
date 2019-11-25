@@ -1,0 +1,87 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 64em) {
+
+
+	/******************** Body, Header & Banner ********************/
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.motto {
+		font-size: 1.25rem;
+		padding-top: 10px;
+	}
+
+	header img {
+		width: 120px;
+	}
+
+	main h2 {
+		font-size: 4rem;
+	}
+
+
+	/*********************** Navigation Menu ***********************/
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li:first-child {
+		display: none;
+
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+		padding: 20px 0 20px 0;
+	}
+
+	.navigation .active {
+		font-size: 2rem;
+	}
+
+	.navigation .activeLi {
+		background-color: rgb(62, 128, 163);
+	}
+
+	.navigation a:hover {
+		font-weight: 100;
+		color: yellow;
+	}
+
+
+	/*************************** Footer ***************************/
+
+	footer {
+		font-size: 1.25rem;
+		max-width: 1000px;
+	}
+
+	footer a {
+		bottom: 0px;
+	}
+
+
+/************************* Preston Page ************************/
+
+	.prestonWeatherSummary {
+		line-height: 1.75rem;
+	}
+
+	.prestonWeatherSummary {
+		max-width: 70%;
+	}
+
+	.summaryContainer {
+		font-size: 1.5rem;
+	}
+
+	.contentBox {
+		background-color: #C2948A;
+		max-width: 1000px;
+	}
+
+}

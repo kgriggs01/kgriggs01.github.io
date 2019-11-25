@@ -1,38 +1,4 @@
-/* Desktop Views ****************************/
-@media only screen and (min-width: 64em) {
-	.headings h1 {
-		font-size: 3rem;
-	}
 
-	.motto {
-		font-size: 1.25rem;
-		padding-top: 10px;
-	}
-
-	.logo {
-		width: 120px;
-	}
-
-	.navigation {
-		display: flex;
-	}
-
-	.navigation li:first-child {
-		display: none;
-	}
-
-	.navigation li {
-		display: block;
-		flex: 1 1 100%;
-	}
-
-	.navigation .active {
-		font-size: 2rem;
-	}
-
-	.h2info {
-		margin: 30px;
-	}
 
 	footer {
 		font-size: 1.25rem;

@@ -1,0 +1,225 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 32.5em) {
+
+
+	/******************** Body, Header & Banner ********************/
+
+	.motto {
+		font-size: 1rem;
+		padding-top: 10px;
+	}
+
+	header img {
+		width: 90px;
+	}
+
+	.headings h1 {
+		font-size: 2.5rem;
+	}
+
+	main h2 {
+		font-size: 3.5rem;
+		padding: 30px 10px 50px 10px;
+		margin: 20px;
+	}
+
+
+	/************************* Home Page *************************/
+
+	.homePageMain .townInfo {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.homePageMain section {
+		display: flex;
+		width: 80%;
+		margin: auto;
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+
+	.townInfo div {
+		margin: auto;
+	}
+
+	.homePageMain section:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	.homePageMain .townInfo {
+		margin: auto;
+	}
+
+	.homePageMain section img {
+		width: 40%;
+	}
+
+	.traffic h5 {
+		font-size: 2rem;
+		background-color: #F0F0F0;
+		color: #8F0000;
+		animation: blink 3s linear infinite;
+	}
+
+	.traffic p {
+		font-size: 2.25rem;
+		padding: 20px 0 10px 0;
+		line-height: 2rem;
+	}
+
+
+	/*********************** Navigation Menu ***********************/
+
+	.navigation {
+		font-size: 2rem;
+	}
+
+	nav .menu {
+		font-size: 2.25rem;
+		padding: 10px 0 10px 0;
+	}
+
+	.responsive li {
+		padding-bottom: 10px;
+	}
+
+
+	/*************************** Footer ***************************/
+
+	footer {
+		font-size: 1.25rem;
+		max-width: 100%;
+		padding-bottom: 10px;
+	}
+
+	footer a {
+		bottom: 5px;
+	}
+
+
+	/************************* Preston Page ************************/
+
+	.prestonPhoto img {
+		padding-bottom: 10px;
+		height: auto;
+	}
+
+	.prestonWeatherSummary {
+		max-width: 100%;
+		line-height: 1.5rem;
+	}
+
+	.summaryContainer {
+		font-size: 1.25rem;
+	}
+
+	.prestonWeatherSummary h3 {
+		padding-bottom: 7px;
+		font-size: 2rem;
+	}
+
+	.forecastSection {
+		display: grid;
+		background-color: rgb(211, 204, 185);
+		margin: 0 auto;
+		text-align: center;
+		padding: 10px 10px 30px 10px;
+	}
+
+	.forecastDayContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		width: 600px;
+		height: 200px;
+		margin: 0 auto;
+		text-align: center;
+		background-color: rgb(178, 179, 180);
+	}
+
+	.forecastSec,
+	.forecastDayContainer,
+	.forecastWeekday,
+	.forecastIcon,
+	.forecastTemp {
+		border: 1px solid black;
+	}
+
+	.forecastWeekday {
+		background-color: #28536B;
+		text-align: center;
+		color: white;
+		padding: 10px 0 0;
+		font-size: 2rem;
+	}
+
+	.forecastIcon {
+		padding: 10px 0 0 0;
+		border-bottom: none;
+	}
+
+	.forecastSection img {
+		width: 75px;
+	}
+
+	.forecastTemp {
+		font-size: 2rem;
+		padding: 10px 0 10px 0;
+		border-top: none;
+	}
+
+	.forecastSection h4 {
+		font-size: 2.5rem;
+		padding: 10px 10px 30px 10px;
+	}
+
+	.forecastSection p {
+		font-size: 1rem;
+		padding: 20px 0 0 0;
+		font-family: 'Buenard', serif;
+	}
+
+	.contactBox {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		flex-flow: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.contentPic {
+		margin-top: 10px;
+		float: right;
+	}
+
+	.contentInfo {
+		margin-top: 10px;
+	}
+
+	.prestonMap {
+		display: flex;
+		max-width: 300px;
+		height: auto;
+	}
+
+
+	/********************** Storm Center Page **********************/
+
+	.stormPageMain form fieldset {
+		width: 48%;
+		margin: 0 auto;
+	}
+
+	.formSubmitButton {
+		width: 96%;
+		text-align: center;
+	}
+
+	/************************* Gallery Page *************************/
+
+	.galleryContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+	}
+}

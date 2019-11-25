@@ -10,9 +10,9 @@
     <meta name="description"
         content="The Weather Site Home Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/homepage.css/small-homepage.css">
-    <link rel="stylesheet" href="css/homepage.css/medium-homepage.css">
-    <link rel="stylesheet" href="css/homepage.css/large-homepage.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
     <nav>
         <ul class="navigation">
             <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="#" class="active">&#9925; Home</a></li>
+            <li class="activeLi"><a href="#" class="active">&#9925; Home &#9925;</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
@@ -41,13 +41,13 @@
         </ul>
     </nav>
 
-    <main>
-        <h2 class="h2info">Town Information</h2>
+    <main class="homePageMain">
+        <h2>Town Information</h2>
 
         <div class="townInfo"></div>
 
         <div class="traffic">
-            <h5 class="road"> 🚧 See current road conditions 🚧</h5>
+            <h5> 🚧 See current road conditions 🚧</h5>
             <p class="roadcams"><a
                     href="https://ow.511.idaho.gov/cameras/42/@-111.91755,42.6296,-111.91755,42.6296?show=road-reports,winter-driving,weather-warnings,alert-stations,cameras"
                     target="_blank" rel="noopener"> Live Camera - Fish Creek Summit</a></p>

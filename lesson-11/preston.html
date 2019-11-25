@@ -9,9 +9,9 @@
     <meta name="description"
         content="Preston Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/preston.css/small-preston.css">
-    <link rel="stylesheet" href="css/preston.css/medium-preston.css">
-    <link rel="stylesheet" href="css/preston.css/large-preston.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 
 <body onload="prestonBanner()">
@@ -32,7 +32,7 @@
         <ul class="navigation">
             <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#" class="active">&#9925; Preston</a></li>
+            <li class="activeLi"><a href="#" class="active">&#9925; Preston &#9925;</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
@@ -40,21 +40,21 @@
         </ul>
     </nav>
 
-    <main class="mainPreston">
-        <section class="h2townname">
+    <main class="prestonPageMain">
+        <section>
             <h2>Preston Idaho</h2>
         </section>
 
-        <section class="townpicdiv">
+        <section class="prestonPhoto">
 
-            <figure class="myphoto">
+            <figure>
                 <img src="images/prestonPagePics/preston-1100.jpg" alt="Preston pic" sizes="50vw" srcset="images/prestonPagePics/preston-200.jpg 200w, 
                         images/prestonPagePics/preston-500.jpg 500w, 
                         images/prestonPagePics/preston-800.jpg 800w,
                         images/prestonPagePics/preston-1100.jpg 1100w">
             </figure>
 
-            <div class="weather-summary">
+            <div class="prestonWeatherSummary">
                 <h3>Weather Summary</h3>
                 <div class="summaryContainer">
                     <div class="current">Currently:</div>
@@ -76,7 +76,7 @@
             </div>
         </section>
 
-        <section class="forecastSec">
+        <section class="forecastSection">
             <h4>5 Day Forecast</h4>
 
             <div class="forecastDayContainer">
@@ -102,12 +102,12 @@
             <p class="siteCredit">Weather data courtesy of OpenWeatherMap.org</p>
         </section>
 
-        <section class="content-box">
-            <h4 class="box-heading">placeholder</h4>
-            <div class="content-info">
+        <section class="contentBox">
+            <h4 class="boxHeading">placeholder</h4>
+            <div class="contentInfo">
 
                 <article class="article">
-                    <h4 class="content-Title">Founders Day Fresco</h4>
+                    <h4 class="contentTitle">Founders Day Fresco</h4>
                     <h5 class="author">by Janica Juarez</h5><br>
                     <p>Lorem ipsum dolor sit amet, duo diam zril expetendis at.
                         Hinc tritani te ius, eum in tota causae alienum, eu eum augue conceptam adversarium.
@@ -119,19 +119,19 @@
                 </article>
             </div>
 
-            <picture class="content-pic">
-                <img class="content-pic" src="images/prestonPagePics/picnic-pic.jpg" alt="couple on picnic">
+            <picture class="contentPic">
+                <img class="contentPic" src="images/prestonPagePics/picnic-pic.jpg" alt="couple on picnic">
             </picture>
         </section>
 
-        <section class="contact-box">
+        <section class="contactBox">
 
-            <picture class="map">
-                <img class="map" src="images/prestonPagePics/map.jpg" alt="preston map">
+            <picture class="prestonMap">
+                <img class="prestonMap" src="images/prestonPagePics/map.jpg" alt="preston map">
             </picture>
 
-            <div class="contact-info">
-                <h4 class="contact-title">SE Idaho Weather</h4>
+            <div class="contactInfo">
+                <h4 class="contactTitle">SE Idaho Weather</h4>
 
                 <img class="pointer" src="images/icons/pin.png" alt="map pointer">
                 123 Main St<br>
