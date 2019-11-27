@@ -2,19 +2,19 @@
 <html lang="en-us">
 
 <head>
-    <title>Preston Town Page | Keith Griggs | BYU-Idaho</title>
+    <title>Soda Springs Town Page | Keith Griggs | BYU-Idaho</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="description"
-        content="Preston Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+        content="Soda Springs Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body onload="prestonBanner()">
+<body onload="sodaSpringsBanner()">
     <div id="banner"></div>
 
     <header>
@@ -31,30 +31,30 @@
     <nav>
         <ul class="navigation">
             <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="https://kgriggs01.github.io/lesson-11/index.html">Home</a></li>
-            <li class="activeLi"><a href="#" class="active">&#9925; Preston &#9925;</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="https://kgriggs01.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
-            <li><a href="https://kgriggs01.github.io/lesson-11/gallery.html">Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class="activeLi"><a href="#" class="active">&#9925; Soda Springs &#9925;</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
-    <main class="prestonPageMain">
+    <main class="sodaSpringsPageMain">
         <section>
-            <h2>Preston Idaho</h2>
+            <h2>Soda Springs</h2>
         </section>
 
-        <section class="prestonPhoto">
+        <section class="sodaSpringsPhoto">
 
             <figure>
-                <img src="images/prestonPagePics/preston-1100.jpg" alt="Preston pic" sizes="50vw" srcset="images/prestonPagePics/preston-200.jpg 200w, 
-                        images/prestonPagePics/preston-500.jpg 500w, 
-                        images/prestonPagePics/preston-800.jpg 800w,
-                        images/prestonPagePics/preston-1100.jpg 1100w">
+                <img src="images/sodaSpringsPagePics/sodaSprings-1100.jpg" alt="Soda Springs pic" sizes="50vw" srcset="images/sodaSpringsPagePics/sodaSprings-200.jpg 200w, 
+                        images/sodaSpringsPagePics/sodaSprings-500.jpg 500w, 
+                        images/sodaSpringsPagePics/sodaSprings-800.jpg 800w,
+                        images/sodaSpringsPagePics/sodaSprings-1100.jpg 1100w">
             </figure>
 
-            <div class="prestonWeatherSummary">
+            <div class="sodaSpringsWeatherSummary">
                 <h3>Weather Summary</h3>
                 <div class="summaryContainer">
                     <div class="current">Currently:</div>
@@ -78,8 +78,6 @@
                 <p>Weather data courtesy of OpenWeatherMap.org</p>
             </div>
         </section>
-
-
 
         <section class="forecastSection">
             <h4>5 Day Forecast</h4>
@@ -107,6 +105,22 @@
             <p class="siteCredit">Weather data courtesy of OpenWeatherMap.org</p>
         </section>
 
+
+
+
+        <section class="sodaSpringsEvents">
+            <ul>
+                <li class="event"><span id="townEvents0"></span></li>
+                <li class="event"><span id="townEvents1"></span></li>
+                <li class="event"><span id="townEvents2"></span></li>
+
+            </ul>
+        </section>
+
+
+
+
+
         <section class="contentBox">
             <h4 class="boxHeading">placeholder</h4>
             <div class="contentInfo">
@@ -125,14 +139,14 @@
             </div>
 
             <picture class="contentPic">
-                <img class="contentPic" src="images/prestonPagePics/picnic-pic.jpg" alt="couple on picnic">
+                <img class="contentPic" src="images/sodaSpringsPagePics/picnic-pic.jpg" alt="couple on picnic">
             </picture>
         </section>
 
         <section class="contactBox">
 
-            <picture class="prestonMap">
-                <img class="prestonMap" src="images/prestonPagePics/PrestonMap.jpg" alt="preston map">
+            <picture class="sodaSpringsMap">
+                <img class="sodaSpringsMap" src="images/sodaSpringsPagePics/sodaSpringsMap.jpg" alt="Soda Springs map">
             </picture>
 
             <div class="contactInfo">
@@ -140,7 +154,7 @@
 
                 <img class="pointer" src="images/icons/pin.png" alt="map pointer">
                 123 Main St<br>
-                Preston, Idaho 83263<br>
+                Soda Springs, Idaho 83276<br>
                 <br>
                 &#9742; 208-555-5555<br>
                 &#9993; idahoweather.us<br>
@@ -167,7 +181,7 @@
     <script src="js/togglemenu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/prestonWeatherapi.js"></script>
+    <script src="js/sodaSpringsWeatherapi.js"></script>
 </body>
 
 </html>

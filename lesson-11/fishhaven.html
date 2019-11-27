@@ -2,19 +2,19 @@
 <html lang="en-us">
 
 <head>
-    <title>Preston Town Page | Keith Griggs | BYU-Idaho</title>
+    <title>Fish Haven Town Page | Keith Griggs | BYU-Idaho</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="description"
-        content="Preston Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+        content="Fish Haven Town Page for Keith Griggs in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body onload="prestonBanner()">
+<body onload="fishHavenBanner()">
     <div id="banner"></div>
 
     <header>
@@ -31,30 +31,30 @@
     <nav>
         <ul class="navigation">
             <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="https://kgriggs01.github.io/lesson-11/index.html">Home</a></li>
-            <li class="activeLi"><a href="#" class="active">&#9925; Preston &#9925;</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="https://kgriggs01.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
-            <li><a href="https://kgriggs01.github.io/lesson-11/gallery.html">Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="activeLi"><a href="#" class="active">&#9925; Fish Haven &#9925;</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
-    <main class="prestonPageMain">
+    <main class="fishHavenPageMain">
         <section>
-            <h2>Preston Idaho</h2>
+            <h2>Fish Haven</h2>
         </section>
 
-        <section class="prestonPhoto">
+        <section class="fishHavenPhoto">
 
             <figure>
-                <img src="images/prestonPagePics/preston-1100.jpg" alt="Preston pic" sizes="50vw" srcset="images/prestonPagePics/preston-200.jpg 200w, 
-                        images/prestonPagePics/preston-500.jpg 500w, 
-                        images/prestonPagePics/preston-800.jpg 800w,
-                        images/prestonPagePics/preston-1100.jpg 1100w">
+                <img src="images/fishHavenPagePics/fishHaven-1100.jpg" alt="Fish Haven pic" sizes="50vw" srcset="images/fishHavenPagePics/fishHaven-200.jpg 200w, 
+                        images/fishHavenPagePics/fishHaven-500.jpg 500w, 
+                        images/fishHavenPagePics/fishHaven-800.jpg 800w,
+                        images/fishHavenPagePics/fishHaven-1100.jpg 1100w">
             </figure>
 
-            <div class="prestonWeatherSummary">
+            <div class="fishHavenWeatherSummary">
                 <h3>Weather Summary</h3>
                 <div class="summaryContainer">
                     <div class="current">Currently:</div>
@@ -125,14 +125,14 @@
             </div>
 
             <picture class="contentPic">
-                <img class="contentPic" src="images/prestonPagePics/picnic-pic.jpg" alt="couple on picnic">
+                <img class="contentPic" src="images/fishHavenPagePics/picnic-pic.jpg" alt="couple on picnic">
             </picture>
         </section>
 
         <section class="contactBox">
 
-            <picture class="prestonMap">
-                <img class="prestonMap" src="images/prestonPagePics/PrestonMap.jpg" alt="preston map">
+            <picture class="fishHavenMap">
+                <img class="fishHavenMap" src="images/fishHavenPagePics/fishHavenMap.jpg" alt="fishHaven map">
             </picture>
 
             <div class="contactInfo">
@@ -140,7 +140,7 @@
 
                 <img class="pointer" src="images/icons/pin.png" alt="map pointer">
                 123 Main St<br>
-                Preston, Idaho 83263<br>
+                Fish Haven, Idaho 83263<br>
                 <br>
                 &#9742; 208-555-5555<br>
                 &#9993; idahoweather.us<br>
@@ -167,7 +167,7 @@
     <script src="js/togglemenu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/prestonWeatherapi.js"></script>
+    <script src="js/fishHavenWeatherapi.js"></script>
 </body>
 
 </html>

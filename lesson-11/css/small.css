@@ -293,11 +293,12 @@ footer a {
 
 .prestonWeatherSummary h3 {
     border-bottom: 1px solid white;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding: 10px 0 10px 0;
     letter-spacing: 1pt;
     font-size: 1.25rem;
+    text-align: center;
 }
+
 
 .current {
     grid-area: current;
@@ -416,6 +417,364 @@ footer a {
 }
 
 
+/************************* Soda Springs Page ************************/
+
+.sodaSpringsPageMain {
+    max-width: 960px;
+}
+
+.sodaSpringsPhoto {
+    position: relative;
+    font-size: 1.25rem;
+}
+
+.sodaSpringsPhoto figure {
+    width: 100%;
+    margin: 0;
+}
+
+.sodaSpringsPhoto img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.sodaSpringsWeatherSummary {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(to right, rgb(1, 4, 27), rgba(0, 0, 0, 0));
+    border: 1px solid blue;
+    padding: 10px;
+    box-shadow: 0 0 30px #777;
+    border-radius: 15px;
+    letter-spacing: 1pt;
+    color: white;
+    line-height: 1.25rem;
+    text-shadow: 2px 2px black;
+    max-width: 65%;
+}
+
+.summaryContainer {
+    display: grid;
+    column-gap: 25px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "current currentValue"
+        "temp tempValue"
+        "highTemp highTempValue"
+        "lowTemp lowTempValue"
+        "windChill windChillValue"
+        "humidity humidityValue"
+        "windSpeed windSpeedValue";
+    font-size: .75rem;
+}
+
+.sodaSpringsWeatherSummary h3 {
+    border-bottom: 1px solid white;
+    padding: 10px 0 10px 0;
+    letter-spacing: 1pt;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.current {
+    grid-area: current;
+    text-align: right;
+}
+
+.temp {
+    grid-area: temp;
+    text-align: right;
+}
+
+.highTemp {
+    grid-area: highTemp;
+    text-align: right;
+}
+
+.lowTemp {
+    grid-area: lowTemp;
+    text-align: right;
+}
+
+.windChill {
+    grid-area: windChill;
+    text-align: right;
+}
+
+.humidity {
+    grid-area: humidity;
+    text-align: right;
+}
+
+.windSpeed {
+    grid-area: windSpeed;
+    text-align: right;
+}
+
+.currentValue,
+.tempValue,
+.highTempValue,
+.lowTempValue,
+.windChillValue,
+.humidityValue,
+.windSpeedValue {
+    color: yellow;
+}
+
+.siteCreditSmall {
+    font-size: .75rem;
+}
+
+.forecastSection {
+    display: none;
+}
+
+.contentBox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #C2948A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contentInfo,
+.contentPic {
+    max-width: 100%;
+    flex: 1 0 15em;
+    font-family: 'Kalam', cursive;
+    margin-top: 20px;
+}
+
+.contentTitle {
+    font-size: 1.5em;
+}
+
+.contentPic {
+    padding-top: 10px;
+}
+
+.contactBox {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(211, 204, 185);
+}
+
+.contactInfo {
+    max-width: 95%;
+    padding: 10px;
+}
+
+.contactTitle {
+    font-size: 1.25rem;
+}
+
+.boxHeading {
+    display: none;
+}
+
+.author {
+    font-style: italic;
+    font-size: 1rem;
+    text-indent: 1rem;
+}
+
+.sodaSpringsMap {
+    display: none;
+}
+
+.icons img {
+    padding-right: 5px;
+}
+
+
+/************************* Fish Haven Page ************************/
+
+.fishHavenPageMain {
+    max-width: 960px;
+}
+
+.fishHavenPhoto {
+    position: relative;
+    font-size: 1.25rem;
+}
+
+.fishHavenPhoto figure {
+    width: 100%;
+    margin: 0;
+}
+
+.fishHavenPhoto img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.fishHavenWeatherSummary {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(to right, rgb(1, 4, 27), rgba(0, 0, 0, 0));
+    border: 1px solid blue;
+    padding: 10px;
+    box-shadow: 0 0 30px #777;
+    border-radius: 15px;
+    letter-spacing: 1pt;
+    color: white;
+    line-height: 1.25rem;
+    text-shadow: 2px 2px black;
+    max-width: 65%;
+}
+
+.summaryContainer {
+    display: grid;
+    column-gap: 25px;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "current currentValue"
+        "temp tempValue"
+        "highTemp highTempValue"
+        "lowTemp lowTempValue"
+        "windChill windChillValue"
+        "humidity humidityValue"
+        "windSpeed windSpeedValue";
+    font-size: .75rem;
+}
+
+.fishHavenWeatherSummary h3 {
+    border-bottom: 1px solid white;
+    padding: 10px 0 10px 0;
+    letter-spacing: 1pt;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.current {
+    grid-area: current;
+    text-align: right;
+}
+
+.temp {
+    grid-area: temp;
+    text-align: right;
+}
+
+.highTemp {
+    grid-area: highTemp;
+    text-align: right;
+}
+
+.lowTemp {
+    grid-area: lowTemp;
+    text-align: right;
+}
+
+.windChill {
+    grid-area: windChill;
+    text-align: right;
+}
+
+.humidity {
+    grid-area: humidity;
+    text-align: right;
+}
+
+.windSpeed {
+    grid-area: windSpeed;
+    text-align: right;
+}
+
+.currentValue,
+.tempValue,
+.highTempValue,
+.lowTempValue,
+.windChillValue,
+.humidityValue,
+.windSpeedValue {
+    color: yellow;
+}
+
+.siteCreditSmall {
+    font-size: .75rem;
+}
+
+.forecastSection {
+    display: none;
+}
+
+.contentBox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #C2948A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contentInfo,
+.contentPic {
+    max-width: 100%;
+    flex: 1 0 15em;
+    font-family: 'Kalam', cursive;
+    margin-top: 20px;
+}
+
+.contentTitle {
+    font-size: 1.5em;
+}
+
+.contentPic {
+    padding-top: 10px;
+}
+
+.contactBox {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(211, 204, 185);
+}
+
+.contactInfo {
+    max-width: 95%;
+    padding: 10px;
+}
+
+.contactTitle {
+    font-size: 1.25rem;
+}
+
+.boxHeading {
+    display: none;
+}
+
+.author {
+    font-style: italic;
+    font-size: 1rem;
+    text-indent: 1rem;
+}
+
+.fishHavenMap {
+    display: none;
+}
+
+.icons img {
+    padding-right: 5px;
+}
+
+
 /********************** Storm Center Page **********************/
 
 .stormPageMain {
@@ -429,8 +788,8 @@ footer a {
     border-radius: 10px;
     padding: .5rem 2%;
     padding-bottom: 2rem;
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+
 }
 
 .stormPageMain form legend {
@@ -460,10 +819,14 @@ footer a {
     border-radius: 4px;
     padding: .75rem;
     color: #555;
-    width: 100%;
+    width: 90%;
     max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+}
+
+.stormPageMain form label.top .stormRegion { 
+    width: 100%;
 }
 
 .stormPageMain form label.top select {
