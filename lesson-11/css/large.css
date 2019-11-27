@@ -120,50 +120,12 @@
 		max-width: 1000px;
 	}
 
-	/************************* Soda Springs Page ************************/
-
-	.sodaSpringsWeatherSummary {
-		line-height: 1.75rem;
-	}
-
-	.sodaSpringsWeatherSummary {
-		max-width: 70%;
-	}
-
-	.summaryContainer {
-		font-size: 1.5rem;
-	}
-
-	.contentBox {
-		background-color: #C2948A;
-		max-width: 1000px;
-	}
-
-	/************************* Fish Haven Page ************************/
-
-	.fishHavenWeatherSummary {
-		line-height: 1.75rem;
-	}
-
-	.fishHavenWeatherSummary {
-		max-width: 70%;
-	}
-
-	.summaryContainer {
-		font-size: 1.5rem;
-	}
-
-	.contentBox {
-		background-color: #C2948A;
-		max-width: 1000px;
-	}
-
 
 	/********************** Storm Center Page **********************/
 
 	.stormPageMain form fieldset {
 		width: 18%;
-	
+
 
 	}
 
