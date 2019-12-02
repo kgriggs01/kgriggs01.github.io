@@ -91,6 +91,7 @@
            list.appendChild(thingsToDo)
            document.querySelector("div.townEvents").appendChild(list);
            //console.log(thingsToDo);
+           
          }
        }
      }
