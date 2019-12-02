@@ -101,13 +101,13 @@
 	}
 
 
-	/************************* Preston Page ************************/
+	/************************* Preston, Soda Springs, Fish Haven Pages ************************/
 
-	.prestonWeatherSummary {
+	.weatherSummary {
 		line-height: 1.75rem;
 	}
 
-	.prestonWeatherSummary {
+	.weatherSummary {
 		max-width: 70%;
 	}
 
@@ -116,7 +116,6 @@
 	}
 
 	.contentBox {
-		background-color: #C2948A;
 		max-width: 1000px;
 	}
 

@@ -5,12 +5,12 @@
    .then((jsObject) => {
      //console.log(jsObject);
 
-     document.getElementById('current-weather-condition').textContent = jsObject.weather[0].description;
-     document.getElementById('current-temp').textContent = jsObject.main.temp.toFixed(0);
-     document.getElementById('current-wind-speed').textContent = jsObject.wind.speed.toFixed(1);
-     document.getElementById('current-humidity').textContent = jsObject.main.humidity;
-     document.getElementById('high-temp').textContent = jsObject.main.temp_max.toFixed(0);
-     document.getElementById('low-temp').textContent = jsObject.main.temp_min.toFixed(0);
+     document.getElementById("current-weather-condition").textContent = jsObject.weather[0].description;
+     document.getElementById("current-temp").textContent = jsObject.main.temp.toFixed(0);
+     document.getElementById("current-wind-speed").textContent = jsObject.wind.speed.toFixed(1);
+     document.getElementById("current-humidity").textContent = jsObject.main.humidity;
+     document.getElementById("high-temp").textContent = jsObject.main.temp_max.toFixed(0);
+     document.getElementById("low-temp").textContent = jsObject.main.temp_min.toFixed(0);
 
      function wind() {
        var tempF = parseFloat(document.getElementById("current-temp").textContent);
@@ -44,31 +44,54 @@
      let day = 0;
      for (let i = 0; i < jsObject.list.length; i++) {
 
-       if (jsObject.list[i].dt_txt.includes('18:00:00')) {
+       if (jsObject.list[i].dt_txt.includes("18:00:00")) {
          //console.log(jsObject.list[i].dt_txt);
          //console.log(jsObject.list[i].main.temp.toFixed(0));
          //console.log(jsObject.list[i].weather[0].icon);
 
          let dayInfo = new Date(jsObject.list[i].dt_txt);
          let weekday = {
-           weekday: 'short'
+           weekday: "short"
          };
-         let forecastDayOfWeek = dayInfo.toLocaleDateString('en-US', weekday);
-         let dayOfWeek = 'forecastWeekdayValue' + day;
+         let forecastDayOfWeek = dayInfo.toLocaleDateString("en-US", weekday);
+         let dayOfWeek = "forecastWeekdayValue" + day;
          document.getElementById(dayOfWeek).textContent = forecastDayOfWeek;
 
-         let forecastIconInfo = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
+         let forecastIconInfo = "https://openweathermap.org/img/w/" + jsObject.list[i].weather[0].icon + ".png";
          let iconDescription = jsObject.list[i].weather[0].description;
-         let icon = 'forecastIconValue' + day;
-         document.getElementById(icon).setAttribute('src', forecastIconInfo);
-         document.getElementById(icon).setAttribute('alt', iconDescription);
+         let icon = "forecastIconValue" + day;
+         document.getElementById(icon).setAttribute("src", forecastIconInfo);
+         document.getElementById(icon).setAttribute("alt", iconDescription);
 
          let forecastTempValue = jsObject.list[i].main.temp.toFixed(0);
-         let tempInfo = 'forecastTempValue' + day;
-         document.getElementById(tempInfo).textContent = forecastTempValue + ' °F';
+         let tempInfo = "forecastTempValue" + day;
+         document.getElementById(tempInfo).textContent = forecastTempValue + " °F";
 
          day = day + 1;
 
+       }
+     }
+   });
+
+
+ const townDataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+ fetch(townDataURL)
+   .then(function (response) {
+     return response.json();
+   })
+   .then(function (jsonObject) {
+     const towns = jsonObject.towns;
+     for (let i = 0; i < towns.length; i++) {
+       if (towns[i].name == "Fish Haven") {
+         let list = document.createElement("ul");
+         for (let j = 0; j < towns[i].events.length; j++) {
+           let thingsToDo = document.createElement("li");
+           thingsToDo.textContent = towns[i].events[j];
+           list.appendChild(thingsToDo)
+           document.querySelector("div.townEvents").appendChild(list);
+           //console.log(thingsToDo);
+         }
        }
      }
    });

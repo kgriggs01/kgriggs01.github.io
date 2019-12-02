@@ -32,21 +32,21 @@
     <nav>
         <ul class="navigation">
             <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
+            <li><a href="https://kgriggs01.github.io/lesson-11/index.html">Home</a></li>
+            <li><a href="https://kgriggs01.github.io/lesson-11/preston.html">Preston</a></li>
             <li class="activeLi"><a href="#" class="active">&#9925; Soda Springs &#9925;</a></li>
-            <li><a href="fishhaven.html">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="https://kgriggs01.github.io/lesson-11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="https://kgriggs01.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://kgriggs01.github.io/lesson-11/gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
-    <main class="sodaSpringsPageMain">
+    <main class="townPageMain">
         <section>
             <h2>Soda Springs</h2>
         </section>
 
-        <section class="sodaSpringsPhoto">
+        <section class="townPhoto">
 
             <figure>
                 <img src="images/sodaSpringsPagePics/sodaSprings-1100.jpg" alt="Soda Springs pic" sizes="50vw" srcset="images/sodaSpringsPagePics/sodaSprings-200.jpg 200w, 
@@ -55,7 +55,7 @@
                         images/sodaSpringsPagePics/sodaSprings-1100.jpg 1100w">
             </figure>
 
-            <div class="sodaSpringsWeatherSummary">
+            <div class="weatherSummary">
                 <h3>Weather Summary</h3>
                 <div class="summaryContainer">
                     <div class="current">Currently:</div>
@@ -74,9 +74,6 @@
                     <div class="humidityValue"><span id="current-humidity"></span> %</div>
                     <div class="windSpeedValue"><span id="current-wind-speed"></span> mph</div>
                 </div>
-            </div>
-            <div class="siteCreditSmall">
-                <p>Weather data courtesy of OpenWeatherMap.org</p>
             </div>
         </section>
 
@@ -102,62 +99,51 @@
                 <div class="forecastTemp"><span id="forecastTempValue3"></span></div>
                 <div class="forecastTemp"><span id="forecastTempValue4"></span></div>
             </div>
-
-            <p class="siteCredit">Weather data courtesy of OpenWeatherMap.org</p>
         </section>
 
-
-
-
-        <section class="sodaSpringsEvents">
-            <ul>
-                <li class="event"><span id="townEvents0"></span></li>
-                <li class="event"><span id="townEvents1"></span></li>
-                <li class="event"><span id="townEvents2"></span></li>
-
-            </ul>
+        <section class="townEventsSection">
+            <div class="townEvents">
+            </div>
         </section>
-
-
-
-
 
         <section class="contentBox">
             <h4 class="boxHeading">placeholder</h4>
             <div class="contentInfo">
 
                 <article class="article">
-                    <h4 class="contentTitle">Founders Day Fresco</h4>
-                    <h5 class="author">by Janica Juarez</h5><br>
-                    <p>Lorem ipsum dolor sit amet, duo diam zril expetendis at.
-                        Hinc tritani te ius, eum in tota causae alienum, eu eum augue conceptam adversarium.
-                        Partem laboramus in vel, per harum probatus interesset ei. Eam vocibus appareat ad.<br>
-                        Cu paulo facilis mel. Cetero persius at mel, duo no habeo elitr assentior. Ex novum virtute
-                        pro.
-                        Ea eos facer quando alienum, unum mentitum delicata ex has.
+                    <h4 class="contentTitle">Geyser & Fireworks Festival</h4>
+                    <h5 class="author">by Keith Griggs</h5><br>
+                    <p>Come join us for the Soda Springs annual New Year's Eve Geyser & Fireworks festival.<br>
+                        <br>
+                        The event kicks off at 11pm with free hot chocolate and cookies.
+                        A spectacular fireworks show will begin at 11:45pm with the finale happening at the same time
+                        the geyser erupts at the top of the hour – and ringing in the new year!<br>
+                        <br>
+                        It’s a show you won’t want to miss!
                     </p>
                 </article>
             </div>
 
             <picture class="contentPic">
-                <img class="contentPic" src="images/sodaSpringsPagePics/picnic-pic.jpg" alt="couple on picnic">
+                <img class="contentPic" src="images/sodaSpringsPagePics/fireworks.jpg"
+                    alt="fireworks exploding in the sky">
             </picture>
         </section>
 
         <section class="contactBox">
 
-            <picture class="sodaSpringsMap">
-                <img class="sodaSpringsMap" src="images/sodaSpringsPagePics/sodaSpringsMap.jpg" alt="Soda Springs map">
+            <picture class="townMap">
+                <img class="townMap" src="images/sodaSpringsPagePics/sodaSpringsMap.jpg" alt="Soda Springs map">
             </picture>
 
             <div class="contactInfo">
                 <h4 class="contactTitle">SE Idaho Weather</h4>
 
                 <img class="pointer" src="images/icons/pin.png" alt="map pointer">
-                123 Main St<br>
+                1295 Main St<br>
                 Soda Springs, Idaho 83276<br>
                 <br>
-                &#9742; 208-555-5555<br>
+                &#9742; 208-547-5555<br>
                 &#9993; idahoweather.us<br>
                 <br>
 
@@ -172,6 +158,10 @@
     </main>
 
     <footer>
+        <div class="siteCredit">
+            <p>Weather data courtesy of OpenWeatherMap.org</p>
+        </div>
+
         <div> &COPY; <span id="copyright_year"></span> | SE Idaho Weather | Keith A. Griggs | <a
                 href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap.org </a></div>
         <a> <span id="weekday"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span></a>
@@ -182,7 +172,7 @@
     <script src="js/togglemenu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/sodaSpringsWeatherapi.js"></script>
+    <script src="js/sodaspringsweatherapi.js"></script>
 </body>
 
 </html>

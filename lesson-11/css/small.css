@@ -143,6 +143,11 @@ footer a {
     color: white;
 }
 
+.siteCredit {
+    font-size: .65rem;
+    padding: 10px 0 10px 0;
+}
+
 
 /************************* Home Page *************************/
 
@@ -237,29 +242,29 @@ footer a {
 }
 
 
-/************************* Preston Page ************************/
+/************************* Preston, Soda Springs, Fish Haven Pages ************************/
 
-.prestonPageMain {
+.townPageMain {
     max-width: 960px;
 }
 
-.prestonPhoto {
+.townPhoto {
     position: relative;
     font-size: 1.25rem;
 }
 
-.prestonPhoto figure {
+.townPhoto figure {
     width: 100%;
     margin: 0;
 }
 
-.prestonPhoto img {
+.townPhoto img {
     position: relative;
     width: 100%;
     height: 250px;
 }
 
-.prestonWeatherSummary {
+.weatherSummary {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -291,14 +296,13 @@ footer a {
     font-size: .75rem;
 }
 
-.prestonWeatherSummary h3 {
+.weatherSummary h3 {
     border-bottom: 1px solid white;
     padding: 10px 0 10px 0;
     letter-spacing: 1pt;
     font-size: 1.25rem;
     text-align: center;
 }
-
 
 .current {
     grid-area: current;
@@ -345,12 +349,18 @@ footer a {
     color: yellow;
 }
 
-.siteCreditSmall {
-    font-size: .75rem;
+.townEventsSection {
+    margin-top: 10px;
+    font-size: 1.15rem;
+    line-height: 2rem;
+    padding: 10px 0 10px 0;
+    color: black;
+    background-color: #7EA8BE;
 }
 
 .forecastSection {
     display: none;
+    margin-top: 20px;
 }
 
 .contentBox {
@@ -360,8 +370,8 @@ footer a {
     align-items: center;
     padding: 1rem;
     background-color: #C2948A;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contentInfo,
@@ -376,16 +386,13 @@ footer a {
     font-size: 1.5em;
 }
 
-.contentPic {
-    padding-top: 10px;
-}
-
 .contactBox {
     display: flex;
     flex-flow: column-reverse;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-bottom: 20px;
     background-color: rgb(211, 204, 185);
 }
 
@@ -408,7 +415,7 @@ footer a {
     text-indent: 1rem;
 }
 
-.prestonMap {
+.townMap {
     display: none;
 }
 

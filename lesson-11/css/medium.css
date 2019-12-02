@@ -52,6 +52,11 @@
 		bottom: 5px;
 	}
 
+	.siteCredit {
+		font-size: .85rem;
+		padding: 10px 0 10px 0;
+	}
+
 
 	/************************* Home Page *************************/
 
@@ -93,14 +98,14 @@
 	}
 
 
-	/************************* Preston Page ************************/
+	/************************* Preston, Soda Springs, Fish Haven Pages ************************/
 
-	.prestonPhoto img {
+	.townPhoto img {
 		padding-bottom: 10px;
 		height: auto;
 	}
 
-	.prestonWeatherSummary {
+	.weatherSummary {
 		max-width: 100%;
 		line-height: 1.5rem;
 	}
@@ -109,13 +114,9 @@
 		font-size: 1.25rem;
 	}
 
-	.prestonWeatherSummary h3 {
+	.weatherSummary h3 {
 		padding-bottom: 7px;
 		font-size: 2rem;
-	}
-
-	.siteCreditSmall {
-		display: none;
 	}
 
 	.forecastSection {
@@ -178,6 +179,22 @@
 		font-family: 'Buenard', serif;
 	}
 
+	.townEventsSection {
+		font-size: 1.5rem;
+		line-height: 3rem;
+		padding: 10px 0 10px 10px;
+	}
+
+	.contentPic {
+		display: block;
+		float: right;
+		padding: 0 10px 10px 0;
+	}
+
+	.contentInfo {
+		padding: 0 10px 10px 10px;
+	}
+
 	.contactBox {
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -186,16 +203,7 @@
 		align-items: center;
 	}
 
-	.contentPic {
-		margin-top: 10px;
-		float: right;
-	}
-
-	.contentInfo {
-		margin-top: 10px;
-	}
-
-	.prestonMap {
+	.townMap {
 		display: flex;
 		max-width: 300px;
 		height: auto;

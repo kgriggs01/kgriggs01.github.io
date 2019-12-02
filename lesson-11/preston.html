@@ -19,8 +19,8 @@
 
     <header>
         <picture>
-                <a href="https://kgriggs01.github.io/lesson-11/index.html">
-            <img class="logo" src="images/icons/weather-image.png" alt="weather logo"></a>
+            <a href="https://kgriggs01.github.io/lesson-11/index.html">
+                <img class="logo" src="images/icons/weather-image.png" alt="weather logo"></a>
         </picture>
 
         <section class="headings">
@@ -34,19 +34,19 @@
             <li class="menu"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="https://kgriggs01.github.io/lesson-11/index.html">Home</a></li>
             <li class="activeLi"><a href="#" class="active">&#9925; Preston &#9925;</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://kgriggs01.github.io/lesson-11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="https://kgriggs01.github.io/lesson-11/fishhaven.html">Fish Haven</a></li>
             <li><a href="https://kgriggs01.github.io/lesson-11/stormcenter.html">Storm Center</a></li>
             <li><a href="https://kgriggs01.github.io/lesson-11/gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
-    <main class="prestonPageMain">
+    <main class="townPageMain">
         <section>
             <h2>Preston Idaho</h2>
         </section>
 
-        <section class="prestonPhoto">
+        <section class="townPhoto">
 
             <figure>
                 <img src="images/prestonPagePics/preston-1100.jpg" alt="Preston pic" sizes="50vw" srcset="images/prestonPagePics/preston-200.jpg 200w, 
@@ -55,7 +55,7 @@
                         images/prestonPagePics/preston-1100.jpg 1100w">
             </figure>
 
-            <div class="prestonWeatherSummary">
+            <div class="weatherSummary">
                 <h3>Weather Summary</h3>
                 <div class="summaryContainer">
                     <div class="current">Currently:</div>
@@ -74,9 +74,6 @@
                     <div class="humidityValue"><span id="current-humidity"></span> %</div>
                     <div class="windSpeedValue"><span id="current-wind-speed"></span> mph</div>
                 </div>
-            </div>
-            <div class="siteCreditSmall">
-                <p>Weather data courtesy of OpenWeatherMap.org</p>
             </div>
         </section>
 
@@ -104,8 +101,12 @@
                 <div class="forecastTemp"><span id="forecastTempValue3"></span></div>
                 <div class="forecastTemp"><span id="forecastTempValue4"></span></div>
             </div>
+        </section>
 
-            <p class="siteCredit">Weather data courtesy of OpenWeatherMap.org</p>
+
+        <section class="townEventsSection">
+            <div class="townEvents">
+            </div>
         </section>
 
         <section class="contentBox">
@@ -113,37 +114,45 @@
             <div class="contentInfo">
 
                 <article class="article">
-                    <h4 class="contentTitle">Founders Day Fresco</h4>
-                    <h5 class="author">by Janica Juarez</h5><br>
-                    <p>Lorem ipsum dolor sit amet, duo diam zril expetendis at.
-                        Hinc tritani te ius, eum in tota causae alienum, eu eum augue conceptam adversarium.
-                        Partem laboramus in vel, per harum probatus interesset ei. Eam vocibus appareat ad.<br>
-                        Cu paulo facilis mel. Cetero persius at mel, duo no habeo elitr assentior. Ex novum virtute
-                        pro.
-                        Ea eos facer quando alienum, unum mentitum delicata ex has.
+                    <h4 class="contentTitle">Winter is finally here...</h4>
+                    <h5 class="author">by Keith Griggs</h5><br>
+                    <p>So, that means it's time for exciting outdoor winter recreation.
+                        There are numerous winter activities to do near Preston Idaho including
+                        snow machining, down hill and cross-country skiing, snowboarding, ice skating, and ice
+                        fishing.<br>
+                        <br>
+                        Preston isn't just fun in the winter becasue there is so much to do here year-round.
+                        When snow melts and the ground thaws, there are many ATV & mountain bike trails, camp & RV
+                        sites, hot springs, rodeos, mountains to
+                        climb, and lakes for swimming and fishing.<br>
+                        <br>
+                        Preston is home to year-round outdoor adventure.
+                        If you are an outdoor enthusiest, then no matter the time of year,
+                        there is activity for you to enjoy here with us in Preston.
                     </p>
+
                 </article>
             </div>
 
             <picture class="contentPic">
-                <img class="contentPic" src="images/prestonPagePics/picnic-pic.jpg" alt="couple on picnic">
+                <img class="contentPic" src="images/prestonPagePics/snowmobile.jpg" alt="snowmobile rider">
             </picture>
         </section>
 
         <section class="contactBox">
 
-            <picture class="prestonMap">
-                <img class="prestonMap" src="images/prestonPagePics/PrestonMap.jpg" alt="preston map">
+            <picture class="townMap">
+                <img class="townMap" src="images/prestonPagePics/PrestonMap.jpg" alt="preston map">
             </picture>
 
             <div class="contactInfo">
                 <h4 class="contactTitle">SE Idaho Weather</h4>
 
                 <img class="pointer" src="images/icons/pin.png" alt="map pointer">
-                123 Main St<br>
+                300 E Rocky Point Dr<br>
                 Preston, Idaho 83263<br>
                 <br>
-                &#9742; 208-555-5555<br>
+                &#9742; 208-852-5555<br>
                 &#9993; idahoweather.us<br>
                 <br>
 
@@ -158,6 +167,10 @@
     </main>
 
     <footer>
+        <div class="siteCredit">
+            <p>Weather data courtesy of OpenWeatherMap.org</p>
+        </div>
+
         <div> &COPY; <span id="copyright_year"></span> | SE Idaho Weather | Keith A. Griggs | <a
                 href="https://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap.org </a></div>
         <a> <span id="weekday"></span>, <span id="date"></span> <span id="month"></span> <span id="year"></span></a>
@@ -168,7 +181,7 @@
     <script src="js/togglemenu.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/prestonWeatherapi.js"></script>
+    <script src="js/prestonweatherapi.js"></script>
 </body>
 
 </html>
