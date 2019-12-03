@@ -72,7 +72,7 @@
      }
    });
 
-
+/*
  const townDataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
  fetch(townDataURL)
@@ -90,8 +90,8 @@
            list.appendChild(thingsToDo)
            document.querySelector("div.townEvents").appendChild(list);
            //console.log(thingsToDo);
-           
+
          }
        }
      }
-   });
+   });*/
