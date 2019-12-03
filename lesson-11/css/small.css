@@ -198,6 +198,40 @@ footer a {
     padding-bottom: 20px;
 }
 
+.homePageMain .article {
+    max-width: 960px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #C2948A;
+    padding: 5px;
+}
+
+.homePageMain .contentPic {
+    width: 100%;
+    height: auto;
+    flex: 1 0 15em;
+    font-family: 'Kalam', cursive;
+    margin: 0 0 0 0;
+    box-shadow: none;
+}
+
+.homePageMain .contentTitle {
+    color: black;
+    padding: 0 0 0 0;
+    font-size: 1.5rem;
+}
+
+.homePageMain .author {
+    font-style: italic;
+    font-size: 1rem;
+    text-indent: 1rem;
+}
+
+.homePageMain .mainPagePar {
+    font-size: 1rem;
+}
+
 .traffic {
     display: block;
     text-align: center;
@@ -359,14 +393,14 @@ footer a {
 }
 
 .townEventsSection h3 {
-text-decoration: underline;
-padding: 20px 0 20px 0;
-font-size: 2rem;
-font-family: 'Kalam', cursive;
+    text-decoration: underline;
+    padding: 20px 0 20px 0;
+    font-size: 2rem;
+    font-family: 'Kalam', cursive;
 }
 
 .townEventsSection ul {
-padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .townEventsSection li {
