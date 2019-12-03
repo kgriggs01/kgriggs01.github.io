@@ -353,9 +353,26 @@ footer a {
     margin-top: 10px;
     font-size: 1.15rem;
     line-height: 2rem;
-    padding: 10px 0 10px 0;
     color: black;
     background-color: #7EA8BE;
+    text-align: center;
+}
+
+.townEventsSection h3 {
+text-decoration: underline;
+padding: 20px 0 20px 0;
+font-size: 2rem;
+font-family: 'Kalam', cursive;
+}
+
+.townEventsSection ul {
+padding-bottom: 20px;
+}
+
+.townEventsSection li {
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 0 40px 0 0;
 }
 
 .forecastSection {
