@@ -2,7 +2,7 @@
   "towns" : [
   {
     "name": "Logan",
-    "photo": "franklin.jpg",
+    "photo": "logan-temple-pic.jpg",
     "motto": "Where you will grow!",
     "yearFounded": 1788,
     "currentPopulation": 30458,
@@ -15,7 +15,7 @@
   },
   {
     "name": "Portland",
-    "photo": "fishhaven.jpg",
+    "photo": "portland-temple-pic.jpg",
     "motto": "This is Fish Heaven.",
     "yearFounded": 1864,
     "currentPopulation": 501,
@@ -55,7 +55,7 @@
   },
   {
     "name": "San Diego",
-    "photo": "preston.jpg",
+    "photo": "san-diego-temple-pic.jpg",
     "motto": "Home of Napoleon Dynamite.",
     "yearFounded": 1866,
     "currentPopulation": 5204,
@@ -68,7 +68,7 @@
   },
   {
     "name": "Star Valley",
-    "photo": "sodasprings.jpg",
+    "photo": "star-valley-temple-pic.jpg",
     "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
     "yearFounded": 1858,
     "currentPopulation": 2985,

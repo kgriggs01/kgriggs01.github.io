@@ -1,4 +1,4 @@
-const requestURL = "templeinfo.txt";
+const requestURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
 fetch(requestURL)
   .then(function (response) {
