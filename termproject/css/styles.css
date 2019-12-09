@@ -474,7 +474,7 @@ footer {
   background: #acc18a;
   background: linear-gradient(0deg, #acc18a 0%, rgba(242, 251, 224, 0.8547794118) 100%);
   text-align: center;
-  padding: 1rem 2%; }
+  padding: 2rem 2%; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .navlinks:after {
