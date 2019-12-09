@@ -98,18 +98,64 @@ main {
     }
 
     figure img {
-        width: 100%;
+        width: 10%;
     }
 
     figure {
         margin: 0;
-        width: 100%;
+        width: 25%;
     }
 
     figcaption {
         text-align: center;
         font-size: .8rem;
     }
+
+
+/*
+    .contentBox {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: #C2948A;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .boxHeading {
+        display: none;
+    }
+
+
+    .homePageMain .contentPic {
+        width: 100%;
+        height: auto;
+        flex: 1 0 15em;
+        font-family: 'Kalam', cursive;
+        margin: 0 0 0 0;
+        box-shadow: none;
+    }
+
+    .homePageMain .contentTitle {
+        color: black;
+        padding: 0 0 0 0;
+        font-size: 1.5rem;
+    }
+
+    .contentInfo,
+    .contentPic {
+        max-width: 100%;
+        flex: 1 0 15em;
+        font-family: 'Kalam', cursive;
+        margin-top: 20px;
+    }
+
+    .contentTitle {
+        font-size: 1.5em;
+    }
+*/
 }
 
 // end of main
