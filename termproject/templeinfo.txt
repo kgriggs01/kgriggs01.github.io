@@ -1,5 +1,5 @@
 {
-  "towns" : [
+  "temples" : [
   {
     "name": "Logan",
     "photo": "logan-temple-pic.jpg",

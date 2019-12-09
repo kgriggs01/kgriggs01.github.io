@@ -110,52 +110,6 @@ main {
         text-align: center;
         font-size: .8rem;
     }
-
-
-/*
-    .contentBox {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        background-color: #C2948A;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .boxHeading {
-        display: none;
-    }
-
-
-    .homePageMain .contentPic {
-        width: 100%;
-        height: auto;
-        flex: 1 0 15em;
-        font-family: 'Kalam', cursive;
-        margin: 0 0 0 0;
-        box-shadow: none;
-    }
-
-    .homePageMain .contentTitle {
-        color: black;
-        padding: 0 0 0 0;
-        font-size: 1.5rem;
-    }
-
-    .contentInfo,
-    .contentPic {
-        max-width: 100%;
-        flex: 1 0 15em;
-        font-family: 'Kalam', cursive;
-        margin-top: 20px;
-    }
-
-    .contentTitle {
-        font-size: 1.5em;
-    }
-*/
 }
 
 // end of main
@@ -184,6 +138,28 @@ footer {
 /************************ Temple Page ************************/
 
 
+div {
+    background-color: red;
+    font-size: 10rem;
+}
+
+
+main .templeInfo {
+    display: grid;
+    background-color: red;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    row-gap: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 10px 18px rgba(0, 0, 0, 0.40);
+}
+
+main .templeInfo section {
+    background-color: red;
+    border: 1px solid rgb(78, 78, 78);
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
 /************************ Reservations Page ************************/
 
