@@ -21,7 +21,7 @@ fetch(requestURL)
         let templeInfoDiv = document.createElement("div");
         let image = document.createElement("img");
 
-        templeNameHeading.textContent = temples[i].name;
+        templeNameHeading.textContent = temples[i].fullname;
         motto.textContent = temples[i].motto;
         yearFounded.textContent = "Year Founded: " + temples[i].yearFounded;
         population.textContent = "Population: " + temples[i].currentPopulation;
