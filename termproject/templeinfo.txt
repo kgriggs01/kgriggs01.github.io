@@ -1,7 +1,8 @@
 {
   "temples" : [
   {
-    "name": "Logan Utah Temple",
+    "name": "Logan",
+    "fullname": "Logan Utah Temple",
     "photo": "logan-temple-pic.jpg",
     "motto": "Where you will grow!",
     "yearFounded": 1788,
@@ -15,6 +16,7 @@
   },
   {
     "name": "Portland",
+    "fullname": "Portland Utah Temple",
     "photo": "portland-temple-pic.jpg",
     "motto": "This is Fish Heaven.",
     "yearFounded": 1864,
@@ -55,6 +57,7 @@
   },
   {
     "name": "San Diego",
+    "fullname": "San Diego Utah Temple",
     "photo": "san-diego-temple-pic.jpg",
     "motto": "Home of Napoleon Dynamite.",
     "yearFounded": 1866,
@@ -68,6 +71,7 @@
   },
   {
     "name": "Star Valley",
+    "fullname": "Star Valley Utah Temple",
     "photo": "star-valley-temple-pic.jpg",
     "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
     "yearFounded": 1858,
