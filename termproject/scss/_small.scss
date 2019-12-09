@@ -4,20 +4,24 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-/*----------- apply a natural box layout model to all elements --------------*/
+
+/*---------- apply a natural box layout model to all elements -------------*/
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-/* body rules */
+
+/*------------------------------ body ---------------------------*/
 body {
     font-family: $bodyFontFamily;
     font-weight: $regularWeight;
     font-size: 16px;
 }
 
+
+/*----------------------------- header --------------------------*/
 header {
     display: flex;
     justify-content: center;
@@ -50,41 +54,55 @@ header {
     }
 }
 
-//end of header
 
+/*--------------------------- navigation ------------------------*/
 nav {
-    background-color: $navBackgroundColor;
+
     font-family: $navFontFamily;
+    list-style-type: none;
+    text-align: center;
+    width: 30%;
+    margin: $gutter;
+    font-size: 1rem;
+
+    .menu {
+        border: none;
+        font-size: 1rem;
+
+        font-size: 2rem;
+    }
 
     ul {
         margin: 0;
         padding: 0;
     }
 
-    li {
-        list-style-type: none;
+    li:first-child {
+        display: block;
     }
 
-    li.active {
-        background-color: $navliColor;
+    li {
+        display: none;
     }
+
 
     a {
         display: block;
-        padding: .8rem 0;
+        padding: .8rem 10%;
         //44px min
-        color: $navColor;
-        text-align: center;
+        color: black;
+        text-align: left;
         text-decoration: none;
     }
 
-    a:hover {
-        background-color: $navliColor;
+
+    .responsive li {
+        display: block;
     }
 }
 
-// end of nav
 
+/*----------------------------- main ----------------------------*/
 main {
     display: block;
     padding: 1rem $gutter;
@@ -112,9 +130,8 @@ main {
     }
 }
 
-// end of main
 
-
+/*---------------------------- Footer ---------------------------*/
 footer {
     background: rgb(172, 193, 138);
     background: linear-gradient(0deg, rgba(172, 193, 138, 1) 0%, rgba(242, 251, 224, 0.8547794117647058) 100%);
@@ -123,36 +140,28 @@ footer {
 }
 
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.navlinks:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/************************ Home Page ************************/
+/*------------------------- Home Page ---------------------------*/
 
 
 
-/************************ Temple Page ************************/
+/*------------------------- Temple Page -------------------------*/
+.templesMain {
 
+    div {
+        font-size: 1rem;
+    }
 
-.templesMain div {
-    font-size: 1rem;
-}
+    img {
+        width: 80%;
+        margin: 25px 0 10px 0;
+        box-shadow: -1px 1px 22px 1px rgba(0, 0, 0, 1);
+    }
 
-.templesMain img {
-    width: 80%;
-    margin: 25px 0 10px 0;
-    box-shadow: -1px 1px 22px 1px rgba(0, 0, 0, 1);
-}
+    section {
+        text-align: center;
+    }
 
-.templeInfo section {
-    text-align: center;
-}
-
-/*
+    /*
 .templesMain .templeInfo {
     display: grid;
     grid-template-columns: 1fr;
@@ -169,24 +178,96 @@ footer {
 }
 
 */
-/************************ Reservations Page ************************/
+}
+
+/*----------------------- Reservations Page ---------------------*/
+.nav2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: $heavyWeight;
+}
+
+
+/*------------------------ Services Page ------------------------*/
 
 
 
-/************************ Services Page ************************/
+
+/*----------------------- Contact Us Page -----------------------*/
 
 
 
-/************************ Contact Us Page ************************/
+/*----------------------- References Page -----------------------*/
 
 
 
-/************************ References Page ************************/
+/*----------------------- Reception Page ------------------------*/
 
 
 
-/************************ Reception Page ************************/
+/*---------------------- Missionaries Page ----------------------*/
 
 
 
-/************************ Missionaries Page ************************/
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }

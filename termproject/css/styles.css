@@ -397,18 +397,19 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-/*----------- apply a natural box layout model to all elements --------------*/
+/*---------- apply a natural box layout model to all elements -------------*/
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* body rules */
+/*------------------------------ body ---------------------------*/
 body {
   font-family: "Poly";
   font-weight: 300;
   font-size: 16px; }
 
+/*----------------------------- header --------------------------*/
 header {
   display: flex;
   justify-content: center;
@@ -433,25 +434,35 @@ header {
     width: 75px;
     padding: 0 0 0 0; }
 
+/*--------------------------- navigation ------------------------*/
 nav {
-  background-color: #837A75;
-  font-family: "Arima Madurai"; }
+  font-family: "Arima Madurai";
+  list-style-type: none;
+  text-align: center;
+  width: 30%;
+  margin: 2%;
+  font-size: 1rem; }
+  nav .menu {
+    border: none;
+    font-size: 1rem;
+    font-size: 2rem; }
   nav ul {
     margin: 0;
     padding: 0; }
+  nav li:first-child {
+    display: block; }
   nav li {
-    list-style-type: none; }
-  nav li.active {
-    background-color: #605B56; }
+    display: none; }
   nav a {
     display: block;
-    padding: .8rem 0;
-    color: white;
-    text-align: center;
+    padding: .8rem 10%;
+    color: black;
+    text-align: left;
     text-decoration: none; }
-  nav a:hover {
-    background-color: #605B56; }
+  nav .responsive li {
+    display: block; }
 
+/*----------------------------- main ----------------------------*/
 main {
   display: block;
   padding: 1rem 2%; }
@@ -470,32 +481,17 @@ main {
     text-align: center;
     font-size: .8rem; }
 
+/*---------------------------- Footer ---------------------------*/
 footer {
   background: #acc18a;
   background: linear-gradient(0deg, #acc18a 0%, rgba(242, 251, 224, 0.8547794118) 100%);
   text-align: center;
   padding: 2rem 2%; }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.navlinks:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/************************ Home Page ************************/
-/************************ Temple Page ************************/
-.templesMain div {
-  font-size: 1rem; }
-
-.templesMain img {
-  width: 80%;
-  margin: 25px 0 10px 0;
-  box-shadow: -1px 1px 22px 1px black; }
-
-.templeInfo section {
-  text-align: center; }
-
-/*
+/*------------------------- Home Page ---------------------------*/
+/*------------------------- Temple Page -------------------------*/
+.templesMain {
+    /*
 .templesMain .templeInfo {
     display: grid;
     grid-template-columns: 1fr;
@@ -511,13 +507,93 @@ footer {
     margin-bottom: 10px;
 }
 
-*/
-/************************ Reservations Page ************************/
-/************************ Services Page ************************/
-/************************ Contact Us Page ************************/
-/************************ References Page ************************/
-/************************ Reception Page ************************/
-/************************ Missionaries Page ************************/
+*/ }
+  .templesMain div {
+    font-size: 1rem; }
+  .templesMain img {
+    width: 80%;
+    margin: 25px 0 10px 0;
+    box-shadow: -1px 1px 22px 1px black; }
+  .templesMain section {
+    text-align: center; }
+
+/*----------------------- Reservations Page ---------------------*/
+.nav2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+/*------------------------ Services Page ------------------------*/
+/*----------------------- Contact Us Page -----------------------*/
+/*----------------------- References Page -----------------------*/
+/*----------------------- Reception Page ------------------------*/
+/*---------------------- Missionaries Page ----------------------*/
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */ }
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1; }
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  padding: 10px 15px;
+  border: none; }
+
+.openbtn:hover {
+  background-color: #444; }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  padding: 20px; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px; }
+
+  .sidebar a {
+    font-size: 18px; } }
 @media only screen and (min-width: 560px) {
   nav li {
     width: 25%;
