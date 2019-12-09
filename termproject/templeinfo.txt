@@ -1,7 +1,7 @@
 {
   "temples" : [
   {
-    "name": "Logan",
+    "name": "Logan Utah Temple",
     "photo": "logan-temple-pic.jpg",
     "motto": "Where you will grow!",
     "yearFounded": 1788,
