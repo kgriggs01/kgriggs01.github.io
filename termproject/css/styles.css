@@ -481,7 +481,7 @@ header {
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
   color: white;
   background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
