@@ -421,7 +421,7 @@ header {
   font-family: "Noto Serif"; }
   header h1 {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 2.75rem;
     font-weight: 300;
@@ -481,7 +481,7 @@ header {
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
   color: white;
   background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
@@ -509,52 +509,6 @@ header {
   background-color: #444;
   text-indent: 2rem; }
 
-/*nav {
-
-    font-family: $navFontFamily;
-    list-style-type: none;
-    text-align: center;
-    width: 30%;
-    margin: $gutter;
-    font-size: 1rem;
-
-    .menu {
-        border: none;
-        font-size: 1rem;
-
-        font-size: 2rem;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    li:first-child {
-        display: block;
-    }
-
-    li {
-        display: none;
-    }
-
-
-    a {
-        display: block;
-        padding: .8rem 10%;
-        //44px min
-        color: black;
-        text-align: left;
-        text-decoration: none;
-    }
-
-
-    .responsive li {
-        display: block;
-    }
-}
-
-*/
 /*----------------------------------- Main ----------------------------------*/
 main {
   display: block;
@@ -574,7 +528,8 @@ main {
     width: 100%; }
   main figcaption {
     text-align: center;
-    font-size: .8rem; }
+    font-size: 1rem;
+    padding: 5px 0 0 0; }
 
 /*---------------------------------- Footer ---------------------------------*/
 footer {
@@ -585,35 +540,17 @@ footer {
 
 /*----------------------------------- Home Page -----------------------------*/
 /*---------------------------------- Temple Page ----------------------------*/
-.templesMain {
-    /*
-.templesMain .templeInfo {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-    row-gap: 5px;
-    text-align: center;
-    box-shadow: 2px 2px 10px 18px rgba(0, 0, 0, 0.40);
-}
-
+.templesMain div {
+  font-size: 1rem; }
+.templesMain img {
+  width: 80%;
+  margin: 25px 0 10px 0;
+  box-shadow: -1px 1px 22px 1px black; }
+.templesMain section {
+  text-align: center; }
 .templesMain .templeInfo section {
-    border: 1px solid rgb(78, 78, 78);
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-*/ }
-  .templesMain div {
-    font-size: 1rem; }
-  .templesMain img {
-    width: 80%;
-    margin: 25px 0 10px 0;
-    box-shadow: -1px 1px 22px 1px black; }
-  .templesMain section {
-    text-align: center; }
-  .templesMain .templeInfo section {
-    padding-bottom: 50px;
-    border-bottom: 3px solid black; }
+  padding-bottom: 50px;
+  border-bottom: 3px solid black; }
 
 /*------------------------------ Reservations Page --------------------------*/
 /*------------------------------- Services Page -----------------------------*/
@@ -622,32 +559,24 @@ footer {
 /*----------------------------- Reception Page ------------------------------*/
 /*----------------------------- Missionaries Page ---------------------------*/
 @media only screen and (min-width: 560px) {
-  /* end of media query */
   /*------------------------------------ Body ---------------------------------*/
-  /*
-  main figure {
-      float: right;
-      width: 48%;
-      margin-left: 2%;
-      padding-bottom: .5rem;
-  }
-  
-  
-  
   /*----------------------------------- Header --------------------------------*/
+  header h1 {
+    font-size: 2.5rem; }
+  header h2 {
+    font-size: 1.25rem;
+    padding: 10px 0 10px 0; }
+  header .logo {
+    width: 100px; }
+
   /*----------------------------------- Main ----------------------------------*/
+  main figcaption {
+    font-size: 1.25em;
+    padding: 10px 0 0 0; }
+
   /*---------------------------------- Footer ---------------------------------*/
   /*----------------------------------- Home Page -----------------------------*/
   /*---------------------------------- Temple Page ----------------------------*/
-  /*.sidebar {
-      left: 0px;
-      padding-top: 50px;
-  }
-  
-  .sidebar a {
-      font-size: 1.5rem;
-  }
-  */
   /*--------------------------- Navigation / Side Bar Menu --------------------*/
   /*------------------------------ Reservations Page --------------------------*/
   /*------------------------------- Services Page -----------------------------*/
@@ -657,7 +586,6 @@ footer {
   /*----------------------------- Missionaries Us Page ------------------------*/ }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
-  /* end of media query */
   /*------------------------------------ Body ---------------------------------*/
   /*----------------------------------- Header --------------------------------*/
   header,

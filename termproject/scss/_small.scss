@@ -22,9 +22,6 @@ body {
 
 
 
-
-
-
 /*----------------------------------- Header --------------------------------*/
 header {
     display: flex;
@@ -40,7 +37,7 @@ header {
 
     h1 {
         margin: 0;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: $heavyWeight;
         line-height: 2.75rem;
         font-weight: $regularWeight;
@@ -63,19 +60,27 @@ header {
 
 /*--------------------------- Navigation / Side Bar Menu --------------------*/
 .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: absolute;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  .sidebar a {
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     text-align: left;
@@ -85,25 +90,25 @@ header {
     display: block;
     transition: 0.3s;
     line-height: 2rem;
-  }
-  
-  .sidebar a:hover {
+}
+
+.sidebar a:hover {
     color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
     text-align: center;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn {
-    font-size: 30px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 40px;
     cursor: pointer;
     color: white;
     background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
@@ -111,80 +116,31 @@ header {
     border: none;
     width: 200px;
     text-align: left;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-    padding: 0 15px 0 0;
-  }
-
-   .active {
-    background-color: #444;
-  }
-
-  .listIndent {
-    text-indent: 2rem;
-  }
-
-  .listIndentActive {
-    background-color: #444;
-    text-indent: 2rem;
-  }
-/*nav {
-
-    font-family: $navFontFamily;
-    list-style-type: none;
-    text-align: center;
-    width: 30%;
-    margin: $gutter;
-    font-size: 1rem;
-
-    .menu {
-        border: none;
-        font-size: 1rem;
-
-        font-size: 2rem;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    li:first-child {
-        display: block;
-    }
-
-    li {
-        display: none;
-    }
-
-
-    a {
-        display: block;
-        padding: .8rem 10%;
-        //44px min
-        color: black;
-        text-align: left;
-        text-decoration: none;
-    }
-
-
-    .responsive li {
-        display: block;
-    }
 }
 
-*/
+.openbtn:hover {
+    background-color: #444;
+}
 
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 0 15px 0 0;
+}
 
+.active {
+    background-color: #444;
+}
 
+.listIndent {
+    text-indent: 2rem;
+}
 
+.listIndentActive {
+    background-color: #444;
+    text-indent: 2rem;
+}
 
 
 /*----------------------------------- Main ----------------------------------*/
@@ -213,10 +169,10 @@ main {
 
     figcaption {
         text-align: center;
-        font-size: .8rem;
+        font-size: 1rem;
+        padding: 5px 0 0 0;
     }
 }
-
 
 
 /*---------------------------------- Footer ---------------------------------*/
@@ -226,7 +182,6 @@ footer {
     text-align: center;
     padding: 2rem $gutter;
 }
-
 
 
 /*----------------------------------- Home Page -----------------------------*/
@@ -255,23 +210,6 @@ footer {
         border-bottom: 3px solid black;
     }
 
-    /*
-.templesMain .templeInfo {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-    row-gap: 5px;
-    text-align: center;
-    box-shadow: 2px 2px 10px 18px rgba(0, 0, 0, 0.40);
-}
-
-.templesMain .templeInfo section {
-    border: 1px solid rgb(78, 78, 78);
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-*/
 }
 
 /*------------------------------ Reservations Page --------------------------*/
@@ -295,6 +233,3 @@ footer {
 
 
 /*----------------------------- Missionaries Page ---------------------------*/
-  
-
- 
