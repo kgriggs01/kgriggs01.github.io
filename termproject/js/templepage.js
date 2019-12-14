@@ -19,6 +19,7 @@ fetch(requestURL)
         let population = document.createElement("p");
         let annualRainfall = document.createElement("p");
         let templeInfoDiv = document.createElement("div");
+        let templeName = document.createElement("h3");
         let image = document.createElement("img");
 
         templeNameHeading.textContent = temples[i].fullname;
@@ -29,14 +30,15 @@ fetch(requestURL)
         image.setAttribute("src", "./images/" + temples[i].photo);
         image.setAttribute("alt", temples[i].photo);
 
-        templeInfoDiv.appendChild(templeNameHeading);
+        templeName.appendChild(templeNameHeading);
         templeInfoDiv.appendChild(motto);
         templeInfoDiv.appendChild(yearFounded);
         templeInfoDiv.appendChild(population);
         templeInfoDiv.appendChild(annualRainfall);
-        card.appendChild(templeInfoDiv);
+        card.appendChild(templeName);
         card.appendChild(image);
-
+        card.appendChild(templeInfoDiv);
+   
         document.querySelector("div.templeInfo").appendChild(card);
       }
     }

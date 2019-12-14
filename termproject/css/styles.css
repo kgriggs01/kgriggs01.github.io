@@ -389,8 +389,7 @@ template {
 [hidden] {
   display: none; }
 
-/* Background Colors */
-/* Font Colors */
+/* Colors */
 /* Fonts */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
@@ -566,12 +565,13 @@ main {
     background-color: #DAFEB7;
     font-weight: 700;
     text-align: center;
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 20px 0;
+    border-bottom: 3px solid black; }
   main figure img {
-    width: 10%; }
+    width: 100%; }
   main figure {
     margin: 0;
-    width: 25%; }
+    width: 100%; }
   main figcaption {
     text-align: center;
     font-size: .8rem; }
@@ -611,6 +611,9 @@ footer {
     box-shadow: -1px 1px 22px 1px black; }
   .templesMain section {
     text-align: center; }
+  .templesMain .templeInfo section {
+    padding-bottom: 50px;
+    border-bottom: 3px solid black; }
 
 /*------------------------------ Reservations Page --------------------------*/
 /*------------------------------- Services Page -----------------------------*/
@@ -619,6 +622,7 @@ footer {
 /*----------------------------- Reception Page ------------------------------*/
 /*----------------------------- Missionaries Page ---------------------------*/
 @media only screen and (min-width: 560px) {
+  /* end of media query */
   /*------------------------------------ Body ---------------------------------*/
   /*
   main figure {
@@ -653,6 +657,7 @@ footer {
   /*----------------------------- Missionaries Us Page ------------------------*/ }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
+  /* end of media query */
   /*------------------------------------ Body ---------------------------------*/
   /*----------------------------------- Header --------------------------------*/
   header,
@@ -664,9 +669,9 @@ footer {
   main {
     max-width: 1200px;
     margin: auto; }
-
-  main figure {
-    width: 31%; }
+    main figure {
+      width: 100%;
+      margin: 0 auto; }
 
   /*--------------------------- Navigation / Side Bar Menu --------------------*/
   /*----------------------------------- Home Page -----------------------------*/
