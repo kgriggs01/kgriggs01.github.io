@@ -88,27 +88,24 @@ fetch(portlandForecastURL)
     }
   });
 
+const portlandServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
- const portlandServicesURL =  "https://kgriggs01.github.io/termproject/templeinfo.txt";
-
- fetch(portlandServicesURL)
-   .then(function (response) {
-     return response.json();
-   })
-   .then(function (jsonObject) {
-     const services = jsonObject.services;
-     for (let i = 0; i < services.length; i++) {
-       if (services[i].name == "Portland") {
-         let list = document.createElement("ul");
-         for (let j = 0; j < services[i].services.length; j++) {
-           let templeServices = document.createElement("li");
-           templeServices.textContent = services[i].services[j];
-           list.appendChild(templeServices)
-           document.querySelector("div.portlandServices").appendChild(list);
-           //console.log(templeServices);
-
-         }
-       }
-     }
-   });
-
+fetch(portlandServicesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Portland") {
+        let list = document.createElement("ul");
+        for (let j = 0; j < temples[i].services.length; j++) {
+          let templesServices = document.createElement("li");
+          templesServices.textContent = temples[i].services[j];
+          list.appendChild(templesServices)
+          document.querySelector("div.portlandServices").appendChild(list);
+          //console.log(templesServices);
+        }
+      }
+    }
+  });

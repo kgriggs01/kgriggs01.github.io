@@ -9,12 +9,11 @@
     "country": "United States",
     "telephone": "(1) 435-752-3611",
     "email": "loganutahtemple.org",
-
-
     "services" : [
-      "March 4: March to the Drum of Donuts",
-      "September 5 - 11: Founder Days",
-      "December 1 - 26: Christmas in the Heart"
+      "Clothing rental available",
+      "Cafeteria available",
+      "No patron housing available",
+      "No distribution center nearby"
     ]
   },
   {
@@ -26,13 +25,11 @@
     "country": "United States",
     "telephone": "(1) 503-639-7066",
     "email": "portlandoregontemple.org",
-
-  
     "services" : [
-      "April 1: How Big Was That Fish Day",
-      "May 15-30: Rush the Creek Days",
-      "July 24: Bear Lake Blunder Run",
-      "December 12: Light the Tree"
+      "Clothing rental available",
+      "Cafeteria available",
+      "No patron housing available",
+      "Distribution center nearby"
     ]
   },
   {
@@ -44,12 +41,11 @@
     "country": "United States",
     "telephone": "(1) 858-622-0991",
     "email": "sandiegocaliforniatemple.org",
-
-
     "services" : [
-      "March 29: Work Creek Revival",
-      "July 8-12: Napoleon Dynamite Festival",
-      "November 2-4: Freedom Days"
+      "Clothing rental available",
+      "Cafeteria available",
+      "No patron housing available",
+      "Distribution center nearby"
     ]
   },
   {
@@ -61,12 +57,11 @@
     "country": "United States",
     "telephone": "(1) 307-886-6820",
     "email": "starvalleywyomingtemple.org",
-
-
     "services" : [
-      "February 29: Geyser Song Day",
-      "May 1-6: Days of May Celebration",
-      "October 15-16: Octoberfest"
+      "No clothing rental available",
+      "No cafeteria available",
+      "No patron housing available",
+      "Distribution center nearby"
     ]
   }
  ]

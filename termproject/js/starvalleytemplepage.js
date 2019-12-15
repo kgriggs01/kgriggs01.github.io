@@ -89,28 +89,24 @@ fetch(starvalleyForecastURL)
     }
   });
 
-/*
- const townDataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+  const starvalleyServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
- fetch(townDataURL)
-   .then(function (response) {
-     return response.json();
-   })
-   .then(function (jsonObject) {
-     const towns = jsonObject.towns;
-     for (let i = 0; i < towns.length; i++) {
-       if (towns[i].name == "Preston") {
-         let list = document.createElement("ul");
-         for (let j = 0; j < towns[i].events.length; j++) {
-           let thingsToDo = document.createElement("li");
-           thingsToDo.textContent = towns[i].events[j];
-           list.appendChild(thingsToDo)
-           document.querySelector("div.townEvents").appendChild(list);
-           //console.log(thingsToDo);
-
-         }
-       }
-     }
-   });
-
-*/
+  fetch(starvalleyServicesURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      const temples = jsonObject.temples;
+      for (let i = 0; i < temples.length; i++) {
+        if (temples[i].name == "Star Valley") {
+          let list = document.createElement("ul");
+          for (let j = 0; j < temples[i].services.length; j++) {
+            let templesServices = document.createElement("li");
+            templesServices.textContent = temples[i].services[j];
+            list.appendChild(templesServices)
+            document.querySelector("div.starvalleyServices").appendChild(list);
+            //console.log(templesServices);
+          }
+        }
+      }
+    });
