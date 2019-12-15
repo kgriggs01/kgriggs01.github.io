@@ -21,16 +21,16 @@
       "17 May 1884 — Dedicated",
       "13 March 1979 — Rededicated"
     ],
-      "closures" : {
+      "closures" : 
         "2019" :
       "6 October 1876 — Announced",
       "18 May 1877 — Groundbreaking"
-        },
-      "closures2" : {
+        ,
+      "closures2" : 
         "2020" :
       "17 May 1884 — Dedicated",
       "13 March 1979 — Rededicated"
-      }
+      
   }
   },
   {
