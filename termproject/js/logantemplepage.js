@@ -58,13 +58,37 @@ fetch(loganServicesURL)
     const temples = jsonObject.temples;
     for (let i = 0; i < temples.length; i++) {
       if (temples[i].name == "Logan") {
-        let list = document.createElement("ul");
+
+        let list1 = document.createElement("ul");
         for (let j = 0; j < temples[i].services.length; j++) {
           let templesServices = document.createElement("li");
           templesServices.textContent = temples[i].services[j];
-          list.appendChild(templesServices)
-          document.querySelector("div.loganServices").appendChild(list);
+          list1.appendChild(templesServices)
+          document.querySelector("div.loganServices").appendChild(list1);
           //console.log(templesServices);
+        }
+      }
+    }
+  });
+
+  const loganMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+
+fetch(loganMilestonesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Logan") {
+
+        let list1 = document.createElement("ul");
+        for (let j = 0; j < temples[i].milestones.length; j++) {
+          let templesMilestones = document.createElement("li");
+          templesMilestones.textContent = temples[i].milestones[j];
+          list1.appendChild(templesMilestones)
+          document.querySelector("div.loganMilestones").appendChild(list1);
+          //console.log(templesMilestones);
         }
       }
     }
