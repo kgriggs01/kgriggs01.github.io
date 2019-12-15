@@ -7,9 +7,9 @@
     "streetAddress": "175 N 300 E",
     "cityStateZip": "Logan UT 84321-4720",
     "country": "United States",
+    "telephone": "(1) 435-752-3611",
 
 
-    "averageRainfall": 21,
     "events" : [
       "March 4: March to the Drum of Donuts",
       "September 5 - 11: Founder Days",
@@ -23,9 +23,9 @@
     "streetAddress": "13600 Kruse Oaks Blvd",
     "cityStateZip": "Lake Oswego OR 97035-8602",
     "country": "United States",
+    "telephone": "(1) 503-639-7066",
 
-
-    "averageRainfall": 14.20,
+  
     "events" : [
       "April 1: How Big Was That Fish Day",
       "May 15-30: Rush the Creek Days",
@@ -40,9 +40,9 @@
     "streetAddress": "7474 Charmant Dr",
     "cityStateZip": "San Diego CA 92122-5000",
     "country": "United States",
+    "telephone": "(1) 858-622-0991",
 
 
-    "averageRainfall": 16.65,
     "events" : [
       "March 29: Work Creek Revival",
       "July 8-12: Napoleon Dynamite Festival",
@@ -56,9 +56,9 @@
     "streetAddress": "885 S Washington St",
     "cityStateZip": "Afton WY 83110",
     "country": "United States",
+    "telephone": "(1) 307-886-6820",
 
 
-    "averageRainfall": 15.75,
     "events" : [
       "February 29: Geyser Song Day",
       "May 1-6: Days of May Celebration",
