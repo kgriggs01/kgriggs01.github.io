@@ -61,9 +61,9 @@ fetch(starvalleyForecastURL)
     for (let i = 0; i < jsObject.list.length; i++) {
 
       if (jsObject.list[i].dt_txt.includes("18:00:00")) {
-        console.log(jsObject.list[i].dt_txt);
-        console.log(jsObject.list[i].main.temp.toFixed(0));
-        console.log(jsObject.list[i].weather[0].icon);
+        //console.log(jsObject.list[i].dt_txt);
+        //console.log(jsObject.list[i].main.temp.toFixed(0));
+        //console.log(jsObject.list[i].weather[0].icon);
 
         let dayInfo = new Date(jsObject.list[i].dt_txt);
         let weekday = {

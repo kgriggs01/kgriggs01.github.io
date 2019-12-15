@@ -11,7 +11,7 @@
     "email": "loganutahtemple.org",
 
 
-    "events" : [
+    "services" : [
       "March 4: March to the Drum of Donuts",
       "September 5 - 11: Founder Days",
       "December 1 - 26: Christmas in the Heart"
@@ -28,7 +28,7 @@
     "email": "portlandoregontemple.org",
 
   
-    "events" : [
+    "services" : [
       "April 1: How Big Was That Fish Day",
       "May 15-30: Rush the Creek Days",
       "July 24: Bear Lake Blunder Run",
@@ -46,7 +46,7 @@
     "email": "sandiegocaliforniatemple.org",
 
 
-    "events" : [
+    "services" : [
       "March 29: Work Creek Revival",
       "July 8-12: Napoleon Dynamite Festival",
       "November 2-4: Freedom Days"
@@ -63,7 +63,7 @@
     "email": "starvalleywyomingtemple.org",
 
 
-    "events" : [
+    "services" : [
       "February 29: Geyser Song Day",
       "May 1-6: Days of May Celebration",
       "October 15-16: Octoberfest"

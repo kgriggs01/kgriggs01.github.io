@@ -60,9 +60,9 @@ fetch(portlandForecastURL)
     for (let i = 0; i < jsObject.list.length; i++) {
 
       if (jsObject.list[i].dt_txt.includes("18:00:00")) {
-        console.log(jsObject.list[i].dt_txt);
-        console.log(jsObject.list[i].main.temp.toFixed(0));
-        console.log(jsObject.list[i].weather[0].icon);
+        //console.log(jsObject.list[i].dt_txt);
+        //console.log(jsObject.list[i].main.temp.toFixed(0));
+        //console.log(jsObject.list[i].weather[0].icon);
 
         let dayInfo = new Date(jsObject.list[i].dt_txt);
         let weekday = {
@@ -88,28 +88,27 @@ fetch(portlandForecastURL)
     }
   });
 
-/*
- const townDataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
- fetch(townDataURL)
+ const portlandServicesURL =  "https://kgriggs01.github.io/termproject/templeinfo.txt";
+
+ fetch(portlandServicesURL)
    .then(function (response) {
      return response.json();
    })
    .then(function (jsonObject) {
-     const towns = jsonObject.towns;
-     for (let i = 0; i < towns.length; i++) {
-       if (towns[i].name == "Preston") {
+     const services = jsonObject.services;
+     for (let i = 0; i < services.length; i++) {
+       if (services[i].name == "Portland") {
          let list = document.createElement("ul");
-         for (let j = 0; j < towns[i].events.length; j++) {
-           let thingsToDo = document.createElement("li");
-           thingsToDo.textContent = towns[i].events[j];
-           list.appendChild(thingsToDo)
-           document.querySelector("div.townEvents").appendChild(list);
-           //console.log(thingsToDo);
+         for (let j = 0; j < services[i].services.length; j++) {
+           let templeServices = document.createElement("li");
+           templeServices.textContent = services[i].services[j];
+           list.appendChild(templeServices)
+           document.querySelector("div.portlandServices").appendChild(list);
+           //console.log(templeServices);
 
          }
        }
      }
    });
 
-*/
