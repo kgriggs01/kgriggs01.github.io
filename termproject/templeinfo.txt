@@ -5,7 +5,9 @@
     "fullname": "Logan Utah Temple",
     "photo": "logan-temple-pic.jpg",
     "streetAddress": "175 N 300 E",
-    "yearFounded": 1788,
+    "cityStateZip": "Logan UT 84321-4720",
+
+
     "currentPopulation": 30458,
     "averageRainfall": 21,
     "events" : [
@@ -19,7 +21,9 @@
     "fullname": "Portland Oregon Temple",
     "photo": "portland-temple-pic.jpg",
     "streetAddress": "13600 Kruse Oaks Blvd",
-    "yearFounded": 1864,
+    "cityStateZip": "Lake Oswego OR 97035-8602",
+
+
     "currentPopulation": 501,
     "averageRainfall": 14.20,
     "events" : [
@@ -34,7 +38,9 @@
     "fullname": "San Diego California Temple",
     "photo": "san-diego-temple-pic.jpg",
     "streetAddress": "7474 Charmant Dr",
-    "yearFounded": 1866,
+    "cityStateZip": "San Diego CA 92122-5000",
+
+
     "currentPopulation": 5204,
     "averageRainfall": 16.65,
     "events" : [
@@ -48,7 +54,9 @@
     "fullname": "Star Valley Wyoming Temple",
     "photo": "star-valley-temple-pic.jpg",
     "streetAddress": "885 S Washington St",
-    "yearFounded": 1858,
+    "cityStateZip": "Afton WY 83110",
+
+    
     "currentPopulation": 2985,
     "averageRainfall": 15.75,
     "events" : [
