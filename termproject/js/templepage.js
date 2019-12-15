@@ -18,6 +18,7 @@ fetch(requestURL)
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
         let telephone = document.createElement("p");
+        let email = document.createElement("p");
         let templeInfoDiv = document.createElement("div");
         let templeName = document.createElement("h3");
         let image = document.createElement("img");
@@ -27,6 +28,7 @@ fetch(requestURL)
         cityStateZip.textContent = temples[i].cityStateZip;
         country.textContent = temples[i].country;
         telephone.textContent = temples[i].telephone;
+        email.textContent = temples[i].email;
         image.setAttribute("src", "./images/" + temples[i].photo);
         image.setAttribute("alt", temples[i].photo);
 
@@ -35,6 +37,7 @@ fetch(requestURL)
         templeInfoDiv.appendChild(cityStateZip);
         templeInfoDiv.appendChild(country);
         templeInfoDiv.appendChild(telephone);
+        templeInfoDiv.appendChild(email);
         card.appendChild(templeName);
         card.appendChild(image);
         card.appendChild(templeInfoDiv);
