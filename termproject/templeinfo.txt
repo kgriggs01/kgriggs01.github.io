@@ -14,7 +14,7 @@
       "Cafeteria available",
       "No patron housing available",
       "No distribution center nearby"
-    ]
+    ],
     "milestones" : [
       "6 October 1876         Announced",
       "18 May 1877            Groundbreaking",
@@ -36,7 +36,7 @@
       "Cafeteria available",
       "No patron housing available",
       "Distribution center nearby"
-    ]
+    ],
     "milestones" : [
       "7 April 1984           Announced",
       "20 September 1986      Groundbreaking",
@@ -57,7 +57,7 @@
       "Cafeteria available",
       "No patron housing available",
       "Distribution center nearby"
-    ]
+    ],
     "milestones" : [
       "7 April 1984           Announced",
       "27 February 1988       Groundbreaking",
@@ -78,7 +78,7 @@
       "No cafeteria available",
       "No patron housing available",
       "Distribution center nearby"
-    ]
+    ],
     "milestones" : [
       "1 October 2011         Announced",
       "25 April 2015          Groundbreaking",
