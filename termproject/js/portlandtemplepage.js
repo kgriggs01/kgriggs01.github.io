@@ -48,6 +48,29 @@ fetch(portlandTempleURL)
   });
 
 
+const portlandServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+
+fetch(portlandServicesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Portland") {
+        let list = document.createElement("ul");
+        for (let j = 0; j < temples[i].services.length; j++) {
+          let templesServices = document.createElement("li");
+          templesServices.textContent = temples[i].services[j];
+          list.appendChild(templesServices)
+          document.querySelector("div.portlandServices").appendChild(list);
+          //console.log(templesServices);
+        }
+      }
+    }
+  });
+
+
 const portlandForecastURL = "https://api.openweathermap.org/data/2.5/forecast?zip=97035&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
 fetch(portlandForecastURL)
@@ -84,28 +107,6 @@ fetch(portlandForecastURL)
 
         day = day + 1;
 
-      }
-    }
-  });
-
-const portlandServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
-
-fetch(portlandServicesURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    const temples = jsonObject.temples;
-    for (let i = 0; i < temples.length; i++) {
-      if (temples[i].name == "Portland") {
-        let list = document.createElement("ul");
-        for (let j = 0; j < temples[i].services.length; j++) {
-          let templesServices = document.createElement("li");
-          templesServices.textContent = temples[i].services[j];
-          list.appendChild(templesServices)
-          document.querySelector("div.portlandServices").appendChild(list);
-          //console.log(templesServices);
-        }
       }
     }
   });

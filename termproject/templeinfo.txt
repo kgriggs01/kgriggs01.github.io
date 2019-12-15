@@ -15,6 +15,12 @@
       "No patron housing available",
       "No distribution center nearby"
     ]
+    "milestones" : [
+      "6 October 1876         Announced",
+      "18 May 1877            Groundbreaking",
+      "17 May 1884            Dedicated — dedicatory prayer",
+      "13 March 1979          Rededicated — dedicatory prayer"
+    ]
   },
   {
     "name": "Portland",
@@ -30,6 +36,11 @@
       "Cafeteria available",
       "No patron housing available",
       "Distribution center nearby"
+    ]
+    "milestones" : [
+      "7 April 1984           Announced",
+      "20 September 1986      Groundbreaking",
+      "19 August 1989         Dedicated — dedicatory prayer"
     ]
   },
   {
@@ -47,6 +58,11 @@
       "No patron housing available",
       "Distribution center nearby"
     ]
+    "milestones" : [
+      "7 April 1984           Announced",
+      "27 February 1988       Groundbreaking",
+      "25 April 1993          Dedicated — dedicatory prayer"
+    ]
   },
   {
     "name": "Star Valley",
@@ -62,6 +78,11 @@
       "No cafeteria available",
       "No patron housing available",
       "Distribution center nearby"
+    ]
+    "milestones" : [
+      "1 October 2011         Announced",
+      "25 April 2015          Groundbreaking",
+      "30 October 2016        Dedicated — dedicatory prayer"
     ]
   }
  ]

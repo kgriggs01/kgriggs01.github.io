@@ -48,6 +48,28 @@ fetch(starvalleyTempleURL)
   });
 
 
+const starvalleyServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+
+fetch(starvalleyServicesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Star Valley") {
+        let list = document.createElement("ul");
+        for (let j = 0; j < temples[i].services.length; j++) {
+          let templesServices = document.createElement("li");
+          templesServices.textContent = temples[i].services[j];
+          list.appendChild(templesServices)
+          document.querySelector("div.starvalleyServices").appendChild(list);
+          //console.log(templesServices);
+        }
+      }
+    }
+  });
+
 
 const starvalleyForecastURL = "https://api.openweathermap.org/data/2.5/forecast?zip=83110&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
@@ -88,25 +110,3 @@ fetch(starvalleyForecastURL)
       }
     }
   });
-
-  const starvalleyServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
-
-  fetch(starvalleyServicesURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsonObject) {
-      const temples = jsonObject.temples;
-      for (let i = 0; i < temples.length; i++) {
-        if (temples[i].name == "Star Valley") {
-          let list = document.createElement("ul");
-          for (let j = 0; j < temples[i].services.length; j++) {
-            let templesServices = document.createElement("li");
-            templesServices.textContent = temples[i].services[j];
-            list.appendChild(templesServices)
-            document.querySelector("div.starvalleyServices").appendChild(list);
-            //console.log(templesServices);
-          }
-        }
-      }
-    });
