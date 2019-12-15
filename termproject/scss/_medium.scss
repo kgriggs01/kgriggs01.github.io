@@ -26,6 +26,8 @@ main {
         font-size: 1.25em;
         padding: 10px 0 0 0;
     }
+
+
 }
 
 /*---------------------------------- Footer ---------------------------------*/
@@ -35,7 +37,128 @@ main {
 
 
 /*---------------------------------- Temple Page ----------------------------*/
+.templesMain {
 
+    .forecastSection {
+        display: grid;
+        background-color: rgb(211, 204, 185);
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 10px 30px 10px;
+    }
+
+    .forecastDayContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 600px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgb(178, 179, 180);
+    }
+
+    .forecastSec,
+    .forecastDayContainer,
+    .forecastWeekday,
+    .forecastIcon,
+    .forecastTemp {
+        border: 1px solid black;
+    }
+
+    .forecastWeekday {
+        background-color: #28536B;
+        text-align: center;
+        color: white;
+        padding: 10px 0 0;
+        font-size: 2rem;
+    }
+
+    .forecastIcon {
+        padding: 10px 0 0 0;
+        border-bottom: none;
+    }
+
+    .forecastSection img {
+        width: 75px;
+    }
+
+    .forecastTemp {
+        font-size: 2rem;
+        padding: 10px 0 10px 0;
+        border-top: none;
+    }
+
+    .forecastSection h4 {
+        font-size: 2.5rem;
+        padding: 10px 10px 30px 10px;
+    }
+
+    .forecastSection p {
+        font-size: 1rem;
+        padding: 20px 0 0 0;
+        font-family: 'Buenard', serif;
+    }
+
+       .forecastSection {
+        display: grid;
+        background-color: rgb(211, 204, 185);
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 10px 30px 10px;
+    }
+
+    .forecastDayContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 600px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgb(178, 179, 180);
+    }
+
+    .forecastSec,
+    .forecastDayContainer,
+    .forecastWeekday,
+    .forecastIcon,
+    .forecastTemp {
+        border: 1px solid black;
+    }
+
+    .forecastWeekday {
+        background-color: #28536B;
+        text-align: center;
+        color: white;
+        padding: 10px 0 0;
+        font-size: 2rem;
+    }
+
+    .forecastIcon {
+        padding: 10px 0 0 0;
+        border-bottom: none;
+    }
+
+    .forecastSection img {
+        width: 75px;
+    }
+
+    .forecastTemp {
+        font-size: 2rem;
+        padding: 10px 0 10px 0;
+        border-top: none;
+    }
+
+    .forecastSection h4 {
+        font-size: 2.5rem;
+        padding: 10px 10px 30px 10px;
+    }
+
+    .forecastSection p {
+        font-size: 1rem;
+        padding: 20px 0 0 0;
+        font-family: 'Buenard', serif;
+    }
+}
 
 /*--------------------------- Navigation / Side Bar Menu --------------------*/
 

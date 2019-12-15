@@ -551,6 +551,9 @@ footer {
 .templesMain .templeInfo section {
   padding-bottom: 50px;
   border-bottom: 3px solid black; }
+.templesMain .forecastSection {
+  display: none;
+  margin-top: 20px; }
 
 /*------------------------------ Reservations Page --------------------------*/
 /*------------------------------- Services Page -----------------------------*/
@@ -577,6 +580,189 @@ footer {
   /*---------------------------------- Footer ---------------------------------*/
   /*----------------------------------- Home Page -----------------------------*/
   /*---------------------------------- Temple Page ----------------------------*/
+  .templesMain {
+    /*
+       .forecastSection {
+        display: grid;
+        background-color: rgb(211, 204, 185);
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 10px 30px 10px;
+    }
+
+    .forecastDayContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 600px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgb(178, 179, 180);
+    }
+
+    .forecastSec,
+    .forecastDayContainer,
+    .forecastWeekday,
+    .forecastIcon,
+    .forecastTemp {
+        border: 1px solid black;
+    }
+
+    .forecastWeekday {
+        background-color: #28536B;
+        text-align: center;
+        color: white;
+        padding: 10px 0 0;
+        font-size: 2rem;
+    }
+
+    .forecastIcon {
+        padding: 10px 0 0 0;
+        border-bottom: none;
+    }
+
+    .forecastSection img {
+        width: 75px;
+    }
+
+    .forecastTemp {
+        font-size: 2rem;
+        padding: 10px 0 10px 0;
+        border-top: none;
+    }
+
+    .forecastSection h4 {
+        font-size: 2.5rem;
+        padding: 10px 10px 30px 10px;
+    }
+
+    .forecastSection p {
+        font-size: 1rem;
+        padding: 20px 0 0 0;
+        font-family: 'Buenard', serif;
+    }
+
+
+*/
+    /*
+    
+    
+        .pforecastSection {
+            display: grid;
+            background-color: rgb(211, 204, 185);
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 10px 30px 10px;
+        }
+    
+        .pforecastDayContainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            width: 600px;
+            height: 200px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgb(178, 179, 180);
+        }
+    
+        .pforecastSec,
+        .pforecastDayContainer,
+        .pforecastWeekday,
+        .pforecastIcon,
+        .pforecastTemp {
+            border: 1px solid black;
+        }
+    
+        .pforecastWeekday {
+            background-color: #28536B;
+            text-align: center;
+            color: white;
+            padding: 10px 0 0;
+            font-size: 2rem;
+        }
+    
+        .pforecastIcon {
+            padding: 10px 0 0 0;
+            border-bottom: none;
+        }
+    
+        .pforecastSection img {
+            width: 75px;
+        }
+    
+        .pforecastTemp {
+            font-size: 2rem;
+            padding: 10px 0 10px 0;
+            border-top: none;
+        }
+    
+        .pforecastSection h4 {
+            font-size: 2.5rem;
+            padding: 10px 10px 30px 10px;
+        }
+    
+        .pforecastSection p {
+            font-size: 1rem;
+            padding: 20px 0 0 0;
+            font-family: 'Buenard', serif;
+        }
+        */ }
+    .templesMain .forecastSection,
+    .templesMain .pForecastSection {
+      display: grid;
+      background-color: #d3ccb9;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px 10px 30px 10px; }
+    .templesMain .forecastDayContainer,
+    .templesMain .pForecastDayContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      width: 600px;
+      height: 200px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #b2b3b4; }
+    .templesMain .forecastSec,
+    .templesMain .forecastDayContainer,
+    .templesMain .forecastWeekday,
+    .templesMain .forecastIcon,
+    .templesMain .forecastTemp,
+    .templesMain .pForecastSec,
+    .templesMain .pForecastDayContainer,
+    .templesMain .pForecastWeekday,
+    .templesMain .pForecastIcon,
+    .templesMain .pForecastTemp {
+      border: 1px solid black; }
+    .templesMain .forecastWeekday,
+    .templesMain .pForecastWeekday {
+      background-color: #28536B;
+      text-align: center;
+      color: white;
+      padding: 10px 0 0;
+      font-size: 2rem; }
+    .templesMain .forecastIcon,
+    .templesMain .pForecastIcon {
+      padding: 10px 0 0 0;
+      border-bottom: none; }
+    .templesMain .forecastSection img,
+    .templesMain .pForecastSection img {
+      width: 75px; }
+    .templesMain .forecastTemp,
+    .templesMain .pForecastTemp {
+      font-size: 2rem;
+      padding: 10px 0 10px 0;
+      border-top: none; }
+    .templesMain .forecastSection h4,
+    .templesMain .pForecastSection h4 {
+      font-size: 2.5rem;
+      padding: 10px 10px 30px 10px; }
+    .templesMain .forecastSection p,
+    .templesMain .pForecastSection p {
+      font-size: 1rem;
+      padding: 20px 0 0 0;
+      font-family: 'Buenard', serif; }
+
   /*--------------------------- Navigation / Side Bar Menu --------------------*/
   /*------------------------------ Reservations Page --------------------------*/
   /*------------------------------- Services Page -----------------------------*/
