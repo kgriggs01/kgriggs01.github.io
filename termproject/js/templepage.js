@@ -14,7 +14,7 @@ fetch(requestURL)
         let temple = ["Logan", "Portland", "San Diego", "Star Valley"];
         let card = document.createElement("section");
         let templeNameHeading = document.createElement("h3");
-        let motto = document.createElement("h4");
+        let streetAddress = document.createElement("h4");
         let yearFounded = document.createElement("p");
         let population = document.createElement("p");
         let annualRainfall = document.createElement("p");
@@ -23,7 +23,7 @@ fetch(requestURL)
         let image = document.createElement("img");
 
         templeNameHeading.textContent = temples[i].fullname;
-        motto.textContent = temples[i].motto;
+        streetAddress.textContent = temples[i].streetAddress;
         yearFounded.textContent = "Year Founded: " + temples[i].yearFounded;
         population.textContent = "Population: " + temples[i].currentPopulation;
         annualRainfall.textContent = "Annual Rainfall: " + temples[i].averageRainfall;
@@ -31,7 +31,7 @@ fetch(requestURL)
         image.setAttribute("alt", temples[i].photo);
 
         templeName.appendChild(templeNameHeading);
-        templeInfoDiv.appendChild(motto);
+        templeInfoDiv.appendChild(streetAddress);
         templeInfoDiv.appendChild(yearFounded);
         templeInfoDiv.appendChild(population);
         templeInfoDiv.appendChild(annualRainfall);
