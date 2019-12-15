@@ -14,7 +14,7 @@ fetch(requestURL)
         let temple = ["Logan", "Portland", "San Diego", "Star Valley"];
         let card = document.createElement("section");
         let templeNameHeading = document.createElement("h3");
-        let streetAddress = document.createElement("h4");
+        let streetAddress = document.createElement("p");
         let yearFounded = document.createElement("p");
         let population = document.createElement("p");
         let annualRainfall = document.createElement("p");
