@@ -21,7 +21,7 @@
       "17 May 1884 — Dedicated",
       "13 March 1979 — Rededicated"
     ],
-      "closures" : [
+      "closures" : [{
         "2019" : {
           "date1" : "6 October 1876 — Announced",
           "date2" : "18 May 1877 — Groundbreaking"
@@ -30,7 +30,7 @@
           "date1" : "17 May 1884 — Dedicated",
           "date2" : "13 March 1979 — Rededicated"
           }
-      ],
+      }],
   {
     "name": "Portland",
     "fullname": "Portland Oregon Temple",
