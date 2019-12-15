@@ -59,20 +59,19 @@ fetch(loganServicesURL)
     for (let i = 0; i < temples.length; i++) {
       if (temples[i].name == "Logan") {
 
-        let list1 = document.createElement("ul");
+        let list = document.createElement("ul");
         for (let j = 0; j < temples[i].services.length; j++) {
           let templesServices = document.createElement("li");
           templesServices.textContent = temples[i].services[j];
-          list1.appendChild(templesServices)
-          document.querySelector("div.loganServices").appendChild(list1);
+          list.appendChild(templesServices)
+          document.querySelector("div.loganServices").appendChild(list);
           //console.log(templesServices);
         }
       }
     }
   });
 
-  const loganMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
-
+const loganMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 fetch(loganMilestonesURL)
   .then(function (response) {
     return response.json();
@@ -82,17 +81,41 @@ fetch(loganMilestonesURL)
     for (let i = 0; i < temples.length; i++) {
       if (temples[i].name == "Logan") {
 
-        let list1 = document.createElement("ul");
+        let list = document.createElement("ul");
         for (let j = 0; j < temples[i].milestones.length; j++) {
           let templesMilestones = document.createElement("li");
           templesMilestones.textContent = temples[i].milestones[j];
-          list1.appendChild(templesMilestones)
-          document.querySelector("div.loganMilestones").appendChild(list1);
+          list.appendChild(templesMilestones)
+          document.querySelector("div.loganMilestones").appendChild(list);
           //console.log(templesMilestones);
         }
       }
     }
   });
+
+
+  const loganClosuresURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+fetch(loganClosuresURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Logan") {
+
+        let list = document.createElement("ul");
+        for (let j = 0; j < temples[i].closures.length; j++) {
+          let templesClosures = document.createElement("li");
+          templesClosures.textContent = temples[i].closures[j];
+          list.appendChild(templesClosures)
+          document.querySelector("div.loganClosures").appendChild(list);
+          //console.log(templesClosures);
+        }
+      }
+    }
+  });
+
 
 const LoganForecastURL = "https://api.openweathermap.org/data/2.5/forecast?zip=84321&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
