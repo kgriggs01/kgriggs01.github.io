@@ -41,76 +41,75 @@ fetch(portlandTempleURL)
         card.appendChild(templeName);
         card.appendChild(image);
         card.appendChild(portlandTempleInfo);
-   
+
         document.querySelector("div.portlandTempleInfo").appendChild(card);
       }
     }
   });
 
 
+const portlandForecastURL = "https://api.openweathermap.org/data/2.5/forecast?zip=97035&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
-  const portlandForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
+fetch(portlandForecastURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsObject) {
 
-  fetch(portlandForecastURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsObject) {
- 
-      let day = 0;
-      for (let i = 0; i < jsObject.list.length; i++) {
- 
-        if (jsObject.list[i].dt_txt.includes("18:00:00")) {
-          console.log(jsObject.list[i].dt_txt);
-          console.log(jsObject.list[i].main.temp.toFixed(0));
-          console.log(jsObject.list[i].weather[0].icon);
- 
-          let dayInfo = new Date(jsObject.list[i].dt_txt);
-          let weekday = {
-            weekday: "short"
-          };
-          let pForecastDayOfWeek = dayInfo.toLocaleDateString("en-US", weekday);
-          let dayOfWeek = "pForecastWeekdayValue" + day;
-          document.getElementById(dayOfWeek).textContent = pForecastDayOfWeek;
- 
-          let pForecastIconInfo = "https://openweathermap.org/img/w/" + jsObject.list[i].weather[0].icon + ".png";
-          let piconDescription = jsObject.list[i].weather[0].description;
-          let picon = "pForecastIconValue" + day;
-          document.getElementById(picon).setAttribute("src", pForecastIconInfo);
-          document.getElementById(picon).setAttribute("alt", piconDescription);
- 
-          let pForecastTempValue = jsObject.list[i].main.temp.toFixed(0);
-          let ptempInfo = "pForecastTempValue" + day;
-          document.getElementById(ptempInfo).textContent = pForecastTempValue + " °F";
- 
-          day = day + 1;
- 
-        }
+    let day = 0;
+    for (let i = 0; i < jsObject.list.length; i++) {
+
+      if (jsObject.list[i].dt_txt.includes("18:00:00")) {
+        console.log(jsObject.list[i].dt_txt);
+        console.log(jsObject.list[i].main.temp.toFixed(0));
+        console.log(jsObject.list[i].weather[0].icon);
+
+        let dayInfo = new Date(jsObject.list[i].dt_txt);
+        let weekday = {
+          weekday: "short"
+        };
+        let pForecastDayOfWeek = dayInfo.toLocaleDateString("en-US", weekday);
+        let dayOfWeek = "pForecastWeekdayValue" + day;
+        document.getElementById(dayOfWeek).textContent = pForecastDayOfWeek;
+
+        let pForecastIconInfo = "https://openweathermap.org/img/w/" + jsObject.list[i].weather[0].icon + ".png";
+        let pIconDescription = jsObject.list[i].weather[0].description;
+        let pIcon = "pForecastIconValue" + day;
+        document.getElementById(pIcon).setAttribute("src", pForecastIconInfo);
+        document.getElementById(pIcon).setAttribute("alt", pIconDescription);
+
+        let pForecastTempValue = jsObject.list[i].main.temp.toFixed(0);
+        let pTempInfo = "pForecastTempValue" + day;
+        document.getElementById(pTempInfo).textContent = pForecastTempValue + " °F";
+
+        day = day + 1;
+
       }
-    });
- 
- /*
-  const townDataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
- 
-  fetch(townDataURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsonObject) {
-      const towns = jsonObject.towns;
-      for (let i = 0; i < towns.length; i++) {
-        if (towns[i].name == "Preston") {
-          let list = document.createElement("ul");
-          for (let j = 0; j < towns[i].events.length; j++) {
-            let thingsToDo = document.createElement("li");
-            thingsToDo.textContent = towns[i].events[j];
-            list.appendChild(thingsToDo)
-            document.querySelector("div.townEvents").appendChild(list);
-            //console.log(thingsToDo);
- 
-          }
-        }
-      }
-    });
- 
- */
+    }
+  });
+
+/*
+ const townDataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+ fetch(townDataURL)
+   .then(function (response) {
+     return response.json();
+   })
+   .then(function (jsonObject) {
+     const towns = jsonObject.towns;
+     for (let i = 0; i < towns.length; i++) {
+       if (towns[i].name == "Preston") {
+         let list = document.createElement("ul");
+         for (let j = 0; j < towns[i].events.length; j++) {
+           let thingsToDo = document.createElement("li");
+           thingsToDo.textContent = towns[i].events[j];
+           list.appendChild(thingsToDo)
+           document.querySelector("div.townEvents").appendChild(list);
+           //console.log(thingsToDo);
+
+         }
+       }
+     }
+   });
+
+*/

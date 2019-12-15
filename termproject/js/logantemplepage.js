@@ -41,53 +41,53 @@ fetch(loganTempleURL)
         card.appendChild(templeName);
         card.appendChild(image);
         card.appendChild(loganTempleInfo);
-   
+
         document.querySelector("div.loganTempleInfo").appendChild(card);
       }
     }
   });
 
 
-  
- const loganForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
- fetch(loganForecastURL)
-   .then(function (response) {
-     return response.json();
-   })
-   .then(function (jsObject) {
+const LoganForecastURL = "https://api.openweathermap.org/data/2.5/forecast?zip=84321&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
-     let day = 0;
-     for (let i = 0; i < jsObject.list.length; i++) {
+fetch(LoganForecastURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsObject) {
 
-       if (jsObject.list[i].dt_txt.includes("18:00:00")) {
-         console.log(jsObject.list[i].dt_txt);
-         console.log(jsObject.list[i].main.temp.toFixed(0));
-         console.log(jsObject.list[i].weather[0].icon);
+    let day = 0;
+    for (let i = 0; i < jsObject.list.length; i++) {
 
-         let dayInfo = new Date(jsObject.list[i].dt_txt);
-         let weekday = {
-           weekday: "short"
-         };
-         let forecastDayOfWeek = dayInfo.toLocaleDateString("en-US", weekday);
-         let dayOfWeek = "forecastWeekdayValue" + day;
-         document.getElementById(dayOfWeek).textContent = forecastDayOfWeek;
+      if (jsObject.list[i].dt_txt.includes("18:00:00")) {
+        console.log(jsObject.list[i].dt_txt);
+        console.log(jsObject.list[i].main.temp.toFixed(0));
+        console.log(jsObject.list[i].weather[0].icon);
 
-         let forecastIconInfo = "https://openweathermap.org/img/w/" + jsObject.list[i].weather[0].icon + ".png";
-         let iconDescription = jsObject.list[i].weather[0].description;
-         let icon = "forecastIconValue" + day;
-         document.getElementById(icon).setAttribute("src", forecastIconInfo);
-         document.getElementById(icon).setAttribute("alt", iconDescription);
+        let dayInfo = new Date(jsObject.list[i].dt_txt);
+        let weekday = {
+          weekday: "short"
+        };
+        let lForecastDayOfWeek = dayInfo.toLocaleDateString("en-US", weekday);
+        let dayOfWeek = "lForecastWeekdayValue" + day;
+        document.getElementById(dayOfWeek).textContent = lForecastDayOfWeek;
 
-         let forecastTempValue = jsObject.list[i].main.temp.toFixed(0);
-         let tempInfo = "forecastTempValue" + day;
-         document.getElementById(tempInfo).textContent = forecastTempValue + " °F";
+        let lForecastIconInfo = "https://openweathermap.org/img/w/" + jsObject.list[i].weather[0].icon + ".png";
+        let lIconDescription = jsObject.list[i].weather[0].description;
+        let lIcon = "lForecastIconValue" + day;
+        document.getElementById(lIcon).setAttribute("src", lForecastIconInfo);
+        document.getElementById(lIcon).setAttribute("alt", lIconDescription);
 
-         day = day + 1;
+        let lForecastTempValue = jsObject.list[i].main.temp.toFixed(0);
+        let lTempInfo = "lForecastTempValue" + day;
+        document.getElementById(lTempInfo).textContent = lForecastTempValue + " °F";
 
-       }
-     }
-   });
+        day = day + 1;
+
+      }
+    }
+  });
 
 /*
  const townDataURL = "https://byui-cit230.github.io/weather/data/towndata.json";
