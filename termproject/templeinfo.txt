@@ -6,9 +6,9 @@
     "photo": "logan-temple-pic.jpg",
     "streetAddress": "175 N 300 E",
     "cityStateZip": "Logan UT 84321-4720",
+    "country": "United States",
 
 
-    "currentPopulation": 30458,
     "averageRainfall": 21,
     "events" : [
       "March 4: March to the Drum of Donuts",
@@ -22,9 +22,9 @@
     "photo": "portland-temple-pic.jpg",
     "streetAddress": "13600 Kruse Oaks Blvd",
     "cityStateZip": "Lake Oswego OR 97035-8602",
+    "country": "United States",
 
 
-    "currentPopulation": 501,
     "averageRainfall": 14.20,
     "events" : [
       "April 1: How Big Was That Fish Day",
@@ -39,9 +39,9 @@
     "photo": "san-diego-temple-pic.jpg",
     "streetAddress": "7474 Charmant Dr",
     "cityStateZip": "San Diego CA 92122-5000",
+    "country": "United States",
 
 
-    "currentPopulation": 5204,
     "averageRainfall": 16.65,
     "events" : [
       "March 29: Work Creek Revival",
@@ -55,9 +55,9 @@
     "photo": "star-valley-temple-pic.jpg",
     "streetAddress": "885 S Washington St",
     "cityStateZip": "Afton WY 83110",
+    "country": "United States",
 
-    
-    "currentPopulation": 2985,
+
     "averageRainfall": 15.75,
     "events" : [
       "February 29: Geyser Song Day",

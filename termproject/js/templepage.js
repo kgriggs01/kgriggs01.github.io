@@ -16,7 +16,7 @@ fetch(requestURL)
         let templeNameHeading = document.createElement("h3");
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
-        let population = document.createElement("p");
+        let country = document.createElement("p");
         let annualRainfall = document.createElement("p");
         let templeInfoDiv = document.createElement("div");
         let templeName = document.createElement("h3");
@@ -25,7 +25,7 @@ fetch(requestURL)
         templeNameHeading.textContent = temples[i].fullname;
         streetAddress.textContent = temples[i].streetAddress;
         cityStateZip.textContent = temples[i].cityStateZip;
-        population.textContent = "Population: " + temples[i].currentPopulation;
+        country.textContent = temples[i].country;
         annualRainfall.textContent = "Annual Rainfall: " + temples[i].averageRainfall;
         image.setAttribute("src", "./images/" + temples[i].photo);
         image.setAttribute("alt", temples[i].photo);
@@ -33,7 +33,7 @@ fetch(requestURL)
         templeName.appendChild(templeNameHeading);
         templeInfoDiv.appendChild(streetAddress);
         templeInfoDiv.appendChild(cityStateZip);
-        templeInfoDiv.appendChild(population);
+        templeInfoDiv.appendChild(country);
         templeInfoDiv.appendChild(annualRainfall);
         card.appendChild(templeName);
         card.appendChild(image);
