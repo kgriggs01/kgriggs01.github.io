@@ -9,9 +9,9 @@ fetch(requestURL)
     const temples = jsonObject.temples;
     for (let i = 0; i < temples.length; i++) {
 
-      if (temples[i].name == 'Logan' || temples[i].name == 'Portland' || temples[i].name == 'San Diego' || temples[i].name == 'Star Valley') {
+      //if (temples[i].name == 'Logan' || temples[i].name == 'Portland' || temples[i].name == 'San Diego' || temples[i].name == 'Star Valley') {
 
-        let temple = ["Logan", "Portland", "San Diego", "Star Valley"];
+       // let temple = ["Logan", "Portland", "San Diego", "Star Valley"];
         let card = document.createElement("section");
         let templeNameHeading = document.createElement("h3");
         let motto = document.createElement("h4");
@@ -40,7 +40,7 @@ fetch(requestURL)
         card.appendChild(templeInfoDiv);
    
         document.querySelector("div.templeInfo").appendChild(card);
-      }
+      //}
     }
   });
 
