@@ -9,22 +9,17 @@
     "country": "United States",
     "telephone": "(1) 435-752-3611",
     "email": "loganutahtemple.org",
-    "services" : [
-      "Clothing rental available",
-      "Cafeteria available",
-      "No patron housing available",
-      "No distribution center nearby"
-    ],
+    "services" : {
+      "service1" : "Clothing rental available",
+      "service2" : "Cafeteria available",
+      "service3" : "No patron housing available",
+      "service4" : "No distribution center nearby"
+    },
     "milestones" : [
       "6 October 1876 — Announced",
       "18 May 1877 — Groundbreaking",
       "17 May 1884 — Dedicated",
       "13 March 1979 — Rededicated"
-    ],
-      "closures" : [
-      "Tuesday, 24 December 2019",
-      "Wednesday, 25 December 2019",
-      "Tuesday, 31 December 2019 (Limited Hours)"
     ]
   },
   {
