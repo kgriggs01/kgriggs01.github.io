@@ -485,7 +485,7 @@ header {
   cursor: pointer;
   color: white;
   background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
-  padding: 20px 10px 10px 20px;
+  padding: 10px 10px 10px 20px;
   border: none;
   width: 200px;
   text-align: left; }
