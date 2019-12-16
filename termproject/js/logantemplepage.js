@@ -1,37 +1,37 @@
 const loganWeatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=84321&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
- fetch(loganWeatherURL)
-   .then((response) => response.json())
-   .then((jsObject) => {
-     //console.log(jsObject);
+fetch(loganWeatherURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    //console.log(jsObject);
 
-     document.getElementById("lCurrent-weather-condition").textContent = jsObject.weather[0].description;
-     document.getElementById("lCurrent-temp").textContent = jsObject.main.temp.toFixed(0);
-     document.getElementById("lCurrent-wind-speed").textContent = jsObject.wind.speed.toFixed(1);
-     document.getElementById("lCurrent-humidity").textContent = jsObject.main.humidity;
-     document.getElementById("lHigh-temp").textContent = jsObject.main.temp_max.toFixed(0);
-     document.getElementById("lLow-temp").textContent = jsObject.main.temp_min.toFixed(0);
+    document.getElementById("lCurrent-weather-condition").textContent = jsObject.weather[0].description;
+    document.getElementById("lCurrent-temp").textContent = jsObject.main.temp.toFixed(0);
+    document.getElementById("lCurrent-wind-speed").textContent = jsObject.wind.speed.toFixed(1);
+    document.getElementById("lCurrent-humidity").textContent = jsObject.main.humidity;
+    document.getElementById("lHigh-temp").textContent = jsObject.main.temp_max.toFixed(0);
+    document.getElementById("lLow-temp").textContent = jsObject.main.temp_min.toFixed(0);
 
-     function wind() {
-       var tempF = parseFloat(document.getElementById("lCurrent-temp").textContent);
-       var speed = parseFloat(document.getElementById("lCurrent-wind-speed").textContent);
-       var result = calcWindChill(tempF, speed);
+    function wind() {
+      var tempF = parseFloat(document.getElementById("lCurrent-temp").textContent);
+      var speed = parseFloat(document.getElementById("lCurrent-wind-speed").textContent);
+      var result = calcWindChill(tempF, speed);
 
-       if ((tempF <= 50) && (speed >= 3.0)) {
-         document.getElementById("lGetWindChillValue").textContent = result.toFixed() + " °F";
-       } else {
-         document.getElementById("lGetWindChillValue").textContent = "N/A";
-       }
-     }
+      if ((tempF <= 50) && (speed >= 3.0)) {
+        document.getElementById("lGetWindChillValue").textContent = result.toFixed() + " °F";
+      } else {
+        document.getElementById("lGetWindChillValue").textContent = "N/A";
+      }
+    }
 
-     function calcWindChill(tempF, speed) {
-       var calcWindChill = (35.74 + (0.6215 * tempF) - (35.75 * (Math.pow(speed, 0.16))) + (0.4275 * tempF * (Math.pow(speed, 0.16))));
-       return calcWindChill;
-     }
-     wind();
-   });
-   
-   const loganForecastURL = "https://api.openweathermap.org/data/2.5/forecast?zip=84321&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
+    function calcWindChill(tempF, speed) {
+      var calcWindChill = (35.74 + (0.6215 * tempF) - (35.75 * (Math.pow(speed, 0.16))) + (0.4275 * tempF * (Math.pow(speed, 0.16))));
+      return calcWindChill;
+    }
+    wind();
+  });
+
+const loganForecastURL = "https://api.openweathermap.org/data/2.5/forecast?zip=84321&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
 fetch(loganForecastURL)
   .then(function (response) {
@@ -69,11 +69,11 @@ fetch(loganForecastURL)
       }
     }
   });
-  
-  
-  
-  
-  const loganTempleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+
+
+
+
+const loganTempleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
 fetch(loganTempleURL)
   .then(function (response) {
@@ -91,9 +91,9 @@ fetch(loganTempleURL)
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
-        let address = document.createElement("h3");
+        let phoneNumber = document.createElement("h3");
         let telephone = document.createElement("p");
-        let address = document.createElement("h3");
+        let email = document.createElement("h3");
         let emailURL = document.createElement("p");
         let loganTempleInfo = document.createElement("div");
 
@@ -101,16 +101,20 @@ fetch(loganTempleURL)
         streetAddress.textContent = temples[i].streetAddress;
         cityStateZip.textContent = temples[i].cityStateZip;
         country.textContent = temples[i].country;
+        phoneNumber.textContent = temples[i].phoneNumber;
         telephone.textContent = temples[i].telephone;
+        email.textContent = temples[i].email;
         emailURL.textContent = temples[i].emailURL;
 
         loganTempleInfo.appendChild(address);
         loganTempleInfo.appendChild(streetAddress);
         loganTempleInfo.appendChild(cityStateZip);
         loganTempleInfo.appendChild(country);
+        loganTempleInfo.appendChild(phoneNumber);
         loganTempleInfo.appendChild(telephone);
+        loganTempleInfo.appendChild(email);
         loganTempleInfo.appendChild(emailURL);
-        
+
         card.appendChild(loganTempleInfo);
         document.querySelector("div.loganTempleInfo").appendChild(card);
       }
@@ -164,7 +168,7 @@ fetch(loganMilestonesURL)
   });
 
 
-  const loganClosuresURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+const loganClosuresURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 fetch(loganClosuresURL)
   .then(function (response) {
     return response.json();
@@ -185,4 +189,3 @@ fetch(loganClosuresURL)
       }
     }
   });
-

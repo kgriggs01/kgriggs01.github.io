@@ -90,7 +90,9 @@ fetch(sandiegoTempleURL)
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
+        let phoneNumber = document.createElement("h3");
         let telephone = document.createElement("p");
+        let email = document.createElement("h3");
         let emailURL = document.createElement("p");
         let sandiegoTempleInfo = document.createElement("div");
 
@@ -98,14 +100,18 @@ fetch(sandiegoTempleURL)
         streetAddress.textContent = temples[i].streetAddress;
         cityStateZip.textContent = temples[i].cityStateZip;
         country.textContent = temples[i].country;
+        phoneNumber.textContent = temples[i].phoneNumber;
         telephone.textContent = temples[i].telephone;
+        email.textContent = temples[i].email;
         emailURL.textContent = temples[i].emailURL;
 
         sandiegoTempleInfo.appendChild(address);
         sandiegoTempleInfo.appendChild(streetAddress);
         sandiegoTempleInfo.appendChild(cityStateZip);
         sandiegoTempleInfo.appendChild(country);
+        sandiegoTempleInfo.appendChild(phoneNumber);
         sandiegoTempleInfo.appendChild(telephone);
+        sandiegoTempleInfo.appendChild(email);
         sandiegoTempleInfo.appendChild(emailURL);
 
         card.appendChild(sandiegoTempleInfo);

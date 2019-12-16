@@ -91,7 +91,9 @@ fetch(starvalleyTempleURL)
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
+        let phoneNumber = document.createElement("h3");
         let telephone = document.createElement("p");
+        let email = document.createElement("h3");
         let emailURL = document.createElement("p");
         let starvalleyTempleInfo = document.createElement("div");
 
@@ -99,14 +101,18 @@ fetch(starvalleyTempleURL)
         streetAddress.textContent = temples[i].streetAddress;
         cityStateZip.textContent = temples[i].cityStateZip;
         country.textContent = temples[i].country;
+        phoneNumber.textContent = temples[i].phoneNumber;
         telephone.textContent = temples[i].telephone;
+        email.textContent = temples[i].email;
         emailURL.textContent = temples[i].emailURL;
 
         starvalleyTempleInfo.appendChild(address);
         starvalleyTempleInfo.appendChild(streetAddress);
         starvalleyTempleInfo.appendChild(cityStateZip);
         starvalleyTempleInfo.appendChild(country);
+        starvalleyTempleInfo.appendChild(phoneNumber);
         starvalleyTempleInfo.appendChild(telephone);
+        starvalleyTempleInfo.appendChild(email);
         starvalleyTempleInfo.appendChild(emailURL);
 
         card.appendChild(starvalleyTempleInfo);

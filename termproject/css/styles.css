@@ -600,6 +600,9 @@ footer {
     letter-spacing: 1pt;
     font-size: 1.25rem;
     text-align: center; }
+  .templesMain p {
+    line-height: .5rem;
+    text-align: center; }
   .templesMain .current {
     grid-area: current;
     text-align: right; }
