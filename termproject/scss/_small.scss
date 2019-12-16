@@ -21,9 +21,6 @@ body {
 }
 
 
-
-
-
 /*----------------------------------- Header --------------------------------*/
 header {
     display: flex;
@@ -58,6 +55,8 @@ header {
         padding: 0 0 0 0;
     }
 }
+
+
 
 
 /*--------------------------- Navigation / Side Bar Menu --------------------*/
@@ -114,7 +113,7 @@ header {
     cursor: pointer;
     color: white;
     background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
-    padding: 10px 10px 10px 20px;
+    padding: 20px 10px 10px 20px;
     border: none;
     width: 200px;
     text-align: left;
@@ -178,6 +177,8 @@ main {
 }
 
 
+
+
 /*---------------------------------- Footer ---------------------------------*/
 footer {
     background: rgb(172, 193, 138);
@@ -185,7 +186,6 @@ footer {
     text-align: center;
     padding: 2rem $gutter;
 }
-
 
 /*----------------------------------- Home Page -----------------------------*/
 
@@ -195,20 +195,54 @@ footer {
 .templesMain {
     max-width: 960px;
 
-    .townPhoto {
-        position: relative;
-        font-size: 1.25rem;
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10px 0 5px 0;
     }
 
-    figure {
-        width: 100%;
-        margin: 0;
+    h3 {
+        border-bottom: 1px solid white;
+        padding: 0 0 10px 0;
+        letter-spacing: 1pt;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    h4 {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+        text-indent: 20px;
+    }
+
+    p {
+        line-height: .5rem;
+        text-align: left;
+    }
+
+    .templeSection {
+        position: relative;
+        padding-bottom: 50px;
+        border-bottom: 3px solid rgb(0, 0, 83);
     }
 
     img {
         position: relative;
         width: 100%;
         height: auto;
+    }
+
+    figure {
+        width: 100%;
+        margin: 0;
     }
 
     .weatherSummary {
@@ -240,19 +274,6 @@ footer {
             "humidity humidityValue"
             "windSpeed windSpeedValue";
         font-size: .75rem;
-    }
-
-    h3 {
-        border-bottom: 1px solid white;
-        padding: 0 0 10px 0;
-        letter-spacing: 1pt;
-        font-size: 1.25rem;
-        text-align: center;
-    }
-
-    p {
-        line-height: .5rem;
-        text-align: center;
     }
 
     .current {
@@ -300,28 +321,6 @@ footer {
         color: yellow;
     }
 
-    /*
-    div {
-        font-size: 1rem;
-    }
-
-    img {
-        width: 80%;
-        margin: 25px 0 10px 0;
-        box-shadow: -1px 1px 22px 1px rgba(0, 0, 0, 1);
-    }
-
-    section {
-        text-align: center;
-    }
-
-    .templeInfo section {
-        padding-bottom: 50px;
-        border-bottom: 3px solid black;
-    }
-
-
-    */
     .forecastSection {
         display: none;
         margin-top: 20px;

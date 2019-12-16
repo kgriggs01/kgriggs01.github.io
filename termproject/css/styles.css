@@ -485,7 +485,7 @@ header {
   cursor: pointer;
   color: white;
   background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
-  padding: 10px 10px 10px 20px;
+  padding: 20px 10px 10px 20px;
   border: none;
   width: 200px;
   text-align: left; }
@@ -541,39 +541,39 @@ footer {
 /*----------------------------------- Home Page -----------------------------*/
 /*---------------------------------- Temple Page ----------------------------*/
 .templesMain {
-  max-width: 960px;
-    /*
-    div {
-        font-size: 1rem;
-    }
-
-    img {
-        width: 80%;
-        margin: 25px 0 10px 0;
-        box-shadow: -1px 1px 22px 1px rgba(0, 0, 0, 1);
-    }
-
-    section {
-        text-align: center;
-    }
-
-    .templeInfo section {
-        padding-bottom: 50px;
-        border-bottom: 3px solid black;
-    }
-
-
-    */ }
-  .templesMain .townPhoto {
+  max-width: 960px; }
+  .templesMain h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0 5px 0; }
+  .templesMain h3 {
+    border-bottom: 1px solid white;
+    padding: 0 0 10px 0;
+    letter-spacing: 1pt;
+    font-size: 1.25rem;
+    text-align: center; }
+  .templesMain h4 {
+    text-align: left;
+    font-size: 1.5rem; }
+  .templesMain h5 {
+    font-size: 1.5rem; }
+  .templesMain h6 {
+    font-size: 1.25rem;
+    text-indent: 20px; }
+  .templesMain p {
+    line-height: .5rem;
+    text-align: left; }
+  .templesMain .templeSection {
     position: relative;
-    font-size: 1.25rem; }
-  .templesMain figure {
-    width: 100%;
-    margin: 0; }
+    padding-bottom: 50px;
+    border-bottom: 3px solid #000053; }
   .templesMain img {
     position: relative;
     width: 100%;
     height: auto; }
+  .templesMain figure {
+    width: 100%;
+    margin: 0; }
   .templesMain .weatherSummary {
     position: absolute;
     top: 10px;
@@ -594,15 +594,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "current currentValue" "temp tempValue" "highTemp highTempValue" "lowTemp lowTempValue" "windChill windChillValue" "humidity humidityValue" "windSpeed windSpeedValue";
     font-size: .75rem; }
-  .templesMain h3 {
-    border-bottom: 1px solid white;
-    padding: 0 0 10px 0;
-    letter-spacing: 1pt;
-    font-size: 1.25rem;
-    text-align: center; }
-  .templesMain p {
-    line-height: .5rem;
-    text-align: center; }
   .templesMain .current {
     grid-area: current;
     text-align: right; }
@@ -653,20 +644,56 @@ footer {
   header .logo {
     width: 100px; }
 
+  /*--------------------------- Navigation / Side Bar Menu --------------------*/
+  .sidebar a {
+    font-size: 1.55rem; }
+
+  .openbtn {
+    font-size: 50px; }
+
+  .sidebar .closebtn {
+    font-size: 60px;
+    padding-top: 25px; }
+
   /*----------------------------------- Main ----------------------------------*/
   main figcaption {
     font-size: 1.25em;
     padding: 10px 0 0 0; }
+  main h1 {
+    font-size: 3.5rem; }
 
   /*---------------------------------- Footer ---------------------------------*/
+  footer {
+    font-size: 1.5rem; }
+
   /*----------------------------------- Home Page -----------------------------*/
   /*---------------------------------- Temple Page ----------------------------*/
+  .templesMain h1 {
+    font-size: 3.5rem; }
+  .templesMain h2 {
+    font-size: 2.5rem; }
+  .templesMain h3 {
+    font-size: 1.75rem; }
+  .templesMain h4 {
+    font-size: 2rem; }
+  .templesMain h5 {
+    font-size: 2.25rem; }
+  .templesMain h6 {
+    font-size: 1.75rem; }
+  .templesMain p,
+  .templesMain li {
+    font-size: 1.5rem; }
+  .templesMain .weatherSummary {
+    padding: 0 0 10px 0; }
+  .templesMain .summaryContainer {
+    font-size: 1.25rem; }
+  .templesMain section {
+    padding-bottom: 50px; }
   .templesMain .forecastSection {
     display: grid;
     background-color: #d3ccb9;
     margin: 0 auto;
-    text-align: center;
-    padding: 10px 10px 30px 10px; }
+    text-align: center; }
   .templesMain .forecastDayContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -705,7 +732,7 @@ footer {
     font-family: 'Buenard', serif; }
   .templesMain .forecastSection {
     display: grid;
-    background-color: #d3ccb9;
+    background-color: #ACC18A;
     margin: 0 auto;
     text-align: center;
     padding: 10px 10px 30px 10px; }

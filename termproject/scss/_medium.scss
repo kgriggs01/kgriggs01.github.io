@@ -19,6 +19,22 @@ header {
 }
 
 
+/*--------------------------- Navigation / Side Bar Menu --------------------*/
+.sidebar a {
+    font-size: 1.55rem;
+}
+
+.openbtn {
+    font-size: 50px;
+
+}
+
+.sidebar .closebtn {
+    font-size: 60px;
+    padding-top: 25px;
+}
+
+
 /*----------------------------------- Main ----------------------------------*/
 main {
 
@@ -27,10 +43,15 @@ main {
         padding: 10px 0 0 0;
     }
 
-
+    h1 {
+        font-size: 3.5rem;
+    }
 }
 
 /*---------------------------------- Footer ---------------------------------*/
+footer {
+font-size: 1.5rem;
+}
 
 
 /*----------------------------------- Home Page -----------------------------*/
@@ -39,12 +60,53 @@ main {
 /*---------------------------------- Temple Page ----------------------------*/
 .templesMain {
 
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 2.25rem;
+    }
+
+    h6 {
+        font-size: 1.75rem;
+    }
+
+    p,
+    li {
+        font-size: 1.5rem;
+    }
+
+    .weatherSummary {
+        padding: 0 0 10px 0;
+    }
+
+    .summaryContainer {
+        font-size: 1.25rem;
+
+    }
+
+    section {
+        padding-bottom: 50px;
+    }
+
     .forecastSection {
         display: grid;
         background-color: rgb(211, 204, 185);
         margin: 0 auto;
         text-align: center;
-        padding: 10px 10px 30px 10px;
     }
 
     .forecastDayContainer {
@@ -101,7 +163,7 @@ main {
 
        .forecastSection {
         display: grid;
-        background-color: rgb(211, 204, 185);
+        background-color: #ACC18A;
         margin: 0 auto;
         text-align: center;
         padding: 10px 10px 30px 10px;

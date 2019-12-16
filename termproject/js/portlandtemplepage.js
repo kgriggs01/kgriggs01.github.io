@@ -86,13 +86,13 @@ fetch(portlandTempleURL)
       if (temples[i].name == 'Portland') {
 
         let card = document.createElement("section");
-        let address = document.createElement("h3");
+        let address = document.createElement("h4");
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
-        let phoneNumber = document.createElement("h3");
+        let phoneNumber = document.createElement("h4");
         let telephone = document.createElement("p");
-        let email = document.createElement("h3");
+        let email = document.createElement("h4");
         let emailURL = document.createElement("p");
         let portlandTempleInfo = document.createElement("div");
 
@@ -191,7 +191,7 @@ fetch(portlandClosuresURL)
         templesClosures2020.textContent = temples[i].closures2020[j];
         list2.appendChild(templesClosures2020)
         document.querySelector("div.portlandClosures2020").appendChild(list2);
-        console.log(templesClosures2020);
+        //console.log(templesClosures2020);
       }
     }
     }
