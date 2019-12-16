@@ -176,14 +176,23 @@ fetch(portlandClosuresURL)
     for (let i = 0; i < temples.length; i++) {
       if (temples[i].name == "Portland") {
 
-        let list = document.createElement("ul");
-        for (let j = 0; j < temples[i].closures.length; j++) {
+        let list1 = document.createElement("ul");
+        for (let j = 0; j < temples[i].closures2019.length; j++) {
           let templesClosures2019 = document.createElement("li");
           templesClosures2019.textContent = temples[i].closures2019[j];
-          list.appendChild(templesClosures2019)
-          document.querySelector("div.portlandClosures2019").appendChild(list);
+          list1.appendChild(templesClosures2019)
+          document.querySelector("div.portlandClosures2019").appendChild(list1);
           //console.log(templesClosures2019);
         }
+      
+      let list2 = document.createElement("ul");
+      for (let j = 0; j < temples[i].closures2020.length; j++) {
+        let templesClosures2020 = document.createElement("li");
+        templesClosures2020.textContent = temples[i].closures2020[j];
+        list2.appendChild(templesClosures2020)
+        document.querySelector("div.portlandClosures2020").appendChild(list2);
+        console.log(templesClosures2020);
       }
+    }
     }
   });

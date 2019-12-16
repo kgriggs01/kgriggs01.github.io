@@ -22,14 +22,11 @@
       "17 May 1884 — Dedicated",
       "13 March 1979 — Rededicated"
     ],
-    "closures" : "Closures",
-    "closed2019" : "2019",
     "closures2019": [
       "Tuesday, 24 December 2019",
 		  "Wednesday, 25 December 2019",
 		  "Tuesday, 31 December 2019 (Limited Hours)"
 	],
-  "closed2020" : "2020",
   "closures2020": [
 		"Wednesday, 1 January 2020",
 		"Monday, 10 February 2020 - Monday, 24 February 2020",
@@ -96,9 +93,11 @@
       "27 February 1988 — Groundbreaking",
       "25 April 1993 — Dedicated"
     ],
-    "closures": [
+    "closures2019": [
       "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-		  "Tuesday, 31 December 2019",
+		  "Tuesday, 31 December 2019"
+    ],
+    "closures2020": [
 		  "Wednesday, 1 January 2020",
 		  "Monday, 16 March 2020 - Monday, 30 March 2020",
 		  "Saturday, 4 April 2020",
@@ -131,9 +130,11 @@
       "25 April 2015 — Groundbreaking",
       "30 October 2016 — Dedicated"
     ],
-      "closures": [
+    "closures2019": [
         "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
-		    "Tuesday, 31 December 2019",
+		    "Tuesday, 31 December 2019"
+    ],
+    "closures2020": [
 		    "Wednesday, 1 January 2020",
 		    "Tuesday, 24 March 2020 - Monday, 6 April 2020",
 		    "Saturday, 4 July 2020",
