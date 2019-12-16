@@ -566,7 +566,7 @@ footer {
   .templesMain .templeSection {
     position: relative;
     padding-bottom: 100px;
-    border-bottom: 5px dotted black; }
+    border-bottom: 5px solid black; }
   .templesMain img {
     position: relative;
     width: 100%;
