@@ -540,20 +540,98 @@ footer {
 
 /*----------------------------------- Home Page -----------------------------*/
 /*---------------------------------- Temple Page ----------------------------*/
-.templesMain div {
-  font-size: 1rem; }
-.templesMain img {
-  width: 80%;
-  margin: 25px 0 10px 0;
-  box-shadow: -1px 1px 22px 1px black; }
-.templesMain section {
-  text-align: center; }
-.templesMain .templeInfo section {
-  padding-bottom: 50px;
-  border-bottom: 3px solid black; }
-.templesMain .forecastSection {
-  display: none;
-  margin-top: 20px; }
+.templesMain {
+  max-width: 960px;
+    /*
+    div {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 80%;
+        margin: 25px 0 10px 0;
+        box-shadow: -1px 1px 22px 1px rgba(0, 0, 0, 1);
+    }
+
+    section {
+        text-align: center;
+    }
+
+    .templeInfo section {
+        padding-bottom: 50px;
+        border-bottom: 3px solid black;
+    }
+
+
+    */ }
+  .templesMain .townPhoto {
+    position: relative;
+    font-size: 1.25rem; }
+  .templesMain figure {
+    width: 100%;
+    margin: 0; }
+  .templesMain img {
+    position: relative;
+    width: 100%;
+    height: auto; }
+  .templesMain .weatherSummary {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(to right, #01041b, rgba(0, 0, 0, 0));
+    border: 1px solid blue;
+    box-shadow: 0 0 30px #777;
+    border-radius: 15px;
+    letter-spacing: 1pt;
+    color: white;
+    line-height: 1.25rem;
+    text-shadow: 2px 2px black;
+    max-width: 65%; }
+  .templesMain .summaryContainer {
+    display: grid;
+    column-gap: 25px;
+    padding: 0 10px 10px 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "current currentValue" "temp tempValue" "highTemp highTempValue" "lowTemp lowTempValue" "windChill windChillValue" "humidity humidityValue" "windSpeed windSpeedValue";
+    font-size: .75rem; }
+  .templesMain h3 {
+    border-bottom: 1px solid white;
+    padding: 0 0 10px 0;
+    letter-spacing: 1pt;
+    font-size: 1.25rem;
+    text-align: center; }
+  .templesMain .current {
+    grid-area: current;
+    text-align: right; }
+  .templesMain .temp {
+    grid-area: temp;
+    text-align: right; }
+  .templesMain .highTemp {
+    grid-area: highTemp;
+    text-align: right; }
+  .templesMain .lowTemp {
+    grid-area: lowTemp;
+    text-align: right; }
+  .templesMain .windChill {
+    grid-area: windChill;
+    text-align: right; }
+  .templesMain .humidity {
+    grid-area: humidity;
+    text-align: right; }
+  .templesMain .windSpeed {
+    grid-area: windSpeed;
+    text-align: right; }
+  .templesMain .currentValue,
+  .templesMain .tempValue,
+  .templesMain .highTempValue,
+  .templesMain .lowTempValue,
+  .templesMain .windChillValue,
+  .templesMain .humidityValue,
+  .templesMain .windSpeedValue {
+    color: yellow; }
+  .templesMain .forecastSection {
+    display: none;
+    margin-top: 20px; }
 
 /*------------------------------ Reservations Page --------------------------*/
 /*------------------------------- Services Page -----------------------------*/

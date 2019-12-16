@@ -193,7 +193,109 @@ footer {
 
 /*---------------------------------- Temple Page ----------------------------*/
 .templesMain {
+    max-width: 960px;
 
+    .townPhoto {
+        position: relative;
+        font-size: 1.25rem;
+    }
+
+    figure {
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .weatherSummary {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: linear-gradient(to right, rgb(1, 4, 27), rgba(0, 0, 0, 0));
+        border: 1px solid blue;
+        box-shadow: 0 0 30px #777;
+        border-radius: 15px;
+        letter-spacing: 1pt;
+        color: white;
+        line-height: 1.25rem;
+        text-shadow: 2px 2px black;
+        max-width: 65%;
+    }
+
+    .summaryContainer {
+        display: grid;
+        column-gap: 25px;
+        padding: 0 10px 10px 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "current currentValue"
+            "temp tempValue"
+            "highTemp highTempValue"
+            "lowTemp lowTempValue"
+            "windChill windChillValue"
+            "humidity humidityValue"
+            "windSpeed windSpeedValue";
+        font-size: .75rem;
+    }
+
+    h3 {
+        border-bottom: 1px solid white;
+        padding: 0 0 10px 0;
+        letter-spacing: 1pt;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .current {
+        grid-area: current;
+        text-align: right;
+    }
+
+    .temp {
+        grid-area: temp;
+        text-align: right;
+    }
+
+    .highTemp {
+        grid-area: highTemp;
+        text-align: right;
+    }
+
+    .lowTemp {
+        grid-area: lowTemp;
+        text-align: right;
+    }
+
+    .windChill {
+        grid-area: windChill;
+        text-align: right;
+    }
+
+    .humidity {
+        grid-area: humidity;
+        text-align: right;
+    }
+
+    .windSpeed {
+        grid-area: windSpeed;
+        text-align: right;
+    }
+
+    .currentValue,
+    .tempValue,
+    .highTempValue,
+    .lowTempValue,
+    .windChillValue,
+    .humidityValue,
+    .windSpeedValue {
+        color: yellow;
+    }
+
+    /*
     div {
         font-size: 1rem;
     }
@@ -213,6 +315,8 @@ footer {
         border-bottom: 3px solid black;
     }
 
+
+    */
     .forecastSection {
         display: none;
         margin-top: 20px;

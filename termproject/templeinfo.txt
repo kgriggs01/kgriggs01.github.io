@@ -2,13 +2,12 @@
   "temples" : [
   {
     "name": "Logan",
-    "fullname": "Logan Utah Temple",
-    "photo": "logan-temple-pic.jpg",
+    "address" : "Address",
     "streetAddress": "175 N 300 E",
     "cityStateZip": "Logan UT 84321-4720",
     "country": "United States",
     "telephone": "(1) 435-752-3611",
-    "email": "loganutahtemple.org",
+    "emailURL": "loganutahtemple.org",
     "services" : [
       "Clothing rental available",
       "Cafeteria available",
@@ -33,13 +32,12 @@
 },
   {
     "name": "Portland",
-    "fullname": "Portland Oregon Temple",
-    "photo": "portland-temple-pic.jpg",
+    "address" : "Address",
     "streetAddress": "13600 Kruse Oaks Blvd",
     "cityStateZip": "Lake Oswego OR 97035-8602",
     "country": "United States",
     "telephone": "(1) 503-639-7066",
-    "email": "portlandoregontemple.org",
+    "emailURL": "portlandoregontemple.org",
     "services" : [
       "Clothing rental available",
       "Cafeteria available",
@@ -69,13 +67,12 @@
   },
   {
     "name": "San Diego",
-    "fullname": "San Diego California Temple",
-    "photo": "san-diego-temple-pic.jpg",
+    "address" : "Address",
     "streetAddress": "7474 Charmant Dr",
     "cityStateZip": "San Diego CA 92122-5000",
     "country": "United States",
     "telephone": "(1) 858-622-0991",
-    "email": "sandiegocaliforniatemple.org",
+    "emailURL": "sandiegocaliforniatemple.org",
     "services" : [
       "Clothing rental available",
       "Cafeteria available",
@@ -103,13 +100,12 @@
   },
   {
     "name": "Star Valley",
-    "fullname": "Star Valley Wyoming Temple",
-    "photo": "star-valley-temple-pic.jpg",
+    "address" : "Address",
     "streetAddress": "885 S Washington St",
     "cityStateZip": "Afton WY 83110",
     "country": "United States",
     "telephone": "(1) 307-886-6820",
-    "email": "starvalleywyomingtemple.org",
+    "emailURL": "starvalleywyomingtemple.org",
     "services" : [
       "No clothing rental available",
       "No cafeteria available",
