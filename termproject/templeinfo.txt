@@ -22,6 +22,7 @@
       "17 May 1884 — Dedicated",
       "13 March 1979 — Rededicated"
     ],
+    "closures" : "Closures",
     "closed2019" : "2019",
     "closures2019": [
       "Tuesday, 24 December 2019",
