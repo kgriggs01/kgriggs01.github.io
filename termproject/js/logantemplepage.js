@@ -86,24 +86,31 @@ fetch(loganTempleURL)
 
       if (temples[i].name == 'Logan') {
 
-        let temple = ["Logan"];
         let card = document.createElement("section");
+        let address = document.createElement("h3");
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
+        let address = document.createElement("h3");
         let telephone = document.createElement("p");
+        let address = document.createElement("h3");
         let emailURL = document.createElement("p");
         let loganTempleInfo = document.createElement("div");
+
+        address.textContent = temples[i].address;
         streetAddress.textContent = temples[i].streetAddress;
         cityStateZip.textContent = temples[i].cityStateZip;
         country.textContent = temples[i].country;
         telephone.textContent = temples[i].telephone;
         emailURL.textContent = temples[i].emailURL;
+
+        loganTempleInfo.appendChild(address);
         loganTempleInfo.appendChild(streetAddress);
         loganTempleInfo.appendChild(cityStateZip);
         loganTempleInfo.appendChild(country);
         loganTempleInfo.appendChild(telephone);
         loganTempleInfo.appendChild(emailURL);
+        
         card.appendChild(loganTempleInfo);
         document.querySelector("div.loganTempleInfo").appendChild(card);
       }

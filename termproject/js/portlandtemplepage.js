@@ -85,26 +85,30 @@ fetch(portlandTempleURL)
 
       if (temples[i].name == 'Portland') {
 
-        let temple = ["Portland"];
         let card = document.createElement("section");
+        let address = document.createElement("h3");
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
         let telephone = document.createElement("p");
         let emailURL = document.createElement("p");
         let portlandTempleInfo = document.createElement("div");
+
+        address.textContent = temples[i].address;
         streetAddress.textContent = temples[i].streetAddress;
         cityStateZip.textContent = temples[i].cityStateZip;
         country.textContent = temples[i].country;
         telephone.textContent = temples[i].telephone;
         emailURL.textContent = temples[i].emailURL;
+
+        portlandTempleInfo.appendChild(address);
         portlandTempleInfo.appendChild(streetAddress);
         portlandTempleInfo.appendChild(cityStateZip);
         portlandTempleInfo.appendChild(country);
         portlandTempleInfo.appendChild(telephone);
         portlandTempleInfo.appendChild(emailURL);
-        card.appendChild(portlandTempleInfo);
 
+        card.appendChild(portlandTempleInfo);
         document.querySelector("div.portlandTempleInfo").appendChild(card);
       }
     }

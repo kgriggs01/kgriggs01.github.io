@@ -6,7 +6,9 @@
     "streetAddress": "175 N 300 E",
     "cityStateZip": "Logan UT 84321-4720",
     "country": "United States",
+    "phoneNumber" : "Phone Number",
     "telephone": "(1) 435-752-3611",
+    "email" : "Email",
     "emailURL": "loganutahtemple.org",
     "services" : [
       "Clothing rental available",
@@ -36,7 +38,9 @@
     "streetAddress": "13600 Kruse Oaks Blvd",
     "cityStateZip": "Lake Oswego OR 97035-8602",
     "country": "United States",
+    "phoneNumber" : "Phone Number",
     "telephone": "(1) 503-639-7066",
+    "email" : "Email",
     "emailURL": "portlandoregontemple.org",
     "services" : [
       "Clothing rental available",
@@ -71,7 +75,9 @@
     "streetAddress": "7474 Charmant Dr",
     "cityStateZip": "San Diego CA 92122-5000",
     "country": "United States",
+    "phoneNumber" : "Phone Number",
     "telephone": "(1) 858-622-0991",
+    "email" : "Email",
     "emailURL": "sandiegocaliforniatemple.org",
     "services" : [
       "Clothing rental available",
@@ -104,7 +110,9 @@
     "streetAddress": "885 S Washington St",
     "cityStateZip": "Afton WY 83110",
     "country": "United States",
+    "phoneNumber" : "Phone Number",
     "telephone": "(1) 307-886-6820",
+    "email" : "Email",
     "emailURL": "starvalleywyomingtemple.org",
     "services" : [
       "No clothing rental available",

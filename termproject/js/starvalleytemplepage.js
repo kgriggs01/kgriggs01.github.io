@@ -86,26 +86,30 @@ fetch(starvalleyTempleURL)
 
       if (temples[i].name == 'Star Valley') {
 
-        let temple = ["Star Valley"];
         let card = document.createElement("section");
+        let address = document.createElement("h3");
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
         let telephone = document.createElement("p");
         let emailURL = document.createElement("p");
         let starvalleyTempleInfo = document.createElement("div");
+
+        address.textContent = temples[i].address;
         streetAddress.textContent = temples[i].streetAddress;
         cityStateZip.textContent = temples[i].cityStateZip;
         country.textContent = temples[i].country;
         telephone.textContent = temples[i].telephone;
         emailURL.textContent = temples[i].emailURL;
+
+        starvalleyTempleInfo.appendChild(address);
         starvalleyTempleInfo.appendChild(streetAddress);
         starvalleyTempleInfo.appendChild(cityStateZip);
         starvalleyTempleInfo.appendChild(country);
         starvalleyTempleInfo.appendChild(telephone);
         starvalleyTempleInfo.appendChild(emailURL);
-        card.appendChild(starvalleyTempleInfo);
 
+        card.appendChild(starvalleyTempleInfo);
         document.querySelector("div.starvalleyTempleInfo").appendChild(card);
       }
     }

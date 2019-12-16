@@ -85,26 +85,30 @@ fetch(sandiegoTempleURL)
 
       if (temples[i].name == 'San Diego') {
 
-        let temple = ["San Diego"];
         let card = document.createElement("section");
+        let address = document.createElement("h3");
         let streetAddress = document.createElement("p");
         let cityStateZip = document.createElement("p");
         let country = document.createElement("p");
         let telephone = document.createElement("p");
         let emailURL = document.createElement("p");
         let sandiegoTempleInfo = document.createElement("div");
+
+        address.textContent = temples[i].address;
         streetAddress.textContent = temples[i].streetAddress;
         cityStateZip.textContent = temples[i].cityStateZip;
         country.textContent = temples[i].country;
         telephone.textContent = temples[i].telephone;
         emailURL.textContent = temples[i].emailURL;
+
+        sandiegoTempleInfo.appendChild(address);
         sandiegoTempleInfo.appendChild(streetAddress);
         sandiegoTempleInfo.appendChild(cityStateZip);
         sandiegoTempleInfo.appendChild(country);
         sandiegoTempleInfo.appendChild(telephone);
         sandiegoTempleInfo.appendChild(emailURL);
-        card.appendChild(sandiegoTempleInfo);
 
+        card.appendChild(sandiegoTempleInfo);
         document.querySelector("div.sandiegoTempleInfo").appendChild(card);
       }
     }
