@@ -60,7 +60,7 @@
     "closures2019": [
       "Tuesday, 24 December 2019",
 		  "Wednesday, 25 December 2019",
-		  "Tuesday, 31 December 2019 (Limited Hours)",
+		  "Tuesday, 31 December 2019 (Limited Hours)"
 	],
       "closures2020": [
 		  "Wednesday, 1 January 2020",
