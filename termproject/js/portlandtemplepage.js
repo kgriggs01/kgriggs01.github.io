@@ -178,11 +178,11 @@ fetch(portlandClosuresURL)
 
         let list = document.createElement("ul");
         for (let j = 0; j < temples[i].closures.length; j++) {
-          let templesClosures = document.createElement("li");
-          templesClosures.textContent = temples[i].closures[j];
-          list.appendChild(templesClosures)
-          document.querySelector("div.portlandClosures").appendChild(list);
-          //console.log(templesClosures);
+          let templesClosures2019 = document.createElement("li");
+          templesClosures2019.textContent = temples[i].closures2019[j];
+          list.appendChild(templesClosures2019)
+          document.querySelector("div.portlandClosures2019").appendChild(list);
+          //console.log(templesClosures2019);
         }
       }
     }

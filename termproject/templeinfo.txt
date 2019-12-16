@@ -57,10 +57,12 @@
       "20 September 1986 — Groundbreaking",
       "19 August 1989 — Dedicated"
     ],
-    "closures": [
+    "closures2019": [
       "Tuesday, 24 December 2019",
 		  "Wednesday, 25 December 2019",
 		  "Tuesday, 31 December 2019 (Limited Hours)",
+	],
+      "closures2020": [
 		  "Wednesday, 1 January 2020",
 		  "Monday, 3 February 2020 - Monday, 24 February 2020",
 		  "Saturday, 4 April 2020",

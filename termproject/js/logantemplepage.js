@@ -95,6 +95,11 @@ fetch(loganTempleURL)
         let telephone = document.createElement("p");
         let email = document.createElement("h3");
         let emailURL = document.createElement("p");
+        let closures = document.createElement("h3");
+        let closed2019 = document.createElement("h4");
+        let closures2019 = document.createElement("p");
+        let closed2020 = document.createElement("h4");
+        let closures2020 = document.createElement("p");
         let loganTempleInfo = document.createElement("div");
 
         address.textContent = temples[i].address;
@@ -105,6 +110,11 @@ fetch(loganTempleURL)
         telephone.textContent = temples[i].telephone;
         email.textContent = temples[i].email;
         emailURL.textContent = temples[i].emailURL;
+        closures.textContent = temples[i].closures;
+        closed2019.textContent = temples[i].closed2019;
+        closures2019.textContent = temples[i].closures2019;
+        closed2020.textContent = temples[i].closed2020;
+        closures2020.textContent = temples[i].closures2020;
 
         loganTempleInfo.appendChild(address);
         loganTempleInfo.appendChild(streetAddress);
@@ -114,6 +124,11 @@ fetch(loganTempleURL)
         loganTempleInfo.appendChild(telephone);
         loganTempleInfo.appendChild(email);
         loganTempleInfo.appendChild(emailURL);
+        loganTempleInfo.appendChild(closures);
+        loganTempleInfo.appendChild(closed2019);
+        loganTempleInfo.appendChild(closures2019);
+        loganTempleInfo.appendChild(closed2020);
+        loganTempleInfo.appendChild(closures2020);
 
         card.appendChild(loganTempleInfo);
         document.querySelector("div.loganTempleInfo").appendChild(card);
@@ -167,7 +182,7 @@ fetch(loganMilestonesURL)
     }
   });
 
-
+/*
 const loganClosuresURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 fetch(loganClosuresURL)
   .then(function (response) {
@@ -189,3 +204,5 @@ fetch(loganClosuresURL)
       }
     }
   });
+
+  */
