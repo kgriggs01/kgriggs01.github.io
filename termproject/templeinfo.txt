@@ -20,6 +20,11 @@
       "18 May 1877 — Groundbreaking",
       "17 May 1884 — Dedicated",
       "13 March 1979 — Rededicated"
+    ],
+      "closures" : [
+      "Tuesday, 24 December 2019",
+      "Wednesday, 25 December 2019",
+      "Tuesday, 31 December 2019 (Limited Hours)"
     ]
   },
   {
