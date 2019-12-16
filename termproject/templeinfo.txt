@@ -10,10 +10,10 @@
     "telephone": "(1) 435-752-3611",
     "email": "loganutahtemple.org",
     "services" : {
-      "service1" : "Clothing rental available",
-      "service2" : "Cafeteria available",
-      "service3" : "No patron housing available",
-      "service4" : "No distribution center nearby"
+      "services1" : "Clothing rental available",
+      "services2" : "Cafeteria available",
+      "services3" : "No patron housing available",
+      "services4" : "No distribution center nearby"
     },
     "milestones" : [
       "6 October 1876 — Announced",

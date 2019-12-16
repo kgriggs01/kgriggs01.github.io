@@ -93,7 +93,7 @@ fetch(loganMilestonesURL)
     }
   });
 
-
+/*
   const loganClosuresURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 fetch(loganClosuresURL)
   .then(function (response) {
@@ -116,7 +116,7 @@ fetch(loganClosuresURL)
     }
   });
 
-
+*/
 const LoganForecastURL = "https://api.openweathermap.org/data/2.5/forecast?zip=84321&units=imperial&APPID=c5be23148aa1ea915f584c3fbe57e45c";
 
 fetch(LoganForecastURL)
