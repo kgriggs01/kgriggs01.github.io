@@ -22,16 +22,13 @@
       "13 March 1979 — Rededicated"
     ],
 
-	"closures": [{
-			"2019.1": "Tuesday, 24 December 2019",
-			"2019.2": "Wednesday, 25 December 2019",
-			"2019.3": "Tuesday, 31 December 2019 (Limited Hours)"
-		},
-		{
-			"2020.1": "Wednesday, 1 January 2020",
-			"2020.2": "Monday, 10 February 2020 - Monday, 24 February 2020",
-			"2020.3": "Saturday, 4 April 2020"
-		}
+	"closures": [
+		"Tuesday, 24 December 2019",
+		"Wednesday, 25 December 2019",
+		"Tuesday, 31 December 2019 (Limited Hours)",
+		"Wednesday, 1 January 2020",
+		"Monday, 10 February 2020 - Monday, 24 February 2020",
+		"Saturday, 4 April 2020"
 	]
 },
   {
