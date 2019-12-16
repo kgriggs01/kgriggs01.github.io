@@ -122,6 +122,55 @@ fetch(starvalleyTempleURL)
   });
 
 
+
+const starvalleyScheduleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+fetch(starvalleyScheduleURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Star Valley") {
+
+        let list1 = document.createElement("ul");
+        for (let j = 0; j < temples[i].baptism.length; j++) {
+          let templesBaptism = document.createElement("li");
+          templesBaptism.textContent = temples[i].baptism[j];
+          list1.appendChild(templesBaptism)
+          document.querySelector("div.starvalleyBaptism").appendChild(list1);
+          //console.log(templesBaptism);
+        }
+
+        let list2 = document.createElement("ul");
+        for (let j = 0; j < temples[i].initiatory.length; j++) {
+          let templesInitatory = document.createElement("li");
+          templesInitatory.textContent = temples[i].initiatory[j];
+          list2.appendChild(templesInitatory)
+          document.querySelector("div.starvalleyInitiatory").appendChild(list2);
+          //console.log(templesInitatory);
+        }
+        let list3 = document.createElement("ul");
+        for (let j = 0; j < temples[i].endowment.length; j++) {
+          let templesEndowment = document.createElement("li");
+          templesEndowment.textContent = temples[i].endowment[j];
+          list3.appendChild(templesEndowment)
+          document.querySelector("div.starvalleyEndowment").appendChild(list3);
+          //console.log(templesEndowment);
+        }
+        let list4 = document.createElement("ul");
+        for (let j = 0; j < temples[i].sealing.length; j++) {
+          let templesSealing = document.createElement("li");
+          templesSealing.textContent = temples[i].sealing[j];
+          list4.appendChild(templesSealing)
+          document.querySelector("div.starvalleySealing").appendChild(list4);
+          //console.log(templesSealing);
+        }
+      }
+    }
+  });
+
+
 const starvalleyServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
 fetch(starvalleyServicesURL)
@@ -143,29 +192,6 @@ fetch(starvalleyServicesURL)
       }
     }
   });
-
-const starvalleyMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
-fetch(starvalleyMilestonesURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    const temples = jsonObject.temples;
-    for (let i = 0; i < temples.length; i++) {
-      if (temples[i].name == "Star Valley") {
-
-        let list = document.createElement("ul");
-        for (let j = 0; j < temples[i].milestones.length; j++) {
-          let templesMilestones = document.createElement("li");
-          templesMilestones.textContent = temples[i].milestones[j];
-          list.appendChild(templesMilestones)
-          document.querySelector("div.starvalleyMilestones").appendChild(list);
-          //console.log(templesMilestones);
-        }
-      }
-    }
-  });
-
 
 
 const starvalleyClosuresURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
@@ -194,6 +220,30 @@ fetch(starvalleyClosuresURL)
           list2.appendChild(templesClosures2020)
           document.querySelector("div.starvalleyClosures2020").appendChild(list2);
           //console.log(templesClosures2020);
+        }
+      }
+    }
+  });
+
+
+
+const starvalleyMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+fetch(starvalleyMilestonesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Star Valley") {
+
+        let list = document.createElement("ul");
+        for (let j = 0; j < temples[i].milestones.length; j++) {
+          let templesMilestones = document.createElement("li");
+          templesMilestones.textContent = temples[i].milestones[j];
+          list.appendChild(templesMilestones)
+          document.querySelector("div.starvalleyMilestones").appendChild(list);
+          //console.log(templesMilestones);
         }
       }
     }

@@ -121,6 +121,54 @@ fetch(portlandTempleURL)
   });
 
 
+const portlandScheduleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+fetch(portlandScheduleURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Portland") {
+
+        let list1 = document.createElement("ul");
+        for (let j = 0; j < temples[i].baptism.length; j++) {
+          let templesBaptism = document.createElement("li");
+          templesBaptism.textContent = temples[i].baptism[j];
+          list1.appendChild(templesBaptism)
+          document.querySelector("div.portlandBaptism").appendChild(list1);
+          //console.log(templesBaptism);
+        }
+
+        let list2 = document.createElement("ul");
+        for (let j = 0; j < temples[i].initiatory.length; j++) {
+          let templesInitatory = document.createElement("li");
+          templesInitatory.textContent = temples[i].initiatory[j];
+          list2.appendChild(templesInitatory)
+          document.querySelector("div.portlandInitiatory").appendChild(list2);
+          //console.log(templesInitatory);
+        }
+        let list3 = document.createElement("ul");
+        for (let j = 0; j < temples[i].endowment.length; j++) {
+          let templesEndowment = document.createElement("li");
+          templesEndowment.textContent = temples[i].endowment[j];
+          list3.appendChild(templesEndowment)
+          document.querySelector("div.portlandEndowment").appendChild(list3);
+          //console.log(templesEndowment);
+        }
+        let list4 = document.createElement("ul");
+        for (let j = 0; j < temples[i].sealing.length; j++) {
+          let templesSealing = document.createElement("li");
+          templesSealing.textContent = temples[i].sealing[j];
+          list4.appendChild(templesSealing)
+          document.querySelector("div.portlandSealing").appendChild(list4);
+          //console.log(templesSealing);
+        }
+      }
+    }
+  });
+
+
 const portlandServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
 fetch(portlandServicesURL)
@@ -138,28 +186,6 @@ fetch(portlandServicesURL)
           list.appendChild(templesServices)
           document.querySelector("div.portlandServices").appendChild(list);
           //console.log(templesServices);
-        }
-      }
-    }
-  });
-
-const portlandMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
-fetch(portlandMilestonesURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    const temples = jsonObject.temples;
-    for (let i = 0; i < temples.length; i++) {
-      if (temples[i].name == "Portland") {
-
-        let list = document.createElement("ul");
-        for (let j = 0; j < temples[i].milestones.length; j++) {
-          let templesMilestones = document.createElement("li");
-          templesMilestones.textContent = temples[i].milestones[j];
-          list.appendChild(templesMilestones)
-          document.querySelector("div.portlandMilestones").appendChild(list);
-          //console.log(templesMilestones);
         }
       }
     }
@@ -184,15 +210,37 @@ fetch(portlandClosuresURL)
           document.querySelector("div.portlandClosures2019").appendChild(list1);
           //console.log(templesClosures2019);
         }
-      
-      let list2 = document.createElement("ul");
-      for (let j = 0; j < temples[i].closures2020.length; j++) {
-        let templesClosures2020 = document.createElement("li");
-        templesClosures2020.textContent = temples[i].closures2020[j];
-        list2.appendChild(templesClosures2020)
-        document.querySelector("div.portlandClosures2020").appendChild(list2);
-        //console.log(templesClosures2020);
+
+        let list2 = document.createElement("ul");
+        for (let j = 0; j < temples[i].closures2020.length; j++) {
+          let templesClosures2020 = document.createElement("li");
+          templesClosures2020.textContent = temples[i].closures2020[j];
+          list2.appendChild(templesClosures2020)
+          document.querySelector("div.portlandClosures2020").appendChild(list2);
+          //console.log(templesClosures2020);
+        }
       }
     }
+  });
+
+const portlandMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+fetch(portlandMilestonesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Portland") {
+
+        let list = document.createElement("ul");
+        for (let j = 0; j < temples[i].milestones.length; j++) {
+          let templesMilestones = document.createElement("li");
+          templesMilestones.textContent = temples[i].milestones[j];
+          list.appendChild(templesMilestones)
+          document.querySelector("div.portlandMilestones").appendChild(list);
+          //console.log(templesMilestones);
+        }
+      }
     }
   });

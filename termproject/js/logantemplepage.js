@@ -122,6 +122,54 @@ fetch(loganTempleURL)
   });
 
 
+const loganScheduleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+fetch(loganScheduleURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Logan") {
+
+        let list1 = document.createElement("ul");
+        for (let j = 0; j < temples[i].baptism.length; j++) {
+          let templesBaptism = document.createElement("li");
+          templesBaptism.textContent = temples[i].baptism[j];
+          list1.appendChild(templesBaptism)
+          document.querySelector("div.loganBaptism").appendChild(list1);
+          //console.log(templesBaptism);
+        }
+
+        let list2 = document.createElement("ul");
+        for (let j = 0; j < temples[i].initiatory.length; j++) {
+          let templesInitatory = document.createElement("li");
+          templesInitatory.textContent = temples[i].initiatory[j];
+          list2.appendChild(templesInitatory)
+          document.querySelector("div.loganInitiatory").appendChild(list2);
+          //console.log(templesInitatory);
+        }
+        let list3 = document.createElement("ul");
+        for (let j = 0; j < temples[i].endowment.length; j++) {
+          let templesEndowment = document.createElement("li");
+          templesEndowment.textContent = temples[i].endowment[j];
+          list3.appendChild(templesEndowment)
+          document.querySelector("div.loganEndowment").appendChild(list3);
+          //console.log(templesEndowment);
+        }
+        let list4 = document.createElement("ul");
+        for (let j = 0; j < temples[i].sealing.length; j++) {
+          let templesSealing = document.createElement("li");
+          templesSealing.textContent = temples[i].sealing[j];
+          list4.appendChild(templesSealing)
+          document.querySelector("div.loganSealing").appendChild(list4);
+          //console.log(templesSealing);
+        }
+      }
+    }
+  });
+
+
 const loganServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
 fetch(loganServicesURL)
@@ -140,28 +188,6 @@ fetch(loganServicesURL)
           list.appendChild(templesServices)
           document.querySelector("div.loganServices").appendChild(list);
           //console.log(templesServices);
-        }
-      }
-    }
-  });
-
-const loganMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
-fetch(loganMilestonesURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    const temples = jsonObject.temples;
-    for (let i = 0; i < temples.length; i++) {
-      if (temples[i].name == "Logan") {
-
-        let list = document.createElement("ul");
-        for (let j = 0; j < temples[i].milestones.length; j++) {
-          let templesMilestones = document.createElement("li");
-          templesMilestones.textContent = temples[i].milestones[j];
-          list.appendChild(templesMilestones)
-          document.querySelector("div.loganMilestones").appendChild(list);
-          //console.log(templesMilestones);
         }
       }
     }
@@ -194,6 +220,28 @@ fetch(loganClosuresURL)
           list2.appendChild(templesClosures2020)
           document.querySelector("div.loganClosures2020").appendChild(list2);
           //console.log(templesClosures2020);
+        }
+      }
+    }
+  });
+
+const loganMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
+fetch(loganMilestonesURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const temples = jsonObject.temples;
+    for (let i = 0; i < temples.length; i++) {
+      if (temples[i].name == "Logan") {
+
+        let list = document.createElement("ul");
+        for (let j = 0; j < temples[i].milestones.length; j++) {
+          let templesMilestones = document.createElement("li");
+          templesMilestones.textContent = temples[i].milestones[j];
+          list.appendChild(templesMilestones)
+          document.querySelector("div.loganMilestones").appendChild(list);
+          //console.log(templesMilestones);
         }
       }
     }
