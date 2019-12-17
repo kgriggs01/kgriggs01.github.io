@@ -68,22 +68,22 @@
                                 <label class="top">Email <input type="email" name="email"
                                         placeholder="someone@gmail.com"></label>
 
-                                <label class="top">Zip Code <input id="zip" name="zip" type="number"
-                                        min="10000" max="99999" maxlength="5" required></label>
-                        </div>
+                                <label class="top">Zip <input type="zip" name="zip" pattern="[0-9]{5}" maxlength="5"
+                                        required></label>
 
-                        <div class="fieldsetContainer">
-                            <fieldset>
-                                <legend>Tell Us Something</legend>
+                                <div class="fieldsetContainer">
+                                    <fieldset>
+                                        <legend>Tell Us Something</legend>
 
-                                <label class="tellUs"><textarea id="comments" name="comments"
-                                        placeholder="Type your comments here..."></textarea></label>
-                            </fieldset>
-                        </div>
+                                        <label class="tellUs"><textarea id="comments" name="comments"
+                                                placeholder="Type your comments here..."></textarea></label>
+                                    </fieldset>
+                                </div>
 
-                        <div class="formSubmitButton">
-                            <input class="submitBtn" type="submit" name="submitButton" value="Send Your Comments">
-                        </div>
+                                <div class="formSubmitButton">
+                                    <input class="submitBtn" type="submit" name="submitButton"
+                                        value="Send Your Comments">
+                                </div>
                     </form>
 
                     <section class="contactBox">
