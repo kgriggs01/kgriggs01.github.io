@@ -540,41 +540,42 @@ footer {
 
 /*----------------------------------- Home Page -----------------------------*/
 /*---------------------------------- Temple Page ----------------------------*/
-.templesMain {
+.templesPageMain {
   max-width: 960px; }
-  .templesMain h2 {
+  .templesPageMain h2 {
     font-size: 1.5rem;
     text-align: center;
     padding: 10px 0 5px 0; }
-  .templesMain h3 {
+  .templesPageMain h3 {
     border-bottom: 1px solid white;
     padding: 0 0 10px 0;
     letter-spacing: 1pt;
     font-size: 1.25rem;
     text-align: center; }
-  .templesMain h4 {
+  .templesPageMain h4 {
     text-align: left;
     font-size: 1.5rem; }
-  .templesMain h5 {
+  .templesPageMain h5 {
     font-size: 1.5rem; }
-  .templesMain h6 {
+  .templesPageMain h6 {
     font-size: 1.25rem;
     text-indent: 20px; }
-  .templesMain p {
+  .templesPageMain p {
     line-height: .5rem;
     text-align: left; }
-  .templesMain .templeSection {
+  .templesPageMain .templeSection {
     position: relative;
     padding-bottom: 100px;
     border-bottom: 5px solid black; }
-  .templesMain img {
+  .templesPageMain img {
     position: relative;
     width: 100%;
-    height: auto; }
-  .templesMain figure {
+    height: auto;
+    border-radius: 15px; }
+  .templesPageMain figure {
     width: 100%;
     margin: 0; }
-  .templesMain .weatherSummary {
+  .templesPageMain .weatherSummary {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -587,52 +588,300 @@ footer {
     line-height: 1.25rem;
     text-shadow: 2px 2px black;
     max-width: 65%; }
-  .templesMain .summaryContainer {
+  .templesPageMain .summaryContainer {
     display: grid;
     column-gap: 25px;
     padding: 0 10px 10px 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "current currentValue" "temp tempValue" "highTemp highTempValue" "lowTemp lowTempValue" "windChill windChillValue" "humidity humidityValue" "windSpeed windSpeedValue";
     font-size: .75rem; }
-  .templesMain .current {
+  .templesPageMain .current {
     grid-area: current;
     text-align: right; }
-  .templesMain .temp {
+  .templesPageMain .temp {
     grid-area: temp;
     text-align: right; }
-  .templesMain .highTemp {
+  .templesPageMain .highTemp {
     grid-area: highTemp;
     text-align: right; }
-  .templesMain .lowTemp {
+  .templesPageMain .lowTemp {
     grid-area: lowTemp;
     text-align: right; }
-  .templesMain .windChill {
+  .templesPageMain .windChill {
     grid-area: windChill;
     text-align: right; }
-  .templesMain .humidity {
+  .templesPageMain .humidity {
     grid-area: humidity;
     text-align: right; }
-  .templesMain .windSpeed {
+  .templesPageMain .windSpeed {
     grid-area: windSpeed;
     text-align: right; }
-  .templesMain .currentValue,
-  .templesMain .tempValue,
-  .templesMain .highTempValue,
-  .templesMain .lowTempValue,
-  .templesMain .windChillValue,
-  .templesMain .humidityValue,
-  .templesMain .windSpeedValue {
+  .templesPageMain .currentValue,
+  .templesPageMain .tempValue,
+  .templesPageMain .highTempValue,
+  .templesPageMain .lowTempValue,
+  .templesPageMain .windChillValue,
+  .templesPageMain .humidityValue,
+  .templesPageMain .windSpeedValue {
     color: yellow; }
-  .templesMain .forecastSection {
+  .templesPageMain .forecastSection {
     display: none;
     margin-top: 20px; }
 
 /*------------------------------ Reservations Page --------------------------*/
+.reservationsPageMain {
+  padding: 0 2%;
+  min-height: 20rem; }
+  .reservationsPageMain form fieldset {
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    width: 90%; }
+  .reservationsPageMain form .fieldsetContainer {
+    padding: 20px 0 20px 0; }
+  .reservationsPageMain form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem; }
+  .reservationsPageMain form label.top,
+  .reservationsPageMain form label.tellUs,
+  .reservationsPageMain form div.danger,
+  .reservationsPageMain form #comments {
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1rem; }
+  .reservationsPageMain form label.top input,
+  .reservationsPageMain form label.top select,
+  .reservationsPageMain form label.tellUs input,
+  .reservationsPageMain form #comments {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 auto; }
+  .reservationsPageMain form label.top select {
+    max-width: 21.5rem; }
+  .reservationsPageMain form label.dangerOption {
+    padding: 3px; }
+  .reservationsPageMain form #comments {
+    height: 10rem; }
+  .reservationsPageMain form label.top input:required,
+  .reservationsPageMain form label.top select:required {
+    border-left: red solid 6px; }
+  .reservationsPageMain form label.top input:required:valid,
+  .reservationsPageMain form label.top select:required:valid {
+    border-left: green solid 6px; }
+  .reservationsPageMain form input:hover,
+  .reservationsPageMain form label.top select {
+    cursor: pointer; }
+  .reservationsPageMain form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem; }
+  .reservationsPageMain form .formSubmitButton {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 0 0; }
+
 /*------------------------------- Services Page -----------------------------*/
 /*------------------------------- Contact Us Page ---------------------------*/
+.contactPageMain {
+  padding: 0 2%;
+  min-height: 20rem; }
+  .contactPageMain h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: black; }
+  .contactPageMain h3 {
+    font-size: 1.5rem;
+    text-align: center; }
+  .contactPageMain .contactBox {
+    padding: 10px 0 20px 20px;
+    margin-bottom: 20px;
+    background-color: #DAFEB7;
+    color: black; }
+  .contactPageMain .contactInfo {
+    max-width: 95%;
+    text-align: center;
+    line-height: 1.5rem; }
+  .contactPageMain .contactTitle {
+    font-size: 1.25rem; }
+  .contactPageMain iframe {
+    display: none; }
+  .contactPageMain .icons img {
+    padding: 5px; }
+  .contactPageMain form fieldset {
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    width: 90%; }
+  .contactPageMain form .fieldsetContainer {
+    padding: 20px 0 20px 0; }
+  .contactPageMain form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem; }
+  .contactPageMain form label.top,
+  .contactPageMain form label.tellUs,
+  .contactPageMain form div.danger,
+  .contactPageMain form #comments {
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1rem; }
+  .contactPageMain form label.top input,
+  .contactPageMain form label.top select,
+  .contactPageMain form label.tellUs input,
+  .contactPageMain form #comments {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 auto; }
+  .contactPageMain form label.top select {
+    max-width: 21.5rem; }
+  .contactPageMain form label.dangerOption {
+    padding: 3px; }
+  .contactPageMain form #comments {
+    height: 5rem; }
+  .contactPageMain form label.top input:required {
+    border-left: red solid 6px; }
+  .contactPageMain form label.top input:required:valid {
+    border-left: green solid 6px; }
+  .contactPageMain form input:hover,
+  .contactPageMain form label.top select {
+    cursor: pointer; }
+  .contactPageMain form #rating {
+    width: 87%; }
+  .contactPageMain form #ratingValue {
+    padding-left: 10px;
+    color: #445ba9;
+    font-size: 1.75rem; }
+  .contactPageMain form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem; }
+  .contactPageMain form .formSubmitButton {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 0 0; }
+
+/*
+    form {
+        padding: 0 2%;
+        min-height: 20rem;
+
+        fieldset {
+            margin: 2rem 0;
+            border: 1px solid #445ba9;
+            border-radius: 10px;
+            padding: .5rem 2%;
+            padding-bottom: 2rem;
+            width: 90%;
+        }
+
+        legend {
+            color: #445ba9;
+            margin: 0 1rem;
+            padding: 0 .5rem;
+        }
+
+        label.top,
+        label.tellUs,
+        #comments {
+            display: block;
+            padding-top: 1rem;
+            color: #9c2c13;
+            font-size: 1rem;
+        }
+
+        label.top input,
+        label.top select,
+        label.tellUs input,
+        #comments {
+            -webkit-appearance: none;
+            display: block;
+            font-size: 1rem;
+            border: solid 1px #999;
+            border-radius: 4px;
+            padding: .75rem;
+            color: #555;
+            width: 90%;
+            max-width: 20rem;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        #comments {
+            height: 5rem;
+        }
+
+  
+
+        label.top input:required {
+            border-left: red solid 6px;
+        }
+
+        label.top input:required:valid {
+            border-left: green solid 6px;
+        }
+
+        input:hover,
+        label.top select {
+            cursor: pointer;
+        }
+
+        input.submitBtn {
+            border: none;
+            background-color: #9c2c13;
+            color: white;
+            border-radius: 1rem;
+            padding: .75rem 1.5rem;
+            margin: 0 0 2rem 2%;
+            width: 96%;
+            max-width: 20rem;
+        }
+
+        .formSubmitButton {
+            width: 100%;
+            text-align: center;
+            padding: 25px 0 0 0;
+        }
+    }
+}
+*/
 /*----------------------------- References Us Page --------------------------*/
 /*----------------------------- Reception Page ------------------------------*/
 /*----------------------------- Missionaries Page ---------------------------*/
+/*----------------------------- Thank You Page ---------------------------*/
+.thankyouPageMain {
+  text-align: center;
+  padding: 0 0 20px 0; }
+  .thankyouPageMain h2 {
+    color: #ACC18A; }
+
 @media only screen and (min-width: 560px) {
   /*------------------------------------ Body ---------------------------------*/
   /*----------------------------------- Header --------------------------------*/
@@ -668,8 +917,6 @@ footer {
 
   /*----------------------------------- Home Page -----------------------------*/
   /*---------------------------------- Temple Page ----------------------------*/
-  .templesMain h1 {
-    font-size: 3.5rem; }
   .templesMain h2 {
     font-size: 2.5rem; }
   .templesMain h3 {
@@ -775,8 +1022,31 @@ footer {
 
   /*--------------------------- Navigation / Side Bar Menu --------------------*/
   /*------------------------------ Reservations Page --------------------------*/
+  .reservationsPageMain form fieldset {
+    width: 48%;
+    margin: 0 auto; }
+  .reservationsPageMain form .formSubmitButton {
+    width: 98%;
+    text-align: center; }
+
   /*------------------------------- Services Page -----------------------------*/
   /*------------------------------- Contact Us Page ---------------------------*/
+  .contactPageMain .contactBox {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px; }
+  .contactPageMain iframe {
+    display: flex;
+    padding: 20px 0 20px 0; }
+  .contactPageMain form fieldset {
+    width: 48%;
+    margin: 0 auto; }
+  .contactPageMain form .formSubmitButton {
+    width: 98%;
+    text-align: center; }
+
   /*----------------------------- References Us Page --------------------------*/
   /*----------------------------- Reception Us Page ---------------------------*/
   /*----------------------------- Missionaries Us Page ------------------------*/ }
@@ -789,6 +1059,14 @@ footer {
     max-width: auto;
     margin: auto; }
 
+  header h1 {
+    font-size: 2rem; }
+  header h2 {
+    font-size: 1rem;
+    padding: 10px 0 10px 0; }
+  header .logo {
+    width: 75px; }
+
   /*----------------------------------- Main ----------------------------------*/
   main {
     max-width: 1200px;
@@ -796,13 +1074,31 @@ footer {
     main figure {
       width: 75%;
       margin: 0 auto; }
+    main h1 {
+      font-size: 2rem; }
 
   /*--------------------------- Navigation / Side Bar Menu --------------------*/
+  .sidebar a {
+    font-size: 1.25rem; }
+
+  .openbtn {
+    font-size: 35px; }
+
+  .sidebar .closebtn {
+    font-size: 40px;
+    padding-top: 25px; }
+
   /*----------------------------------- Home Page -----------------------------*/
   /*---------------------------------- Temple Page ----------------------------*/
   /*------------------------------ Reservations Page --------------------------*/
+  .reservationsPageMain form fieldset {
+    width: 35%; }
+
   /*------------------------------- Services Page -----------------------------*/
   /*------------------------------- Contact Us Page ---------------------------*/
+  .contactPageMain form fieldset {
+    width: 35%; }
+
   /*----------------------------- References Us Page --------------------------*/
   /*----------------------------- Reception Page ------------------------------*/
   /*----------------------------- Missionaries Page ---------------------------*/ }

@@ -50,7 +50,7 @@ main {
 
 /*---------------------------------- Footer ---------------------------------*/
 footer {
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 
@@ -60,10 +60,6 @@ font-size: 1.5rem;
 /*---------------------------------- Temple Page ----------------------------*/
 .templesMain {
 
-    h1 {
-        font-size: 3.5rem;
-    }
-    
     h2 {
         font-size: 2.5rem;
     }
@@ -161,7 +157,7 @@ font-size: 1.5rem;
         font-family: 'Buenard', serif;
     }
 
-       .forecastSection {
+    .forecastSection {
         display: grid;
         background-color: #ACC18A;
         margin: 0 auto;
@@ -227,6 +223,22 @@ font-size: 1.5rem;
 
 
 /*------------------------------ Reservations Page --------------------------*/
+.reservationsPageMain {
+
+    form {
+
+        fieldset {
+            width: 48%;
+            margin: 0 auto;
+        }
+
+        .formSubmitButton {
+            width: 98%;
+            text-align: center;
+        }
+
+    }
+}
 
 
 
@@ -235,7 +247,35 @@ font-size: 1.5rem;
 
 
 /*------------------------------- Contact Us Page ---------------------------*/
+.contactPageMain {
 
+    .contactBox {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+    }
+
+    iframe {
+        display: flex;
+        padding: 20px 0 20px 0;
+    }
+
+    form {
+
+        fieldset {
+            width: 48%;
+            margin: 0 auto;
+        }
+
+        .formSubmitButton {
+            width: 98%;
+            text-align: center;
+        }
+    }
+
+}
 
 
 /*----------------------------- References Us Page --------------------------*/
