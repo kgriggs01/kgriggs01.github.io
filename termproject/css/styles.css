@@ -703,6 +703,7 @@ footer {
   min-height: 20rem; }
   .reservationsPageMain form fieldset {
     display: flex;
+    flex-flow: column;
     margin: 0 auto;
     border: 1px solid #445ba9;
     border-radius: 10px;
@@ -772,7 +773,7 @@ footer {
   min-height: 20rem; }
   .contactPageMain form fieldset {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     margin: 0 auto;
     border: 1px solid #445ba9;
     border-radius: 10px;
@@ -781,7 +782,7 @@ footer {
   .contactPageMain form .fieldsetContainer {
     padding: 20px 0 20px 0;
     display: flex;
-    flex-flow: row; }
+    flex-flow: column; }
   .contactPageMain form legend {
     color: #445ba9;
     margin: 0 1rem;
@@ -789,7 +790,7 @@ footer {
   .contactPageMain form label.top,
   .contactPageMain form label.tellUs,
   .contactPageMain form #comments {
-    flex-flow: row;
+    flex-flow: column;
     padding-top: 1rem;
     color: #9c2c13;
     font-size: 1rem;

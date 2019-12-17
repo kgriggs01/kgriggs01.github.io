@@ -469,6 +469,7 @@ footer {
 
         fieldset {
             display: flex;
+            flex-flow: column;
             margin: 0 auto;
             border: 1px solid #445ba9;
             border-radius: 10px;
@@ -576,7 +577,7 @@ footer {
 
         fieldset {
             display: flex;
-            flex-flow: row;
+            flex-flow: column;
             margin: 0 auto;
             border: 1px solid #445ba9;
             border-radius: 10px;
@@ -587,7 +588,7 @@ footer {
         .fieldsetContainer {
             padding: 20px 0 20px 0;
             display: flex;
-            flex-flow: row;
+            flex-flow: column;
         }
 
         legend {
@@ -599,7 +600,7 @@ footer {
         label.top,
         label.tellUs,
         #comments {
-            flex-flow: row;
+            flex-flow: column;
             padding-top: 1rem;
             color: #9c2c13;
             font-size: 1rem;
