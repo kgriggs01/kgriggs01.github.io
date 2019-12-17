@@ -55,7 +55,25 @@ footer {
 
 
 /*----------------------------------- Home Page -----------------------------*/
+.homePageMain {
 
+    .contactBox {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+    }
+
+    iframe {
+        display: flex;
+        padding: 20px 0 20px 0;
+    }
+}
+
+.siteResources {
+    font-size: 1.5rem;
+}
 
 /*---------------------------------- Temple Page ----------------------------*/
 .templesMain {
@@ -241,9 +259,13 @@ footer {
 }
 
 
-
 /*------------------------------- Services Page -----------------------------*/
 
+
+/*----------------------------- Receptions Page ---------------------------*/
+
+
+/*----------------------------- Missionaries Page ------------------------*/
 
 
 /*------------------------------- Contact Us Page ---------------------------*/
@@ -278,12 +300,7 @@ footer {
 }
 
 
-/*----------------------------- References Us Page --------------------------*/
-
-
-
-/*----------------------------- Reception Us Page ---------------------------*/
-
-
-
-/*----------------------------- Missionaries Us Page ------------------------*/
+/*----------------------------- Resources Page --------------------------*/
+.resource {
+    font-size: 1.5rem;
+}

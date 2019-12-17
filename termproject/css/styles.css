@@ -454,30 +454,34 @@ header {
   padding-top: 60px;
   /* Place content 60px from the top */
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidebar */ }
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  text-align: left;
-  font-size: 1.25rem;
-  font-family: "Arima Madurai";
-  color: white;
-  display: block;
-  transition: 0.3s;
-  line-height: 2rem; }
-
-.sidebar a:hover {
-  color: #f1f1f1; }
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  text-align: center; }
+  /* 0.5 second transition effect to slide in the sidebar */
+  /* Position and style the close button (top right corner) */ }
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.25rem;
+    font-family: "Arima Madurai";
+    color: white;
+    display: block;
+    transition: 0.3s;
+    line-height: 2rem; }
+  .sidebar a:hover {
+    color: yellow; }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-align: center; }
+  .sidebar .active {
+    background-color: #444; }
+  .sidebar .listIndent {
+    text-indent: 2rem; }
+  .sidebar .listIndentActive {
+    background-color: #444;
+    text-indent: 2rem; }
 
 /* The button used to open the sidebar */
 .openbtn {
@@ -485,7 +489,7 @@ header {
   cursor: pointer;
   color: white;
   background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 10px 30px;
   border: none;
   width: 200px;
   text-align: left; }
@@ -499,15 +503,60 @@ header {
   /* If you want a transition effect */
   padding: 0 15px 0 0; }
 
-.active {
-  background-color: #444; }
+/* Regular breadcrumbs */
+.collapsed {
+  /* Collapsed breadcrumbs */ }
+  .collapsed ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2em;
+    color: #333; }
+  .collapsed li {
+    display: inline-block;
+    position: relative;
+    padding-right: 2em;
+    margin: 0; }
+  .collapsed li:after {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    width: 2em;
+    text-align: center; }
+  .collapsed li:last-child {
+    font-weight: bold; }
+  .collapsed li:last-child:after {
+    content: ''; }
+  .collapsed a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    white-space: nowrap; }
+  .collapsed a:active {
+    color: white;
+    background-color: black; }
+  .collapsed a:hover {
+    text-decoration: underline; }
+  .collapsed .collapsed li {
+    overflow: hidden; }
+  .collapsed .collapsed li:after {
+    background: #e3e3e3;
+    background: linear-gradient(90deg, rgba(227, 227, 227, 0.4) 0%, #e3e3e3 35%);
+    padding-left: 1em; }
+  .collapsed .collapsed a {
+    max-width: 2em;
+    transition: max-width 300ms ease-in-out; }
+  .collapsed .collapsed a:hover,
+  .collapsed .collapsed a:focus,
+  .collapsed .collapsed li:hover a {
+    max-width: 1000px; }
+  .collapsed .collapsed li:hover:after {
+    padding-left: 0em;
+    background: transparent; }
 
-.listIndent {
-  text-indent: 2rem; }
-
-.listIndentActive {
-  background-color: #444;
-  text-indent: 2rem; }
+.breadcrumb {
+  font-size: 1rem; }
+  .breadcrumb .active:hover {
+    text-decoration-line: none; }
 
 /*----------------------------------- Main ----------------------------------*/
 main {
@@ -539,6 +588,26 @@ footer {
   padding: 2rem 2%; }
 
 /*----------------------------------- Home Page -----------------------------*/
+.homePageMain .contactBox {
+  padding: 10px 0 20px 20px;
+  margin-bottom: 20px;
+  background-color: #DAFEB7;
+  color: black; }
+.homePageMain .contactInfo {
+  max-width: 95%;
+  text-align: center;
+  line-height: 1.5rem; }
+.homePageMain .contactTitle {
+  font-size: 1.25rem; }
+.homePageMain iframe {
+  display: none; }
+.homePageMain .icons img {
+  padding: 5px; }
+
+.siteResources {
+  font-size: 1rem;
+  padding: 0 0 10px 0; }
+
 /*---------------------------------- Temple Page ----------------------------*/
 .templesPageMain {
   max-width: 960px; }
@@ -695,6 +764,8 @@ footer {
     padding: 25px 0 0 0; }
 
 /*------------------------------- Services Page -----------------------------*/
+/*----------------------------- Receptions Page ------------------------------*/
+/*----------------------------- Missionaries Page ---------------------------*/
 /*------------------------------- Contact Us Page ---------------------------*/
 .contactPageMain {
   padding: 0 2%;
@@ -788,93 +859,11 @@ footer {
     text-align: center;
     padding: 25px 0 0 0; }
 
-/*
-    form {
-        padding: 0 2%;
-        min-height: 20rem;
+/*----------------------------- Resources Page --------------------------*/
+.resource {
+  font-size: 1rem;
+  padding: 10px 0 10px 0; }
 
-        fieldset {
-            margin: 2rem 0;
-            border: 1px solid #445ba9;
-            border-radius: 10px;
-            padding: .5rem 2%;
-            padding-bottom: 2rem;
-            width: 90%;
-        }
-
-        legend {
-            color: #445ba9;
-            margin: 0 1rem;
-            padding: 0 .5rem;
-        }
-
-        label.top,
-        label.tellUs,
-        #comments {
-            display: block;
-            padding-top: 1rem;
-            color: #9c2c13;
-            font-size: 1rem;
-        }
-
-        label.top input,
-        label.top select,
-        label.tellUs input,
-        #comments {
-            -webkit-appearance: none;
-            display: block;
-            font-size: 1rem;
-            border: solid 1px #999;
-            border-radius: 4px;
-            padding: .75rem;
-            color: #555;
-            width: 90%;
-            max-width: 20rem;
-            background-color: rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-        }
-
-        #comments {
-            height: 5rem;
-        }
-
-  
-
-        label.top input:required {
-            border-left: red solid 6px;
-        }
-
-        label.top input:required:valid {
-            border-left: green solid 6px;
-        }
-
-        input:hover,
-        label.top select {
-            cursor: pointer;
-        }
-
-        input.submitBtn {
-            border: none;
-            background-color: #9c2c13;
-            color: white;
-            border-radius: 1rem;
-            padding: .75rem 1.5rem;
-            margin: 0 0 2rem 2%;
-            width: 96%;
-            max-width: 20rem;
-        }
-
-        .formSubmitButton {
-            width: 100%;
-            text-align: center;
-            padding: 25px 0 0 0;
-        }
-    }
-}
-*/
-/*----------------------------- References Us Page --------------------------*/
-/*----------------------------- Reception Page ------------------------------*/
-/*----------------------------- Missionaries Page ---------------------------*/
 /*----------------------------- Thank You Page ---------------------------*/
 .thankyouPageMain {
   text-align: center;
@@ -916,6 +905,19 @@ footer {
     font-size: 1.5rem; }
 
   /*----------------------------------- Home Page -----------------------------*/
+  .homePageMain .contactBox {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px; }
+  .homePageMain iframe {
+    display: flex;
+    padding: 20px 0 20px 0; }
+
+  .siteResources {
+    font-size: 1.5rem; }
+
   /*---------------------------------- Temple Page ----------------------------*/
   .templesMain h2 {
     font-size: 2.5rem; }
@@ -1030,6 +1032,8 @@ footer {
     text-align: center; }
 
   /*------------------------------- Services Page -----------------------------*/
+  /*----------------------------- Receptions Page ---------------------------*/
+  /*----------------------------- Missionaries Page ------------------------*/
   /*------------------------------- Contact Us Page ---------------------------*/
   .contactPageMain .contactBox {
     display: flex;
@@ -1047,9 +1051,9 @@ footer {
     width: 98%;
     text-align: center; }
 
-  /*----------------------------- References Us Page --------------------------*/
-  /*----------------------------- Reception Us Page ---------------------------*/
-  /*----------------------------- Missionaries Us Page ------------------------*/ }
+  /*----------------------------- Resources Page --------------------------*/
+  .resource {
+    font-size: 1.5rem; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   /*------------------------------------ Body ---------------------------------*/
@@ -1082,24 +1086,30 @@ footer {
     font-size: 1.25rem; }
 
   .openbtn {
-    font-size: 35px; }
+    font-size: 35px;
+    padding: 10px 10px 10px 35px; }
 
   .sidebar .closebtn {
     font-size: 40px;
     padding-top: 25px; }
 
   /*----------------------------------- Home Page -----------------------------*/
+  .siteResources {
+    font-size: 1.35rem; }
+
   /*---------------------------------- Temple Page ----------------------------*/
   /*------------------------------ Reservations Page --------------------------*/
   .reservationsPageMain form fieldset {
     width: 35%; }
 
   /*------------------------------- Services Page -----------------------------*/
+  /*----------------------------- Receptions Page ------------------------------*/
+  /*----------------------------- Missionaries Page ---------------------------*/
   /*------------------------------- Contact Us Page ---------------------------*/
   .contactPageMain form fieldset {
     width: 35%; }
 
-  /*----------------------------- References Us Page --------------------------*/
-  /*----------------------------- Reception Page ------------------------------*/
-  /*----------------------------- Missionaries Page ---------------------------*/ }
+  /*----------------------------- Resources Page --------------------------*/
+  .resource {
+    font-size: 1.25rem; } }
 /* end of media query */
