@@ -572,42 +572,6 @@ footer {
     padding: 0 2%;
     min-height: 20rem;
 
-    h2 {
-        font-size: 2rem;
-        text-align: center;
-        color: black;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .contactBox {
-        padding: 10px 0 20px 20px;
-        margin-bottom: 20px;
-        background-color: #DAFEB7;
-        color: black;
-    }
-
-    .contactInfo {
-        max-width: 95%;
-        text-align: center;
-        line-height: 1.5rem;
-    }
-
-    .contactTitle {
-        font-size: 1.25rem;
-    }
-
-    iframe {
-        display: none;
-    }
-
-    .icons img {
-        padding: 5px;
-    }
-
     form {
 
         fieldset {
@@ -622,6 +586,8 @@ footer {
 
         .fieldsetContainer {
             padding: 20px 0 20px 0;
+            display: flex;
+            flex-flow: row;
         }
 
         legend {
@@ -649,6 +615,7 @@ footer {
             padding: .75rem;
             color: #555;
             width: 100%;
+
             background-color: rgba(0, 0, 0, 0.1);
             margin: 0 auto;
         }
@@ -687,6 +654,44 @@ footer {
             padding: 25px 0 0 0;
         }
     }
+
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        color: black;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contactBox {
+        padding: 10px 0 20px 20px;
+        margin-bottom: 20px;
+        background-color: #DAFEB7;
+        color: black;
+    }
+
+    .contactInfo {
+        max-width: 95%;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .contactTitle {
+        font-size: 1.25rem;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    .icons img {
+        padding: 5px;
+    }
+
 }
 
 

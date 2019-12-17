@@ -770,28 +770,6 @@ footer {
 .contactPageMain {
   padding: 0 2%;
   min-height: 20rem; }
-  .contactPageMain h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: black; }
-  .contactPageMain h3 {
-    font-size: 1.5rem;
-    text-align: center; }
-  .contactPageMain .contactBox {
-    padding: 10px 0 20px 20px;
-    margin-bottom: 20px;
-    background-color: #DAFEB7;
-    color: black; }
-  .contactPageMain .contactInfo {
-    max-width: 95%;
-    text-align: center;
-    line-height: 1.5rem; }
-  .contactPageMain .contactTitle {
-    font-size: 1.25rem; }
-  .contactPageMain iframe {
-    display: none; }
-  .contactPageMain .icons img {
-    padding: 5px; }
   .contactPageMain form fieldset {
     display: flex;
     flex-flow: row;
@@ -801,7 +779,9 @@ footer {
     padding: 20px 20px 20px 20px;
     width: 90%; }
   .contactPageMain form .fieldsetContainer {
-    padding: 20px 0 20px 0; }
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-flow: row; }
   .contactPageMain form legend {
     color: #445ba9;
     margin: 0 1rem;
@@ -847,6 +827,28 @@ footer {
     width: 100%;
     text-align: center;
     padding: 25px 0 0 0; }
+  .contactPageMain h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: black; }
+  .contactPageMain h3 {
+    font-size: 1.5rem;
+    text-align: center; }
+  .contactPageMain .contactBox {
+    padding: 10px 0 20px 20px;
+    margin-bottom: 20px;
+    background-color: #DAFEB7;
+    color: black; }
+  .contactPageMain .contactInfo {
+    max-width: 95%;
+    text-align: center;
+    line-height: 1.5rem; }
+  .contactPageMain .contactTitle {
+    font-size: 1.25rem; }
+  .contactPageMain iframe {
+    display: none; }
+  .contactPageMain .icons img {
+    padding: 5px; }
 
 /*----------------------------- Resources Page --------------------------*/
 .resource {
