@@ -599,9 +599,11 @@ footer {
         label.top,
         label.tellUs,
         #comments {
+            flex-flow: row;
             padding-top: 1rem;
             color: #9c2c13;
             font-size: 1rem;
+            width: 100%;
         }
 
         label.top input,

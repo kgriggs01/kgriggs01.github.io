@@ -789,9 +789,11 @@ footer {
   .contactPageMain form label.top,
   .contactPageMain form label.tellUs,
   .contactPageMain form #comments {
+    flex-flow: row;
     padding-top: 1rem;
     color: #9c2c13;
-    font-size: 1rem; }
+    font-size: 1rem;
+    width: 100%; }
   .contactPageMain form label.top input,
   .contactPageMain form label.top select,
   .contactPageMain form label.tellUs input,
