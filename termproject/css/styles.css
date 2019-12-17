@@ -794,6 +794,7 @@ footer {
     padding: 5px; }
   .contactPageMain form fieldset {
     display: flex;
+    flex-flow: row;
     margin: 0 auto;
     border: 1px solid #445ba9;
     border-radius: 10px;
@@ -807,7 +808,6 @@ footer {
     padding: 0 .5rem; }
   .contactPageMain form label.top,
   .contactPageMain form label.tellUs,
-  .contactPageMain form div.danger,
   .contactPageMain form #comments {
     padding-top: 1rem;
     color: #9c2c13;
@@ -823,13 +823,8 @@ footer {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0 auto; }
-  .contactPageMain form label.top select {
-    max-width: 21.5rem; }
-  .contactPageMain form label.dangerOption {
-    padding: 3px; }
   .contactPageMain form #comments {
     height: 5rem; }
   .contactPageMain form label.top input:required {
@@ -839,12 +834,6 @@ footer {
   .contactPageMain form input:hover,
   .contactPageMain form label.top select {
     cursor: pointer; }
-  .contactPageMain form #rating {
-    width: 87%; }
-  .contactPageMain form #ratingValue {
-    padding-left: 10px;
-    color: #445ba9;
-    font-size: 1.75rem; }
   .contactPageMain form input.submitBtn {
     border: none;
     background-color: #9c2c13;
@@ -852,7 +841,7 @@ footer {
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
-    width: 96%;
+    width: 95%;
     max-width: 20rem; }
   .contactPageMain form .formSubmitButton {
     width: 100%;
