@@ -518,7 +518,7 @@ footer {
 
 
 /*----------------------------- Missionaries Page ---------------------------*/
-.missionariesPageMain {
+.galleryPageMain {
     max-width: 960px;
     padding: 0 2%;
 
@@ -816,8 +816,9 @@ footer {
 
 
 .galleryPageMain {
-    max-width: 1750px;
+    max-width: 100%;
 
+}
 
     figure {
         border: 2px solid black;
@@ -831,8 +832,9 @@ footer {
     .galleryContainer img {
         filter: blur(0em);
         transition: filter 1s;
-        width: 94%;
+        width: 95%;
         margin: 10px;
+ 
     }
 
     .galleryPicCaption {
@@ -850,77 +852,14 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 50px;
         row-gap: 50px;
-        width: 100%;
-
+        width: 90%;
+        margin: 0 auto;
     }
 
     figure:hover {
         box-shadow: 0 0 50px rgb(12, 11, 11);
     }
-}
 
 
 
 
-
-
-
-
-
-
-.navigation {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    background-color: #7EA8BE;
-    font-weight: 500;
-    font-size: 1.25rem;
-
- 
-    
-}
-
-nav .menu {
-    background-color: rgb(62, 128, 163);
-    border: none;
-    font-size: 1.4rem;
-    font-weight: 700;
-    border: 2px solid black;
-}
-
-.navigation li:first-child {
-    display: block;
-}
-
-.navigation li {
-    display: none;
-}
-
-.navigation a {
-    display: block;
-    color: black;
-    padding: 0.75rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-.navigation .active {
-    background-color: rgb(62, 128, 163);
-    color: yellow;
-    font-weight: 400;
-    font-size: 1.75rem;
-}
-
-.navigation a:hover {
-    color: black;
-    font-weight: 600;
-    background-color: rgb(62, 128, 163);
-
-}
-
-.responsive li {
-    display: grid;
-
-
-}

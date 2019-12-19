@@ -745,14 +745,14 @@ footer {
 
 /*----------------------------- Receptions Page ------------------------------*/
 /*----------------------------- Missionaries Page ---------------------------*/
-.missionariesPageMain {
+.galleryPageMain {
   max-width: 960px;
   padding: 0 2%; }
-  .missionariesPageMain form h3 {
+  .galleryPageMain form h3 {
     font-size: 1.5rem;
     text-align: center;
     color: black; }
-  .missionariesPageMain form fieldset {
+  .galleryPageMain form fieldset {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
@@ -761,22 +761,22 @@ footer {
     padding: 20px 20px 20px 20px;
     width: 90%;
     background-color: #f9fdf1; }
-  .missionariesPageMain form .fieldsetContainer {
+  .galleryPageMain form .fieldsetContainer {
     padding: 20px 0 20px 0; }
-  .missionariesPageMain form legend {
+  .galleryPageMain form legend {
     color: #445ba9;
     margin: 0 1rem;
     padding: 0 .5rem; }
-  .missionariesPageMain form label.top,
-  .missionariesPageMain form label.tellUs,
-  .missionariesPageMain form #comments {
+  .galleryPageMain form label.top,
+  .galleryPageMain form label.tellUs,
+  .galleryPageMain form #comments {
     padding-top: 1rem;
     color: #9c2c13;
     font-size: 1rem; }
-  .missionariesPageMain form label.top input,
-  .missionariesPageMain form label.top select,
-  .missionariesPageMain form label.tellUs input,
-  .missionariesPageMain form #comments {
+  .galleryPageMain form label.top input,
+  .galleryPageMain form label.top select,
+  .galleryPageMain form label.tellUs input,
+  .galleryPageMain form #comments {
     -webkit-appearance: none;
     font-size: 1rem;
     border: solid 1px #999;
@@ -786,21 +786,21 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0 auto; }
-  .missionariesPageMain form label.top select {
+  .galleryPageMain form label.top select {
     max-width: 21.5rem; }
-  .missionariesPageMain form #comments {
+  .galleryPageMain form #comments {
     height: 10rem; }
-  .missionariesPageMain form label.top input:required,
-  .missionariesPageMain form label.top select:required {
+  .galleryPageMain form label.top input:required,
+  .galleryPageMain form label.top select:required {
     border-left: red solid 6px; }
-  .missionariesPageMain form label.top input:required:valid,
-  .missionariesPageMain form label.top select:required:valid {
+  .galleryPageMain form label.top input:required:valid,
+  .galleryPageMain form label.top select:required:valid {
     border-left: green solid 6px; }
-  .missionariesPageMain form input:hover,
-  .missionariesPageMain form label.top select,
-  .missionariesPageMain form #comments {
+  .galleryPageMain form input:hover,
+  .galleryPageMain form label.top select,
+  .galleryPageMain form #comments {
     cursor: pointer; }
-  .missionariesPageMain form input.submitBtn {
+  .galleryPageMain form input.submitBtn {
     border: none;
     background-color: #9c2c13;
     color: white;
@@ -809,19 +809,19 @@ footer {
     margin: 0 0 2rem 2%;
     width: 95%;
     max-width: 20rem; }
-  .missionariesPageMain form .formSubmitButton {
+  .galleryPageMain form .formSubmitButton {
     width: 100%;
     text-align: center;
     padding: 25px 0 0 0; }
-  .missionariesPageMain form .preference {
+  .galleryPageMain form .preference {
     display: block;
     padding: 0 0 10px 0;
     color: #9c2c13;
     font-size: 1rem; }
-  .missionariesPageMain form .preferenceOption {
+  .galleryPageMain form .preferenceOption {
     display: block;
     padding: 5px 5px 5px 10px; }
-  .missionariesPageMain .picsSection {
+  .galleryPageMain .picsSection {
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -831,12 +831,12 @@ footer {
     font-weight: 0;
     margin: 20px 0 50px 0;
     border-radius: 10px; }
-    .missionariesPageMain .picsSection h2 {
+    .galleryPageMain .picsSection h2 {
       font-size: 2rem; }
-    .missionariesPageMain .picsSection figure {
+    .galleryPageMain .picsSection figure {
       max-width: 100%;
       padding: 10px 10px 30px 10px; }
-    .missionariesPageMain .picsSection img {
+    .galleryPageMain .picsSection img {
       width: 100%;
       height: auto;
       border-radius: 10px;
@@ -941,76 +941,40 @@ footer {
     color: #ACC18A; }
 
 .galleryPageMain {
-  max-width: 1750px; }
-  .galleryPageMain figure {
-    border: 2px solid black;
-    background-color: #555; }
-  .galleryPageMain .galleryContainer img[data-src] {
-    filter: blur(0.2em); }
-  .galleryPageMain .galleryContainer img {
-    filter: blur(0em);
-    transition: filter 1s;
-    width: 94%;
-    margin: 10px; }
-  .galleryPageMain .galleryPicCaption {
-    display: grid;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 10px;
-    color: #0000aa;
-    font-size: 1.25rem; }
-  .galleryPageMain .galleryContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 50px;
-    row-gap: 50px;
-    width: 100%; }
-  .galleryPageMain figure:hover {
-    box-shadow: 0 0 50px #0c0b0b; }
+  max-width: 100%; }
 
-.navigation {
-  list-style-type: none;
+figure {
+  border: 2px solid black;
+  background-color: #555; }
+
+.galleryContainer img[data-src] {
+  filter: blur(0.2em); }
+
+.galleryContainer img {
+  filter: blur(0em);
+  transition: filter 1s;
+  width: 95%;
+  margin: 10px; }
+
+.galleryPicCaption {
+  display: grid;
+  align-content: center;
+  align-items: center;
   text-align: center;
-  padding: 0;
-  margin: 0;
-  background-color: #7EA8BE;
-  font-weight: 500;
+  padding-bottom: 10px;
+  color: #0000aa;
   font-size: 1.25rem; }
 
-nav .menu {
-  background-color: #3e80a3;
-  border: none;
-  font-size: 1.4rem;
-  font-weight: 700;
-  border: 2px solid black; }
+.galleryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 50px;
+  width: 90%;
+  margin: 0 auto; }
 
-.navigation li:first-child {
-  display: block; }
-
-.navigation li {
-  display: none; }
-
-.navigation a {
-  display: block;
-  color: black;
-  padding: 0.75rem;
-  text-align: center;
-  text-decoration: none; }
-
-.navigation .active {
-  background-color: #3e80a3;
-  color: yellow;
-  font-weight: 400;
-  font-size: 1.75rem; }
-
-.navigation a:hover {
-  color: black;
-  font-weight: 600;
-  background-color: #3e80a3; }
-
-.responsive li {
-  display: grid; }
+figure:hover {
+  box-shadow: 0 0 50px #0c0b0b; }
 
 @media only screen and (min-width: 560px) {
   /*------------------------------------ Body ---------------------------------*/
