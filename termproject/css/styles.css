@@ -1160,7 +1160,7 @@ footer {
   /*----------------------------------- Header --------------------------------*/
   header,
   footer {
-    max-width: auto;
+    width: auto;
     margin: auto; }
 
   header h1 {
