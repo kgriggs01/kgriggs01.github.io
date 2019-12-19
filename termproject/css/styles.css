@@ -858,7 +858,8 @@ footer {
     border: 1px solid #445ba9;
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
-    width: 90%; }
+    width: 90%;
+    background-color: #f9fdf1; }
   .contactPageMain form .fieldsetContainer {
     padding: 20px 0 20px 0; }
   .contactPageMain form legend {
