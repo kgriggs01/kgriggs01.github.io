@@ -940,6 +940,78 @@ footer {
   .thankyouPageMain h2 {
     color: #ACC18A; }
 
+.galleryPageMain {
+  max-width: 1750px; }
+  .galleryPageMain figure {
+    border: 2px solid black;
+    background-color: #555; }
+  .galleryPageMain .galleryContainer img[data-src] {
+    filter: blur(0.2em); }
+  .galleryPageMain .galleryContainer img {
+    filter: blur(0em);
+    transition: filter 1s;
+    width: 94%;
+    margin: 10px; }
+  .galleryPageMain .galleryPicCaption {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #0000aa;
+    font-size: 1.25rem; }
+  .galleryPageMain .galleryContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    width: 100%; }
+  .galleryPageMain figure:hover {
+    box-shadow: 0 0 50px #0c0b0b; }
+
+.navigation {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #7EA8BE;
+  font-weight: 500;
+  font-size: 1.25rem; }
+
+nav .menu {
+  background-color: #3e80a3;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: 2px solid black; }
+
+.navigation li:first-child {
+  display: block; }
+
+.navigation li {
+  display: none; }
+
+.navigation a {
+  display: block;
+  color: black;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none; }
+
+.navigation .active {
+  background-color: #3e80a3;
+  color: yellow;
+  font-weight: 400;
+  font-size: 1.75rem; }
+
+.navigation a:hover {
+  color: black;
+  font-weight: 600;
+  background-color: #3e80a3; }
+
+.responsive li {
+  display: grid; }
+
 @media only screen and (min-width: 560px) {
   /*------------------------------------ Body ---------------------------------*/
   /*----------------------------------- Header --------------------------------*/

@@ -640,8 +640,10 @@ footer {
         border-radius: 10px;
 
         h2 {
-            font-size: 2rem;;
+            font-size: 2rem;
+            ;
         }
+
         figure {
             max-width: 100%;
             padding: 10px 10px 30px 10px;
@@ -802,3 +804,123 @@ footer {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.galleryPageMain {
+    max-width: 1750px;
+
+
+    figure {
+        border: 2px solid black;
+        background-color: #555;
+    }
+
+    .galleryContainer img[data-src] {
+        filter: blur(0.2em);
+    }
+
+    .galleryContainer img {
+        filter: blur(0em);
+        transition: filter 1s;
+        width: 94%;
+        margin: 10px;
+    }
+
+    .galleryPicCaption {
+        display: grid;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+        color: rgb(0, 0, 170);
+        font-size: 1.25rem;
+    }
+
+    .galleryContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        width: 100%;
+
+    }
+
+    figure:hover {
+        box-shadow: 0 0 50px rgb(12, 11, 11);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #7EA8BE;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+ 
+    
+}
+
+nav .menu {
+    background-color: rgb(62, 128, 163);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 2px solid black;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation .active {
+    background-color: rgb(62, 128, 163);
+    color: yellow;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.navigation a:hover {
+    color: black;
+    font-weight: 600;
+    background-color: rgb(62, 128, 163);
+
+}
+
+.responsive li {
+    display: grid;
+
+
+}
