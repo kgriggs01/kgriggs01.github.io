@@ -92,14 +92,42 @@ main {
 
 /*----------------------------- Missionaries Page ---------------------------*/
 .missionariesPageMain {
+    max-width: 1750px;
 
     form {
 
         fieldset {
-            width: 35%;
+            width: 50%;
+        }
+
+        .picsSection {
+
+            display: flex;
+            flex-flow: column;
+            text-align: left;
+
+            figure {
+                padding: 0;
+                border-radius: 0;
+            }
+
+            img {
+                box-shadow: none;
+            }
+        }
+
+        .picDiv {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
+
+    .return {
+        padding: 20px 0 50px 0;
+        font-size: 1.75rem;
+
+    }
 }
+
 
 /*------------------------------- Contact Us Page ---------------------------*/
 .contactPageMain {
@@ -117,16 +145,3 @@ main {
 .resource {
     font-size: 1.25rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

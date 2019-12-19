@@ -745,14 +745,14 @@ footer {
 
 /*----------------------------- Receptions Page ------------------------------*/
 /*----------------------------- Missionaries Page ---------------------------*/
-.galleryPageMain {
+.missionariesPageMain {
   max-width: 960px;
   padding: 0 2%; }
-  .galleryPageMain form h3 {
+  .missionariesPageMain form h3 {
     font-size: 1.5rem;
     text-align: center;
     color: black; }
-  .galleryPageMain form fieldset {
+  .missionariesPageMain form fieldset {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
@@ -761,22 +761,22 @@ footer {
     padding: 20px 20px 20px 20px;
     width: 90%;
     background-color: #f9fdf1; }
-  .galleryPageMain form .fieldsetContainer {
+  .missionariesPageMain form .fieldsetContainer {
     padding: 20px 0 20px 0; }
-  .galleryPageMain form legend {
+  .missionariesPageMain form legend {
     color: #445ba9;
     margin: 0 1rem;
     padding: 0 .5rem; }
-  .galleryPageMain form label.top,
-  .galleryPageMain form label.tellUs,
-  .galleryPageMain form #comments {
+  .missionariesPageMain form label.top,
+  .missionariesPageMain form label.tellUs,
+  .missionariesPageMain form #comments {
     padding-top: 1rem;
     color: #9c2c13;
     font-size: 1rem; }
-  .galleryPageMain form label.top input,
-  .galleryPageMain form label.top select,
-  .galleryPageMain form label.tellUs input,
-  .galleryPageMain form #comments {
+  .missionariesPageMain form label.top input,
+  .missionariesPageMain form label.top select,
+  .missionariesPageMain form label.tellUs input,
+  .missionariesPageMain form #comments {
     -webkit-appearance: none;
     font-size: 1rem;
     border: solid 1px #999;
@@ -786,21 +786,21 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0 auto; }
-  .galleryPageMain form label.top select {
+  .missionariesPageMain form label.top select {
     max-width: 21.5rem; }
-  .galleryPageMain form #comments {
+  .missionariesPageMain form #comments {
     height: 10rem; }
-  .galleryPageMain form label.top input:required,
-  .galleryPageMain form label.top select:required {
+  .missionariesPageMain form label.top input:required,
+  .missionariesPageMain form label.top select:required {
     border-left: red solid 6px; }
-  .galleryPageMain form label.top input:required:valid,
-  .galleryPageMain form label.top select:required:valid {
+  .missionariesPageMain form label.top input:required:valid,
+  .missionariesPageMain form label.top select:required:valid {
     border-left: green solid 6px; }
-  .galleryPageMain form input:hover,
-  .galleryPageMain form label.top select,
-  .galleryPageMain form #comments {
+  .missionariesPageMain form input:hover,
+  .missionariesPageMain form label.top select,
+  .missionariesPageMain form #comments {
     cursor: pointer; }
-  .galleryPageMain form input.submitBtn {
+  .missionariesPageMain form input.submitBtn {
     border: none;
     background-color: #9c2c13;
     color: white;
@@ -809,19 +809,21 @@ footer {
     margin: 0 0 2rem 2%;
     width: 95%;
     max-width: 20rem; }
-  .galleryPageMain form .formSubmitButton {
+  .missionariesPageMain form .formSubmitButton {
     width: 100%;
     text-align: center;
     padding: 25px 0 0 0; }
-  .galleryPageMain form .preference {
+  .missionariesPageMain form .preference {
     display: block;
     padding: 0 0 10px 0;
     color: #9c2c13;
     font-size: 1rem; }
-  .galleryPageMain form .preferenceOption {
+  .missionariesPageMain form .preferenceOption {
     display: block;
     padding: 5px 5px 5px 10px; }
-  .galleryPageMain .picsSection {
+  .missionariesPageMain .roomsH1 {
+    padding: 25px 0 0 0; }
+  .missionariesPageMain .picsSection {
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -831,16 +833,20 @@ footer {
     font-weight: 0;
     margin: 20px 0 50px 0;
     border-radius: 10px; }
-    .galleryPageMain .picsSection h2 {
+    .missionariesPageMain .picsSection h2 {
       font-size: 2rem; }
-    .galleryPageMain .picsSection figure {
+    .missionariesPageMain .picsSection figure {
       max-width: 100%;
       padding: 10px 10px 30px 10px; }
-    .galleryPageMain .picsSection img {
+    .missionariesPageMain .picsSection img {
       width: 100%;
       height: auto;
       border-radius: 10px;
       box-shadow: 5px 5px 5px black; }
+  .missionariesPageMain .return {
+    padding: 20px 0 40px 0;
+    font-size: 1.5rem;
+    text-align: center; }
 
 /*------------------------------- Contact Us Page ---------------------------*/
 .contactPageMain {
@@ -939,42 +945,6 @@ footer {
   padding: 0 0 20px 0; }
   .thankyouPageMain h2 {
     color: #ACC18A; }
-
-.galleryPageMain {
-  max-width: 100%; }
-
-figure {
-  border: 2px solid black;
-  background-color: #555; }
-
-.galleryContainer img[data-src] {
-  filter: blur(0.2em); }
-
-.galleryContainer img {
-  filter: blur(0em);
-  transition: filter 1s;
-  width: 95%;
-  margin: 10px; }
-
-.galleryPicCaption {
-  display: grid;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 10px;
-  color: #0000aa;
-  font-size: 1.25rem; }
-
-.galleryContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
-  row-gap: 50px;
-  width: 90%;
-  margin: 0 auto; }
-
-figure:hover {
-  box-shadow: 0 0 50px #0c0b0b; }
 
 @media only screen and (min-width: 560px) {
   /*------------------------------------ Body ---------------------------------*/
@@ -1144,11 +1114,26 @@ figure:hover {
   /*----------------------------- Receptions Page ---------------------------*/
   /*----------------------------- Missionaries Page ------------------------*/
   .missionariesPageMain form fieldset {
-    width: 48%;
+    width: 75%;
     margin: 0 auto; }
   .missionariesPageMain form .formSubmitButton {
     width: 98%;
     text-align: center; }
+  .missionariesPageMain .picsSection figure {
+    width: 100%;
+    border-radius: 0; }
+  .missionariesPageMain .picsSection img {
+    box-shadow: none; }
+  .missionariesPageMain .picDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 20px;
+    width: 100%;
+    margin: 0 auto; }
+  .missionariesPageMain .return {
+    padding: 20px 0 50px 0;
+    font-size: 2rem; }
 
   /*------------------------------- Contact Us Page ---------------------------*/
   .contactPageMain .contactBox {
@@ -1225,8 +1210,24 @@ figure:hover {
   /*------------------------------- Services Page -----------------------------*/
   /*----------------------------- Receptions Page ------------------------------*/
   /*----------------------------- Missionaries Page ---------------------------*/
-  .missionariesPageMain form fieldset {
-    width: 35%; }
+  .missionariesPageMain {
+    max-width: 1750px; }
+    .missionariesPageMain form fieldset {
+      width: 50%; }
+    .missionariesPageMain form .picsSection {
+      display: flex;
+      flex-flow: column;
+      text-align: left; }
+      .missionariesPageMain form .picsSection figure {
+        padding: 0;
+        border-radius: 0; }
+      .missionariesPageMain form .picsSection img {
+        box-shadow: none; }
+    .missionariesPageMain form .picDiv {
+      grid-template-columns: 1fr 1fr 1fr; }
+    .missionariesPageMain .return {
+      padding: 20px 0 50px 0;
+      font-size: 1.75rem; }
 
   /*------------------------------- Contact Us Page ---------------------------*/
   .contactPageMain form fieldset {
