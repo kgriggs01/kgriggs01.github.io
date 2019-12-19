@@ -47,13 +47,18 @@ main {
 }
 
 .openbtn {
-    font-size: 35px;
-    padding: 10px 10px 10px 35px;
+    font-size: 30px;
+    padding: 10px 10px 10px 15px;
 }
 
-.sidebar .closebtn {
+.closebtn {
     font-size: 40px;
     padding-top: 25px;
+}
+
+.breadcrumb {
+    margin-left: -1.5rem;
+    font-size: 1.25rem;
 }
 
 
@@ -86,7 +91,15 @@ main {
 
 
 /*----------------------------- Missionaries Page ---------------------------*/
+.missionariesPageMain {
 
+    form {
+
+        fieldset {
+            width: 35%;
+        }
+    }
+}
 
 /*------------------------------- Contact Us Page ---------------------------*/
 .contactPageMain {

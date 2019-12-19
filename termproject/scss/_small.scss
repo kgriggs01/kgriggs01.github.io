@@ -59,7 +59,6 @@ header {
 
 
 
-
 /*--------------------------- Navigation / Side Bar Menu --------------------*/
 .sidebar {
     height: 100%;
@@ -128,13 +127,11 @@ header {
     cursor: pointer;
     color: white;
     background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
-    padding: 10px 10px 10px 30px;
+    padding: 10px 10px 10px 5px;
     border: none;
     width: 200px;
     text-align: left;
 }
-
-
 
 .openbtn:hover {
     background-color: #444;
@@ -147,95 +144,29 @@ header {
     padding: 0 15px 0 0;
 }
 
-
-/* Regular breadcrumbs */
-
-.collapsed {
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 2em;
-        color: #333;
-    }
+.breadcrumb {
+    margin-left: -2rem;
 
     li {
         display: inline-block;
-        position: relative;
-        padding-right: 2em;
-        margin: 0;
-    }
-
-    li:after {
-        position: absolute;
-        display: inline-block;
-        right: 0;
-        width: 2em;
-        text-align: center;
-    }
-
-    li:last-child {
-        font-weight: bold;
-    }
-
-    li:last-child:after {
-        content: '';
     }
 
     a {
         text-decoration: none;
-        display: inline-block;
         color: black;
         white-space: nowrap;
     }
-
-    a:active {
-        color: white;
-        background-color: black;
-    }
-
 
     a:hover {
         text-decoration: underline;
     }
 
-
-    /* Collapsed breadcrumbs */
-
-    .collapsed li {
-        overflow: hidden;
-    }
-
-    .collapsed li:after {
-        background: rgb(227, 227, 227);
-        background: linear-gradient(90deg, rgba(227, 227, 227, 0.4) 0%, rgba(227, 227, 227, 1) 35%);
-        padding-left: 1em;
-    }
-
-    .collapsed a {
-        max-width: 2em;
-        transition: max-width 300ms ease-in-out;
-    }
-
-    .collapsed a:hover,
-    .collapsed a:focus,
-    .collapsed li:hover a {
-        max-width: 1000px;
-    }
-
-    .collapsed li:hover:after {
-        padding-left: 0em;
-        background: transparent;
-    }
-}
-
-.breadcrumb {
-    font-size: 1rem;
-
     .active:hover {
         text-decoration-line: none;
     }
 }
+
+
 
 
 /*----------------------------------- Main ----------------------------------*/
@@ -278,6 +209,7 @@ footer {
     padding: 2rem $gutter;
 }
 
+
 /*----------------------------------- Home Page -----------------------------*/
 .homePageMain {
 
@@ -313,11 +245,10 @@ footer {
 }
 
 
-
-
 /*---------------------------------- Temple Page ----------------------------*/
 .templesPageMain {
     max-width: 960px;
+
 
     h2 {
         font-size: 1.5rem;
@@ -450,18 +381,18 @@ footer {
         display: none;
         margin-top: 20px;
     }
+
+    .return {
+        padding: 50px 0 0 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
-
-
-
-
-
 
 
 /*------------------------------ Reservations Page --------------------------*/
 .reservationsPageMain {
     padding: 0 2%;
-    min-height: 20rem;
 
     form {
 
@@ -473,6 +404,7 @@ footer {
             border-radius: 10px;
             padding: 20px 20px 20px 20px;
             width: 90%;
+            background-color: rgb(249, 253, 241);
         }
 
         .fieldsetContainer {
@@ -527,7 +459,8 @@ footer {
         }
 
         input:hover,
-        label.top select {
+        label.top select,
+        #comments {
             cursor: pointer;
         }
 
@@ -552,18 +485,181 @@ footer {
 
 
 /*------------------------------- Services Page -----------------------------*/
+.servicesPageMain {
+
+    .links {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    a:hover {
+        font-size: 2rem;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 0 10px 10px;
+        line-height: 1.5rem;
+        background-color: #F2FBE0;
+        margin: 20px 0 20px 0;
+    }
+
+    .amenities,
+    .services {
+        max-width: 90%;
+        flex: 1 0 15em;
+    }
+}
 
 
 /*----------------------------- Receptions Page ------------------------------*/
 
 
 /*----------------------------- Missionaries Page ---------------------------*/
+.missionariesPageMain {
+    max-width: 960px;
+    padding: 0 2%;
+
+    form {
+
+        h3 {
+            font-size: 1.5rem;
+            text-align: center;
+            color: black;
+        }
+
+        fieldset {
+            display: flex;
+            flex-flow: column;
+            margin: 0 auto;
+            border: 1px solid #445ba9;
+            border-radius: 10px;
+            padding: 20px 20px 20px 20px;
+            width: 90%;
+            background-color: rgb(249, 253, 241);
+        }
+
+        .fieldsetContainer {
+            padding: 20px 0 20px 0;
+        }
+
+        legend {
+            color: #445ba9;
+            margin: 0 1rem;
+            padding: 0 .5rem;
+        }
+
+        label.top,
+        label.tellUs,
+        #comments {
+            padding-top: 1rem;
+            color: #9c2c13;
+            font-size: 1rem;
+        }
+
+        label.top input,
+        label.top select,
+        label.tellUs input,
+        #comments {
+            -webkit-appearance: none;
+            font-size: 1rem;
+            border: solid 1px #999;
+            border-radius: 4px;
+            padding: .75rem;
+            color: #555;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        label.top select {
+            max-width: 21.5rem;
+        }
+
+        #comments {
+            height: 10rem;
+        }
+
+        label.top input:required,
+        label.top select:required {
+            border-left: red solid 6px;
+        }
+
+        label.top input:required:valid,
+        label.top select:required:valid {
+            border-left: green solid 6px;
+        }
+
+        input:hover,
+        label.top select,
+        #comments {
+            cursor: pointer;
+        }
+
+        input.submitBtn {
+            border: none;
+            background-color: #9c2c13;
+            color: white;
+            border-radius: 1rem;
+            padding: .75rem 1.5rem;
+            margin: 0 0 2rem 2%;
+            width: 95%;
+            max-width: 20rem;
+        }
+
+        .formSubmitButton {
+            width: 100%;
+            text-align: center;
+            padding: 25px 0 0 0;
+        }
+
+        .preference {
+            display: block;
+            padding: 0 0 10px 0;
+            color: #9c2c13;
+            font-size: 1rem;
+        }
+
+        .preferenceOption {
+            display: block;
+            padding: 5px 5px 5px 10px;
+        }
+    }
+
+    .picsSection {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        padding: 10px;
+        background-color: #605B56;
+        color: white;
+        font-weight: 0;
+        margin: 20px 0 50px 0;
+        border-radius: 10px;
+
+        h2 {
+            font-size: 2rem;;
+        }
+        figure {
+            max-width: 100%;
+            padding: 10px 10px 30px 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px black;
+        }
+    }
+}
 
 
 /*------------------------------- Contact Us Page ---------------------------*/
 .contactPageMain {
     padding: 0 2%;
-    min-height: 20rem;
 
     form {
 
@@ -629,7 +725,8 @@ footer {
         }
 
         input:hover,
-        label.top select {
+        label.top select,
+        #comments {
             cursor: pointer;
         }
 
@@ -650,7 +747,7 @@ footer {
             padding: 25px 0 0 0;
         }
     }
-   
+
     h2 {
         font-size: 2rem;
         text-align: center;
@@ -704,3 +801,4 @@ footer {
         color: #ACC18A;
     }
 }
+

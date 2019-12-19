@@ -20,18 +20,26 @@ header {
 
 
 /*--------------------------- Navigation / Side Bar Menu --------------------*/
-.sidebar a {
-    font-size: 1.55rem;
+.sidebar {
+
+    a {
+        font-size: 1.55rem;
+    }
+
+    .closebtn {
+        font-size: 60px;
+        padding-top: 25px;
+    }
 }
 
 .openbtn {
     font-size: 50px;
-
+    padding: 10px 10px 10px 10px;
 }
 
-.sidebar .closebtn {
-    font-size: 60px;
-    padding-top: 25px;
+.breadcrumb {
+    margin-left: -1.5rem;
+    font-size: 1.5rem;
 }
 
 
@@ -76,7 +84,7 @@ footer {
 }
 
 /*---------------------------------- Temple Page ----------------------------*/
-.templesMain {
+.templesPageMain {
 
     h2 {
         font-size: 2.5rem;
@@ -266,7 +274,21 @@ footer {
 
 
 /*----------------------------- Missionaries Page ------------------------*/
+.missionariesPageMain {
 
+    form {
+
+        fieldset {
+            width: 48%;
+            margin: 0 auto;
+        }
+
+        .formSubmitButton {
+            width: 98%;
+            text-align: center;
+        }
+    }
+}
 
 /*------------------------------- Contact Us Page ---------------------------*/
 .contactPageMain {

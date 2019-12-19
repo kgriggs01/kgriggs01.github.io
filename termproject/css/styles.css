@@ -489,7 +489,7 @@ header {
   cursor: pointer;
   color: white;
   background: linear-gradient(to right, #605B56 0%, #ffffff 100%);
-  padding: 10px 10px 10px 30px;
+  padding: 10px 10px 10px 5px;
   border: none;
   width: 200px;
   text-align: left; }
@@ -503,58 +503,16 @@ header {
   /* If you want a transition effect */
   padding: 0 15px 0 0; }
 
-/* Regular breadcrumbs */
-.collapsed {
-  /* Collapsed breadcrumbs */ }
-  .collapsed ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 2em;
-    color: #333; }
-  .collapsed li {
-    display: inline-block;
-    position: relative;
-    padding-right: 2em;
-    margin: 0; }
-  .collapsed li:after {
-    position: absolute;
-    display: inline-block;
-    right: 0;
-    width: 2em;
-    text-align: center; }
-  .collapsed li:last-child {
-    font-weight: bold; }
-  .collapsed li:last-child:after {
-    content: ''; }
-  .collapsed a {
+.breadcrumb {
+  margin-left: -2rem; }
+  .breadcrumb li {
+    display: inline-block; }
+  .breadcrumb a {
     text-decoration: none;
-    display: inline-block;
     color: black;
     white-space: nowrap; }
-  .collapsed a:active {
-    color: white;
-    background-color: black; }
-  .collapsed a:hover {
+  .breadcrumb a:hover {
     text-decoration: underline; }
-  .collapsed .collapsed li {
-    overflow: hidden; }
-  .collapsed .collapsed li:after {
-    background: #e3e3e3;
-    background: linear-gradient(90deg, rgba(227, 227, 227, 0.4) 0%, #e3e3e3 35%);
-    padding-left: 1em; }
-  .collapsed .collapsed a {
-    max-width: 2em;
-    transition: max-width 300ms ease-in-out; }
-  .collapsed .collapsed a:hover,
-  .collapsed .collapsed a:focus,
-  .collapsed .collapsed li:hover a {
-    max-width: 1000px; }
-  .collapsed .collapsed li:hover:after {
-    padding-left: 0em;
-    background: transparent; }
-
-.breadcrumb {
-  font-size: 1rem; }
   .breadcrumb .active:hover {
     text-decoration-line: none; }
 
@@ -696,11 +654,14 @@ footer {
   .templesPageMain .forecastSection {
     display: none;
     margin-top: 20px; }
+  .templesPageMain .return {
+    padding: 50px 0 0 0;
+    font-size: 1.5rem;
+    text-align: center; }
 
 /*------------------------------ Reservations Page --------------------------*/
 .reservationsPageMain {
-  padding: 0 2%;
-  min-height: 20rem; }
+  padding: 0 2%; }
   .reservationsPageMain form fieldset {
     display: flex;
     flex-flow: column;
@@ -708,7 +669,8 @@ footer {
     border: 1px solid #445ba9;
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
-    width: 90%; }
+    width: 90%;
+    background-color: #f9fdf1; }
   .reservationsPageMain form .fieldsetContainer {
     padding: 20px 0 20px 0; }
   .reservationsPageMain form legend {
@@ -745,7 +707,8 @@ footer {
   .reservationsPageMain form label.top select:required:valid {
     border-left: green solid 6px; }
   .reservationsPageMain form input:hover,
-  .reservationsPageMain form label.top select {
+  .reservationsPageMain form label.top select,
+  .reservationsPageMain form #comments {
     cursor: pointer; }
   .reservationsPageMain form input.submitBtn {
     border: none;
@@ -762,12 +725,126 @@ footer {
     padding: 25px 0 0 0; }
 
 /*------------------------------- Services Page -----------------------------*/
+.servicesPageMain .links {
+  font-size: 1.5rem;
+  padding: 10px; }
+.servicesPageMain a:hover {
+  font-size: 2rem; }
+.servicesPageMain section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 10px 10px;
+  line-height: 1.5rem;
+  background-color: #F2FBE0;
+  margin: 20px 0 20px 0; }
+.servicesPageMain .amenities,
+.servicesPageMain .services {
+  max-width: 90%;
+  flex: 1 0 15em; }
+
 /*----------------------------- Receptions Page ------------------------------*/
 /*----------------------------- Missionaries Page ---------------------------*/
+.missionariesPageMain {
+  max-width: 960px;
+  padding: 0 2%; }
+  .missionariesPageMain form h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: black; }
+  .missionariesPageMain form fieldset {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    width: 90%;
+    background-color: #f9fdf1; }
+  .missionariesPageMain form .fieldsetContainer {
+    padding: 20px 0 20px 0; }
+  .missionariesPageMain form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem; }
+  .missionariesPageMain form label.top,
+  .missionariesPageMain form label.tellUs,
+  .missionariesPageMain form #comments {
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1rem; }
+  .missionariesPageMain form label.top input,
+  .missionariesPageMain form label.top select,
+  .missionariesPageMain form label.tellUs input,
+  .missionariesPageMain form #comments {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 auto; }
+  .missionariesPageMain form label.top select {
+    max-width: 21.5rem; }
+  .missionariesPageMain form #comments {
+    height: 10rem; }
+  .missionariesPageMain form label.top input:required,
+  .missionariesPageMain form label.top select:required {
+    border-left: red solid 6px; }
+  .missionariesPageMain form label.top input:required:valid,
+  .missionariesPageMain form label.top select:required:valid {
+    border-left: green solid 6px; }
+  .missionariesPageMain form input:hover,
+  .missionariesPageMain form label.top select,
+  .missionariesPageMain form #comments {
+    cursor: pointer; }
+  .missionariesPageMain form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 95%;
+    max-width: 20rem; }
+  .missionariesPageMain form .formSubmitButton {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0 0 0; }
+  .missionariesPageMain form .preference {
+    display: block;
+    padding: 0 0 10px 0;
+    color: #9c2c13;
+    font-size: 1rem; }
+  .missionariesPageMain form .preferenceOption {
+    display: block;
+    padding: 5px 5px 5px 10px; }
+  .missionariesPageMain .picsSection {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 10px;
+    background-color: #605B56;
+    color: white;
+    font-weight: 0;
+    margin: 20px 0 50px 0;
+    border-radius: 10px; }
+    .missionariesPageMain .picsSection h2 {
+      font-size: 2rem; }
+    .missionariesPageMain .picsSection figure {
+      max-width: 100%;
+      padding: 10px 10px 30px 10px; }
+    .missionariesPageMain .picsSection img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px black; }
+
 /*------------------------------- Contact Us Page ---------------------------*/
 .contactPageMain {
-  padding: 0 2%;
-  min-height: 20rem; }
+  padding: 0 2%; }
   .contactPageMain form fieldset {
     display: flex;
     flex-flow: column;
@@ -812,7 +889,8 @@ footer {
   .contactPageMain form label.top select:required:valid {
     border-left: green solid 6px; }
   .contactPageMain form input:hover,
-  .contactPageMain form label.top select {
+  .contactPageMain form label.top select,
+  .contactPageMain form #comments {
     cursor: pointer; }
   .contactPageMain form input.submitBtn {
     border: none;
@@ -876,13 +954,17 @@ footer {
   /*--------------------------- Navigation / Side Bar Menu --------------------*/
   .sidebar a {
     font-size: 1.55rem; }
-
-  .openbtn {
-    font-size: 50px; }
-
   .sidebar .closebtn {
     font-size: 60px;
     padding-top: 25px; }
+
+  .openbtn {
+    font-size: 50px;
+    padding: 10px 10px 10px 10px; }
+
+  .breadcrumb {
+    margin-left: -1.5rem;
+    font-size: 1.5rem; }
 
   /*----------------------------------- Main ----------------------------------*/
   main figcaption {
@@ -910,31 +992,31 @@ footer {
     font-size: 1.5rem; }
 
   /*---------------------------------- Temple Page ----------------------------*/
-  .templesMain h2 {
+  .templesPageMain h2 {
     font-size: 2.5rem; }
-  .templesMain h3 {
+  .templesPageMain h3 {
     font-size: 1.75rem; }
-  .templesMain h4 {
+  .templesPageMain h4 {
     font-size: 2rem; }
-  .templesMain h5 {
+  .templesPageMain h5 {
     font-size: 2.25rem; }
-  .templesMain h6 {
+  .templesPageMain h6 {
     font-size: 1.75rem; }
-  .templesMain p,
-  .templesMain li {
+  .templesPageMain p,
+  .templesPageMain li {
     font-size: 1.5rem; }
-  .templesMain .weatherSummary {
+  .templesPageMain .weatherSummary {
     padding: 0 0 10px 0; }
-  .templesMain .summaryContainer {
+  .templesPageMain .summaryContainer {
     font-size: 1.25rem; }
-  .templesMain section {
+  .templesPageMain section {
     padding-bottom: 50px; }
-  .templesMain .forecastSection {
+  .templesPageMain .forecastSection {
     display: grid;
     background-color: #d3ccb9;
     margin: 0 auto;
     text-align: center; }
-  .templesMain .forecastDayContainer {
+  .templesPageMain .forecastDayContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 600px;
@@ -942,41 +1024,41 @@ footer {
     margin: 0 auto;
     text-align: center;
     background-color: #b2b3b4; }
-  .templesMain .forecastSec,
-  .templesMain .forecastDayContainer,
-  .templesMain .forecastWeekday,
-  .templesMain .forecastIcon,
-  .templesMain .forecastTemp {
+  .templesPageMain .forecastSec,
+  .templesPageMain .forecastDayContainer,
+  .templesPageMain .forecastWeekday,
+  .templesPageMain .forecastIcon,
+  .templesPageMain .forecastTemp {
     border: 1px solid black; }
-  .templesMain .forecastWeekday {
+  .templesPageMain .forecastWeekday {
     background-color: #28536B;
     text-align: center;
     color: white;
     padding: 10px 0 0;
     font-size: 2rem; }
-  .templesMain .forecastIcon {
+  .templesPageMain .forecastIcon {
     padding: 10px 0 0 0;
     border-bottom: none; }
-  .templesMain .forecastSection img {
+  .templesPageMain .forecastSection img {
     width: 75px; }
-  .templesMain .forecastTemp {
+  .templesPageMain .forecastTemp {
     font-size: 2rem;
     padding: 10px 0 10px 0;
     border-top: none; }
-  .templesMain .forecastSection h4 {
+  .templesPageMain .forecastSection h4 {
     font-size: 2.5rem;
     padding: 10px 10px 30px 10px; }
-  .templesMain .forecastSection p {
+  .templesPageMain .forecastSection p {
     font-size: 1rem;
     padding: 20px 0 0 0;
     font-family: 'Buenard', serif; }
-  .templesMain .forecastSection {
+  .templesPageMain .forecastSection {
     display: grid;
     background-color: #ACC18A;
     margin: 0 auto;
     text-align: center;
     padding: 10px 10px 30px 10px; }
-  .templesMain .forecastDayContainer {
+  .templesPageMain .forecastDayContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 600px;
@@ -984,31 +1066,31 @@ footer {
     margin: 0 auto;
     text-align: center;
     background-color: #b2b3b4; }
-  .templesMain .forecastSec,
-  .templesMain .forecastDayContainer,
-  .templesMain .forecastWeekday,
-  .templesMain .forecastIcon,
-  .templesMain .forecastTemp {
+  .templesPageMain .forecastSec,
+  .templesPageMain .forecastDayContainer,
+  .templesPageMain .forecastWeekday,
+  .templesPageMain .forecastIcon,
+  .templesPageMain .forecastTemp {
     border: 1px solid black; }
-  .templesMain .forecastWeekday {
+  .templesPageMain .forecastWeekday {
     background-color: #28536B;
     text-align: center;
     color: white;
     padding: 10px 0 0;
     font-size: 2rem; }
-  .templesMain .forecastIcon {
+  .templesPageMain .forecastIcon {
     padding: 10px 0 0 0;
     border-bottom: none; }
-  .templesMain .forecastSection img {
+  .templesPageMain .forecastSection img {
     width: 75px; }
-  .templesMain .forecastTemp {
+  .templesPageMain .forecastTemp {
     font-size: 2rem;
     padding: 10px 0 10px 0;
     border-top: none; }
-  .templesMain .forecastSection h4 {
+  .templesPageMain .forecastSection h4 {
     font-size: 2.5rem;
     padding: 10px 10px 30px 10px; }
-  .templesMain .forecastSection p {
+  .templesPageMain .forecastSection p {
     font-size: 1rem;
     padding: 20px 0 0 0;
     font-family: 'Buenard', serif; }
@@ -1025,6 +1107,13 @@ footer {
   /*------------------------------- Services Page -----------------------------*/
   /*----------------------------- Receptions Page ---------------------------*/
   /*----------------------------- Missionaries Page ------------------------*/
+  .missionariesPageMain form fieldset {
+    width: 48%;
+    margin: 0 auto; }
+  .missionariesPageMain form .formSubmitButton {
+    width: 98%;
+    text-align: center; }
+
   /*------------------------------- Contact Us Page ---------------------------*/
   .contactPageMain .contactBox {
     display: flex;
@@ -1077,12 +1166,16 @@ footer {
     font-size: 1.25rem; }
 
   .openbtn {
-    font-size: 35px;
-    padding: 10px 10px 10px 35px; }
+    font-size: 30px;
+    padding: 10px 10px 10px 15px; }
 
-  .sidebar .closebtn {
+  .closebtn {
     font-size: 40px;
     padding-top: 25px; }
+
+  .breadcrumb {
+    margin-left: -1.5rem;
+    font-size: 1.25rem; }
 
   /*----------------------------------- Home Page -----------------------------*/
   .siteResources {
@@ -1096,6 +1189,9 @@ footer {
   /*------------------------------- Services Page -----------------------------*/
   /*----------------------------- Receptions Page ------------------------------*/
   /*----------------------------- Missionaries Page ---------------------------*/
+  .missionariesPageMain form fieldset {
+    width: 35%; }
+
   /*------------------------------- Contact Us Page ---------------------------*/
   .contactPageMain form fieldset {
     width: 35%; }
