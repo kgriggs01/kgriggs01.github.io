@@ -15,8 +15,8 @@ html {
 
 /*------------------------------------ Body ---------------------------------*/
 body {
-    font-family: $bodyFontFamily;
-    font-weight: $regularWeight;
+    font-family: 'Poly';
+    font-weight: 300;
     font-size: 16px;
 }
 
@@ -31,22 +31,22 @@ header {
     background: rgb(242, 251, 224);
     background: linear-gradient(0deg, rgba(242, 251, 224, 1) 0%,
             rgba(172, 193, 138, 0.7931547619047619) 100%);
-    padding: 1rem $gutter;
-    font-family: $headerFontFamily;
+    padding: 1rem 2%;
+    font-family: 'Noto Serif';
 
     h1 {
         margin: 0;
         font-size: 1.5rem;
-        font-weight: $heavyWeight;
+        font-weight: 700;
         line-height: 2.75rem;
-        font-weight: $regularWeight;
+        font-weight: 300;
         padding: 0;
     }
 
     h2 {
         margin: 0;
         font-size: .85rem;
-        font-weight: $regularWeight;
+        font-weight: 300;
         padding: 0 0 10px 0;
     }
 
@@ -83,7 +83,7 @@ header {
         text-decoration: none;
         text-align: left;
         font-size: 1.25rem;
-        font-family: $navFontFamily;
+        font-family: 'Arima Madurai';
         color: white;
         display: block;
         transition: 0.3s;
@@ -167,13 +167,13 @@ header {
 /*----------------------------------- Main ----------------------------------*/
 main {
     display: block;
-    padding: 1rem $gutter;
+    padding: 1rem 2%;
     padding-top: 0;
 
     h1 {
-        color: $mainH1FontColor;
-        background-color: $mainH1BackgoundColor;
-        font-weight: $heavyWeight;
+        color: black;
+        background-color: #DAFEB7;
+        font-weight: 700;
         text-align: center;
         padding: 20px 0 20px 0;
         border-bottom: 3px solid black;
@@ -201,7 +201,7 @@ footer {
     background: rgb(172, 193, 138);
     background: linear-gradient(0deg, rgba(172, 193, 138, 1) 0%, rgba(242, 251, 224, 0.8547794117647058) 100%);
     text-align: center;
-    padding: 2rem $gutter;
+    padding: 2rem 2%;
 }
 
 
@@ -808,4 +808,6 @@ footer {
         color: #ACC18A;
     }
 }
+
+
 
