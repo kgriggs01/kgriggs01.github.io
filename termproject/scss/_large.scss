@@ -110,17 +110,12 @@ main {
                 padding: 0;
                 border-radius: 0;
             }
-
-            img {
-                box-shadow: none;
-            }
-        }
-
-        .picDiv {
-            grid-template-columns: 1fr 1fr 1fr;
         }
     }
-
+    
+    .picDiv {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .return {
         padding: 20px 0 50px 0;
         font-size: 1.75rem;

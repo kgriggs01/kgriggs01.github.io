@@ -296,16 +296,13 @@ footer {
             border-radius: 0;
         }
 
-        img {
-            box-shadow: none;
-        }
     }
 
     .picDiv {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 50px;
-        row-gap: 20px;
+        column-gap: 40px;
+        row-gap: 10px;
         width: 100%;
         margin: 0 auto;
     }

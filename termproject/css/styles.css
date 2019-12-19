@@ -1122,13 +1122,11 @@ footer {
   .missionariesPageMain .picsSection figure {
     width: 100%;
     border-radius: 0; }
-  .missionariesPageMain .picsSection img {
-    box-shadow: none; }
   .missionariesPageMain .picDiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    row-gap: 20px;
+    column-gap: 40px;
+    row-gap: 10px;
     width: 100%;
     margin: 0 auto; }
   .missionariesPageMain .return {
@@ -1221,9 +1219,7 @@ footer {
       .missionariesPageMain form .picsSection figure {
         padding: 0;
         border-radius: 0; }
-      .missionariesPageMain form .picsSection img {
-        box-shadow: none; }
-    .missionariesPageMain form .picDiv {
+    .missionariesPageMain .picDiv {
       grid-template-columns: 1fr 1fr 1fr; }
     .missionariesPageMain .return {
       padding: 20px 0 50px 0;
