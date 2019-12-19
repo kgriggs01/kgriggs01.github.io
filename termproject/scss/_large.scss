@@ -101,7 +101,6 @@ main {
         }
 
         .picsSection {
-
             display: flex;
             flex-flow: column;
             text-align: left;
@@ -112,10 +111,11 @@ main {
             }
         }
     }
-    
+
     .picDiv {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .return {
         padding: 20px 0 50px 0;
         font-size: 1.75rem;
