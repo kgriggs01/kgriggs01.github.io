@@ -939,14 +939,14 @@ footer {
   padding: 10px 0 10px 0; }
 
 /*----------------------------- Thank You Page ---------------------------*/
-.confirmationPageMain
+.confirmationPageMain,
 .thankyouPage1Main,
-.thankyouPage1Main {
+.thankyouPage2Main {
   text-align: center;
   padding: 0 0 20px 0; }
-  .confirmationPageMain
+  .confirmationPageMain h2,
   .thankyouPage1Main h2,
-  .thankyouPage1Main h2 {
+  .thankyouPage2Main h2 {
     color: black; }
 
 @media only screen and (min-width: 560px) {
