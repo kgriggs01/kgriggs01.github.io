@@ -508,8 +508,33 @@ footer {
     }
 }
 
-
 /*----------------------------- Receptions Page ------------------------------*/
+.receptionsPageMain {
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 20px 0 0 0;
+        border-bottom: 2px solid black;
+        line-height: 3rem;
+    }
+
+    figure {
+        padding: 10px 0 10px 0;
+    }
+
+    .pics1,
+    .pics2,
+    .pics3,
+    .pics4 {
+        background-color: #F2FBE0;
+        padding: 10px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+}
 
 
 /*----------------------------- Missionaries Page ---------------------------*/
@@ -810,9 +835,3 @@ footer {
         color: black;
     }
 }
-
-
-
-
-
-

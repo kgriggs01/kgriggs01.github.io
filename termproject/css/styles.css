@@ -742,6 +742,23 @@ footer {
   flex: 1 0 15em; }
 
 /*----------------------------- Receptions Page ------------------------------*/
+.receptionsPageMain h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-bottom: 2px solid black;
+  line-height: 3rem; }
+.receptionsPageMain figure {
+  padding: 10px 0 10px 0; }
+.receptionsPageMain .pics1,
+.receptionsPageMain .pics2,
+.receptionsPageMain .pics3,
+.receptionsPageMain .pics4 {
+  background-color: #F2FBE0;
+  padding: 10px; }
+.receptionsPageMain img {
+  border-radius: 10px; }
+
 /*----------------------------- Missionaries Page ---------------------------*/
 .missionariesPageMain {
   max-width: 960px;
@@ -1115,6 +1132,17 @@ footer {
 
   /*------------------------------- Services Page -----------------------------*/
   /*----------------------------- Receptions Page ---------------------------*/
+  .receptionsPageMain h2 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid black;
+    line-height: 5rem; }
+  .receptionsPageMain h3 {
+    font-size: 2rem; }
+  .receptionsPageMain .offersList,
+  .receptionsPageMain .foodList {
+    font-size: 1.5rem;
+    line-height: 2rem; }
+
   /*----------------------------- Missionaries Page ------------------------*/
   .missionariesPageMain form fieldset {
     width: 75%;
@@ -1210,6 +1238,42 @@ footer {
 
   /*------------------------------- Services Page -----------------------------*/
   /*----------------------------- Receptions Page ------------------------------*/
+  .receptionsPageMain h2 {
+    font-size: 2rem; }
+  .receptionsPageMain h3 {
+    text-align: center;
+    text-decoration: underline; }
+  .receptionsPageMain figure {
+    padding: 10px; }
+  .receptionsPageMain .servicesSection1,
+  .receptionsPageMain .servicesSection3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 20px 0; }
+  .receptionsPageMain .pics1,
+  .receptionsPageMain .pics3 {
+    display: flex;
+    flex-flow: column;
+    max-width: 50%;
+    flex: 1 0 15em;
+    padding: 10px; }
+  .receptionsPageMain .pics2,
+  .receptionsPageMain .pics4 {
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 15em;
+    padding: 10px; }
+  .receptionsPageMain .offersList,
+  .receptionsPageMain .foodList {
+    display: flex;
+    flex-flow: column;
+    max-width: 50%;
+    flex: 1 0 15em;
+    padding: 10px;
+    line-height: 2.5rem; }
+
   /*----------------------------- Missionaries Page ---------------------------*/
   .missionariesPageMain {
     max-width: 1750px; }

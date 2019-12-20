@@ -271,7 +271,24 @@ footer {
 
 
 /*----------------------------- Receptions Page ---------------------------*/
+.receptionsPageMain {
 
+    h2 {
+        font-size: 2.5rem;
+        border-bottom: 3px solid black;
+        line-height: 5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .offersList,
+    .foodList {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
 
 /*----------------------------- Missionaries Page ------------------------*/
 .missionariesPageMain {

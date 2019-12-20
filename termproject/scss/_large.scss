@@ -88,6 +88,57 @@ main {
 
 
 /*----------------------------- Receptions Page ------------------------------*/
+.receptionsPageMain {
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    figure {
+        padding: 10px;
+    }
+
+    .servicesSection1,
+    .servicesSection3 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 20px 0;
+    }
+
+    .pics1,
+    .pics3 {
+        display: flex;
+        flex-flow: column;
+        max-width: 50%;
+        flex: 1 0 15em;
+        padding: 10px;
+    }
+
+    .pics2,
+    .pics4 {
+        display: flex;
+        flex-flow: row;
+        flex: 1 0 15em;
+        padding: 10px;
+    }
+
+    .offersList,
+    .foodList {
+        display: flex;
+        flex-flow: column;
+        max-width: 50%;
+        flex: 1 0 15em;
+        padding: 10px;
+        line-height: 2.5rem;
+    }
+}
 
 
 /*----------------------------- Missionaries Page ---------------------------*/
@@ -119,7 +170,6 @@ main {
     .return {
         padding: 20px 0 50px 0;
         font-size: 1.75rem;
-
     }
 }
 
