@@ -389,8 +389,6 @@ template {
 [hidden] {
   display: none; }
 
-/* Colors */
-/* Fonts */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -941,11 +939,15 @@ footer {
   padding: 10px 0 10px 0; }
 
 /*----------------------------- Thank You Page ---------------------------*/
-.thankyouPageMain {
+.confirmationPageMain
+.thankyouPage1Main,
+.thankyouPage1Main {
   text-align: center;
   padding: 0 0 20px 0; }
-  .thankyouPageMain h2 {
-    color: #ACC18A; }
+  .confirmationPageMain
+  .thankyouPage1Main h2,
+  .thankyouPage1Main h2 {
+    color: black; }
 
 @media only screen and (min-width: 560px) {
   /*------------------------------------ Body ---------------------------------*/
