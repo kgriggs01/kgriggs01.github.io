@@ -72,7 +72,6 @@ fetch(starvalleyForecastURL)
   });
 
 
-
 const starvalleyTempleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
 fetch(starvalleyTempleURL)
@@ -120,7 +119,6 @@ fetch(starvalleyTempleURL)
       }
     }
   });
-
 
 
 const starvalleyScheduleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
@@ -224,7 +222,6 @@ fetch(starvalleyClosuresURL)
       }
     }
   });
-
 
 
 const starvalleyMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";

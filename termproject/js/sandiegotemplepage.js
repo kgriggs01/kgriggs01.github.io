@@ -121,7 +121,6 @@ fetch(sandiegoTempleURL)
   });
 
 
-
 const sandiegoScheduleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 fetch(sandiegoScheduleURL)
   .then(function (response) {
@@ -168,7 +167,6 @@ fetch(sandiegoScheduleURL)
       }
     }
   });
-
 
 
 const sandiegoServicesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
@@ -224,6 +222,7 @@ fetch(sandiegoClosuresURL)
       }
     }
   });
+
 
 const sandiegoMilestonesURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 fetch(sandiegoMilestonesURL)

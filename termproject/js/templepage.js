@@ -41,9 +41,8 @@ fetch(requestURL)
         card.appendChild(templeName);
         card.appendChild(image);
         card.appendChild(templeInfoDiv);
-   
+
         document.querySelector("div.templeInfo").appendChild(card);
       }
     }
   });
-

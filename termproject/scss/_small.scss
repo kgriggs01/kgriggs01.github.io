@@ -260,9 +260,6 @@ footer {
         font-weight: 300;
     }
 
-
-    
-
     .picsSection {
         display: flex;
         flex-flow: column;
@@ -380,7 +377,6 @@ footer {
             margin: 50px 0 0 0;
             font-size: 5rem;
         }
-
 
         .templeLink {
             font-size: 1.25rem;
@@ -578,9 +574,6 @@ input.submitBtn {
         color: yellow;
     }
 
-
-
-
     .return {
         padding: 50px 0 0 0;
         font-size: 1.5rem;
@@ -611,11 +604,6 @@ input.submitBtn {
         }
     }
 
-
-
-    
-
-
     .ordinanceSchedule {
         margin: 20px 0 0 0px;
         padding: 10px;
@@ -643,7 +631,7 @@ input.submitBtn {
         .portlandServices,
         .portlandMilestones,
         .portlandClosures2019,
-        .portlandClosures2020
+        .portlandClosures2020,
         .sandiegoBaptism,
         .sandiegoInitiatory,
         .sandiegoEndowment,
@@ -664,7 +652,6 @@ input.submitBtn {
             margin: 0;
         }
 
-
         .closure {
             padding: 0 0 10px 0;
         }
@@ -673,15 +660,12 @@ input.submitBtn {
             font-size: 1rem;
         }
 
-        li{
+        li {
             font-size: 1rem;
             line-height: 1.5rem;
         }
     }
 
-
-    
-    
     .templeInfo {
         padding: 10px;
         background-color: #F2FBE0;
@@ -848,7 +832,6 @@ input.submitBtn {
         border-radius: 10px;
     }
 }
-
 
 
 /*----------------------------- Missionaries Page ---------------------------*/
@@ -1137,6 +1120,7 @@ input.submitBtn {
     font-size: 1rem;
     padding: 10px 0 10px 0;
 }
+
 
 /*----------------------------- Thank You Page ---------------------------*/
 .confirmationPageMain,

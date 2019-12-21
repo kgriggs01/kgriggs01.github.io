@@ -840,8 +840,8 @@ input.submitBtn {
     .templesPageMain .ordinanceSchedule .portlandServices,
     .templesPageMain .ordinanceSchedule .portlandMilestones,
     .templesPageMain .ordinanceSchedule .portlandClosures2019,
-    .templesPageMain .ordinanceSchedule .portlandClosures2020
-    .sandiegoBaptism,
+    .templesPageMain .ordinanceSchedule .portlandClosures2020,
+    .templesPageMain .ordinanceSchedule .sandiegoBaptism,
     .templesPageMain .ordinanceSchedule .sandiegoInitiatory,
     .templesPageMain .ordinanceSchedule .sandiegoEndowment,
     .templesPageMain .ordinanceSchedule .sandiegoSealing,
@@ -1185,7 +1185,6 @@ input.submitBtn {
     color: black; }
 
 @media only screen and (min-width: 560px) {
-  /*------------------------------------ Body ---------------------------------*/
   /*----------------------------------- Header --------------------------------*/
   header h1 {
     font-size: 2.5rem; }
@@ -1250,8 +1249,11 @@ input.submitBtn {
     max-width: 100%;
     margin: 5px;
     text-align: left; }
-  .homePageMain .picsSection h3 {
-    text-align: center; }
+  .homePageMain .picsSection .weatherH3 {
+    text-align: center;
+    font-size: 1.5rem; }
+  .homePageMain .picsSection .summaryContainer {
+    font-size: 1.25rem; }
   .homePageMain .picsSection .templeSummary {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1259,6 +1261,12 @@ input.submitBtn {
     row-gap: 10px;
     width: 100%;
     margin: 0 auto; }
+  .homePageMain .picsSection .sandiegoTempleInfo h4 {
+    font-size: 2rem;
+    padding: 20px; }
+  .homePageMain .picsSection .sandiegoTempleInfo p {
+    font-size: 1.25rem;
+    padding: 10px; }
   .homePageMain .picsSection .templeLink {
     font-size: 2rem; }
 
@@ -1400,7 +1408,6 @@ input.submitBtn {
       font-size: 1.5rem;
       line-height: 3rem; }
 
-  /*--------------------------- Navigation / Side Bar Menu --------------------*/
   /*------------------------------ Reservations Page --------------------------*/
   .reservationsPageMain form fieldset {
     width: 48%;
@@ -1409,7 +1416,6 @@ input.submitBtn {
     width: 98%;
     text-align: center; }
 
-  /*------------------------------- Services Page -----------------------------*/
   /*----------------------------- Receptions Page ---------------------------*/
   .receptionsPageMain h2 {
     font-size: 2.5rem;
@@ -1465,7 +1471,6 @@ input.submitBtn {
     font-size: 1.5rem; } }
 /* end of media query */
 @media only screen and (min-width: 1028px) {
-  /*------------------------------------ Body ---------------------------------*/
   /*----------------------------------- Header --------------------------------*/
   header,
   footer {
@@ -1516,13 +1521,22 @@ input.submitBtn {
     font-size: 1.35rem; }
   .homePageMain h2 {
     font-size: 4rem; }
+  .homePageMain h3 {
+    text-align: center;
+    font-size: 2rem; }
+  .homePageMain .summaryContainer {
+    font-size: 2rem; }
+  .homePageMain .picsSection .weatherH3 {
+    font-size: 2rem;
+    line-height: 2rem; }
+  .homePageMain .picsSection .summaryContainer {
+    font-size: 1.5rem;
+    line-height: 2rem; }
 
-  /*---------------------------------- Temple Page ----------------------------*/
   /*------------------------------ Reservations Page --------------------------*/
   .reservationsPageMain form fieldset {
     width: 35%; }
 
-  /*------------------------------- Services Page -----------------------------*/
   /*----------------------------- Receptions Page ------------------------------*/
   .receptionsPageMain h2 {
     font-size: 2rem; }

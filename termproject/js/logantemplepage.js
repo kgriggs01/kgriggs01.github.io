@@ -70,9 +70,6 @@ fetch(loganForecastURL)
     }
   });
 
-
-
-
 const loganTempleURL = "https://kgriggs01.github.io/termproject/templeinfo.txt";
 
 fetch(loganTempleURL)
