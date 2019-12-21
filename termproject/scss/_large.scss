@@ -63,9 +63,27 @@ main {
 
 
 /*----------------------------------- Home Page -----------------------------*/
+.homePageMain {
+
+.picDiv {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.return {
+    padding: 20px 0 50px 0;
+    font-size: 1.75rem;
+}
+
+
 .siteResources {
     font-size: 1.35rem;
 }
+
+h2 {
+    font-size: 4rem;
+}
+}
+
 
 /*---------------------------------- Temple Page ----------------------------*/
 

@@ -548,17 +548,158 @@ footer {
   padding: 10px 0 20px 20px;
   margin-bottom: 20px;
   background-color: #DAFEB7;
-  color: black; }
+  color: black;
+  border-radius: 10px; }
 .homePageMain .contactInfo {
   max-width: 95%;
   text-align: center;
   line-height: 1.5rem; }
 .homePageMain .contactTitle {
   font-size: 1.25rem; }
+.homePageMain img {
+  border-radius: 10px; }
 .homePageMain iframe {
   display: none; }
 .homePageMain .icons img {
   padding: 5px; }
+.homePageMain .homepagePics {
+  padding: 25px 0 0 0; }
+.homePageMain h2 {
+  color: white;
+  text-align: center;
+  background-color: #605B56;
+  padding: 10px 0 10px 0;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 300;
+  border-radius: 10px;
+  margin-bottom: 0; }
+.homePageMain h3 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 300; }
+.homePageMain .picsSection {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding: 10px;
+  background-color: #ACC18A;
+  color: white;
+  font-weight: 0;
+  margin: 0 0 30px 0;
+  border-radius: 10px;
+  line-height: 2.5rem; }
+  .homePageMain .picsSection figure {
+    max-width: 100%;
+    padding: 10px 10px 10px 10px; }
+  .homePageMain .picsSection .picDiv {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #0000aa;
+    font-size: 1.25rem; }
+  .homePageMain .picsSection figure {
+    width: 100%;
+    margin: 0; }
+  .homePageMain .picsSection .weatherSummary {
+    background: linear-gradient(to right, #01041b, rgba(0, 0, 0, 0));
+    border: 1px solid blue;
+    box-shadow: 0 0 30px #777;
+    border-radius: 15px;
+    letter-spacing: 1pt;
+    color: white;
+    line-height: 1.25rem;
+    text-shadow: 2px 2px black;
+    max-width: 50%;
+    margin: 5px;
+    padding-bottom: 10px; }
+  .homePageMain .picsSection .summaryContainer {
+    display: grid;
+    column-gap: 25px;
+    padding: 0 10px 10px 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "current currentValue" "temp tempValue" "highTemp highTempValue" "lowTemp lowTempValue" "windChill windChillValue" "humidity humidityValue" "windSpeed windSpeedValue";
+    font-size: .75rem; }
+  .homePageMain .picsSection .weatherH3 {
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.75rem; }
+  .homePageMain .picsSection .current {
+    grid-area: current;
+    text-align: right; }
+  .homePageMain .picsSection .temp {
+    grid-area: temp;
+    text-align: right; }
+  .homePageMain .picsSection .highTemp {
+    grid-area: highTemp;
+    text-align: right; }
+  .homePageMain .picsSection .lowTemp {
+    grid-area: lowTemp;
+    text-align: right; }
+  .homePageMain .picsSection .windChill {
+    grid-area: windChill;
+    text-align: right; }
+  .homePageMain .picsSection .humidity {
+    grid-area: humidity;
+    text-align: right; }
+  .homePageMain .picsSection .windSpeed {
+    grid-area: windSpeed;
+    text-align: right; }
+  .homePageMain .picsSection .currentValue,
+  .homePageMain .picsSection .tempValue,
+  .homePageMain .picsSection .highTempValue,
+  .homePageMain .picsSection .lowTempValue,
+  .homePageMain .picsSection .windChillValue,
+  .homePageMain .picsSection .humidityValue,
+  .homePageMain .picsSection .windSpeedValue {
+    color: yellow; }
+  .homePageMain .picsSection .homeTemplePic {
+    margin: 50px 0 0 0;
+    font-size: 5rem; }
+  .homePageMain .picsSection .templeLink {
+    font-size: 1.25rem; }
+  .homePageMain .picsSection .sandiegoTempleInfo {
+    color: black; }
+    .homePageMain .picsSection .sandiegoTempleInfo h4 {
+      font-size: 1rem;
+      padding: 0;
+      margin: 0; }
+    .homePageMain .picsSection .sandiegoTempleInfo p {
+      font-size: .75rem;
+      line-height: .5rem;
+      padding: 5px;
+      margin: 0; }
+  .homePageMain .picsSection .templeSummary {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0 0 0; }
+.homePageMain .return {
+  padding: 0 0 30px 0;
+  font-size: 1.5rem;
+  text-align: center; }
+
+input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 75%;
+  max-width: 20rem;
+  font-size: 1.5rem; }
+
+.homepageSubmitButton {
+  width: 100%;
+  text-align: center;
+  padding: 20px 10px 0 0;
+  color: red; }
 
 .siteResources {
   font-size: 1rem;
@@ -649,13 +790,90 @@ footer {
   .templesPageMain .humidityValue,
   .templesPageMain .windSpeedValue {
     color: yellow; }
-  .templesPageMain .forecastSection {
-    display: none;
-    margin-top: 20px; }
   .templesPageMain .return {
     padding: 50px 0 0 0;
     font-size: 1.5rem;
     text-align: center; }
+  .templesPageMain .forecastSection {
+    display: none; }
+  .templesPageMain .loganTempleInfo,
+  .templesPageMain .portlandTempleInfo,
+  .templesPageMain .sandiegoTempleInfo,
+  .templesPageMain .starvalleyTempleInfo {
+    margin: 50px 0 0 0px;
+    padding: 10px;
+    background-color: #F2FBE0; }
+    .templesPageMain .loganTempleInfo h4,
+    .templesPageMain .portlandTempleInfo h4,
+    .templesPageMain .sandiegoTempleInfo h4,
+    .templesPageMain .starvalleyTempleInfo h4 {
+      font-size: 1.5rem;
+      margin: 0; }
+    .templesPageMain .loganTempleInfo p,
+    .templesPageMain .portlandTempleInfo p,
+    .templesPageMain .sandiegoTempleInfo p,
+    .templesPageMain .starvalleyTempleInfo p {
+      font-size: 1rem;
+      line-height: 0;
+      padding: 0 0 10px 0; }
+  .templesPageMain .ordinanceSchedule {
+    margin: 20px 0 0 0px;
+    padding: 10px;
+    background-color: #F2FBE0; }
+    .templesPageMain .ordinanceSchedule h4 {
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0; }
+    .templesPageMain .ordinanceSchedule h6,
+    .templesPageMain .ordinanceSchedule .loganBaptism,
+    .templesPageMain .ordinanceSchedule .loganInitiatory,
+    .templesPageMain .ordinanceSchedule .loganEndowment,
+    .templesPageMain .ordinanceSchedule .loganSealing,
+    .templesPageMain .ordinanceSchedule .loganServices,
+    .templesPageMain .ordinanceSchedule .loganMilestones,
+    .templesPageMain .ordinanceSchedule .loganClosures2019,
+    .templesPageMain .ordinanceSchedule .loganClosures2020,
+    .templesPageMain .ordinanceSchedule .portlandBaptism,
+    .templesPageMain .ordinanceSchedule .portlandInitiatory,
+    .templesPageMain .ordinanceSchedule .portlandEndowment,
+    .templesPageMain .ordinanceSchedule .portlandSealing,
+    .templesPageMain .ordinanceSchedule .portlandServices,
+    .templesPageMain .ordinanceSchedule .portlandMilestones,
+    .templesPageMain .ordinanceSchedule .portlandClosures2019,
+    .templesPageMain .ordinanceSchedule .portlandClosures2020
+    .sandiegoBaptism,
+    .templesPageMain .ordinanceSchedule .sandiegoInitiatory,
+    .templesPageMain .ordinanceSchedule .sandiegoEndowment,
+    .templesPageMain .ordinanceSchedule .sandiegoSealing,
+    .templesPageMain .ordinanceSchedule .sandiegoServices,
+    .templesPageMain .ordinanceSchedule .sandiegoMilestones,
+    .templesPageMain .ordinanceSchedule .sandiegoClosures2019,
+    .templesPageMain .ordinanceSchedule .sandiegoClosures2020,
+    .templesPageMain .ordinanceSchedule .starvalleyBaptism,
+    .templesPageMain .ordinanceSchedule .starvalleyInitiatory,
+    .templesPageMain .ordinanceSchedule .starvalleyEndowment,
+    .templesPageMain .ordinanceSchedule .starvalleySealing,
+    .templesPageMain .ordinanceSchedule .starvalleyServices,
+    .templesPageMain .ordinanceSchedule .starvalleyMilestones,
+    .templesPageMain .ordinanceSchedule .starvalleyClosures2019,
+    .templesPageMain .ordinanceSchedule .starvalleyClosures2020 {
+      padding: 0;
+      margin: 0; }
+    .templesPageMain .ordinanceSchedule .closure {
+      padding: 0 0 10px 0; }
+    .templesPageMain .ordinanceSchedule .year {
+      font-size: 1rem; }
+    .templesPageMain .ordinanceSchedule li {
+      font-size: 1rem;
+      line-height: 1.5rem; }
+  .templesPageMain .templeInfo {
+    padding: 10px;
+    background-color: #F2FBE0; }
+    .templesPageMain .templeInfo h4 {
+      font-size: 1.5rem; }
+    .templesPageMain .templeInfo p {
+      font-size: 1rem;
+      line-height: 0; }
 
 /*------------------------------ Reservations Page --------------------------*/
 .reservationsPageMain {
@@ -1013,6 +1231,36 @@ footer {
   .homePageMain iframe {
     display: flex;
     padding: 20px 0 20px 0; }
+  .homePageMain .picDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+    width: 100%;
+    margin: 0 auto; }
+  .homePageMain .return {
+    padding: 20px 0 50px 0;
+    font-size: 2rem; }
+  .homePageMain h2 {
+    font-size: 3rem; }
+  .homePageMain h3 {
+    font-size: 2rem;
+    font-weight: 500; }
+  .homePageMain .picsSection .weatherSummary {
+    max-width: 100%;
+    margin: 5px;
+    text-align: left; }
+  .homePageMain .picsSection h3 {
+    text-align: center; }
+  .homePageMain .picsSection .templeSummary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+    width: 100%;
+    margin: 0 auto; }
+  .homePageMain .picsSection .templeLink {
+    font-size: 2rem; }
 
   .siteResources {
     font-size: 1.5rem; }
@@ -1080,7 +1328,6 @@ footer {
     font-family: 'Buenard', serif; }
   .templesPageMain .forecastSection {
     display: grid;
-    background-color: #ACC18A;
     margin: 0 auto;
     text-align: center;
     padding: 10px 10px 30px 10px; }
@@ -1120,6 +1367,38 @@ footer {
     font-size: 1rem;
     padding: 20px 0 0 0;
     font-family: 'Buenard', serif; }
+  .templesPageMain .loganTempleInfo h4,
+  .templesPageMain .portlandTempleInfo h4,
+  .templesPageMain .sandiegoTempleInfo h4,
+  .templesPageMain .starvalleyTempleInfo h4 {
+    font-size: 2.5rem; }
+  .templesPageMain .loganTempleInfo h6,
+  .templesPageMain .portlandTempleInfo h6,
+  .templesPageMain .sandiegoTempleInfo h6,
+  .templesPageMain .starvalleyTempleInfo h6 {
+    font-size: 2rem; }
+  .templesPageMain .loganTempleInfo p,
+  .templesPageMain .portlandTempleInfo p,
+  .templesPageMain .sandiegoTempleInfo p,
+  .templesPageMain .starvalleyTempleInfo p {
+    font-size: 1.5rem; }
+  .templesPageMain .ordinanceSchedule {
+    margin: 20px 0 0 0px;
+    padding: 10px;
+    background-color: #F2FBE0; }
+    .templesPageMain .ordinanceSchedule h4 {
+      font-size: 2.5rem; }
+    .templesPageMain .ordinanceSchedule h6 {
+      font-size: 2rem; }
+    .templesPageMain .ordinanceSchedule p {
+      font-size: 1.5rem; }
+    .templesPageMain .ordinanceSchedule .closure {
+      padding: 0 0 20px 0; }
+    .templesPageMain .ordinanceSchedule .year {
+      font-size: 1.5rem; }
+    .templesPageMain .ordinanceSchedule li {
+      font-size: 1.5rem;
+      line-height: 3rem; }
 
   /*--------------------------- Navigation / Side Bar Menu --------------------*/
   /*------------------------------ Reservations Page --------------------------*/
@@ -1228,8 +1507,15 @@ footer {
     font-size: 1.25rem; }
 
   /*----------------------------------- Home Page -----------------------------*/
-  .siteResources {
+  .homePageMain .picDiv {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .homePageMain .return {
+    padding: 20px 0 50px 0;
+    font-size: 1.75rem; }
+  .homePageMain .siteResources {
     font-size: 1.35rem; }
+  .homePageMain h2 {
+    font-size: 4rem; }
 
   /*---------------------------------- Temple Page ----------------------------*/
   /*------------------------------ Reservations Page --------------------------*/

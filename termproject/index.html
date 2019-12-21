@@ -47,26 +47,129 @@
   </div>
 
   <main class="homePageMain">
+    <h2>The Temple Inn & Suites</h2>
 
-    <figure>
-      <img src="images/sandiego-pics/sandiego-temple-pic-2.jpg" alt="San Diego California Temple">
-      <figcaption>San Diego California Temple</figcaption>
-    </figure>
+    <div class="homepagePics">
 
-    <div class="placeholder">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
+      <section class="picsSection">
+        <h3>Conveniently located near your favorite temple</h3>
 
+
+
+        <figure>
+          <img class="homeTemplePic" src="images/homepage-pics/sandiego-temple-1100.jpg" alt="Preston pic" sizes="50vw"
+            srcset="images/homepage-pics/sandiego-temple-200.jpg 200w, 
+                  images/homepage-pics/sandiego-temple-400x400.jpg 500w, 
+                  images/homepage-pics/sandiego-temple-800.jpg 800w,
+                  images/homepage-pics/sandiego-temple.jpg 1100w">
+          <a class="templeLink" href="temples.html#sandiegoTemple">San Diego California Temple</a>
+        </figure>
+
+        <div class="templeSummary">
+          <section class="weatherSummary">
+            <h3 class="weatherH3">San Diego<br>
+              Current Weather</h3>
+            <div class="summaryContainer">
+              <div class="current">Currently:</div>
+              <div class="temp">Current:</div>
+              <div class="highTemp">High:</div>
+              <div class="lowTemp">Low:</div>
+              <div class="windChill">Wind Chill:</div>
+              <div class="humidity">Humidity:</div>
+              <div class="windSpeed">Wind Speed:</div>
+
+              <div class="currentValue"><span id="sdCurrent-weather-condition"></span></div>
+              <div class="tempValue"><span id="sdCurrent-temp"></span> °F</div>
+              <div class="highTempValue"><span id="sdHigh-temp"></span> °F</div>
+              <div class="lowTempValue"><span id="sdLow-temp"></span> °F</div>
+              <div class="windChillValue"><span id="sdGetWindChillValue"></span> </div>
+              <div class="humidityValue"><span id="sdCurrent-humidity"></span> %</div>
+              <div class="windSpeedValue"><span id="sdCurrent-wind-speed"></span> mph</div>
+            </div>
+          </section>
+
+          <div>
+            <div class="sandiegoTempleInfo"></div>
+          </div>
+        </div>
+
+
+        <div class="picDiv">
+          <figure>
+            <img class="homeTemplePic" src="images/homepage-pics/logan-temple.jpg" alt="Logan Utah Temple">
+            <a class="templeLink" href="temples.html#loganTemple">Logan Utah Temple</a>
+          </figure>
+
+          <figure>
+            <img class="homeTemplePic" src="images/homepage-pics/portland-temple.jpg" alt="Portland Oregon Temple">
+            <a class="templeLink" href="temples.html#portlandTemple">Portland Oregon Temple</a>
+          </figure>
+
+          <figure>
+            <img class="homeTemplePic" src="images/homepage-pics/starvalley-temple.jpg" alt="Denver Colorado Temple">
+            <a class="templeLink" href="temples.html#starvalleyTemple">Star Valley Wyoming Temple</a>
+          </figure>
+        </div>
+      </section>
+
+      <section class="picsSection">
+        <h3>Worship together</h3>
+        <div class="picDiv">
+
+          <figure>
+            <img src="images/homepage-pics/worship-pic1.jpg" alt="youth at temple">
+          </figure>
+
+          <figure>
+            <img src="images/homepage-pics/worship-pic2.jpg" alt="youth going to temple">
+          </figure>
+
+          <figure>
+            <img src="images/homepage-pics/worship-pic3.jpg" alt="young men at temple">
+          </figure>
+
+        </div>
+      </section>
+
+      <section class="picsSection">
+        <h3>Perfect for families</h3>
+        <div class="picDiv">
+          <figure>
+            <img src="images/homepage-pics/family-pic1.jpg" alt="Temple Visitor Center">
+          </figure>
+
+          <figure>
+            <img src="images/homepage-pics/family-pic2.jpg" alt="Family picture at temple">
+          </figure>
+
+          <figure>
+            <img src="images/homepage-pics/family-pic3.jpg" alt="Kids at temple">
+          </figure>
+
+          <figure>
+            <img src="images/homepage-pics/family-pic4.jpg" alt="Family walking at temple">
+          </figure>
+
+          <figure>
+            <img src="images/homepage-pics/family-pic5.jpg" alt="couple at temple">
+          </figure>
+
+          <figure>
+            <img src="images/homepage-pics/family-pic6.jpg" alt="newlyweds dancing">
+          </figure>
+        </div>
+      </section>
     </div>
 
     <form method="get" action="reservations.html">
-      <div class="homeSubmitButton">
+      <div class="homepageSubmitButton">
         <input class="submitBtn" type="submit" name="submitButton" value="Reserve my Room">
       </div>
     </form>
+
+    <div class="return">
+      <a href="index.html">Return to top of page</a>
+    </div>
 
     <section class="contactBox">
 
@@ -77,7 +180,6 @@
         <br>
         &#9742; (1) 240-555-5555<br>
         &#9993; templeinn.world<br>
-
 
         <div class="icons">
           <img src="images/icons/facebook-icon.png" alt="facebook icon">
@@ -101,6 +203,7 @@
   <script src="js/dates.js"></script>
   <script src="js/togglemenu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/sandiegoweatherpage.js"></script>
   <script src="js/webfontload.js"></script>
   <script src="js/sidebar.js"></script>
 </body>

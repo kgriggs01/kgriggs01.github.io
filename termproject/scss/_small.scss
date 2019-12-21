@@ -213,6 +213,7 @@ footer {
         margin-bottom: 20px;
         background-color: #DAFEB7;
         color: black;
+        border-radius: 10px;
     }
 
     .contactInfo {
@@ -225,6 +226,10 @@ footer {
         font-size: 1.25rem;
     }
 
+    img {
+        border-radius: 10px;
+    }
+
     iframe {
         display: none;
     }
@@ -232,6 +237,207 @@ footer {
     .icons img {
         padding: 5px;
     }
+
+    .homepagePics {
+        padding: 25px 0 0 0;
+    }
+
+    h2 {
+        color: white;
+        text-align: center;
+        background-color: #605B56;
+        padding: 10px 0 10px 0;
+        font-style: italic;
+        font-size: 2rem;
+        font-weight: 300;
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+
+    
+
+    .picsSection {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        padding: 10px;
+        background-color: #ACC18A;
+        color: white;
+        font-weight: 0;
+        margin: 0 0 30px 0;
+        border-radius: 10px;
+        line-height: 2.5rem;
+
+        figure {
+            max-width: 100%;
+            padding: 10px 10px 10px 10px;
+        }
+
+        .picDiv {
+            display: grid;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 10px;
+            color: rgb(0, 0, 170);
+            font-size: 1.25rem;
+        }
+
+        figure {
+            width: 100%;
+            margin: 0;
+        }
+
+        .weatherSummary {
+            background: linear-gradient(to right, rgb(1, 4, 27), rgba(0, 0, 0, 0));
+            border: 1px solid blue;
+            box-shadow: 0 0 30px #777;
+            border-radius: 15px;
+            letter-spacing: 1pt;
+            color: white;
+            line-height: 1.25rem;
+            text-shadow: 2px 2px black;
+            max-width: 50%;
+            margin: 5px;
+            padding-bottom: 10px;
+        }
+
+        .summaryContainer {
+            display: grid;
+            column-gap: 25px;
+            padding: 0 10px 10px 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "current currentValue"
+                "temp tempValue"
+                "highTemp highTempValue"
+                "lowTemp lowTempValue"
+                "windChill windChillValue"
+                "humidity humidityValue"
+                "windSpeed windSpeedValue";
+            font-size: .75rem;
+        }
+
+        .weatherH3 {
+            color: white;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .current {
+            grid-area: current;
+            text-align: right;
+        }
+
+        .temp {
+            grid-area: temp;
+            text-align: right;
+        }
+
+        .highTemp {
+            grid-area: highTemp;
+            text-align: right;
+        }
+
+        .lowTemp {
+            grid-area: lowTemp;
+            text-align: right;
+        }
+
+        .windChill {
+            grid-area: windChill;
+            text-align: right;
+        }
+
+        .humidity {
+            grid-area: humidity;
+            text-align: right;
+        }
+
+        .windSpeed {
+            grid-area: windSpeed;
+            text-align: right;
+        }
+
+        .currentValue,
+        .tempValue,
+        .highTempValue,
+        .lowTempValue,
+        .windChillValue,
+        .humidityValue,
+        .windSpeedValue {
+            color: yellow;
+        }
+
+        .homeTemplePic {
+            margin: 50px 0 0 0;
+            font-size: 5rem;
+        }
+
+
+        .templeLink {
+            font-size: 1.25rem;
+        }
+
+        .sandiegoTempleInfo {
+            color: black;
+
+            h4 {
+                font-size: 1rem;
+                padding: 0;
+                margin: 0;
+            }
+
+            p {
+                font-size: .75rem;
+                line-height: .5rem;
+                padding: 5px;
+                margin: 0;
+            }
+        }
+
+        .templeSummary {
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            padding: 50px 0 0 0;
+        }
+    }
+
+    .return {
+        padding: 0 0 30px 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 75%;
+    max-width: 20rem;
+    font-size: 1.5rem;
+}
+
+.homepageSubmitButton {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px 0 0;
+    color: red;
 }
 
 .siteResources {
@@ -372,15 +578,122 @@ footer {
         color: yellow;
     }
 
-    .forecastSection {
-        display: none;
-        margin-top: 20px;
-    }
+
+
 
     .return {
         padding: 50px 0 0 0;
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    .forecastSection {
+        display: none;
+    }
+
+    .loganTempleInfo,
+    .portlandTempleInfo,
+    .sandiegoTempleInfo,
+    .starvalleyTempleInfo {
+        margin: 50px 0 0 0px;
+        padding: 10px;
+        background-color: #F2FBE0;
+
+        h4 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 0;
+            padding: 0 0 10px 0;
+        }
+    }
+
+
+
+    
+
+
+    .ordinanceSchedule {
+        margin: 20px 0 0 0px;
+        padding: 10px;
+        background-color: #F2FBE0;
+
+        h4 {
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        h6,
+        .loganBaptism,
+        .loganInitiatory,
+        .loganEndowment,
+        .loganSealing,
+        .loganServices,
+        .loganMilestones,
+        .loganClosures2019,
+        .loganClosures2020,
+        .portlandBaptism,
+        .portlandInitiatory,
+        .portlandEndowment,
+        .portlandSealing,
+        .portlandServices,
+        .portlandMilestones,
+        .portlandClosures2019,
+        .portlandClosures2020
+        .sandiegoBaptism,
+        .sandiegoInitiatory,
+        .sandiegoEndowment,
+        .sandiegoSealing,
+        .sandiegoServices,
+        .sandiegoMilestones,
+        .sandiegoClosures2019,
+        .sandiegoClosures2020,
+        .starvalleyBaptism,
+        .starvalleyInitiatory,
+        .starvalleyEndowment,
+        .starvalleySealing,
+        .starvalleyServices,
+        .starvalleyMilestones,
+        .starvalleyClosures2019,
+        .starvalleyClosures2020 {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .closure {
+            padding: 0 0 10px 0;
+        }
+
+        .year {
+            font-size: 1rem;
+        }
+
+        li{
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+
+
+    
+    
+    .templeInfo {
+        padding: 10px;
+        background-color: #F2FBE0;
+
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 0;
+        }
     }
 }
 
@@ -535,6 +848,7 @@ footer {
         border-radius: 10px;
     }
 }
+
 
 
 /*----------------------------- Missionaries Page ---------------------------*/

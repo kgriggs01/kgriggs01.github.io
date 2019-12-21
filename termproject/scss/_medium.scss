@@ -78,6 +78,56 @@ footer {
         display: flex;
         padding: 20px 0 20px 0;
     }
+
+
+    
+    .picDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .return {
+        padding: 20px 0 50px 0;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+ 
+    .picsSection {
+
+    .weatherSummary {
+        max-width: 100%;
+        margin: 5px;
+        text-align: left;
+    }
+    h3 {
+        text-align: center;
+    }
+  
+    .templeSummary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .templeLink {
+        font-size: 2rem;
+    }
+}
 }
 
 .siteResources {
@@ -119,7 +169,6 @@ footer {
 
     .summaryContainer {
         font-size: 1.25rem;
-
     }
 
     section {
@@ -187,7 +236,6 @@ footer {
 
     .forecastSection {
         display: grid;
-        background-color: #ACC18A;
         margin: 0 auto;
         text-align: center;
         padding: 10px 10px 30px 10px;
@@ -244,7 +292,57 @@ footer {
         padding: 20px 0 0 0;
         font-family: 'Buenard', serif;
     }
+
+    .loganTempleInfo,
+    .portlandTempleInfo,
+    .sandiegoTempleInfo,
+    .starvalleyTempleInfo {
+ 
+        h4 {
+            font-size: 2.5rem;
+        }
+
+        h6 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .ordinanceSchedule {
+        margin: 20px 0 0 0px;
+        padding: 10px;
+        background-color: #F2FBE0;
+
+        h4 {
+            font-size: 2.5rem;
+        }
+
+        h6 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        .closure {
+            padding: 0 0 20px 0;
+        }
+
+        .year {
+            font-size: 1.5rem;
+        }
+
+        li{
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+    }
 }
+
 
 /*--------------------------- Navigation / Side Bar Menu --------------------*/
 
@@ -290,6 +388,7 @@ footer {
     }
 }
 
+
 /*----------------------------- Missionaries Page ------------------------*/
 .missionariesPageMain {
 
@@ -312,7 +411,6 @@ footer {
             width: 100%;
             border-radius: 0;
         }
-
     }
 
     .picDiv {
@@ -327,7 +425,6 @@ footer {
     .return {
         padding: 20px 0 50px 0;
         font-size: 2rem;
-
     }
 }
 
