@@ -1,0 +1,30 @@
+
+/*
+fieldset[title=fieldset2] > p + p {
+    background-color: bisque;
+}
+
+
+
+fieldset:nth-of-type(2) >p + p {
+    background-color: bisque;
+}
+
+.help::before {
+    content: "(";
+}
+
+.help::after {
+    content: ")";
+}
+
+*/
+
+fieldset p:nth-of-type(n+3) {
+display:none;
+}
+
+
+
+
+
