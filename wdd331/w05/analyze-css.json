@@ -1,0 +1,54 @@
+{
+  "generator": "analyze-css v0.12.8",
+  "metrics": {
+    "base64Length": 0,
+    "redundantBodySelectors": 0,
+    "redundantChildNodesSelectors": 0,
+    "colors": 5,
+    "comments": 1,
+    "commentsLength": 42,
+    "complexSelectors": 0,
+    "duplicatedSelectors": 0,
+    "duplicatedProperties": 0,
+    "emptyRules": 0,
+    "expressions": 0,
+    "oldIEFixes": 0,
+    "imports": 0,
+    "importants": 0,
+    "mediaQueries": 1,
+    "notMinified": 1,
+    "multiClassesSelectors": 0,
+    "parsingErrors": 0,
+    "oldPropertyPrefixes": 0,
+    "propertyResets": 0,
+    "qualifiedSelectors": 0,
+    "specificityIdAvg": 0,
+    "specificityIdTotal": 0,
+    "specificityClassAvg": 0.4,
+    "specificityClassTotal": 14,
+    "specificityTagAvg": 1.37,
+    "specificityTagTotal": 48,
+    "selectors": 35,
+    "selectorLengthAvg": 1.4285714285714286,
+    "selectorsByAttribute": 0,
+    "selectorsByClass": 2,
+    "selectorsById": 0,
+    "selectorsByPseudo": 12,
+    "selectorsByTag": 48,
+    "length": 2371,
+    "rules": 32,
+    "declarations": 62
+  },
+  "offenders": {
+    "mediaQueries": [
+      "@media only screen and (min-width: 64em) (10 rules) @ 118:1"
+    ],
+    "colors": [
+      "#6495ed (3 times)",
+      "#faebd7 (3 times)",
+      "#deb887 (3 times)",
+      "#f8f8f8 (1 times)",
+      "rgba(143,139,143,0.52) (1 times)"
+    ]
+  }
+}

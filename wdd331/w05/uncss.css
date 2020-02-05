@@ -1,0 +1,165 @@
+body {
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #6495ED;
+    line-height: 2rem;
+    padding: 26px 24px 45px 30px;
+    text-align: right;
+}
+
+header a {
+    color: #FAEBD7;
+    text-decoration: none;
+}
+
+.post-date {
+    color: black;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 30px 0 25px 0;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 8px 0 25px 0;
+    text-decoration: none;
+}
+
+nav {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a:link,
+nav a:visited {
+    color: #FAEBD7;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #DEB887;
+}
+
+main {
+    background-color: #FAEBD7;
+    padding: 30px 10px 0 15px;
+}
+
+article {
+    background-color: rgb(248, 248, 248);
+    box-shadow: 10px 10px 5px -8px rgba(143, 139, 143, 0.52);
+    margin-bottom: 25px;
+    padding: 35px 20px 0 30px;
+}
+
+article a:link,
+article a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+article a:active {
+    color: #DEB887;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 71%;
+}
+
+p {
+    padding: 0 0 40px 0;
+}
+
+p a:link,
+p a:visited {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+p a:active {
+    color: #DEB887;
+}
+
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 64em) {
+
+    body {
+        display: block;
+        margin: 50px auto;
+        max-width: 50%;
+    }
+
+    div {
+        display: flex;
+    }
+
+    header {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        padding: 20px 0 25px 0;
+    }
+
+    nav {
+        font-size: .8rem;
+    }
+
+    article {
+        height: auto;
+        margin: 10px 50px 40px 50px;
+        width: auto;
+    }
+
+    .post-date {
+        font-size: .8rem;
+        font-weight: bolder;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 47%;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+}

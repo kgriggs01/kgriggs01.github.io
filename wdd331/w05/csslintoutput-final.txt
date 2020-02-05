@@ -1,0 +1,17 @@
+
+
+csslint: There are 3 problems in C:\OneDrive\School - Keith\BYUI\old-courses\2019-20\fall\cit230_web-frontend-development\github\kgriggs01.github.io\wdd331\w05\main.css.
+
+main.css
+1: warning at line 138, col 5
+Heading (h1) has already been defined.
+    h1 {
+
+main.css
+2: warning at line 158, col 5
+Heading (h2) has already been defined.
+    h2 {
+
+main.css
+3: warning
+You have 2 h1s, 2 h2s defined in this stylesheet.
