@@ -38,9 +38,10 @@
 }
 
 .grid div {
-  background-color: #ddf8e9;
+  background-color: #d4d4d4;
   grid-template-columns: 12.5% 25% 25% 25% 12.5%;
-  row-gap: 6em;
+  grid-template-rows: 25% 25% 25% 25%;
+  row-gap: 4em;
 }
 
 .row {
