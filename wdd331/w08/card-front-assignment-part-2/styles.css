@@ -37,63 +37,65 @@
   transform: rotate(180deg);
 }
 
-.grid div {
-  background-color: #d4d4d4;
-  grid-template-columns: 12.5% 25% 25% 25% 12.5%;
-  grid-template-rows: 25% 25% 25% 25%;
-  row-gap: 4em;
-}
-
 .row {
   display: grid;
+  grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+  grid-template-rows: 25% 25% 25% 25%;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.grid div:nth-child(1) {
-  grid-row: 1;
-  grid-column: 1;
-}
-
-.grid div:nth-child(2) {
-  grid-row: 1;
-  grid-column: 2;
-}
-
-.grid div:nth-child(3) {
+.cell:nth-child(3) {
   grid-row: 1;
   grid-column: 4;
 }
 
-.grid div:nth-child(4) {
+.cell:nth-child(4) {
   grid-row: 2;
   grid-column: 3;
 }
 
-.grid div:nth-child(5) {
+.cell:nth-child(5) {
   grid-row: 3;
   grid-column: 2;
 }
 
-.grid div:nth-child(6) {
+.cell:nth-child(6) {
   grid-row: 3;
   grid-column: 4;
 }
 
-.grid div:nth-child(7) {
+.cell:nth-child(7) {
   grid-row: 4;
   grid-column: 2;
 }
 
-.grid div:nth-child(8) {
+.cell:nth-child(8) {
   grid-row: 4;
   grid-column: 4;
 }
 
-.grid div:nth-child(9) {
+.cell:nth-child(9) {
   grid-row: 4;
   grid-column: 5;
 }
 
 @supports not (display: grid) {
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+  }
+
+  .cell {
+    flex: 1;
+    text-align: center;
+  }
+
   .col-1 {
     flex: 0 0 12.5%;
   }
@@ -156,70 +158,6 @@
 
   .offset-8 {
     margin-left: 100%;
-  }
-
-  .row {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: space-between;
-    height: 100%;
-  }
-
-  .cell {
-    flex: 1;
-    text-align: center;
-  }
-
-  *,
-*:before,
-*:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  .card {
-    border: 1px solid grey;
-    height: 56vw;
-    width: 40vw;
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 2px 2px 4px grey;
-  }
-
-  .card-front {
-    padding: 0.5em;
-  }
-
-  .icon {
-    width: 8vw;
-    height: 8vw;
-  }
-
-  .number {
-    text-align: center;
-    font-size: 4vw;
-  }
-  .number > .icon {
-    width: 4vw;
-    height: 4vw;
-  }
-
-  .rotate {
-    transform: rotate(180deg);
-  }
-
-  .col-1 {
-    flex: 0 0 12.5%;
-  }
-
-  .col-2 {
-    flex: 0 0 25%;
-  }
-
-  .col-8 {
-    flex: 0 0 100%;
   }
 }
 
