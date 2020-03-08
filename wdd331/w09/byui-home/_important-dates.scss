@@ -1,0 +1,45 @@
+@import 'typography';
+@import 'icons';
+@import 'breakpoints';
+@import 'colors';
+
+.important-dates {
+
+    h3 {
+        background-color: $byui-blue;
+        color: white;
+        margin-top: 2em;
+        padding: .5em .5em .5em 1em;
+        border: .05em solid $dark-gray;
+        font-size: 1.25em;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    p {
+        list-style-type: none;
+        padding: .5em .5em .5em 1em;
+    }
+}
+
+.events {
+    display: grid;
+    grid-template-columns: 20% 5% 1fr;
+    font-size: .9em;
+    padding: 0 1.5em 0 0;
+    border-bottom: thin solid $dark-gray;
+
+    :nth-child(1) {
+        grid-column: 1;
+        font-weight: 900;
+    }
+
+    :nth-child(2) {
+        grid-column: 2;
+    }
+
+    :nth-child(3) {
+        grid-column: 3;
+
+    }
+}

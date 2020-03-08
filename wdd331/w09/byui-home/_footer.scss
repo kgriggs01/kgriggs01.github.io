@@ -1,0 +1,17 @@
+@import 'typography';
+@import 'icons';
+@import 'breakpoints';
+@import 'colors';
+
+.taylor-bld {
+    display: block;
+    text-align: center;
+    margin: 5em 0 0 0;
+    border-bottom: thin solid $dark-gray;
+}
+
+.incomplete-footer {
+    background-color: $light-gray;
+    padding: 1.5em 0 1.5em 0;
+    margin-top: -.25em;
+}

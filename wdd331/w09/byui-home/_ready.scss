@@ -1,0 +1,34 @@
+@import 'typography';
+@import 'icons';
+@import 'breakpoints';
+@import 'colors';
+
+.ready {
+
+    .ready-pic1 {
+        max-width: 100%;
+        max-height: auto;
+        width: 100%;
+    }
+
+    .ready-pic2 {
+        display: none;
+    }
+}
+
+@media (min-width: $sm-break) {
+    .ready {
+
+        .ready-pic1 {
+            display: none;
+        }
+
+        .ready-pic2 {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            max-height: 50%;
+            margin-top: 1em;
+        }
+    }
+}

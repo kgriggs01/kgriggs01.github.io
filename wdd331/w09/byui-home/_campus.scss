@@ -1,0 +1,46 @@
+@import 'typography';
+@import 'icons';
+@import 'breakpoints';
+@import 'colors';
+
+.campus {
+
+  figure {
+    border: 1px solid rgb(179, 177, 177);
+    padding: 0 0 .5em 0;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  span {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    padding: .25em 0 0 1em;
+    font-size: .9em;
+  }
+
+  .videos,
+  .gallery,
+  .explore {
+    color: $link-blue;
+    padding: 2em 0 0 0;
+  }
+
+  .icon-angle-right {
+    grid-column: 2;
+    align-self: center;
+  }
+}
+
+@media (min-width: $sm-break) {
+
+  .campus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1em;
+  }
+}

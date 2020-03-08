@@ -1,0 +1,58 @@
+@import 'typography';
+@import 'icons';
+@import 'breakpoints';
+@import 'colors';
+
+.get-info {
+    background-color: $light-gray;
+    text-transform: uppercase;
+    padding: .2em;
+    border: .05em solid $dark-gray;
+    border-radius: .3em;
+
+    span {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr;
+        width: 100%;
+        padding: .5em .5em .5em 1.1em;
+        font-size: .85em;
+        font-weight: bold;
+    }
+
+    .icon-triangle-down {
+        grid-column: 2;
+        align-self: center;
+    }
+}
+
+.resources {
+
+    .resources-heading {
+        background-color: $dark-gray;
+        color: white;
+        margin-top: 2em;
+        padding: .5em .5em .5em 1em;
+        border: .05em solid $dark-gray;
+        font-size: 1.25em;
+    }
+
+    span {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr;
+        width: 100%;
+        background-color: $light-gray;
+        border: .05em solid $dark-gray;
+        color: $link-blue;
+        padding: .5em .5em .5em 1.5em;
+        font-size: .85em;
+    }
+
+    .icon-angle-right {
+        grid-column: 2;
+        align-self: center;
+    }
+}

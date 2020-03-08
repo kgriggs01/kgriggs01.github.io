@@ -1,0 +1,27 @@
+@import 'typography';
+@import 'icons';
+@import 'breakpoints';
+@import 'colors';
+
+.message {
+    margin-top: 8em;
+    border: thin solid $dark-gray;
+
+    h3 {
+        background-color: $light-gray;
+        margin: 0;
+        padding: .5em;
+        font-size: 1em;
+        border-bottom: thin solid $dark-gray;
+    }
+
+    .speaker-info {
+        padding: .25em;
+    }
+}
+
+@media (min-width: $sm-break) {
+    .message {
+        margin-top: 10em;
+    }
+}

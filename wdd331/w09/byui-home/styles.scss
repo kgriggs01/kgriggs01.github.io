@@ -1,14 +1,16 @@
 @import 'typography';
 @import 'icons';
+@import 'breakpoints';
+@import 'colors';
 
-$sm-break: 48em;
-// colors
-$dark-gray: #727272;
-$med-gray: #b4b3b5;
-$light-gray: #eaeaea;
-$body-font: #020202;
-$link-blue: #0076b6; //why do we have both of these blues?
-$byui-blue: #056cb6;
+@import 'header';
+@import 'campus';
+@import 'information';
+@import 'important-dates';
+@import 'newsroom';
+@import 'message';
+@import 'footer';
+@import 'ready';
 
 // Utility classes
 *,
@@ -18,9 +20,11 @@ $byui-blue: #056cb6;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -30,4 +34,49 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+main {
+  font-family: 'BYUI Open Sans';
+  margin: 0 2em 0 0;
+}
+
+.main-div {
+  padding: 2em 0 1em 0;
+}
+
+.information-div {
+  padding: 1em 0 1em 0;
+}
+
+@media (min-width: $sm-break) {
+
+  .main-div {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100% auto;
+    margin: 0 20% 0 20%;
+    gap: 2em;
+
+    .main-div {
+      margin-top: 2em;
+
+      .left-wrapper {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 95%;
+      }
+
+      .newsroom {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+      }
+    }
+
+    .information-div {
+      max-width: 100%;
+      margin-top: 0;
+    }
+  }
 }
