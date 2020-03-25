@@ -1,0 +1,48 @@
+@import 'partials/reset';
+@import 'partials/prefix-mixins';
+@import 'partials/layout'; // responsive grid and media queries
+
+// Fonts
+@import 'partials/fonts';
+
+// color palette - these colors will be the color swatches of the Colors section
+@import 'partials/colors';
+
+// Typography 
+@import 'partials/typography';
+
+// Icons
+@import 'partials/icons';
+
+// Navigation 
+@import 'partials/navigation';
+
+
+// Background 
+body {
+  /* this is the page background */
+  background-color: $color-5;
+}
+
+// Patterns
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid $color-4;
+  border-radius: 3px;
+  background: $color-5;
+  box-shadow: 0 1px 1px rgba(#000, 0.05);
+  padding: 6px;
+  color: $color-3;
+}
+
+// Page title 
+main>h1 {
+  color: $color-2;
+
+  @include MQ(L) {
+    /* title goes into the header on big devices */
+    color: $color-5;
+  }
+}
+
+@import 'partials/basic-style';
